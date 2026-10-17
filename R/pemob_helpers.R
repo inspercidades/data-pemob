@@ -330,6 +330,109 @@ parse_pemob_response <- function(response) {
   return(result)
 }
 
+build_pemob_review_candidates <- function(dat) {
+  required_cols <- c(
+    "code_muni",
+    "name_muni",
+    "abbrev_state",
+    "year",
+    "code_variable",
+    "raw_response"
+  )
+  if (!all(required_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Review inputs must include: {paste(required_cols, collapse = ', ')}."
+    )
+  }
+
+  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
+  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
+    cli::cli_abort(
+      "Review inputs must have unique municipality-question-year keys."
+    )
+  }
+
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
+  expected_unit <- ifelse(result$code_variable == "3.1.1.A", "BRL", "km")
+  flags <- data.frame(
+    unparsed_response = result$parse_status == "review",
+    negative_value = !is.na(result$parsed_value) & result$parsed_value < 0,
+    unit_mismatch = !is.na(result$parsed_unit) &
+      result$parsed_unit != expected_unit,
+    cross_city_outlier = rep(FALSE, nrow(result)),
+    zero_transition = rep(FALSE, nrow(result)),
+    abrupt_change_10x = rep(FALSE, nrow(result))
+  )
+
+  by_question_year <- split(
+    seq_len(nrow(result)),
+    interaction(result$code_variable, result$year, drop = TRUE)
+  )
+  for (rows in by_question_year) {
+    values <- result$parsed_value[rows]
+    eligible <- !is.na(values) &
+      values > 0 &
+      (is.na(result$parsed_unit[rows]) |
+        result$parsed_unit[rows] == expected_unit[rows])
+    observed <- values[eligible]
+    if (length(observed) < 8L) {
+      next
+    }
+
+    spread <- stats::IQR(observed)
+    if (spread > 0) {
+      fence <- stats::quantile(observed, 0.75) + 3 * spread
+      flags$cross_city_outlier[rows[eligible]] <- observed > fence
+    }
+  }
+
+  order_rows <- order(result$code_muni, result$code_variable, result$year)
+  for (position in seq_along(order_rows)[-1L]) {
+    current <- order_rows[position]
+    previous <- order_rows[position - 1L]
+    same_series <- result$code_muni[current] == result$code_muni[previous] &
+      result$code_variable[current] == result$code_variable[previous] &
+      result$year[current] - result$year[previous] == 1
+    if (!same_series) {
+      next
+    }
+
+    current_value <- result$parsed_value[current]
+    previous_value <- result$parsed_value[previous]
+    if (is.na(current_value) || is.na(previous_value)) {
+      next
+    }
+    if (xor(current_value == 0, previous_value == 0)) {
+      flags$zero_transition[current] <- TRUE
+    }
+    if (
+      current_value > 0 &&
+        previous_value > 0 &&
+        max(current_value, previous_value) /
+          min(current_value, previous_value) >=
+          10
+    ) {
+      # shortcut: flag 10-fold changes for review; confirm them against records.
+      flags$abrupt_change_10x[current] <- TRUE
+    }
+  }
+
+  result$flag_reasons <- vapply(
+    seq_len(nrow(flags)),
+    function(row) {
+      row_flags <- unlist(flags[row, ], use.names = TRUE)
+      paste(names(row_flags)[row_flags], collapse = ";")
+    },
+    character(1)
+  )
+  result <- result[nzchar(result$flag_reasons), , drop = FALSE]
+  result$treated_value <- result$parsed_value
+  result$review_decision <- rep("pending", nrow(result))
+
+  return(result)
+}
+
 scale_pemob_share <- function(value, total) {
   value_scaled <- rep(NA_real_, length(value))
   valid <- !is.na(value) & !is.na(total) & total != 0

@@ -299,6 +299,46 @@ Added on 17 October 2026 following the requested review of reporting errors.
 The treatment below is a proposed implementation policy. No observations have
 been corrected, removed, or imputed in this review.
 
+### Candidate generation results
+
+A first review pass covers fare (`3.1.1.A`), ciclovia (`1.6.1.G`), and
+ciclofaixa (`1.6.1.H`) from the rebuilt 2019–2024 municipal history and the raw
+2025 survey. The candidate generator retains the original response and parsed
+value, and initializes the treated value to the parsed value. It flags records
+for review only; it does not correct, exclude, or interpolate them. Reruns
+write the regenerable extract to `data/pemob_review_candidates.csv`; the
+tracked `docs/internal/pemob-review-ledger.csv` is a review snapshot, so
+rerunning the script cannot overwrite human decisions in that ledger.
+
+The snapshot contains 134 distinct candidates. Overlapping flags include 74
+zero transitions, 34 cross-city outliers, 16 abrupt tenfold changes, 14
+unparsed responses, and one explicit unit mismatch. No fare value met these
+screening rules. Zero transitions and outlier flags are leads for review, not
+proof of error. Suspected unit changes and ambiguous separators remain
+unparsed/unresolved, with treated values unchanged from parser output.
+
+Official municipal evidence confirms plausibility concerns but not exact
+corrections. Macaé reported 28.27 km of combined ciclovias, ciclofaixas, and
+ciclorrotas in 2022 ([municipal system presentation](https://macae.rj.gov.br/noticias/leitura/noticia/mobilidade-apresenta-projeto-para-atualizacao-do-sistema-cicloviario));
+the same page distinguishes 39.70 km of proposed routes from existing
+infrastructure. A 2025 Macaé page reports 30 km of ciclovias and ciclofaixas,
+but does not break the categories down and its page date conflicts with the
+date in its body ([cyclist-day article](https://www.macae.rj.gov.br/noticias/leitura/noticia/macae-celebra-o-dia-do-ciclista-com-muitos-motivos-para-pedalar)).
+São Vicente reported more than 12 km combined in 2025, plus lengths for two
+specific corridors ([municipal release](https://www.saovicente.sp.gov.br/informacao/sao-vicente-sobre-duas-rodas-pedalar-e-saude-e-sustentabilidade));
+its 2026–2029 PPA identifies a 2023 cycle lane and 2024 revitalization but
+gives no comparable citywide totals ([PPA](https://www.saovicente.sp.gov.br/transparencia/orcamento-municipal/ppa-plano-plurianual/ppa-2026-2029/projeto-de-lei-ppa-sv-2026-2029_compressed.pdf/%40%40download/file/Projeto%20de%20Lei%20-%20PPA%20SV%202026-2029_compressed.pdf)).
+These sources do not support dividing a response by 1,000, reallocating length
+between categories, or assigning an exact historical correction. The two
+cycling categories remain separate; cross-field agreement is not imposed
+because the published sources combine definitions and lack category totals.
+
+The generator has synthetic regression coverage for abrupt and cross-city
+changes, zeros, explicit unit mismatches, parser review cases, negative fares,
+missing reasons, pending decisions, and unchanged treated values. Short-gap
+interpolation, reviewed corrections, and treatment validation remain the next
+work; this stage does not authorize publication of treated values.
+
 ### Evidence from fares and cycling infrastructure
 
 The pilot examined `3.1.1.A` (current predominant municipal fare), `1.6.1.G`

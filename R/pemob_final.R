@@ -5,16 +5,13 @@ library(stringr)
 library(ggplot2)
 library(here)
 
-as_numeric_comma <- function(x) {
-  stopifnot(is.character(x))
-  return(as.numeric(gsub(",", ".", x)))
-}
+source(here("R/pemob_helpers.R"))
 
 # The actual data
 pemob <- read_excel(
-  here("data/PEMOB Harmonizada 2024.xlsx"),
+  here("tabelas/PEMOB Harmonizada 2024.xlsx"),
   sheet = "PEMOB Muni Harmonizada 24",
-  na = "NA"
+  na = ""
 )
 
 pemob <- pemob |>
@@ -28,15 +25,19 @@ pemob <- pemob |>
     into = c("code_group", "code_subgroup", "code_subsubgroup", "code_modal"),
     sep = "\\.",
     remove = FALSE
-  ) |>
-  mutate(
-    value_num = as.numeric(str_replace(value, ",", "."))
   )
+
+parsed_responses <- parse_pemob_response(pemob$value)
+pemob <- dplyr::bind_cols(
+  pemob,
+  dplyr::select(parsed_responses, -raw_response)
+) |>
+  rename(value_num = parsed_value)
 
 question_stats <- pemob |>
   filter(year == max(year)) |>
   summarise(
-    filled = sum(!is.na(value)),
+    filled = sum(parse_status != "missing"),
     total = n(),
     avg = mean(value_num, na.rm = TRUE),
     min = min(value_num, na.rm = TRUE),
@@ -95,25 +96,20 @@ dim_shares <- dashboard |>
 
 dim_shares <- left_join(
   dim_shares,
-  select(dashboard, code_muni, year, code_variable, value),
+  select(dashboard, code_muni, year, code_variable, value_num),
   by = c("code_muni", "year", "share_total" = "code_variable")
 )
 
 dim_shares <- dim_shares |>
-  filter(!is.na(value)) |>
-  rename(share_value = value)
+  rename(share_value = value_num)
 
 ### Compute shares -----------------------------------------------
 
 tbl_shares <- dashboard |>
   filter(desc_scaled == "share") |>
   left_join(dim_shares, by = c("code_muni", "year", "share_total")) |>
-  filter(!is.na(share_value)) |>
   mutate(
-    value = as_numeric_comma(value),
-    value = if_else(is.na(value), 0, value),
-    share_value = as_numeric_comma(share_value),
-    value_scaled = if_else(share_value != 0, value / share_value * 100, 0),
+    value_scaled = scale_pemob_share(value_num, share_value),
     label = str_replace(label, "Número de ", "Percentual de "),
     label = if_else(
       !str_detect(label, "Percentual|percen"),
@@ -146,7 +142,7 @@ tbl_shares <- tbl_shares |>
 tbl_max <- dashboard |>
   filter(desc_scaled == "max") |>
   mutate(
-    value_scaled = value_num / max(value_num, na.rm = TRUE) * 100,
+    value_scaled = scale_pemob_max(value_num),
     .by = c("code_variable", "year")
   ) |>
   filter(!is.na(value_num))
@@ -189,7 +185,7 @@ tbl_per_capita <- dashboard |>
   left_join(pop_muni, by = "code_muni") |>
   mutate(value_pop_scaled = value_num / pop) |>
   mutate(
-    value_scaled = value_pop_scaled / max(value_pop_scaled, na.rm = TRUE) * 100,
+    value_scaled = scale_pemob_max(value_pop_scaled),
     .by = c("code_variable", "year")
   )
 
@@ -199,11 +195,15 @@ tbl_per_capita <- dashboard |>
 sel_cols <- c(
   "code_variable",
   "code_muni", "name_muni", "abbrev_state", "label", "label_pergunta",
-  "is_dashboard", "desc_scaled", "value_scaled", "value_num", "year",
-  "value_pop_scaled"
+  "is_dashboard", "desc_scaled", "value", "value_scaled", "value_num",
+  "parsed_unit", "parse_status", "missing_reason", "year", "value_pop_scaled"
 )
 
 txt_cols <- c(
+  "value",
+  "parsed_unit",
+  "parse_status",
+  "missing_reason",
   "name_muni",
   "abbrev_state",
   "label",
@@ -219,7 +219,6 @@ format_tables <- function(dat) {
     mutate(across(all_of(txt_cols), as.character)) |>
     mutate(across(all_of(lgl_cols), ~ ifelse(.x == 1, TRUE, FALSE))) |>
     mutate(across(any_of(num_cols), as.numeric)) |>
-    mutate(across(any_of(num_cols), ~ ifelse(is.na(.x), 0, .x))) |>
     arrange(code_variable) |>
     arrange(year)
 }

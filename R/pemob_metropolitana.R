@@ -3,6 +3,7 @@ library(tidyverse)
 library(cli)
 import::from(here, here)
 import::from(janitor, clean_names, make_clean_names)
+source(here("R/pemob_helpers.R"))
 
 header_to_dictionary <- function(x) {
 
@@ -12,10 +13,6 @@ header_to_dictionary <- function(x) {
 
 
 # Data --------------------------------------------------------------------
-
-munis <- geobr::read_municipality(year = 2022, showProgress = FALSE)
-dim_muni <- as_tibble(sf::st_drop_geometry(munis))
-
 
 ## Dictionaries ------------------------------------------------------------
 
@@ -174,6 +171,12 @@ for (i in seq_along(pemob_dictionaries)) {
 
 ### Functions and dictionary ------------------------------------------------
 
+pemob19 <- add_pemob_metro_identity(pemob19)
+pemob21 <- add_pemob_metro_identity(pemob21)
+pemob22 <- add_pemob_metro_identity(pemob22)
+pemob23 <- add_pemob_metro_identity(pemob23)
+pemob24 <- add_pemob_metro_identity(pemob24)
+
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob19)
 names(pemobs) <- rev(paste0("year_", c(2019, 2021:2024)))
 sel_cols <- rev(paste0("x", c(2019, 2021:2024)))
@@ -215,10 +218,10 @@ pemob_get_variable <- function(var) {
     if (is.na(y)) {
       return(NULL)
     } else {
-      dat <- select(x, name_metro, any_of(y))
+      dat <- select(x, metro_key, abbrev_state, name_metro, any_of(y))
     }
 
-    if (ncol(dat) == 2) {
+    if (ncol(dat) == 4) {
       return(dat)
     } else {
       return(NULL)
@@ -246,13 +249,14 @@ pemob_get_variable <- function(var) {
 
   # Rename columns
   stacked <- map2(ls, names(ls), \(x, y) {
-    names(x)[2] <- y
-    x[[2]] <- do.call(paste0("as.", ref_class), list(x[[2]]))
-    return(x)
+    result <- x[1:3]
+    result[[y]] <- do.call(paste0("as.", ref_class), list(x[[4]]))
+    return(result)
   })
 
   # Join and reshape
-  tbl <- reduce(stacked, left_join, by = "name_metro")
+  id_cols <- c("metro_key", "abbrev_state", "name_metro")
+  tbl <- reduce(stacked, full_join, by = id_cols)
 
   result <- tbl |>
     pivot_longer(
@@ -304,13 +308,10 @@ if (length(prob_inds) > 0) {
 }
 
 # Combine list into a single table
-full_pemob <- reduce(iter_pemob, full_join, by = c("name_metro", "year"))
-
-# Add identification columns for PEMOB
-id_cols <- names(dim_muni)
+id_cols <- c("metro_key", "abbrev_state", "name_metro", "year")
+full_pemob <- reduce(iter_pemob, full_join, by = id_cols)
 
 full_pemob <- full_pemob |>
-  left_join(dim_muni, by = "name_metro") |>
   select(all_of(id_cols), everything())
 
 # Export

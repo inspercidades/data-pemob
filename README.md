@@ -20,6 +20,15 @@ Pipeline em R para processamento, harmonização e publicação dos dados da PEM
 `data/portal/v1/pemob_<ano>.json` (2019–2024) são os artefatos consumidos
 pelo frontend do Portal das Cidades.
 
+## Dados harmonizados até 2025
+
+Execute `Rscript tests/test-pemob.R` para conferir os contratos e as
+harmonizações e `Rscript R/pemob_2025.R` para gerar os CSVs municipal e
+metropolitano em `data/`. As séries anteriores a 2025 vêm da planilha
+harmonizada de 2024.
+O [roteiro de 2025](ROADMAP-2025.md) registra problemas de cobertura histórica
+que precisam ser resolvidos antes de publicar novos arquivos do portal.
+
 ## Notas
 
 - Arquivos grandes (`.xlsx`, CSVs harmonizados completos) ficam fora do
@@ -28,6 +37,6 @@ pelo frontend do Portal das Cidades.
 
 ## Próximos passos
 
-- Incorporar dados da pesquisa de 2025
-- Pipeline para dataset Metropolitano
+- Revisar a cobertura histórica e publicar o JSON municipal de 2025
+- Definir o formato de publicação dos dados metropolitanos
 - Refatorar código e usar {renv}

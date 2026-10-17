@@ -1,0 +1,6 @@
+source("tests/test-pemob-historical-joins.R")
+source("tests/test-pemob-source-contracts.R")
+source("tests/test-pemob-2025.R")
+source("tests/test-pemob-parsing.R")
+source("tests/test-pemob-scaling.R")
+source("tests/test-pemob-metro-identifiers.R")

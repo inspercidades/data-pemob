@@ -31,13 +31,41 @@ join_pemob_editions <- function(editions, by) {
 
 build_pemob_participation <- function(editions, by) {
   participation <- purrr::imap(editions, function(dat, edition) {
-    result <- dplyr::distinct(dat, dplyr::across(dplyr::all_of(by)))
+    result <- unique(dat[by])
     result$year <- as.numeric(stringr::str_remove(edition, "^year_"))
     result$participated <- TRUE
     return(result)
   })
 
   result <- dplyr::bind_rows(participation)
+  return(result)
+}
+
+build_pemob_municipality_dimension <- function(editions) {
+  id_cols <- c("code_muni", "name_muni", "abbrev_state")
+  missing_cols <- purrr::map_lgl(editions, function(dat) {
+    !all(id_cols %in% names(dat))
+  })
+
+  if (any(missing_cols)) {
+    cli::cli_abort("Municipal editions must include code, name, and state.")
+  }
+
+  identifiers <- lapply(editions, function(dat) {
+    dat[id_cols]
+  })
+  result <- dplyr::bind_rows(identifiers)
+  state_conflicts <- vapply(
+    split(result$abbrev_state, result$code_muni),
+    function(states) length(unique(states)) > 1L,
+    logical(1)
+  )
+
+  if (any(state_conflicts)) {
+    cli::cli_abort("A municipal code is associated with multiple states.")
+  }
+
+  result <- result[!duplicated(result$code_muni), , drop = FALSE]
   return(result)
 }
 

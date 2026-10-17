@@ -243,6 +243,34 @@ that encode the known incomplete historical cohort.
 
 ## Self-reported data: correction, outliers, and interpolation
 
+### Historical municipal rebuild check
+
+The source-based 2019–2024 run completed on 17 October 2026. It retrieved all
+472 mapped questions without a per-question failure and produced 642 unique
+municipality-year rows for 107 municipalities. Each year has the expected
+union of respondents: 64 (2019), 32 (2020), 62 (2021), 64 (2022), 67 (2023),
+and 70 (2024). Nonrespondents have no question values, and all respondent rows
+have at least one reported value. The rebuilt 2024 cohort
+contains all 70 municipalities in the checked-in 2024 baseline plus 37
+additional municipalities from the union of historical respondent files.
+
+The run is a local diagnostic, not a replacement dataset: its generated
+`data/pemob_harmonizada_2024.csv` is ignored by Git. Comparing the 70 overlapping
+2024 rows against `data/pemob_harmonizada_2025.csv` found 49 differing cells.
+The parser reports numeric/status differences in 46 cells, 35 of them in
+`1.6.1.F`, where values such as `15,410` remain ambiguous while the rebuilt
+output represents them as `15.41`. Other numeric differences include
+`1,000` versus `1` and decimal precision/ambiguous separators. Three additional
+text differences are a line break in Serra's `4.3.1.B`, a Cuiabá regional-name
+spelling variant in `4.3.2.A`, and a Taubaté URL typo in `4.4.3.B`.
+
+These differences have not been adjudicated as corrections. In particular,
+the 35 `1.6.1.F` cases cannot be declared equivalent without checking that
+question's unit and the workbook's number formatting. Keep the generated
+history out of publication until these cells and the import/coercion warnings
+are reviewed. The join and respondent coverage checks are necessary but do not
+establish that converted responses preserve meaning.
+
 Added on 17 October 2026 following the requested review of reporting errors.
 The treatment below is a proposed implementation policy. No observations have
 been corrected, removed, or imputed in this review.

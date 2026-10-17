@@ -23,6 +23,41 @@ stopifnot(
   )
 )
 
+duplicate_column_editions <- list(
+  year_2019 = data.frame(
+    code_muni = c(1111111, 2222222),
+    answer = 1:2,
+    answer = 3:4,
+    check.names = FALSE
+  )
+)
+duplicate_name_participation <- build_pemob_participation(
+  duplicate_column_editions,
+  by = "code_muni"
+)
+stopifnot(
+  nrow(duplicate_name_participation) == 2L,
+  all(duplicate_name_participation$participated)
+)
+
+dimension <- build_pemob_municipality_dimension(list(
+  year_2024 = data.frame(
+    code_muni = c(1111111, 2222222),
+    name_muni = c("Current name", "Older only"),
+    abbrev_state = c("SP", "RJ")
+  ),
+  year_2019 = data.frame(
+    code_muni = c(1111111, 3333333),
+    name_muni = c("Old name", "Another older municipality"),
+    abbrev_state = c("SP", "MG")
+  )
+))
+stopifnot(
+  nrow(dimension) == 3L,
+  dimension$name_muni[dimension$code_muni == 1111111] == "Current name",
+  dimension$abbrev_state[dimension$code_muni == 3333333] == "MG"
+)
+
 municipal_source <- data.frame(
   code_muni = c(1111111, 1, NA, 2222222),
   name_muni = c("Respondent", "Footer note", "Missing code", NA_character_),

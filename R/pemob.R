@@ -13,10 +13,6 @@ header_to_dictionary <- function(x) {
 
 # Data --------------------------------------------------------------------
 
-munis <- geobr::read_municipality(year = 2022, showProgress = FALSE)
-dim_muni <- as_tibble(sf::st_drop_geometry(munis))
-
-
 ## Dictionaries ------------------------------------------------------------
 
 keydict <- read_excel(
@@ -274,6 +270,7 @@ lkey <- lkey |>
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob20, pemob19)
 names(pemobs) <- rev(paste0("year_", 2019:2024))
 pemobs <- lapply(pemobs, filter_pemob_municipal_respondents)
+dim_muni <- build_pemob_municipality_dimension(pemobs)
 participation <- build_pemob_participation(pemobs, by = "code_muni")
 sel_cols <- rev(paste0("x", 2019:2024))
 
@@ -492,7 +489,7 @@ sub_errors <- tbl_errors |>
 
 control <- left_join(sub_errors, pemob_codigos)
 
-control |>
+control_errors <- control |>
   mutate(
     flag = ifelse(
       status_variable != status_variable_pemob | is.na(status_variable_pemob),
@@ -500,20 +497,8 @@ control |>
       0L
     )
   ) |>
-  filter(flag == 1) |>
-  View()
+  filter(flag == 1)
 
-control |>
-  mutate(
-    flag = ifelse(
-      status_variable != status_variable_pemob | is.na(status_variable_pemob),
-      1L,
-      0L
-    ),
-    status = case_when(
-      status_variable == "000010" ~ "Variável não consta na PEMOB 2020",
-      status_variable == "000001" ~ "Variável não consta na PEMOB 2019"
-    )
-  ) |>
-  filter(flag == 1) |>
-  show_in_excel()
+if (interactive()) {
+  View(control_errors)
+}

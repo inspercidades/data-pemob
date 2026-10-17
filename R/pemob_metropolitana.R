@@ -319,7 +319,7 @@ readr::write_excel_csv2(full_pemob, "data/pemob_metro_harmonizada_2024.csv")
 
 ## Evaluate errors ---------------------------------------------------------
 
-error_inds <- sapply(iter_pemob, \(x) nrow(unique(x[, 2])) != 5)
+error_inds <- sapply(iter_pemob, \(x) length(unique(x$year)) != 5)
 pemob_missing <- iter_pemob[error_inds]
 
 all_years <- c(2019, 2021:2024)
@@ -334,7 +334,10 @@ find_missing_years <- function(dat) {
     missing_years <- paste(missing_years, collapse = ", ")
   }
   # control table
-  name_variable <- names(dat)[3]
+  name_variable <- setdiff(
+    names(dat),
+    c("metro_key", "abbrev_state", "name_metro", "year")
+  )
 
   control <- tibble(
     name_variable = name_variable,

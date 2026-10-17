@@ -50,7 +50,10 @@ question_stats <- pemob |>
   filter(filled >= 3) |>
   arrange(desc(filled))
 
-dict <- readr::read_csv2(here("data/portal/v1/dict_portal_parcial.csv"))
+dict <- readr::read_delim(
+  here("data/portal/v1/dict_portal_parcial.csv"),
+  delim = ","
+)
 
 full_pemob <- pemob |>
   left_join(dict) |>

@@ -13,15 +13,7 @@ tbl_per_capita <- dashboard[["per_capita"]]
 tbl_dashboard <- bind_rows(tbl_shares, tbl_max, tbl_per_capita)
 
 tbl_dashboard <- tbl_dashboard |>
-  # Scale 'max' variables in a 0-100 range
   mutate(
-    value_scaled = if_else(
-      desc_scaled == "max",
-      (value_num - min(value_num, na.rm = TRUE)) /
-        (max(value_num, na.rm = TRUE) - min(value_num, na.rm = TRUE)) *
-        100,
-      value_scaled
-    ),
     value_num = if_else(
       desc_scaled == "per_capita",
       value_pop_scaled * 10000,

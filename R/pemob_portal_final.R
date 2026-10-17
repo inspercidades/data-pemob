@@ -4,11 +4,13 @@ library(tidyr)
 library(stringr)
 library(here)
 
+source(here("R/pemob_helpers.R"))
+
 # The actual data
 pemob <- read_excel(
-  here("data/PEMOB Harmonizada 2024.xlsx"),
+  here("tabelas/PEMOB Harmonizada 2024.xlsx"),
   sheet = "PEMOB Muni Harmonizada 24",
-  na = "NA"
+  na = ""
 )
 
 pemob <- pemob |>
@@ -22,15 +24,19 @@ pemob <- pemob |>
     into = c("code_group", "code_subgroup", "code_subsubgroup", "code_modal"),
     sep = "\\.",
     remove = FALSE
-  ) |>
-  mutate(
-    value_num = as.numeric(str_replace(value, ",", "."))
   )
+
+parsed_responses <- parse_pemob_response(pemob$value)
+pemob <- dplyr::bind_cols(
+  pemob,
+  dplyr::select(parsed_responses, -raw_response)
+) |>
+  rename(value_num = parsed_value)
 
 question_stats <- pemob |>
   filter(year == max(year)) |>
   summarise(
-    filled = sum(!is.na(value)),
+    filled = sum(parse_status != "missing"),
     total = n(),
     avg = mean(value_num, na.rm = TRUE),
     min = min(value_num, na.rm = TRUE),
@@ -44,7 +50,10 @@ question_stats <- pemob |>
   filter(filled >= 3) |>
   arrange(desc(filled))
 
-dict <- readr::read_csv(here("data/portal/dict_portal_parcial.csv"))
+dict <- readr::read_delim(
+  here("data/portal/v1/dict_portal_parcial.csv"),
+  delim = ","
+)
 
 full_pemob <- pemob |>
   left_join(dict) |>
@@ -94,9 +103,8 @@ readr::write_excel_csv2(dict_portal, "data/portal/dict_portal_v1.csv")
 pemob_final <- pemob |>
   left_join(dict_portal) |>
   mutate(
-    value = str_replace(value, "sim|Sim", "1"),
-    value = str_replace(value, "não|Não", "0"),
-    value = as.numeric(str_replace(value, ",", "."))
+    raw_value = value,
+    value = value_num
   )
 
 pemob_final <- pemob_final |>

@@ -164,8 +164,10 @@ build_pemob_metro_key <- function(abbrev_state, name_metro) {
 add_pemob_metro_identity <- function(dat) {
   valid <- !is.na(dat$abbrev_state) &
     grepl("^[A-Z]{2}$", dat$abbrev_state) &
+    !dat$abbrev_state %in% c("NA", "NR", "ND") &
     !is.na(dat$name_metro) &
-    nzchar(trimws(dat$name_metro))
+    nzchar(trimws(dat$name_metro)) &
+    !toupper(trimws(dat$name_metro)) %in% c("NA", "NR", "ND", "-")
   result <- dat[valid, , drop = FALSE]
   result$name_metro <- canonicalize_pemob_metro_name(
     result$abbrev_state,
@@ -184,13 +186,68 @@ add_pemob_metro_identity <- function(dat) {
   return(result)
 }
 
+read_pemob_source <- function(path, skip = 0) {
+  result <- readxl::read_excel(
+    path,
+    skip = skip,
+    col_types = "text",
+    na = character()
+  )
+  # shortcut: readxl merges blank and Excel-error cells as NA; inspect XML if errors appear.
+  result[] <- lapply(result, function(column) {
+    column[is.na(column)] <- ""
+    return(column)
+  })
+
+  return(result)
+}
+
+format_pemob_excel_dates <- function(response) {
+  date_number <- suppressWarnings(as.numeric(response))
+  is_excel_date <- !is.na(date_number)
+  result <- as.character(response)
+  result[is_excel_date] <- as.character(
+    janitor::excel_numeric_to_date(date_number[is_excel_date])
+  )
+
+  return(result)
+}
+
 parse_pemob_response <- function(response) {
   raw_response <- as.character(response)
   text <- trimws(raw_response)
+  normalized_text <- toupper(text)
   missing_reason <- rep(NA_character_, length(text))
-  missing_reason[is.na(text) | toupper(text) == "NA"] <- "NA"
-  missing_reason[toupper(text) == "NR"] <- "NR"
-  missing_reason[toupper(text) == "ND"] <- "ND"
+  missing_reason[is.na(text) | normalized_text == "NA"] <- "NA"
+  missing_reason[
+    normalized_text %in% c("NR", "NÃO RESPONDEU", "NAO RESPONDEU")
+  ] <- "NR"
+  missing_reason[normalized_text == "ND"] <- "ND"
+  missing_reason[normalized_text == "N/D"] <- "N/D"
+  missing_reason[normalized_text == "N/A"] <- "N/A"
+  missing_reason[
+    normalized_text %in% c("NÃO DISPONÍVEL", "NAO DISPONIVEL")
+  ] <- "not_available"
+  missing_reason[
+    normalized_text %in% c("SEM INFORMAÇÃO", "SEM INFORMACAO")
+  ] <- "no_information"
+  missing_reason[
+    normalized_text %in% c("NÃO SE APLICA", "NAO SE APLICA")
+  ] <- "not_applicable"
+  missing_reason[
+    normalized_text %in% c("NÃO INFORMADO", "NAO INFORMADO")
+  ] <- "not_reported"
+  excel_errors <- normalized_text %in%
+    c(
+      "#N/A",
+      "#VALUE!",
+      "#DIV/0!",
+      "#REF!",
+      "#NAME?",
+      "#NUM!",
+      "#NULL!"
+    )
+  missing_reason[excel_errors] <- normalized_text[excel_errors]
   missing_reason[text == "-"] <- "-"
   missing_reason[!is.na(text) & text == ""] <- "blank"
   is_missing <- !is.na(missing_reason)

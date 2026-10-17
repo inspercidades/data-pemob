@@ -55,8 +55,6 @@ path_pemob <- path_excel_files[
   !str_detect(path_excel_files, "códigos|Renomeado")
 ]
 
-na_excel <- c("#REF!", "NR", "NA", "ND", "-")
-
 vl_names <- c(
   "code_muni" = "Código IBGE",
   "code_muni" = "CÓDIGO IBGE",
@@ -74,7 +72,7 @@ vl_names <- c(
 
 path_19 <- here("data-raw/Pemob2019_Municipal.xlsx")
 
-pemob19 <- read_excel(path_19, skip = 1, na = na_excel)
+pemob19 <- read_pemob_source(path_19, skip = 1)
 
 id_cols <- c("code_muni", "abbrev_state", "name_muni")
 
@@ -115,7 +113,7 @@ survey19 <- survey19 |>
 
 path_20 <- here("data-raw/BancodeDados_PemobMunicipal_2020.xlsx")
 
-pemob20 <- read_excel(path_20, na = na_excel)
+pemob20 <- read_pemob_source(path_20)
 # Nomes duplicados!
 #- Acredito que 4.4.1 (repetido) deveria ser 4.5.1
 #- Acredito que 4.4.2 (repetido) deveria ser 4.5.2
@@ -148,7 +146,7 @@ survey20 <- survey20 |>
 
 path_21 <- here("data-raw/pemob21_municipal.xlsx")
 
-pemob21 <- read_excel(path_21, skip = 1, na = na_excel)
+pemob21 <- read_pemob_source(path_21, skip = 1)
 
 pemob21 <- pemob21 |>
   rename(any_of(vl_names))
@@ -168,7 +166,7 @@ names(dict21) <- c("name_variable", "code_variable")
 
 path_22 <- here("data-raw/copy_of_pemob_municipal_2022.xlsx")
 
-pemob22 <- read_excel(path_22, skip = 1, na = na_excel)
+pemob22 <- read_pemob_source(path_22, skip = 1)
 
 pemob22 <- pemob22 |>
   rename(any_of(vl_names))
@@ -188,11 +186,11 @@ names(dict22) <- c("name_variable", "code_variable")
 
 path_23 <- here("data-raw/pemob2023_municipal.xlsx")
 
-pemob23 <- read_excel(path_23, skip = 1, na = na_excel)
+pemob23 <- read_pemob_source(path_23, skip = 1)
 
 pemob23 <- pemob23 |>
   rename(any_of(vl_names)) |>
-  mutate(`11.2.2.B` = janitor::excel_numeric_to_date(`11.2.2.B`))
+  mutate(`11.2.2.B` = format_pemob_excel_dates(`11.2.2.B`))
 
 
 dict23 <- read_excel(
@@ -208,7 +206,7 @@ names(dict23) <- c("name_variable", "code_variable")
 
 path_24 <- here("data-raw/pemob_municipal_2024.xlsx")
 
-pemob24 <- read_excel(path_24, skip = 1, na = na_excel)
+pemob24 <- read_pemob_source(path_24, skip = 1)
 
 pemob24 <- pemob24 |>
   rename(any_of(vl_names))
@@ -333,16 +331,10 @@ pemob_get_variable <- function(var) {
   # Filter out NULL entries
   ls <- ls[!sapply(ls, is.null)]
 
-  ref_class <- class(ls$year_2024[[var]])
-
-  if (is.POSIXct(ls$year_2024[[var]])) {
-    ref_class <- "character"
-  }
-
   # Rename columns
   stacked <- map2(ls, names(ls), \(x, y) {
     names(x)[2] <- y
-    x[[2]] <- do.call(paste0("as.", ref_class), list(x[[2]]))
+    x[[2]] <- as.character(x[[2]])
     return(x)
   })
 

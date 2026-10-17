@@ -193,6 +193,30 @@ when required questions fail. Repair the confirmed `1.4.1.B` correspondence
 before calculating accessibility shares. Verify the positional 2020 header corrections
 in `R/pemob.R:117-125` against their actual question text as part of this audit.
 
+**Follow-up status (2026-10-17).** Historical municipal and metropolitan
+readers now import response cells as text and retain `NA`, `NR`, `ND`, and `-`
+instead of collapsing them during import. Both harmonizers keep edition values
+as text rather than coercing them to the 2024 column class. The response parser
+retains raw tokens and gives separate missing reasons to `NA`, `NR`, `ND`,
+`N/D`, `N/A`, dashes, blanks, common Portuguese text forms, and literal Excel
+error strings; ambiguous numbers and mixed text remain review cases. A scan
+across source data cells found 102,480 `NA`, 24,261 `NR`, 1,463 `ND`, 189
+dashes, and additional Portuguese forms. Regression checks confirm that the
+2019 fare `RS3,45` remains available and parses as 3.45. The 2023 date field
+converts numeric Excel date serials while preserving text entries such as
+`11/2028`.
+
+The checked-in source worksheets contain no native Excel error cells. `readxl`
+imports such cells as `NA`, so a future input containing them cannot be
+distinguished from a blank cell by this reader alone; check the workbook's
+error cells before relying on blank-versus-error status.
+
+The municipal and metropolitan historical scripts now complete in a headless
+run; the metropolitan export has 210 unique region-year keys and excludes
+placeholder states. Generated outputs remain local pending review. This does
+not resolve all cross-edition question meanings or the 49 previously identified
+2024 differences, and import warnings still need classification.
+
 ### 7. Metropolitan identity currently relies on names alone
 
 **Evidence; high confidence for implementation; matching policy unresolved.**

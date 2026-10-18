@@ -63,12 +63,21 @@ compare_pemob_baseline <- function(
   baseline,
   rebuilt,
   key_cols,
-  repairs = NULL
+  repairs = NULL,
+  allowed_missing = character()
 ) {
-  codes <- intersect(
-    setdiff(names(baseline), key_cols),
-    setdiff(names(rebuilt), key_cols)
+  baseline_codes <- setdiff(names(baseline), key_cols)
+  missing_codes <- setdiff(
+    baseline_codes,
+    c(names(rebuilt), allowed_missing)
   )
+  if (length(missing_codes) > 0L) {
+    cli::cli_abort(c(
+      "{length(missing_codes)} workbook question{?s} {?is/are} missing from the rebuild.",
+      "i" = "Missing: {.val {missing_codes}}."
+    ))
+  }
+  codes <- intersect(baseline_codes, names(rebuilt))
   to_long <- function(dat, value_col) {
     dat |>
       dplyr::select(dplyr::all_of(c(key_cols, codes))) |>

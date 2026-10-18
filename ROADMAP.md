@@ -218,6 +218,17 @@ with value, status, and the registry fields the site needs. The handoff also
 holds the category tree, the year list, and a schema check. The site derives
 menus and year ranges from these files instead of hard-coding them.
 
+Hand the frontend work over in four changes, each shippable on its own and
+checked with a local build before it goes out.
+
+1. **Data source.** The site reads the new export keyed by question code,
+   with the current charts. This also fixes the zero handling.
+2. **Table.** Apply the quality rule, generate the menu from the registry, and
+   drop empty entries.
+3. **Dashboard.** Time series as the main view, a one-year comparison plot,
+   and no radar chart.
+4. **Level switch.** Add the municipal/metropolitan switch.
+
 **Done when** a local `observatorio` build renders both products from the
 export without hand edits.
 

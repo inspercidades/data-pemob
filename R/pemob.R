@@ -400,7 +400,11 @@ full_pemob <- full_pemob |>
   select(all_of(id_cols), everything())
 
 # Export
-readr::write_excel_csv2(full_pemob, here("data", "pemob_harmonizada_2024.csv"))
+readr::write_excel_csv2(
+  full_pemob,
+  here("data", "pemob_harmonizada_2024.csv"),
+  na = ""
+)
 
 ### Evaluate errors ---------------------------------------------------------
 

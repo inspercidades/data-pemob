@@ -178,6 +178,10 @@ pemob24 <- add_pemob_metro_identity(pemob24)
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob19)
 names(pemobs) <- rev(paste0("year_", c(2019, 2021:2024)))
 sel_cols <- rev(paste0("x", c(2019, 2021:2024)))
+participation <- build_pemob_participation(
+  pemobs,
+  by = c("metro_key", "abbrev_state", "name_metro")
+)
 
 get_inds <- function(dat) {
   inds <- dat |>
@@ -301,13 +305,19 @@ if (length(prob_inds) > 0) {
 
 # Combine list into a single table
 id_cols <- c("metro_key", "abbrev_state", "name_metro", "year")
-full_pemob <- reduce(iter_pemob, full_join, by = id_cols)
+full_pemob <- reduce(iter_pemob, full_join, by = id_cols) |>
+  full_join(participation, by = id_cols) |>
+  mutate(participated = coalesce(participated, FALSE))
 
 full_pemob <- full_pemob |>
   select(all_of(id_cols), everything())
 
 # Export
-readr::write_excel_csv2(full_pemob, here("data", "pemob_metro_harmonizada_2024.csv"))
+readr::write_excel_csv2(
+  full_pemob,
+  here("data", "pemob_metro_harmonizada_2024.csv"),
+  na = ""
+)
 
 ## Evaluate errors ---------------------------------------------------------
 

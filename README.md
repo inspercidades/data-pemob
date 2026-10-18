@@ -7,19 +7,21 @@ Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
 ## Uso
 
 ```sh
-Rscript tests/test-pemob.R          # testes
-Rscript R/pemob.R                   # histórico municipal 2019–2024
-Rscript R/pemob_metropolitana.R     # histórico metropolitano 2019–2024
-Rscript R/pemob_2025.R              # acrescenta 2025
+Rscript tests/test-pemob.R    # testes
+Rscript R/build_pemob.R       # reconstrói 2019–2025 a partir dos arquivos originais
 ```
 
-Os três scripts gravam CSVs em `data/`. `R/pemob_2025.R` acrescenta 2025 à
-planilha harmonizada de 2024 em `tabelas/`, não ao histórico reconstruído.
+`R/build_pemob.R` roda `R/pemob.R` e `R/pemob_metropolitana.R`, que gravam os
+históricos de 2019 a 2024 em `data/`, e depois `R/pemob_2025.R`, que acrescenta
+2025. As saídas são `data/pemob_harmonizada_2025.csv` e
+`data/pemob_metro_harmonizada_2025.csv`, com uma linha por local e edição e a
+coluna `participated`.
 
 ## Estrutura
 
 - `R/pemob.R`, `R/pemob_metropolitana.R`: leitura das edições, compatibilização
   dos códigos de perguntas e junção dos municípios e regiões.
+- `R/build_pemob.R`: ponto de entrada do pipeline.
 - `R/pemob_2025.R`: leitura dos CSVs de 2025 e junção ao histórico.
 - `R/pemob_helpers.R`, `R/pemob_series.R`: leitura das respostas, missing
   reasons, parsing de valores e camada de revisão.

@@ -35,7 +35,7 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 | Area | State |
 |---|---|
 | Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 42 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
-| 2025 extension | Works, but `R/pemob_2025.R` appends to the frozen workbook `tabelas/PEMOB Harmonizada 2024.xlsx` (70 municipalities, 29 regions per year), not to the rebuilt history. |
+| 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 43 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
 | Parsing | Currency, decimal commas, `km` suffixes, Excel dates, and missing tokens (`NA`, `NR`, `ND`, `-`) are parsed and tested. Ambiguous separators go to review. |
 | Review layer | 134 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
 | Interpolation | Candidate extract and gate exist. The gate currently admits no case. |
@@ -56,10 +56,13 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 Build 2019–2025 from the source files in one chain, so that every fix in the
 historical readers reaches the released data.
 
-- Make `R/pemob_2025.R` append 2025 to the rebuilt history instead of the
+- [x] Make `R/pemob_2025.R` append 2025 to the rebuilt history instead of the
   workbook. Keep the workbook only as a regression baseline.
-- Add one entry point that runs municipal and metropolitan harmonization in
-  order and writes the release files.
+- [x] Add one entry point, `R/build_pemob.R`, that runs municipal and
+  metropolitan harmonization in order and writes the release files.
+- [x] Track metropolitan participation by edition, as for municipalities.
+- [x] Write missing cells as empty in the CSVs, so they no longer look like a
+  written `NA`.
 - Reconcile the known differences before release: 49 cells between the rebuilt
   2024 history and the workbook (35 in `1.6.1.F`), and the cell differences
   reported in `docs/internal/pipeline-reproduction-log-2026-10-18.md`.

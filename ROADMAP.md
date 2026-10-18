@@ -137,7 +137,7 @@ types fit in two value columns, the same split the parser already produces.
 | `value_raw` | Response as submitted, always text |
 | `value_num` | Parsed number; missing for text, categorical, and unparsed responses |
 | `value_type`, `unit` | From the registry |
-| `missing_reason` | `NA`, `NR`, `ND`, dash, blank, or nonparticipation |
+| `missing_code` | Missing-value code as written in the source cell (`NA`, `NR`, `ND`, `-`, blank, and written-out forms); no inference |
 | `value_treated`, `treatment_status` | Reported, corrected, excluded, reconstructed, or interpolated |
 
 The municipal 2019–2024 history has about 150,000 nonempty cells, so the long
@@ -224,7 +224,10 @@ export without hand edits.
 ## Open questions
 
 1. **Dataverse layout.** Confirm the long layout in Phase 4.
-2. **Same view or separate views.** Decide after the concept links are
+2. **Meaning of the missing codes.** Ask SIMU what `NA`, `NR`, and `ND` mean
+   in each edition. The parser also records an empty cell as `NA`; the release
+   should keep empty cells and a written `NA` apart.
+3. **Same view or separate views.** Decide after the concept links are
    reviewed: if few dashboard indicators exist at both levels, give
    metropolitan data its own view instead of a switch.
 

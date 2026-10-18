@@ -18,11 +18,20 @@ stopifnot(
   any(parsed_fare_2019$parsed_value == 3.45, na.rm = TRUE)
 )
 
-date_responses <- format_pemob_excel_dates(c("45597", "11/2028", NA))
+municipal_2024 <- read_pemob_source(
+  "data-raw/pemob_municipal_2024.xlsx",
+  skip = 1
+)
+metro_2024 <- read_pemob_source(
+  "data-raw/pemob_metropolitana_2024.xlsx",
+  skip = 1
+)
 stopifnot(
-  date_responses[1] == as.character(janitor::excel_numeric_to_date(45597)),
-  date_responses[2] == "11/2028",
-  is.na(date_responses[3])
+  municipal_2024[["3.1.1.C"]][1] == "2022-10-01",
+  municipal_2024[["11.2.2.B"]][2] == "2030-12-01",
+  municipal_2024[["11.2.2.B"]][1] == "NA",
+  metro_2024[["3.1.1.J"]][1] == "2023-05-01",
+  metro_2024[["3.1.1.C"]][1] == "8.1"
 )
 
 missing_variants <- c(

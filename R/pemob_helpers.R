@@ -193,22 +193,25 @@ read_pemob_source <- function(path, skip = 0) {
     col_types = "text",
     na = character()
   )
+  cells <- readxl::read_excel(
+    path,
+    skip = skip,
+    col_types = "list",
+    na = character()
+  )
+  for (column in seq_along(result)) {
+    dates <- vapply(cells[[column]], inherits, logical(1), what = "POSIXt")
+    result[[column]][dates] <- vapply(
+      cells[[column]][dates],
+      as.character,
+      character(1)
+    )
+  }
   # shortcut: readxl merges blank and Excel-error cells as NA; inspect XML if errors appear.
   result[] <- lapply(result, function(column) {
     column[is.na(column)] <- ""
     return(column)
   })
-
-  return(result)
-}
-
-format_pemob_excel_dates <- function(response) {
-  date_number <- suppressWarnings(as.numeric(response))
-  is_excel_date <- !is.na(date_number)
-  result <- as.character(response)
-  result[is_excel_date] <- as.character(
-    janitor::excel_numeric_to_date(date_number[is_excel_date])
-  )
 
   return(result)
 }

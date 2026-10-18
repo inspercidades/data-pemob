@@ -1,4 +1,4 @@
-source("R/pemob_helpers.R")
+source(here::here("R", "pemob_helpers.R"))
 
 municipal_names <- c(
   code_muni = "Código IBGE",
@@ -14,7 +14,7 @@ municipal_names <- c(
 )
 missing_values <- c("#REF!", "NR", "NA", "ND", "-")
 keydict <- readxl::read_excel(
-  "data-raw/pemob_códigos.xlsx",
+  here::here("data-raw", "pemob_códigos.xlsx"),
   sheet = "pemob_municipal"
 ) |>
   janitor::clean_names() |>
@@ -28,12 +28,12 @@ stopifnot(
 )
 
 source_files <- c(
-  `2019` = "data-raw/Pemob2019_Municipal.xlsx",
-  `2020` = "data-raw/BancodeDados_PemobMunicipal_2020.xlsx",
-  `2021` = "data-raw/pemob21_municipal.xlsx",
-  `2022` = "data-raw/copy_of_pemob_municipal_2022.xlsx",
-  `2023` = "data-raw/pemob2023_municipal.xlsx",
-  `2024` = "data-raw/pemob_municipal_2024.xlsx"
+  `2019` = here::here("data-raw", "Pemob2019_Municipal.xlsx"),
+  `2020` = here::here("data-raw", "BancodeDados_PemobMunicipal_2020.xlsx"),
+  `2021` = here::here("data-raw", "pemob21_municipal.xlsx"),
+  `2022` = here::here("data-raw", "copy_of_pemob_municipal_2022.xlsx"),
+  `2023` = here::here("data-raw", "pemob2023_municipal.xlsx"),
+  `2024` = here::here("data-raw", "pemob_municipal_2024.xlsx")
 )
 
 read_municipal_source <- function(year) {

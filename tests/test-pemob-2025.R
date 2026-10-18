@@ -1,6 +1,6 @@
-source("R/pemob_2025.R")
+source(here::here("R", "pemob_2025.R"))
 
-codes_file <- "data-raw/pemob_códigos.xlsx"
+codes_file <- here::here("data-raw", "pemob_códigos.xlsx")
 municipal_codes <- readxl::read_excel(codes_file, sheet = "pemob_municipal")
 metro_codes <- readxl::read_excel(codes_file, sheet = "pemob_metropolitana")
 
@@ -12,10 +12,13 @@ stopifnot(
 )
 
 municipal_2025 <- read_pemob_2025(
-  "data-raw/pemob_municipal_2025(pemob_municipal_25).csv"
+  here::here("data-raw", "pemob_municipal_2025(pemob_municipal_25).csv")
 )
 metro_2025 <- read_pemob_2025(
-  "data-raw/pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+  here::here(
+    "data-raw",
+    "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+  )
 )
 
 stopifnot(
@@ -90,11 +93,11 @@ stopifnot(identical(
 ))
 
 baseline_municipal <- readxl::read_excel(
-  "tabelas/PEMOB Harmonizada 2024.xlsx",
+  here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
   sheet = "PEMOB Muni Harmonizada 24"
 )
 baseline_metro <- readxl::read_excel(
-  "tabelas/PEMOB Harmonizada 2024.xlsx",
+  here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
   sheet = "PEMOB Metro Harmonizada 24"
 )
 stopifnot(

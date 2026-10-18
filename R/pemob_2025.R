@@ -1,4 +1,4 @@
-source("R/pemob_helpers.R")
+source(here::here("R", "pemob_helpers.R"))
 
 # Read 2025 files ----------------------------------------------------------
 
@@ -32,7 +32,7 @@ read_pemob_2025 <- function(path) {
 harmonize_municipal_2025 <- function(survey) {
   # shortcut: past years retain the 2024 workbook cohort, rebuild them after the data audit.
   baseline <- readxl::read_excel(
-    "tabelas/PEMOB Harmonizada 2024.xlsx",
+    here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
     sheet = "PEMOB Muni Harmonizada 24"
   )
   baseline <- as.data.frame(baseline)
@@ -125,13 +125,13 @@ harmonize_municipal_2025 <- function(survey) {
 harmonize_metro_2025 <- function(survey) {
   # shortcut: past years retain the 2024 workbook cohort, rebuild them after the data audit.
   baseline <- readxl::read_excel(
-    "tabelas/PEMOB Harmonizada 2024.xlsx",
+    here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
     sheet = "PEMOB Metro Harmonizada 24"
   )
   baseline <- as.data.frame(baseline)
 
   metro_2024 <- readxl::read_excel(
-    "data-raw/pemob_metropolitana_2024.xlsx",
+    here::here("data-raw", "pemob_metropolitana_2024.xlsx"),
     skip = 1
   )
   baseline_names <- canonicalize_pemob_metro_name(
@@ -206,17 +206,26 @@ harmonize_metro_2025 <- function(survey) {
 
 build_pemob_2025 <- function() {
   municipal_source <- read_pemob_2025(
-    "data-raw/pemob_municipal_2025(pemob_municipal_25).csv"
+    here::here("data-raw", "pemob_municipal_2025(pemob_municipal_25).csv")
   )
   metro_source <- read_pemob_2025(
-    "data-raw/pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+    here::here(
+      "data-raw",
+      "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+    )
   )
 
   municipal <- harmonize_municipal_2025(municipal_source)
   metro <- harmonize_metro_2025(metro_source)
 
-  readr::write_excel_csv2(municipal, "data/pemob_harmonizada_2025.csv")
-  readr::write_excel_csv2(metro, "data/pemob_metro_harmonizada_2025.csv")
+  readr::write_excel_csv2(
+    municipal,
+    here::here("data", "pemob_harmonizada_2025.csv")
+  )
+  readr::write_excel_csv2(
+    metro,
+    here::here("data", "pemob_metro_harmonizada_2025.csv")
+  )
   cli::cli_alert_warning(
     "Historical years still use the 2024 workbook cohort; see ROADMAP-2025.md."
   )

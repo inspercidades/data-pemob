@@ -163,8 +163,8 @@ dict_tabela <- dict_tabela |>
   select(-subcategoria) |>
   filter(is_candidate == 1, tipo == "numeric")
 
-readr::write_csv(pemob_dict, "data/dict_portal_pemob.csv")
-readr::write_csv(dict_tabela, "data/dict_tabela_pemob.csv")
+readr::write_csv(pemob_dict, here("data", "dict_portal_pemob.csv"))
+readr::write_csv(dict_tabela, here("data", "dict_tabela_pemob.csv"))
 
 dict_tabela <- pemob_dict |>
   select(
@@ -406,7 +406,7 @@ export_category <- dim_category |>
 export_category <- export_category |>
   select(categoria, subcategoria, label)
 
-readr::write_csv(export_category, "data/portal/dim_category.csv")
+readr::write_csv(export_category, here("data", "portal", "dim_category.csv"))
 
 dct <- dim_category |>
   select(
@@ -432,7 +432,7 @@ dpt <- pemob_dict |>
 
 dict_portal <- left_join(dpt, dct, by = "code_variable")
 
-readr::write_csv(dict_portal, "data/portal/dict_portal_parcial.csv")
+readr::write_csv(dict_portal, here("data", "portal", "dict_portal_parcial.csv"))
 
 
 # 9.1.2
@@ -517,7 +517,7 @@ portal
 pemob |>
   left_join(dict_tabela, by = "code_variable") |>
   filter(is_portal == 1 | is_dashboard == 1) |>
-  readr::write_csv("data/pemob_portal_teste.csv")
+  readr::write_csv(here("data", "pemob_portal_teste.csv"))
 
 test <- pemob |>
   filter(code_question %in% c("7.1.1", "7.2.1")) |>

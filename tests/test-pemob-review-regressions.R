@@ -1,6 +1,6 @@
-portal_code <- parse("R/pemob_portal_final.R")
-metro_code <- parse("R/pemob_metropolitana.R")
-source("R/pemob_helpers.R")
+portal_code <- parse(here::here("R", "pemob_portal_final.R"))
+metro_code <- parse(here::here("R", "pemob_metropolitana.R"))
+source(here::here("R", "pemob_helpers.R"))
 
 assignment <- function(code, name) {
   matches <- vapply(
@@ -374,5 +374,40 @@ stopifnot(
   grepl(
     "endpoint_evidence_missing",
     no_evidence_candidate$eligibility_reason
+  )
+)
+
+shuffled_candidates <- build_pemob_review_candidates(
+  review_fixture[rev(seq_len(nrow(review_fixture))), ]
+)
+gap_fixture <- data.frame(
+  code_muni = 30,
+  name_muni = "Gap City",
+  abbrev_state = "SP",
+  year = c(2019, 2021),
+  code_variable = "3.1.1.A",
+  raw_response = c("0", "50")
+)
+interpolation_empty <- build_pemob_interpolation_candidates(
+  interpolation_fixture[FALSE, ]
+)
+stopifnot(
+  setequal(
+    paste(
+      shuffled_candidates$code_muni,
+      shuffled_candidates$year,
+      shuffled_candidates$flag_reasons
+    ),
+    paste(
+      review_candidates$code_muni,
+      review_candidates$year,
+      review_candidates$flag_reasons
+    )
+  ),
+  nrow(build_pemob_review_candidates(gap_fixture)) == 0L,
+  identical(names(interpolation_empty), names(interpolation_candidates)),
+  identical(
+    vapply(interpolation_empty, class, character(1)),
+    vapply(interpolation_candidates, class, character(1))
   )
 )

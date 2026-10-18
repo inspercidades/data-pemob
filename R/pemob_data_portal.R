@@ -3,7 +3,8 @@
 library(dplyr)
 library(jsonlite)
 
-dashboard <- readr::read_rds("data/portal/final/pemob_tables.rds")
+path_tables <- here::here("data", "portal", "final", "pemob_tables.rds")
+dashboard <- readr::read_rds(path_tables)
 names(dashboard) <- c("share", "max", "per_capita")
 
 tbl_shares <- dashboard[["share"]]

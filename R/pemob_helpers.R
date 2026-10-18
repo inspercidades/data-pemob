@@ -333,6 +333,73 @@ parse_pemob_response <- function(response) {
   return(result)
 }
 
+# Review targets -----------------------------------------------------------
+
+pemob_expected_units <- c(
+  "3.1.1.A" = "BRL",
+  "1.6.1.G" = "km",
+  "1.6.1.H" = "km"
+)
+pemob_target_variables <- names(pemob_expected_units)
+
+build_pemob_candidate_id <- function(code_muni, code_variable, year) {
+  result <- paste(
+    sprintf("%.0f", as.numeric(code_muni)),
+    code_variable,
+    year,
+    sep = "::"
+  )
+  return(result)
+}
+
+# Collapse logical flag columns into "flag_a;flag_b" strings, one per row.
+collapse_pemob_flags <- function(dat, flag_cols) {
+  result <- purrr::pmap_chr(dat[flag_cols], function(...) {
+    flags <- c(...)
+    return(paste(names(flags)[flags], collapse = ";"))
+  })
+  return(result)
+}
+
+# Flag values above Q3 + 3 * IQR among eligible observations. Groups with
+# fewer than 8 eligible values or no spread are never flagged.
+flag_pemob_outliers <- function(value, eligible) {
+  result <- rep(FALSE, length(value))
+  observed <- value[eligible]
+  spread <- stats::IQR(observed)
+  if (length(observed) < 8L || spread == 0) {
+    return(result)
+  }
+
+  fence <- stats::quantile(observed, 0.75, names = FALSE) + 3 * spread
+  result[eligible] <- observed > fence
+  return(result)
+}
+
+parse_pemob_target_responses <- function(dat, required_cols, label) {
+  if (!all(required_cols %in% names(dat))) {
+    cli::cli_abort("{label} inputs must include {.field {required_cols}}.")
+  }
+
+  dat <- dplyr::filter(dat, code_variable %in% pemob_target_variables)
+  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
+    cli::cli_abort(
+      "{label} inputs must have unique municipality-question-year keys."
+    )
+  }
+
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- dplyr::bind_cols(
+    tibble::as_tibble(dat),
+    dplyr::select(parsed, -"raw_response")
+  )
+  result$expected_unit <- unname(pemob_expected_units[result$code_variable])
+  return(result)
+}
+
+
+# Review candidates --------------------------------------------------------
+
 build_pemob_review_candidates <- function(dat) {
   required_cols <- c(
     "code_muni",
@@ -342,99 +409,74 @@ build_pemob_review_candidates <- function(dat) {
     "code_variable",
     "raw_response"
   )
-  if (!all(required_cols %in% names(dat))) {
-    cli::cli_abort(
-      "Review inputs must include: {paste(required_cols, collapse = ', ')}."
-    )
-  }
-
-  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
-  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
-    cli::cli_abort(
-      "Review inputs must have unique municipality-question-year keys."
-    )
-  }
-
-  parsed <- parse_pemob_response(dat$raw_response)
-  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
-  expected_unit <- ifelse(result$code_variable == "3.1.1.A", "BRL", "km")
-  flags <- data.frame(
-    unparsed_response = result$parse_status == "review",
-    negative_value = !is.na(result$parsed_value) & result$parsed_value < 0,
-    unit_mismatch = !is.na(result$parsed_unit) &
-      result$parsed_unit != expected_unit,
-    cross_city_outlier = rep(FALSE, nrow(result)),
-    zero_transition = rep(FALSE, nrow(result)),
-    abrupt_change_10x = rep(FALSE, nrow(result))
+  flag_cols <- c(
+    "unparsed_response",
+    "negative_value",
+    "unit_mismatch",
+    "cross_city_outlier",
+    "zero_transition",
+    "abrupt_change_10x"
+  )
+  helper_cols <- c(
+    "expected_unit",
+    "outlier_eligible",
+    "previous_year",
+    "previous_value",
+    "consecutive"
   )
 
-  by_question_year <- split(
-    seq_len(nrow(result)),
-    interaction(result$code_variable, result$year, drop = TRUE)
-  )
-  for (rows in by_question_year) {
-    values <- result$parsed_value[rows]
-    eligible <- !is.na(values) &
-      values > 0 &
-      (is.na(result$parsed_unit[rows]) |
-        result$parsed_unit[rows] == expected_unit[rows])
-    observed <- values[eligible]
-    if (length(observed) < 8L) {
-      next
-    }
+  responses <- parse_pemob_target_responses(dat, required_cols, "Review")
 
-    spread <- stats::IQR(observed)
-    if (spread > 0) {
-      fence <- stats::quantile(observed, 0.75) + 3 * spread
-      flags$cross_city_outlier[rows[eligible]] <- observed > fence
-    }
-  }
+  value_flags <- responses |>
+    dplyr::mutate(
+      unparsed_response = parse_status == "review",
+      negative_value = !is.na(parsed_value) & parsed_value < 0,
+      unit_mismatch = !is.na(parsed_unit) & parsed_unit != expected_unit,
+      outlier_eligible = !is.na(parsed_value) &
+        parsed_value > 0 &
+        (is.na(parsed_unit) | parsed_unit == expected_unit)
+    ) |>
+    dplyr::mutate(
+      cross_city_outlier = flag_pemob_outliers(parsed_value, outlier_eligible),
+      .by = c(code_variable, year)
+    )
 
-  order_rows <- order(result$code_muni, result$code_variable, result$year)
-  for (position in seq_along(order_rows)[-1L]) {
-    current <- order_rows[position]
-    previous <- order_rows[position - 1L]
-    same_series <- result$code_muni[current] == result$code_muni[previous] &
-      result$code_variable[current] == result$code_variable[previous] &
-      result$year[current] - result$year[previous] == 1
-    if (!same_series) {
-      next
-    }
-
-    current_value <- result$parsed_value[current]
-    previous_value <- result$parsed_value[previous]
-    if (is.na(current_value) || is.na(previous_value)) {
-      next
-    }
-    if (xor(current_value == 0, previous_value == 0)) {
-      flags$zero_transition[current] <- TRUE
-    }
-    if (
-      current_value > 0 &&
-        previous_value > 0 &&
-        max(current_value, previous_value) /
-          min(current_value, previous_value) >=
+  # shortcut: flag 10-fold changes for review; confirm them against records.
+  series_flags <- value_flags |>
+    dplyr::arrange(code_muni, code_variable, year) |>
+    dplyr::mutate(
+      previous_year = dplyr::lag(year),
+      previous_value = dplyr::lag(parsed_value),
+      .by = c(code_muni, code_variable)
+    ) |>
+    dplyr::mutate(
+      consecutive = !is.na(previous_year) &
+        year - previous_year == 1 &
+        !is.na(parsed_value) &
+        !is.na(previous_value),
+      zero_transition = consecutive &
+        xor(parsed_value == 0, previous_value == 0),
+      abrupt_change_10x = consecutive &
+        parsed_value > 0 &
+        previous_value > 0 &
+        pmax(parsed_value, previous_value) /
+          pmin(parsed_value, previous_value) >=
           10
-    ) {
-      # shortcut: flag 10-fold changes for review; confirm them against records.
-      flags$abrupt_change_10x[current] <- TRUE
-    }
-  }
+    )
 
-  result$flag_reasons <- vapply(
-    seq_len(nrow(flags)),
-    function(row) {
-      row_flags <- unlist(flags[row, ], use.names = TRUE)
-      paste(names(row_flags)[row_flags], collapse = ";")
-    },
-    character(1)
-  )
-  result <- result[nzchar(result$flag_reasons), , drop = FALSE]
-  result$treated_value <- result$parsed_value
-  result$review_decision <- rep("pending", nrow(result))
+  result <- series_flags |>
+    dplyr::mutate(
+      flag_reasons = collapse_pemob_flags(series_flags, flag_cols)
+    ) |>
+    dplyr::filter(nzchar(flag_reasons)) |>
+    dplyr::mutate(treated_value = parsed_value, review_decision = "pending") |>
+    dplyr::select(-dplyr::all_of(c(flag_cols, helper_cols)))
 
   return(result)
 }
+
+
+# Interpolation candidates -------------------------------------------------
 
 build_pemob_interpolation_candidates <- function(dat) {
   required_cols <- c(
@@ -448,196 +490,168 @@ build_pemob_interpolation_candidates <- function(dat) {
     "review_decision",
     "review_evidence"
   )
-  if (!all(required_cols %in% names(dat))) {
-    cli::cli_abort(
-      "Interpolation inputs must include: {paste(required_cols, collapse = ', ')}."
-    )
-  }
-
-  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
-  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
-    cli::cli_abort(
-      "Interpolation inputs must have unique municipality-question-year keys."
-    )
-  }
-  if (!is.logical(dat$participated)) {
-    cli::cli_abort("Participation must be recorded as TRUE, FALSE, or NA.")
-  }
+  reason_cols <- c(
+    "missing_reason_not_item_nonresponse",
+    "participation_unknown",
+    "nonparticipation",
+    "endpoint_not_numeric",
+    "endpoint_negative",
+    "endpoint_unit_mismatch",
+    "endpoint_not_accepted",
+    "endpoint_evidence_missing",
+    "invalid_reference_time"
+  )
+  endpoint_cols <- c(
+    "year",
+    "reference_time",
+    "parse_status",
+    "parsed_value",
+    "parsed_unit",
+    "review_decision",
+    "review_evidence"
+  )
+  output_cols <- c(
+    "code_muni",
+    "name_muni",
+    "abbrev_state",
+    "year",
+    "code_variable",
+    "candidate_id",
+    "raw_response",
+    "missing_reason",
+    "participated",
+    "endpoint_left_id",
+    "endpoint_left_year",
+    "endpoint_left_value",
+    "endpoint_left_review",
+    "endpoint_left_evidence",
+    "endpoint_right_id",
+    "endpoint_right_year",
+    "endpoint_right_value",
+    "endpoint_right_review",
+    "endpoint_right_evidence",
+    "estimate_value",
+    "method",
+    "eligible",
+    "eligibility_reason"
+  )
 
   if (!"reference_time" %in% names(dat)) {
     dat$reference_time <- as.numeric(dat$year)
   }
-  if (!is.numeric(dat$year) || !is.numeric(dat$reference_time)) {
-    cli::cli_abort("Year and reference time must be numeric.")
+  responses <- parse_pemob_target_responses(dat, required_cols, "Interpolation")
+  if (!is.logical(responses$participated)) {
+    cli::cli_abort(
+      "{.field participated} must be recorded as TRUE, FALSE, or NA."
+    )
   }
-  parsed <- parse_pemob_response(dat$raw_response)
-  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
-  groups <- split(
-    seq_len(nrow(result)),
-    interaction(result$code_muni, result$code_variable, drop = TRUE)
+  if (!is.numeric(responses$year) || !is.numeric(responses$reference_time)) {
+    cli::cli_abort("{.field year} and {.field reference_time} must be numeric.")
+  }
+
+  endpoints <- responses |>
+    dplyr::select(code_muni, code_variable, dplyr::all_of(endpoint_cols))
+  left_endpoints <- dplyr::rename_with(
+    endpoints,
+    \(col) paste0("left_", col),
+    dplyr::all_of(endpoint_cols)
   )
-  candidates <- list()
+  right_endpoints <- dplyr::rename_with(
+    endpoints,
+    \(col) paste0("right_", col),
+    dplyr::all_of(endpoint_cols)
+  )
 
-  for (rows in groups) {
-    for (row in rows[result$parse_status[rows] == "missing"]) {
-      year <- result$year[row]
-      left <- rows[result$year[rows] == year - 1]
-      right <- rows[result$year[rows] == year + 1]
-      if (length(left) != 1L || length(right) != 1L) {
-        next
-      }
+  # A gap is a missing response whose previous and next years both exist.
+  gaps <- responses |>
+    dplyr::filter(parse_status == "missing") |>
+    dplyr::mutate(left_year = year - 1, right_year = year + 1) |>
+    dplyr::inner_join(
+      left_endpoints,
+      by = c("code_muni", "code_variable", "left_year"),
+      na_matches = "never"
+    ) |>
+    dplyr::inner_join(
+      right_endpoints,
+      by = c("code_muni", "code_variable", "right_year"),
+      na_matches = "never"
+    )
 
-      left <- left[[1]]
-      right <- right[[1]]
-      expected_unit <- if (result$code_variable[row] == "3.1.1.A") {
-        "BRL"
-      } else {
-        "km"
-      }
-      endpoint_units <- c(
-        result$parsed_unit[left],
-        result$parsed_unit[right]
-      )
-      endpoint_units[is.na(endpoint_units)] <- expected_unit
-      reasons <- character()
+  has_text <- function(x) !is.na(x) & nzchar(trimws(x))
 
-      if (!identical(result$missing_reason[row], "NR")) {
-        reasons <- c(reasons, "missing_reason_not_item_nonresponse")
-      }
-      if (is.na(result$participated[row])) {
-        reasons <- c(reasons, "participation_unknown")
-      } else if (!result$participated[row]) {
-        reasons <- c(reasons, "nonparticipation")
-      }
-      if (
-        result$parse_status[left] != "parsed" ||
-          result$parse_status[right] != "parsed"
-      ) {
-        reasons <- c(reasons, "endpoint_not_numeric")
-      }
-      endpoint_values <- result$parsed_value[c(left, right)]
-      if (any(endpoint_values < 0, na.rm = TRUE)) {
-        reasons <- c(reasons, "endpoint_negative")
-      }
-      if (
-        any(endpoint_units != expected_unit) ||
-          endpoint_units[1] != endpoint_units[2]
-      ) {
-        reasons <- c(reasons, "endpoint_unit_mismatch")
-      }
-      endpoint_decisions <- result$review_decision[c(left, right)]
-      if (
-        anyNA(endpoint_decisions) ||
-          any(endpoint_decisions != "accepted")
-      ) {
-        reasons <- c(reasons, "endpoint_not_accepted")
-      }
-      endpoint_evidence <- result$review_evidence[c(left, right)]
-      if (
-        anyNA(endpoint_evidence) ||
-          any(!nzchar(trimws(endpoint_evidence)))
-      ) {
-        reasons <- c(reasons, "endpoint_evidence_missing")
-      }
-      reference_times <- result$reference_time[c(left, row, right)]
-      if (
-        anyNA(reference_times) ||
-          any(!is.finite(reference_times)) ||
-          reference_times[1] >= reference_times[2] ||
-          reference_times[2] >= reference_times[3]
-      ) {
-        reasons <- c(reasons, "invalid_reference_time")
-      }
+  # Endpoints without a unit are assumed to use the expected unit.
+  reasons <- gaps |>
+    dplyr::mutate(
+      left_unit = dplyr::coalesce(left_parsed_unit, expected_unit),
+      right_unit = dplyr::coalesce(right_parsed_unit, expected_unit),
+      missing_reason_not_item_nonresponse = !missing_reason %in% "NR",
+      participation_unknown = is.na(participated),
+      nonparticipation = participated %in% FALSE,
+      endpoint_not_numeric = left_parse_status != "parsed" |
+        right_parse_status != "parsed",
+      endpoint_negative = dplyr::coalesce(left_parsed_value < 0, FALSE) |
+        dplyr::coalesce(right_parsed_value < 0, FALSE),
+      endpoint_unit_mismatch = left_unit != expected_unit |
+        right_unit != expected_unit,
+      endpoint_not_accepted = !left_review_decision %in% "accepted" |
+        !right_review_decision %in% "accepted",
+      endpoint_evidence_missing = !has_text(left_review_evidence) |
+        !has_text(right_review_evidence),
+      invalid_reference_time = !(is.finite(left_reference_time) &
+        is.finite(reference_time) &
+        is.finite(right_reference_time)) |
+        left_reference_time >= reference_time |
+        reference_time >= right_reference_time
+    )
 
-      eligible <- length(reasons) == 0L
-      estimate_value <- NA_real_
-      if (eligible) {
-        estimate_value <- result$parsed_value[left] +
-          (result$parsed_value[right] - result$parsed_value[left]) *
-            (reference_times[2] - reference_times[1]) /
-            (reference_times[3] - reference_times[1])
-      }
-      candidates[[length(candidates) + 1L]] <- data.frame(
-        code_muni = result$code_muni[row],
-        name_muni = result$name_muni[row],
-        abbrev_state = result$abbrev_state[row],
-        year = year,
-        code_variable = result$code_variable[row],
-        candidate_id = paste(
-          sprintf("%.0f", result$code_muni[row]),
-          result$code_variable[row],
-          year,
-          sep = "::"
-        ),
-        raw_response = result$raw_response[row],
-        missing_reason = result$missing_reason[row],
-        participated = result$participated[row],
-        endpoint_left_id = paste(
-          sprintf("%.0f", result$code_muni[left]),
-          result$code_variable[left],
-          result$year[left],
-          sep = "::"
-        ),
-        endpoint_left_year = result$year[left],
-        endpoint_left_value = result$parsed_value[left],
-        endpoint_left_review = result$review_decision[left],
-        endpoint_left_evidence = result$review_evidence[left],
-        endpoint_right_id = paste(
-          sprintf("%.0f", result$code_muni[right]),
-          result$code_variable[right],
-          result$year[right],
-          sep = "::"
-        ),
-        endpoint_right_year = result$year[right],
-        endpoint_right_value = result$parsed_value[right],
-        endpoint_right_review = result$review_decision[right],
-        endpoint_right_evidence = result$review_evidence[right],
-        estimate_value = estimate_value,
-        method = "linear_interpolation",
-        eligible = eligible,
-        eligibility_reason = if (eligible) {
-          "both adjacent endpoints reviewed; item nonresponse and participation confirmed"
-        } else {
-          paste(unique(reasons), collapse = ";")
-        },
-        stringsAsFactors = FALSE
-      )
-    }
-  }
+  result <- reasons |>
+    dplyr::mutate(
+      reason_list = collapse_pemob_flags(reasons, reason_cols),
+      eligible = !nzchar(reason_list),
+      estimate_value = dplyr::if_else(
+        eligible,
+        left_parsed_value +
+          (right_parsed_value - left_parsed_value) *
+            (reference_time - left_reference_time) /
+            (right_reference_time - left_reference_time),
+        NA_real_
+      ),
+      eligibility_reason = dplyr::if_else(
+        eligible,
+        "both adjacent endpoints reviewed; item nonresponse and participation confirmed",
+        reason_list
+      ),
+      candidate_id = build_pemob_candidate_id(code_muni, code_variable, year),
+      endpoint_left_id = build_pemob_candidate_id(
+        code_muni,
+        code_variable,
+        left_year
+      ),
+      endpoint_right_id = build_pemob_candidate_id(
+        code_muni,
+        code_variable,
+        right_year
+      ),
+      method = "linear_interpolation"
+    ) |>
+    dplyr::rename(
+      endpoint_left_year = left_year,
+      endpoint_left_value = left_parsed_value,
+      endpoint_left_review = left_review_decision,
+      endpoint_left_evidence = left_review_evidence,
+      endpoint_right_year = right_year,
+      endpoint_right_value = right_parsed_value,
+      endpoint_right_review = right_review_decision,
+      endpoint_right_evidence = right_review_evidence
+    ) |>
+    dplyr::arrange(code_muni, code_variable, year) |>
+    dplyr::select(dplyr::all_of(output_cols))
 
-  if (length(candidates) == 0L) {
-    return(data.frame(
-      code_muni = numeric(),
-      name_muni = character(),
-      abbrev_state = character(),
-      year = numeric(),
-      code_variable = character(),
-      candidate_id = character(),
-      raw_response = character(),
-      missing_reason = character(),
-      participated = logical(),
-      endpoint_left_id = character(),
-      endpoint_left_year = numeric(),
-      endpoint_left_value = numeric(),
-      endpoint_left_review = character(),
-      endpoint_left_evidence = character(),
-      endpoint_right_id = character(),
-      endpoint_right_year = numeric(),
-      endpoint_right_value = numeric(),
-      endpoint_right_review = character(),
-      endpoint_right_evidence = character(),
-      estimate_value = numeric(),
-      method = character(),
-      eligible = logical(),
-      eligibility_reason = character(),
-      stringsAsFactors = FALSE
-    ))
-  }
-
-  result <- do.call(rbind, candidates)
-  rownames(result) <- NULL
   return(result)
 }
+
+
+# Scaling -------------------------------------------------------------------
 
 scale_pemob_share <- function(value, total) {
   value_scaled <- rep(NA_real_, length(value))

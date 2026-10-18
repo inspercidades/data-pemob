@@ -428,7 +428,15 @@ read_pemob_source <- function(path, skip = 0) {
     numbers <- vapply(cells[[column]], is.double, logical(1)) & !dates
     result[[column]][numbers] <- vapply(
       cells[[column]][numbers],
-      function(x) format(x, digits = 15, scientific = FALSE, trim = TRUE),
+      function(x) {
+        format(
+          x,
+          digits = 15,
+          scientific = FALSE,
+          trim = TRUE,
+          decimal.mark = "."
+        )
+      },
       character(1)
     )
   }
@@ -712,6 +720,7 @@ apply_pemob_review_decisions <- function(dat, ledger) {
   )
   ledger_cols <- c(
     "candidate_id",
+    "raw_response",
     "review_decision",
     "treated_value",
     "review_evidence",
@@ -799,8 +808,28 @@ apply_pemob_review_decisions <- function(dat, ledger) {
     )
   }
 
+  # A decision applies only to the response that was reviewed; when the source
+  # response changes, the row returns to pending.
+  reviewed_response <- as.character(ledger$raw_response)
+  current_response <- as.character(dat$raw_response[ledger_rows])
+  stale <- reviewed &
+    (is.na(reviewed_response) |
+      is.na(current_response) |
+      reviewed_response != current_response)
+  if (any(stale)) {
+    cli::cli_warn(c(
+      "{sum(stale)} review decision{?s} no longer match{?es/} the source response and return{?s/} to pending.",
+      "i" = "Stale candidate IDs: {.val {ledger$candidate_id[stale]}}."
+    ))
+  }
+
   for (ledger_row in seq_len(nrow(ledger))) {
     data_row <- ledger_rows[[ledger_row]]
+    if (stale[[ledger_row]]) {
+      result$treatment_status[[data_row]] <- "pending"
+      result$review_decision[[data_row]] <- "pending"
+      next
+    }
     decision <- decisions[[ledger_row]]
     ledger_value <- ledger$treated_value[[ledger_row]]
     parsed_value <- result$parsed_value[[data_row]]

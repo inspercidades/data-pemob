@@ -3,7 +3,7 @@
 # Run from the project root with `Rscript R/check_pemob_baseline.R` after
 # `R/build_pemob.R`. Prints counts by class and writes one row per differing
 # cell to `data/pemob_baseline_differences.csv`, except for blanked missing
-# codes and number formatting.
+# codes and number formatting outside repaired cells.
 
 source(here::here("R", "pemob_2025.R"))
 
@@ -64,12 +64,21 @@ compare_pemob_baseline <- function(
   rebuilt,
   key_cols,
   repairs = NULL,
-  combined = NULL
+  combined = NULL,
+  allowed_missing = character()
 ) {
-  codes <- intersect(
-    setdiff(names(baseline), key_cols),
-    setdiff(names(rebuilt), key_cols)
+  baseline_codes <- setdiff(names(baseline), key_cols)
+  missing_codes <- setdiff(
+    baseline_codes,
+    c(names(rebuilt), allowed_missing)
   )
+  if (length(missing_codes) > 0L) {
+    cli::cli_abort(c(
+      "{length(missing_codes)} workbook question{?s} {?is/are} missing from the rebuild.",
+      "i" = "Missing: {.val {missing_codes}}."
+    ))
+  }
+  codes <- intersect(baseline_codes, names(rebuilt))
   to_long <- function(dat, value_col) {
     dat |>
       dplyr::select(dplyr::all_of(c(key_cols, codes))) |>
@@ -94,11 +103,12 @@ compare_pemob_baseline <- function(
       difference = classify_pemob_difference(baseline_value, rebuilt_value)
     )
 
-  # Cells the repair table moves to another column differ by design.
+  # Cells the repair table moves to another column differ by design; the flag
+  # keeps their difference class so a value regression stays visible.
+  result$code_repair <- rep(FALSE, nrow(result))
   if (!is.null(repairs)) {
-    repaired <- paste(result$year, result$code_variable) %in%
+    result$code_repair <- paste(result$year, result$code_variable) %in%
       paste(repairs$edition, repairs$code_2024)
-    result$difference[repaired] <- "code_repair"
   }
   # The workbook leaves the 2019 checkbox questions blank.
   if (!is.null(combined)) {
@@ -146,10 +156,11 @@ check_pemob_baseline <- function() {
     combined = dplyr::filter(read_pemob_range_options(), level == "municipal")
   )
 
-  # Blanked missing codes and number formatting are counted, not listed.
+  # Blanked missing codes and number formatting are counted, not listed,
+  # except in repaired cells.
   bulk_classes <- c("missing_code_dropped", "number_format")
   readr::write_excel_csv2(
-    dplyr::filter(differences, !difference %in% bulk_classes),
+    dplyr::filter(differences, !difference %in% bulk_classes | code_repair),
     here::here("data", "pemob_baseline_differences.csv"),
     na = ""
   )
@@ -160,6 +171,9 @@ check_pemob_baseline <- function() {
     paste0(counts$difference, ": ", counts$n),
     rep("*", nrow(counts))
   ))
+  cli::cli_alert_info(
+    "{sum(differences$code_repair)} differing cell{?s} come{?s/} from code repairs."
+  )
   return(invisible(differences))
 }
 

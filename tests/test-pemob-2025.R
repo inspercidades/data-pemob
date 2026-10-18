@@ -69,12 +69,34 @@ readr::write_excel_csv2(
 history_read <- read_pemob_history(history_file)
 unlink(history_file)
 
+# The CSV quotes source blanks ("") and leaves absent values empty.
+blank_file <- tempfile(fileext = ".csv")
+readr::write_excel_csv2(
+  tibble::tibble(
+    code_muni = c(1, 2, 3, 1, 2, 3),
+    name_muni = "Example",
+    abbrev_state = "SP",
+    year = c(2023, 2023, 2023, 2024, 2024, 2024),
+    `1.1.1` = c("Sim", "", NA, "Sim", "Não", NA),
+    `1.2.1` = c(NA, NA, NA, "5", "", NA),
+    `1.3.1` = c("Sim", NA, NA, "", "Não", NA),
+    participated = c(TRUE, TRUE, FALSE, TRUE, TRUE, FALSE)
+  ),
+  blank_file,
+  na = ""
+)
+blank_read <- read_pemob_history(blank_file)
+unlink(blank_file)
+
 stopifnot(
   is.numeric(history_read$code_muni),
   is.numeric(history_read$year),
   is.logical(history_read$participated),
   identical(history_read[["3.1.1.A"]], c("4,50", "NR")),
-  identical(history_read[["1.1.1"]], c("Ônibus", NA))
+  identical(history_read[["1.1.1"]], c("Ônibus", NA)),
+  identical(blank_read[["1.1.1"]], c("Sim", "", NA, "Sim", "Não", NA)),
+  identical(blank_read[["1.2.1"]], c(NA, NA, NA, "5", "", NA)),
+  identical(blank_read[["1.3.1"]], c("Sim", NA, NA, "", "Não", NA))
 )
 
 

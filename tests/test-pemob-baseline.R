@@ -96,9 +96,28 @@ repaired_differences <- compare_pemob_baseline(
   key_cols = c("code_muni", "year"),
   repairs = data.frame(edition = 2024, code_2024 = "1.1.1")
 )
-stopifnot(identical(
-  repaired_differences$difference,
-  c("code_repair", "value_not_in_rebuild", "code_repair")
+# A repair keeps the cell's difference class, so a value regression in a
+# repaired cell stays visible.
+stopifnot(
+  identical(
+    repaired_differences$difference,
+    differences$difference
+  ),
+  identical(repaired_differences$code_repair, c(TRUE, FALSE, TRUE)),
+  identical(differences$code_repair, c(FALSE, FALSE, FALSE))
+)
+
+missing_question_table <- rebuilt_table[c("code_muni", "year", "1.1.1")]
+stopifnot(inherits(
+  try(
+    compare_pemob_baseline(
+      baseline_table,
+      missing_question_table,
+      key_cols = c("code_muni", "year")
+    ),
+    silent = TRUE
+  ),
+  "try-error"
 ))
 
 combined_differences <- compare_pemob_baseline(
@@ -111,3 +130,11 @@ stopifnot(identical(
   combined_differences$difference,
   c("range_combined", "value_not_in_rebuild", "range_combined")
 ))
+
+allowed_missing <- compare_pemob_baseline(
+  baseline_table,
+  missing_question_table,
+  key_cols = c("code_muni", "year"),
+  allowed_missing = "1.4.1.B"
+)
+stopifnot(!"1.4.1.B" %in% allowed_missing$code_variable)

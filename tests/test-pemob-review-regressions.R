@@ -132,6 +132,7 @@ treatment_data <- data.frame(
 )
 treatment_ledger <- data.frame(
   candidate_id = paste(20:23, "1.6.1.G", "2024", sep = "::"),
+  raw_response = c("12", "25", "30", "0"),
   review_decision = c("corrected", "excluded", "pending", "accepted"),
   treated_value = c(12.5, NA_real_, 30, 0),
   review_evidence = c(
@@ -181,6 +182,29 @@ invalid_status_ledger$review_decision <- "auto_corrected"
 stopifnot(inherits(
   try(
     apply_pemob_review_decisions(treatment_data, invalid_status_ledger),
+    silent = TRUE
+  ),
+  "try-error"
+))
+
+stale_ledger <- treatment_ledger[1:2, ]
+stale_ledger$raw_response <- c("100", "250")
+stale_result <- suppressWarnings(
+  apply_pemob_review_decisions(treatment_data, stale_ledger)
+)
+stopifnot(
+  identical(stale_result$treated_value[1:2], c(12, 25)),
+  identical(stale_result$treatment_status[1:2], c("pending", "pending")),
+  identical(stale_result$review_decision[1:2], c("pending", "pending")),
+  all(is.na(stale_result$review_evidence[1:2])),
+  all(is.na(stale_result$reviewer[1:2]))
+)
+
+missing_response_ledger <- treatment_ledger
+missing_response_ledger$raw_response <- NULL
+stopifnot(inherits(
+  try(
+    apply_pemob_review_decisions(treatment_data, missing_response_ledger),
     silent = TRUE
   ),
   "try-error"

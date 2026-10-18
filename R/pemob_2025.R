@@ -37,14 +37,18 @@ read_pemob_history <- function(path) {
     ))
   }
 
-  dat <- readr::read_delim(
+  # The CSV quotes source blanks ("") and leaves absent values empty; fread
+  # keeps that distinction, which readr drops.
+  dat <- data.table::fread(
     path,
-    delim = ";",
-    col_types = readr::cols(.default = readr::col_character()),
-    na = "",
-    trim_ws = FALSE,
-    progress = FALSE
-  )
+    sep = ";",
+    colClasses = "character",
+    na.strings = "",
+    strip.white = FALSE,
+    encoding = "UTF-8",
+    showProgress = FALSE
+  ) |>
+    tibble::as_tibble()
 
   if (!all(c("year", "participated") %in% names(dat))) {
     cli::cli_abort(

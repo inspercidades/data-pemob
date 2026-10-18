@@ -94,6 +94,20 @@ pemob19 <- combine_pemob_range_options(
   edition = 2019
 )
 
+# The combined answer drops missing codes in the other options; list those
+# responses so partial nonresponse stays visible.
+readr::write_excel_csv2(
+  list_pemob_incomplete_ranges(
+    pemob19,
+    read_pemob_range_options(),
+    level = "municipal",
+    edition = 2019,
+    id_cols = "code_muni"
+  ),
+  here("data", "pemob_range_incomplete.csv"),
+  na = ""
+)
+
 dict19 <- read_excel(
   path_19,
   range = "D1:QH2",

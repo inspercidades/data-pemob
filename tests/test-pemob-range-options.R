@@ -142,3 +142,33 @@ failures <- vapply(
   character(1)
 )
 stopifnot(all(failures == "error"))
+
+
+# Partial nonresponse ------------------------------------------------------
+
+# Rows 2 ("Sim" + "NR") and 1 ("Sim" + "Não") combine alike; only row 2 is
+# listed as incomplete.
+incomplete <- list_pemob_incomplete_ranges(
+  source_dat,
+  synthetic_options,
+  level = "municipal",
+  edition = 2019,
+  id_cols = "code_muni"
+)
+
+stopifnot(
+  identical(incomplete$code_muni, 2L),
+  identical(incomplete$edition, 2019),
+  identical(incomplete$code_2024, "1.1.1"),
+  identical(incomplete$combined_answer, "Ônibus"),
+  identical(incomplete$missing_options, "Metrô"),
+  identical(incomplete$missing_codes, "NR"),
+  nrow(list_pemob_incomplete_ranges(
+    source_dat[1, ],
+    synthetic_options,
+    level = "municipal",
+    edition = 2019,
+    id_cols = "code_muni"
+  )) ==
+    0L
+)

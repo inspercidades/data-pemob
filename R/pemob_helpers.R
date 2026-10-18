@@ -294,6 +294,64 @@ combine_pemob_range_options <- function(dat, options, level, edition) {
   return(dat)
 }
 
+# List rows where some options are "Sim" and others hold a missing code. The
+# combined answer keeps only the chosen labels, so it cannot tell these rows
+# from fully observed ones.
+list_pemob_incomplete_ranges <- function(
+  dat,
+  options,
+  level,
+  edition,
+  id_cols
+) {
+  options <- options[
+    options$level == level & options$edition == edition,
+  ]
+
+  result <- list()
+  for (range in unique(options$source_range)) {
+    range_options <- options[options$source_range == range, ]
+    answers <- as.matrix(dat[range_options$source_code])
+    normalized <- tolower(trimws(answers))
+    chosen <- !is.na(normalized) & normalized == "sim"
+    missing <- is.na(normalized) |
+      !normalized %in% c("sim", "não", "nâo", "nao")
+    incomplete <- which(rowSums(chosen) > 0L & rowSums(missing) > 0L)
+
+    for (row in incomplete) {
+      codes <- parse_pemob_response(answers[row, missing[row, ]])
+      result[[length(result) + 1L]] <- tibble::tibble(
+        dat[row, id_cols, drop = FALSE],
+        edition = edition,
+        source_range = range,
+        code_2024 = range_options$code_2024[1],
+        combined_answer = paste(
+          range_options$option_label[chosen[row, ]],
+          collapse = "; "
+        ),
+        missing_options = paste(
+          range_options$option_label[missing[row, ]],
+          collapse = "; "
+        ),
+        missing_codes = paste(unique(codes$missing_reason), collapse = "; ")
+      )
+    }
+  }
+
+  if (length(result) == 0L) {
+    return(tibble::tibble(
+      dat[0, id_cols, drop = FALSE],
+      edition = numeric(),
+      source_range = character(),
+      code_2024 = character(),
+      combined_answer = character(),
+      missing_options = character(),
+      missing_codes = character()
+    ))
+  }
+  return(dplyr::bind_rows(result))
+}
+
 pemob_metro_aliases <- data.frame(
   abbrev_state = c(
     "AL",

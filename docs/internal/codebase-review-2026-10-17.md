@@ -339,6 +339,27 @@ missing reasons, pending decisions, and unchanged treated values. Short-gap
 interpolation, reviewed corrections, and treatment validation remain the next
 work; this stage does not authorize publication of treated values.
 
+### Short-gap interpolation gate
+
+The first interpolation review extract found 738 missing cells with an
+observation in each adjacent edition: 71 explicit `NR` cycling cells and 667
+`NA` cells. No fare gap is explicitly marked `NR`. The other missing forms are
+not treated as item nonresponse because their meanings differ, and nonresponse
+must also be distinguished from nonparticipation. No candidate is eligible for
+an estimate yet: no endpoint has been accepted with review evidence. The
+extract in `data/pemob_interpolation_candidates.csv` records endpoints,
+decisions, eligibility reasons, and a separate proposed value; all proposed
+values are currently missing.
+
+The proposal function supports irregular numeric reference times, but the
+actual data run uses survey edition year because no verified observation dates
+are available in the input. It rejects unreviewed endpoints, missing evidence,
+nonparticipation, non-`NR` markers, nonnumeric endpoints, and incompatible
+units. Synthetic tests cover those gates, zero endpoints, irregular reference
+times, unequal and equal values, long gaps, and no extrapolation. Masked-value
+validation is not possible until a reviewed endpoint sample exists; no treated
+series has been produced.
+
 ### Evidence from fares and cycling infrastructure
 
 The pilot examined `3.1.1.A` (current predominant municipal fare), `1.6.1.G`

@@ -63,9 +63,11 @@ historical readers reaches the released data.
 - [x] Track metropolitan participation by edition, as for municipalities.
 - [x] Write missing cells as empty in the CSVs, so they no longer look like a
   written `NA`.
-- Reconcile the known differences before release: 49 cells between the rebuilt
-  2024 history and the workbook (35 in `1.6.1.F`), and the cell differences
-  reported in `docs/internal/pipeline-reproduction-log-2026-10-18.md`.
+- [x] Reconcile the rebuilt history with the 2024 workbook. Every difference
+  traces to the workbook or to the `1.4.1.B` unlink; see
+  `docs/internal/baseline-reconciliation-2026-10-18.md` and
+  `Rscript R/check_pemob_baseline.R`.
+- [x] Format numeric Excel cells with 15 significant digits instead of 17.
 - Classify the import and coercion warnings; fail the build on unexpected ones.
 - Review cross-edition question correspondences against question text and
   unit. The known collision is `1.4.1.B` (metro/rail stations in 2019,
@@ -251,4 +253,6 @@ export without hand edits.
 - `docs/internal/pemob-implementation-plan-2026-10-17.md` — staged plan and
   acceptance criteria behind phases 2–3.
 - `docs/internal/pipeline-reproduction-log-2026-10-18.md` — reproduction run.
+- `docs/internal/baseline-reconciliation-2026-10-18.md` — rebuilt history
+  against the 2024 workbook.
 - `docs/internal/pemob-dashboard-brief-and-fix-plan.md` — dashboard redesign.

@@ -89,3 +89,14 @@ stopifnot(
   ),
   !"9.9.9" %in% differences$code_variable
 )
+
+repaired_differences <- compare_pemob_baseline(
+  baseline_table,
+  rebuilt_table,
+  key_cols = c("code_muni", "year"),
+  repairs = data.frame(edition = 2024, code_2024 = "1.1.1")
+)
+stopifnot(identical(
+  repaired_differences$difference,
+  c("code_repair", "value_not_in_rebuild", "code_repair")
+))

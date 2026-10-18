@@ -69,9 +69,67 @@ build_pemob_municipality_dimension <- function(editions) {
   return(result)
 }
 
-repair_pemob_municipal_crosswalk <- function(dat) {
+# Some source columns carry the wrong question code; the repair table lists
+# them by edition and column, with the question text that identifies them.
+read_pemob_code_repairs <- function(
+  path = here::here("tabelas", "pemob_code_repairs.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      column = readr::col_integer(),
+      .default = readr::col_character()
+    ),
+    progress = FALSE
+  )
+  return(result)
+}
+
+build_pemob_repaired_code <- function(code_2024) {
+  result <- paste0("repaired:", code_2024)
+  return(result)
+}
+
+repair_pemob_source_codes <- function(dat, edition, repairs) {
+  repairs <- repairs[repairs$edition == edition, ]
+  if (nrow(repairs) == 0L) {
+    return(dat)
+  }
+
+  current <- stringr::str_squish(
+    stringr::str_remove(names(dat)[repairs$column], "\\.\\.\\.[0-9]{1,3}$")
+  )
+  mismatch <- is.na(current) | current != repairs$source_code
+  if (any(mismatch)) {
+    cli::cli_abort(
+      "The {edition} source does not have the expected code in column{?s} {repairs$column[mismatch]}."
+    )
+  }
+
+  names(dat)[repairs$column] <- build_pemob_repaired_code(repairs$code_2024)
+  return(dat)
+}
+
+repair_pemob_municipal_crosswalk <- function(dat, repairs = NULL) {
   changed_question <- dat$x2024 == "1.4.1.B"
   dat$x2019[changed_question] <- NA_character_
+
+  if (is.null(repairs)) {
+    return(dat)
+  }
+
+  unknown <- !repairs$code_2024 %in% dat$x2024
+  if (any(unknown)) {
+    cli::cli_abort(
+      "Repaired codes absent from the crosswalk: {repairs$code_2024[unknown]}."
+    )
+  }
+  for (i in seq_len(nrow(repairs))) {
+    edition_col <- paste0("x", repairs$edition[[i]])
+    row <- dat$x2024 == repairs$code_2024[[i]]
+    dat[[edition_col]][row] <- build_pemob_repaired_code(repairs$code_2024[[i]])
+  }
 
   return(dat)
 }

@@ -29,7 +29,8 @@ keydict <- keydict |>
     srv_block = bloco,
     srv_section = secao
   )
-keydict <- repair_pemob_municipal_crosswalk(keydict)
+code_repairs <- read_pemob_code_repairs()
+keydict <- repair_pemob_municipal_crosswalk(keydict, code_repairs)
 
 dict_insper <- read_excel(here("data-raw/Pemob_Renomeado_2024.xlsx"), skip = 3)
 
@@ -73,6 +74,7 @@ vl_names <- c(
 path_19 <- here("data-raw/Pemob2019_Municipal.xlsx")
 
 pemob19 <- read_pemob_source(path_19, skip = 1)
+pemob19 <- repair_pemob_source_codes(pemob19, 2019, code_repairs)
 
 id_cols <- c("code_muni", "abbrev_state", "name_muni")
 
@@ -114,13 +116,7 @@ survey19 <- survey19 |>
 path_20 <- here("data-raw/BancodeDados_PemobMunicipal_2020.xlsx")
 
 pemob20 <- read_pemob_source(path_20)
-# Nomes duplicados!
-#- Acredito que 4.4.1 (repetido) deveria ser 4.5.1
-#- Acredito que 4.4.2 (repetido) deveria ser 4.5.2
-#- Acredito que 4.5.1 (errado) deveria ser 4.6.1
-names(pemob20)[101] <- "4.5.1"
-names(pemob20)[102] <- "4.5.2"
-names(pemob20)[103] <- "4.6.1"
+pemob20 <- repair_pemob_source_codes(pemob20, 2020, code_repairs)
 
 pemob20 <- pemob20 |>
   rename(any_of(vl_names)) |>

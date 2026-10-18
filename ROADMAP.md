@@ -68,6 +68,8 @@ historical readers reaches the released data.
   `docs/internal/baseline-reconciliation-2026-10-18.md` and
   `Rscript R/check_pemob_baseline.R`.
 - [x] Format numeric Excel cells with 15 significant digits instead of 17.
+- [x] Repair misplaced question codes in the 2019 and 2020 municipal sources
+  through `tabelas/pemob_code_repairs.csv`.
 - Classify the import and coercion warnings; fail the build on unexpected ones.
 - Review cross-edition question correspondences against question text and
   unit. The known collision is `1.4.1.B` (metro/rail stations in 2019,

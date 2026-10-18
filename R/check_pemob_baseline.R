@@ -59,7 +59,12 @@ classify_pemob_difference <- function(baseline, rebuilt) {
 
 # Compare cells ------------------------------------------------------------
 
-compare_pemob_baseline <- function(baseline, rebuilt, key_cols) {
+compare_pemob_baseline <- function(
+  baseline,
+  rebuilt,
+  key_cols,
+  repairs = NULL
+) {
   codes <- intersect(
     setdiff(names(baseline), key_cols),
     setdiff(names(rebuilt), key_cols)
@@ -87,6 +92,13 @@ compare_pemob_baseline <- function(baseline, rebuilt, key_cols) {
     dplyr::mutate(
       difference = classify_pemob_difference(baseline_value, rebuilt_value)
     )
+
+  # Cells the repair table moves to another column differ by design.
+  if (!is.null(repairs)) {
+    repaired <- paste(result$year, result$code_variable) %in%
+      paste(repairs$edition, repairs$code_2024)
+    result$difference[repaired] <- "code_repair"
+  }
   return(result)
 }
 
@@ -122,7 +134,8 @@ check_pemob_baseline <- function() {
   differences <- compare_pemob_baseline(
     baseline[baseline_cols],
     rebuilt,
-    key_cols = key_cols
+    key_cols = key_cols,
+    repairs = read_pemob_code_repairs()
   )
 
   # Blanked missing codes and number formatting are counted, not listed.

@@ -70,7 +70,14 @@ historical readers reaches the released data.
 - [x] Format numeric Excel cells with 15 significant digits instead of 17.
 - [x] Repair misplaced question codes in the 2019 and 2020 municipal sources
   through `tabelas/pemob_code_repairs.csv`.
-- Classify the import and coercion warnings; fail the build on unexpected ones.
+- [x] Classify the build warnings. "Variable has missing years" covers
+  questions an edition did not ask and crosswalk codes the source lacks; the
+  build now stops unless every such code is listed in
+  `tabelas/pemob_crosswalk_gaps.csv`. The remaining warnings come from footer
+  rows in the 2019 file and from packages built under a newer R.
+- Combine the 2019 checkbox columns that the crosswalk lists as ranges (for
+  example `4.7.1.A-L` for 2024 `4.6.1`): six municipal questions and one
+  metropolitan question. Their 2019 values are absent today.
 - Review cross-edition question correspondences against question text and
   unit. The known collision is `1.4.1.B` (metro/rail stations in 2019,
   accessible road terminals in 2024).

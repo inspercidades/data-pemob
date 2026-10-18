@@ -177,6 +177,11 @@ pemob24 <- add_pemob_metro_identity(pemob24)
 
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob19)
 names(pemobs) <- rev(paste0("year_", c(2019, 2021:2024)))
+check_pemob_crosswalk_gaps(
+  find_pemob_crosswalk_gaps(keydict, pemobs),
+  read_pemob_crosswalk_gaps(),
+  "metropolitan"
+)
 sel_cols <- rev(paste0("x", c(2019, 2021:2024)))
 participation <- build_pemob_participation(
   pemobs,

@@ -134,6 +134,75 @@ repair_pemob_municipal_crosswalk <- function(dat, repairs = NULL) {
   return(dat)
 }
 
+# Crosswalk codes that a source edition lacks. A listed gap is expected: the
+# question was not asked that year, or the crosswalk names a column range
+# that the pipeline does not combine yet.
+find_pemob_crosswalk_gaps <- function(crosswalk, editions) {
+  gaps <- purrr::imap(editions, function(dat, edition) {
+    year <- as.numeric(stringr::str_remove(edition, "^year_"))
+    edition_col <- paste0("x", year)
+    if (!edition_col %in% names(crosswalk)) {
+      return(NULL)
+    }
+    source_code <- crosswalk[[edition_col]]
+    absent <- !is.na(source_code) & !source_code %in% names(dat)
+    result <- tibble::tibble(
+      edition = rep(year, sum(absent)),
+      source_code = source_code[absent],
+      code_2024 = crosswalk$x2024[absent]
+    )
+    return(result)
+  })
+
+  result <- dplyr::bind_rows(gaps)
+  if (nrow(result) == 0L) {
+    result <- tibble::tibble(
+      edition = numeric(),
+      source_code = character(),
+      code_2024 = character()
+    )
+  }
+  result <- dplyr::arrange(result, edition, source_code)
+  return(result)
+}
+
+read_pemob_crosswalk_gaps <- function(
+  path = here::here("tabelas", "pemob_crosswalk_gaps.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      .default = readr::col_character()
+    ),
+    progress = FALSE
+  )
+  return(result)
+}
+
+check_pemob_crosswalk_gaps <- function(gaps, expected, level) {
+  expected <- expected[expected$level == level, ]
+  found_key <- paste(gaps$edition, gaps$source_code)
+  expected_key <- paste(expected$edition, expected$source_code)
+  unexpected <- setdiff(found_key, expected_key)
+  stale <- setdiff(expected_key, found_key)
+
+  if (length(unexpected) > 0L) {
+    cli::cli_abort(c(
+      "The {level} sources lack {length(unexpected)} crosswalk code{?s}.",
+      "x" = "{unexpected}",
+      "i" = "Repair the code or list it in {.file tabelas/pemob_crosswalk_gaps.csv}."
+    ))
+  }
+  if (length(stale) > 0L) {
+    cli::cli_abort(c(
+      "{length(stale)} listed {level} gap{?s} no longer occur{?s/}.",
+      "x" = "{stale}"
+    ))
+  }
+  return(invisible(TRUE))
+}
+
 pemob_metro_aliases <- data.frame(
   abbrev_state = c(
     "AL",

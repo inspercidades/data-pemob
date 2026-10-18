@@ -263,6 +263,11 @@ lkey <- lkey |>
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob20, pemob19)
 names(pemobs) <- rev(paste0("year_", 2019:2024))
 pemobs <- lapply(pemobs, filter_pemob_municipal_respondents)
+check_pemob_crosswalk_gaps(
+  find_pemob_crosswalk_gaps(keydict, pemobs),
+  read_pemob_crosswalk_gaps(),
+  "municipal"
+)
 dim_muni <- build_pemob_municipality_dimension(pemobs)
 participation <- build_pemob_participation(pemobs, by = "code_muni")
 sel_cols <- rev(paste0("x", 2019:2024))

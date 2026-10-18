@@ -1,6 +1,25 @@
 source(here::here("R/pemob_helpers.R"))
 source(here::here("R/pemob_2025.R"))
 
+apply_pemob_endpoint_reviews <- function(series, review_ledger) {
+  if (anyDuplicated(review_ledger$candidate_id)) {
+    cli::cli_abort("The review ledger must have unique candidate IDs.")
+  }
+
+  review_row <- match(series$candidate_id, review_ledger$candidate_id)
+  reviewed_response <- review_ledger$raw_response[review_row]
+  reviewed <- !is.na(review_row) &
+    !is.na(series$raw_response) &
+    !is.na(reviewed_response) &
+    series$raw_response == reviewed_response
+  series$review_decision[reviewed] <-
+    review_ledger$review_decision[review_row[reviewed]]
+  series$review_evidence[reviewed] <-
+    review_ledger$review_evidence[review_row[reviewed]]
+
+  return(series)
+}
+
 build_pemob_interpolation_candidates_file <- function() {
   historical_path <- here::here("data/pemob_harmonizada_2024.csv")
   review_path <- here::here("docs/internal/pemob-review-ledger.csv")
@@ -84,18 +103,14 @@ build_pemob_interpolation_candidates_file <- function() {
     review_path,
     col_types = readr::cols(
       candidate_id = readr::col_character(),
+      raw_response = readr::col_character(),
       review_decision = readr::col_character(),
       review_evidence = readr::col_character(),
       .default = readr::col_skip()
     ),
     show_col_types = FALSE
   )
-  review_row <- match(series$candidate_id, review_ledger$candidate_id)
-  reviewed <- !is.na(review_row)
-  series$review_decision[reviewed] <-
-    review_ledger$review_decision[review_row[reviewed]]
-  series$review_evidence[reviewed] <-
-    review_ledger$review_evidence[review_row[reviewed]]
+  series <- apply_pemob_endpoint_reviews(series, review_ledger)
   candidates <- build_pemob_interpolation_candidates(series)
   candidates$source_file <- unname(c(
     "2019" = "data-raw/Pemob2019_Municipal.xlsx",

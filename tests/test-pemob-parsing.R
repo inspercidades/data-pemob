@@ -34,6 +34,30 @@ stopifnot(
   metro_2024[["3.1.1.C"]][1] == "8.1"
 )
 
+numeric_cells_file <- tempfile(fileext = ".xlsx")
+writexl::write_xlsx(
+  list(
+    data = data.frame(
+      measured = c(76.1, 0.07, 9935487.59, 2429753, 0.23816, 100000),
+      typed = c("1.320", "76.099999999999994", "15,24 km", "", "NR", "0")
+    )
+  ),
+  numeric_cells_file
+)
+numeric_cells <- read_pemob_source(numeric_cells_file)
+unlink(numeric_cells_file)
+
+stopifnot(
+  identical(
+    numeric_cells$measured,
+    c("76.1", "0.07", "9935487.59", "2429753", "0.23816", "100000")
+  ),
+  identical(
+    numeric_cells$typed,
+    c("1.320", "76.099999999999994", "15,24 km", "", "NR", "0")
+  )
+)
+
 missing_variants <- c(
   "N/D",
   "N/A",

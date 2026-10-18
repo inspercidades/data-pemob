@@ -206,6 +206,13 @@ read_pemob_source <- function(path, skip = 0) {
       as.character,
       character(1)
     )
+    # Text import prints numeric cells with 17 digits (76.099999999999994).
+    numbers <- vapply(cells[[column]], is.double, logical(1)) & !dates
+    result[[column]][numbers] <- vapply(
+      cells[[column]][numbers],
+      function(x) format(x, digits = 15, scientific = FALSE, trim = TRUE),
+      character(1)
+    )
   }
   # shortcut: readxl merges blank and Excel-error cells as NA; inspect XML if errors appear.
   result[] <- lapply(result, function(column) {

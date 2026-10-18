@@ -101,16 +101,31 @@ metro_survey <- read_pemob_2025(
     "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
   )
 )
-metro <- harmonize_metro_2025(metro_survey)
+metro_2024_identity <- add_pemob_metro_identity(data.frame(
+  abbrev_state = metro_2024_source$UF,
+  name_metro = metro_2024_source$REGIÃO,
+  stringsAsFactors = FALSE
+))
+metro_history <- tibble::tibble(
+  metro_key = metro_2024_identity$metro_key,
+  abbrev_state = metro_2024_identity$abbrev_state,
+  name_metro = metro_2024_identity$name_metro,
+  year = 2024,
+  participated = TRUE
+)
+survey_codes <- setdiff(names(metro_survey), c("UF", "Região Metropolitana"))
+metro_history[survey_codes] <- NA_character_
+metro <- harmonize_metro_2025(metro_survey, metro_history)
 
 stopifnot(
   all(c("abbrev_state", "metro_key", "name_metro_source") %in% names(metro)),
   all(!is.na(metro$abbrev_state)),
   !anyDuplicated(metro[c("metro_key", "year")]),
-  length(unique(metro$metro_key[metro$year == 2025])) == 29L,
+  sum(metro$year == 2025 & metro$participated) == 29L,
   sum(
     metro$year == 2025 &
-      metro$metro_key %in% metro$metro_key[metro$year == 2024]
+      metro$participated &
+      metro$metro_key %in% metro_history$metro_key
   ) ==
     27L
 )

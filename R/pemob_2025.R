@@ -27,15 +27,73 @@ read_pemob_2025 <- function(path) {
 }
 
 
+# Read rebuilt history -----------------------------------------------------
+
+read_pemob_history <- function(path) {
+  if (!file.exists(path)) {
+    cli::cli_abort(c(
+      "The rebuilt history {.file {path}} does not exist.",
+      "i" = "Run {.code Rscript R/build_pemob.R} to rebuild it."
+    ))
+  }
+
+  # The CSV quotes source blanks ("") and leaves absent values empty; fread
+  # keeps that distinction, which readr drops.
+  dat <- data.table::fread(
+    path,
+    sep = ";",
+    colClasses = "character",
+    na.strings = "",
+    strip.white = FALSE,
+    encoding = "UTF-8",
+    showProgress = FALSE
+  ) |>
+    tibble::as_tibble()
+
+  if (!all(c("year", "participated") %in% names(dat))) {
+    cli::cli_abort(
+      "The history {.file {path}} lacks {.field year} or {.field participated}."
+    )
+  }
+
+  dat$year <- as.numeric(dat$year)
+  dat$participated <- as.logical(dat$participated)
+  if ("code_muni" %in% names(dat)) {
+    dat$code_muni <- as.numeric(dat$code_muni)
+  }
+
+  return(dat)
+}
+
+
+# Complete the place-year panel --------------------------------------------
+
+complete_pemob_panel <- function(dat, place_cols, key_col) {
+  places <- dat |>
+    dplyr::arrange(dplyr::desc(year)) |>
+    dplyr::distinct(dplyr::across(dplyr::all_of(key_col)), .keep_all = TRUE) |>
+    dplyr::select(dplyr::all_of(place_cols))
+
+  result <- dat |>
+    dplyr::select(-dplyr::all_of(setdiff(place_cols, key_col))) |>
+    tidyr::complete(.data[[key_col]], year) |>
+    dplyr::mutate(participated = dplyr::coalesce(participated, FALSE)) |>
+    dplyr::left_join(places, by = key_col) |>
+    dplyr::relocate(dplyr::all_of(place_cols), year) |>
+    dplyr::arrange(.data[[key_col]], year)
+
+  return(result)
+}
+
+
 # Harmonize municipal data -------------------------------------------------
 
-harmonize_municipal_2025 <- function(survey) {
-  # shortcut: past years retain the 2024 workbook cohort, rebuild them after the data audit.
-  baseline <- readxl::read_excel(
-    here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
-    sheet = "PEMOB Muni Harmonizada 24"
-  )
-  baseline <- as.data.frame(baseline)
+harmonize_municipal_2025 <- function(survey, history) {
+  place_cols <- c("code_muni", "name_muni", "abbrev_state")
+  history_cols <- c(place_cols, "year", "participated")
+  if (!all(history_cols %in% names(history))) {
+    cli::cli_abort("The municipal history lacks an identifier column.")
+  }
 
   id_cols <- c("CÓDIGO IBGE", "UF", "Município")
   required_cols <- c(id_cols, "12.1.1", "1.3.1.A")
@@ -47,10 +105,11 @@ harmonize_municipal_2025 <- function(survey) {
 
   # SIMU: the municipal fund question moved from 12.2.1 to 12.1.1 in 2025.
   names(survey)[names(survey) == "12.1.1"] <- "12.2.1"
-  baseline[["1.3.1.A"]] <- NA_character_
+  if (!"1.3.1.A" %in% names(history)) {
+    history[["1.3.1.A"]] <- NA_character_
+  }
 
-  indicator_cols <- setdiff(names(baseline), names(baseline)[1:8])
-  baseline[indicator_cols] <- lapply(baseline[indicator_cols], as.character)
+  indicator_cols <- setdiff(names(history), history_cols)
   survey_codes <- setdiff(names(survey), id_cols)
   unknown_codes <- setdiff(survey_codes, indicator_cols)
   if (length(unknown_codes) > 0L) {
@@ -64,101 +123,66 @@ harmonize_municipal_2025 <- function(survey) {
     cli::cli_abort("The municipal 2025 identifiers must be unique IBGE codes.")
   }
 
-  states <- unique(baseline[c(
-    "code_state",
-    "abbrev_state",
-    "name_state",
-    "code_region",
-    "name_region"
-  )])
-  if (!21 %in% states$code_state) {
-    # Maranhão has no municipality in the 2024 workbook.
-    states <- rbind(
-      states,
-      data.frame(
-        code_state = 21,
-        abbrev_state = "MA",
-        name_state = "Maranhão",
-        code_region = 2,
-        name_region = "Nordeste"
-      )
-    )
-  }
-  if (anyDuplicated(states$code_state)) {
-    cli::cli_abort("The 2024 workbook has conflicting state metadata.")
-  }
-  state_code <- as.numeric(substr(survey[["CÓDIGO IBGE"]], 1, 2))
-  state_rows <- states[match(state_code, states$code_state), , drop = FALSE]
-  if (
-    anyNA(state_rows$code_state) ||
-      any(state_rows$abbrev_state != survey[["UF"]])
-  ) {
+  history_states <- dplyr::distinct(history, code_muni, abbrev_state)
+  known <- match(code_muni, history_states$code_muni)
+  state_mismatch <- !is.na(known) &
+    history_states$abbrev_state[known] != survey[["UF"]]
+  if (any(state_mismatch)) {
     cli::cli_abort(
-      "The municipal 2025 state identifiers do not match the 2024 workbook."
+      "The municipal 2025 states do not match the history for {sum(state_mismatch)} municipalit{?y/ies}."
     )
   }
 
-  current <- baseline[rep(NA_integer_, nrow(survey)), , drop = FALSE]
-  current$code_muni <- code_muni
-  current$name_muni <- survey[["Município"]]
-  current$code_state <- state_rows$code_state
-  current$abbrev_state <- survey[["UF"]]
-  current$name_state <- state_rows$name_state
-  current$code_region <- state_rows$code_region
-  current$name_region <- state_rows$name_region
-  current$year <- 2025
+  current <- tibble::tibble(
+    code_muni = code_muni,
+    name_muni = survey[["Município"]],
+    abbrev_state = survey[["UF"]],
+    year = 2025,
+    participated = TRUE
+  )
   current[survey_codes] <- survey[survey_codes]
 
-  result <- rbind(baseline, current)
-  if (anyDuplicated(result[c("code_muni", "year")])) {
+  # The history's municipality names take precedence over the 2025 spelling.
+  history_names <- dplyr::distinct(history, code_muni, name_muni)
+  known_names <- match(current$code_muni, history_names$code_muni)
+  current$name_muni[!is.na(known_names)] <- history_names$name_muni[
+    known_names[!is.na(known_names)]
+  ]
+
+  combined <- dplyr::bind_rows(history, current)
+  if (anyDuplicated(combined[c("code_muni", "year")])) {
     cli::cli_abort(
       "The municipal data contain duplicate municipality-year keys."
     )
   }
 
+  result <- complete_pemob_panel(combined, place_cols, "code_muni")
   return(result)
 }
 
 
 # Harmonize metropolitan data ---------------------------------------------
 
-harmonize_metro_2025 <- function(survey) {
-  # shortcut: past years retain the 2024 workbook cohort, rebuild them after the data audit.
-  baseline <- readxl::read_excel(
-    here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
-    sheet = "PEMOB Metro Harmonizada 24"
-  )
-  baseline <- as.data.frame(baseline)
-
-  metro_2024 <- readxl::read_excel(
-    here::here("data-raw", "pemob_metropolitana_2024.xlsx"),
-    skip = 1
-  )
-  baseline_names <- canonicalize_pemob_metro_name(
-    metro_2024$UF,
-    metro_2024$REGIÃO,
-    pemob_metro_aliases
-  )
-  baseline_state <- metro_2024$UF[match(baseline$name_metro, baseline_names)]
-  if (anyNA(baseline_state)) {
-    cli::cli_abort(
-      "The 2024 metro workbook does not identify every harmonized region."
-    )
+harmonize_metro_2025 <- function(
+  survey,
+  history,
+  aliases = pemob_metro_aliases
+) {
+  place_cols <- c("metro_key", "abbrev_state", "name_metro")
+  history_cols <- c(place_cols, "year", "participated")
+  if (!all(history_cols %in% names(history))) {
+    cli::cli_abort("The metropolitan history lacks an identifier column.")
   }
-  baseline$abbrev_state <- baseline_state
-  baseline$metro_key <- build_pemob_metro_key(
-    baseline$abbrev_state,
-    baseline$name_metro
-  )
-  baseline$name_metro_source <- baseline$name_metro
 
   id_cols <- c("UF", "Região Metropolitana")
   if (!all(id_cols %in% names(survey))) {
     cli::cli_abort("The metropolitan 2025 file lacks an identifier column.")
   }
 
-  indicator_cols <- setdiff(names(baseline), c("name_metro", "year"))
-  baseline[indicator_cols] <- lapply(baseline[indicator_cols], as.character)
+  indicator_cols <- setdiff(
+    names(history),
+    c(history_cols, "name_metro_source")
+  )
   survey_codes <- setdiff(names(survey), id_cols)
   unknown_codes <- setdiff(survey_codes, indicator_cols)
   if (length(unknown_codes) > 0L) {
@@ -182,22 +206,25 @@ harmonize_metro_2025 <- function(survey) {
   name_metro <- canonicalize_pemob_metro_name(
     abbrev_state,
     name_metro_source,
-    pemob_metro_aliases
+    aliases
   )
 
-  current <- baseline[rep(NA_integer_, nrow(survey)), , drop = FALSE]
-  current$name_metro <- name_metro
-  current$name_metro_source <- name_metro_source
-  current$abbrev_state <- abbrev_state
-  current$metro_key <- build_pemob_metro_key(abbrev_state, name_metro)
-  current$year <- 2025
+  current <- tibble::tibble(
+    metro_key = build_pemob_metro_key(abbrev_state, name_metro),
+    abbrev_state = abbrev_state,
+    name_metro = name_metro,
+    year = 2025,
+    participated = TRUE,
+    name_metro_source = name_metro_source
+  )
   current[survey_codes] <- survey[survey_codes]
 
-  result <- rbind(baseline, current)
-  if (anyDuplicated(result[c("metro_key", "year")])) {
+  combined <- dplyr::bind_rows(history, current)
+  if (anyDuplicated(combined[c("metro_key", "year")])) {
     cli::cli_abort("The metropolitan data contain duplicate region-year keys.")
   }
 
+  result <- complete_pemob_panel(combined, place_cols, "metro_key")
   return(result)
 }
 
@@ -214,20 +241,25 @@ build_pemob_2025 <- function() {
       "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
     )
   )
+  municipal_history <- read_pemob_history(
+    here::here("data", "pemob_harmonizada_2024.csv")
+  )
+  metro_history <- read_pemob_history(
+    here::here("data", "pemob_metro_harmonizada_2024.csv")
+  )
 
-  municipal <- harmonize_municipal_2025(municipal_source)
-  metro <- harmonize_metro_2025(metro_source)
+  municipal <- harmonize_municipal_2025(municipal_source, municipal_history)
+  metro <- harmonize_metro_2025(metro_source, metro_history)
 
   readr::write_excel_csv2(
     municipal,
-    here::here("data", "pemob_harmonizada_2025.csv")
+    here::here("data", "pemob_harmonizada_2025.csv"),
+    na = ""
   )
   readr::write_excel_csv2(
     metro,
-    here::here("data", "pemob_metro_harmonizada_2025.csv")
-  )
-  cli::cli_alert_warning(
-    "Historical years still use the 2024 workbook cohort; see ROADMAP.md."
+    here::here("data", "pemob_metro_harmonizada_2025.csv"),
+    na = ""
   )
   cli::cli_alert_success(
     "Wrote the municipal and metropolitan harmonized datasets through 2025."

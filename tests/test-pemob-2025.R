@@ -1,5 +1,7 @@
 source(here::here("R", "pemob_2025.R"))
 
+# Source contracts ---------------------------------------------------------
+
 codes_file <- here::here("data-raw", "pemob_códigos.xlsx")
 municipal_codes <- readxl::read_excel(codes_file, sheet = "pemob_municipal")
 metro_codes <- readxl::read_excel(codes_file, sheet = "pemob_metropolitana")
@@ -47,67 +49,175 @@ stopifnot(identical(
   c("NA", "NR", "ND", "-", "")
 ))
 
-municipal <- harmonize_municipal_2025(municipal_2025)
-metro <- harmonize_metro_2025(metro_2025)
 
-stopifnot(
-  nrow(municipal) == 502L,
-  nrow(metro) == 174L,
-  sum(municipal$year == 2025) == 82L,
-  sum(metro$year == 2025) == 29L,
-  !anyDuplicated(municipal[c("code_muni", "year")]),
-  !anyDuplicated(metro[c("name_metro", "year")]),
-  !"12.1.1" %in% names(municipal),
-  "1.3.1.A" %in% names(municipal),
-  all(municipal[["1.3.1.A"]][municipal$year == 2025] %in% c("NA", "NR")),
-  all(is.na(municipal[["1.3.1.A"]][municipal$year < 2025])),
-  all(!is.na(municipal$code_state[municipal$year == 2025])),
-  all(!is.na(municipal$name_state[municipal$year == 2025]))
-)
+# History reader -----------------------------------------------------------
 
-fund_2025 <- municipal[["12.2.1"]][municipal$year == 2025]
-source_fund <- municipal_2025[["12.1.1"]]
-source_fund <- source_fund[match(
-  municipal$code_muni[municipal$year == 2025],
-  as.numeric(municipal_2025[["CÓDIGO IBGE"]])
-)]
-stopifnot(identical(fund_2025, source_fund))
-
-new_municipalities <- setdiff(
-  municipal$code_muni[municipal$year == 2025],
-  municipal$code_muni[municipal$year == 2024]
-)
-stopifnot(length(new_municipalities) == 25L)
-
-new_metros <- setdiff(
-  metro$name_metro[metro$year == 2025],
-  metro$name_metro[metro$year == 2024]
-)
-stopifnot(length(new_metros) == 2L)
-
-stopifnot(identical(
-  unique(municipal$name_state[
-    municipal$year == 2025 & municipal$abbrev_state == "MA"
-  ]),
-  "Maranhão"
-))
-
-baseline_municipal <- readxl::read_excel(
-  here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
-  sheet = "PEMOB Muni Harmonizada 24"
-)
-baseline_metro <- readxl::read_excel(
-  here::here("tabelas", "PEMOB Harmonizada 2024.xlsx"),
-  sheet = "PEMOB Metro Harmonizada 24"
-)
-stopifnot(
-  identical(
-    municipal$code_muni[municipal$year < 2025],
-    baseline_municipal$code_muni
+history_file <- tempfile(fileext = ".csv")
+readr::write_excel_csv2(
+  tibble::tibble(
+    code_muni = c(1100205, 1100205),
+    name_muni = "Porto Velho",
+    abbrev_state = "RO",
+    year = c(2023, 2024),
+    `1.1.1` = c("Ônibus", NA),
+    `3.1.1.A` = c("4,50", "NR"),
+    participated = c(TRUE, FALSE)
   ),
-  identical(metro$name_metro[metro$year < 2025], baseline_metro$name_metro),
+  history_file,
+  na = ""
+)
+history_read <- read_pemob_history(history_file)
+unlink(history_file)
+
+# The CSV quotes source blanks ("") and leaves absent values empty.
+blank_file <- tempfile(fileext = ".csv")
+readr::write_excel_csv2(
+  tibble::tibble(
+    code_muni = c(1, 2, 3, 1, 2, 3),
+    name_muni = "Example",
+    abbrev_state = "SP",
+    year = c(2023, 2023, 2023, 2024, 2024, 2024),
+    `1.1.1` = c("Sim", "", NA, "Sim", "Não", NA),
+    `1.2.1` = c(NA, NA, NA, "5", "", NA),
+    `1.3.1` = c("Sim", NA, NA, "", "Não", NA),
+    participated = c(TRUE, TRUE, FALSE, TRUE, TRUE, FALSE)
+  ),
+  blank_file,
+  na = ""
+)
+blank_read <- read_pemob_history(blank_file)
+unlink(blank_file)
+
+stopifnot(
+  is.numeric(history_read$code_muni),
+  is.numeric(history_read$year),
+  is.logical(history_read$participated),
+  identical(history_read[["3.1.1.A"]], c("4,50", "NR")),
+  identical(history_read[["1.1.1"]], c("Ônibus", NA)),
+  identical(blank_read[["1.1.1"]], c("Sim", "", NA, "Sim", "Não", NA)),
+  identical(blank_read[["1.2.1"]], c(NA, NA, NA, "5", "", NA)),
+  identical(blank_read[["1.3.1"]], c("Sim", NA, NA, "", "Não", NA))
+)
+
+
+# Municipal append ---------------------------------------------------------
+
+municipal_history <- tibble::tibble(
+  code_muni = c(1100205, 1100205, 2927408, 2927408),
+  name_muni = c("Porto Velho", "Porto Velho", "Salvador", "Salvador"),
+  abbrev_state = c("RO", "RO", "BA", "BA"),
+  year = c(2023, 2024, 2023, 2024),
+  `1.1.1` = c("Ônibus", "Ônibus", "Metrô", NA),
+  `12.2.1` = c("Sim", "Não", "Sim", NA),
+  participated = c(TRUE, TRUE, TRUE, FALSE)
+)
+municipal_survey <- data.frame(
+  `CÓDIGO IBGE` = c("1100205", "2111300"),
+  UF = c("RO", "MA"),
+  `Município` = c("Porto Velho", "São Luís"),
+  `1.1.1` = c("Ônibus", "Ônibus"),
+  `12.1.1` = c("Sim", "NR"),
+  `1.3.1.A` = c("NA", "NR"),
+  check.names = FALSE
+)
+
+municipal <- harmonize_municipal_2025(municipal_survey, municipal_history)
+municipal <- dplyr::arrange(municipal, code_muni, year)
+new_place <- municipal[municipal$code_muni == 2111300, ]
+skipped_2025 <- municipal[
+  municipal$code_muni == 2927408 & municipal$year == 2025,
+]
+
+stopifnot(
+  nrow(municipal) == 9L,
+  !anyDuplicated(municipal[c("code_muni", "year")]),
+  !"12.1.1" %in% names(municipal),
   identical(
-    municipal[["1.1.1"]][municipal$year < 2025],
-    as.character(baseline_municipal[["1.1.1"]])
+    municipal[["12.2.1"]][municipal$year == 2025 & municipal$participated],
+    c("Sim", "NR")
+  ),
+  all(is.na(municipal[["1.3.1.A"]][municipal$year < 2025])),
+  identical(new_place$participated, c(FALSE, FALSE, TRUE)),
+  identical(new_place$name_muni, rep("São Luís", 3)),
+  identical(new_place$abbrev_state, rep("MA", 3)),
+  isFALSE(skipped_2025$participated),
+  is.na(skipped_2025[["1.1.1"]]),
+  identical(
+    dplyr::semi_join(
+      municipal,
+      municipal_history,
+      by = c("code_muni", "year")
+    )[["1.1.1"]],
+    municipal_history[["1.1.1"]]
+  )
+)
+
+unknown_survey <- municipal_survey
+unknown_survey[["9.9.9"]] <- "x"
+unknown_code <- tryCatch(
+  harmonize_municipal_2025(unknown_survey, municipal_history),
+  error = function(e) "error"
+)
+stopifnot(identical(unknown_code, "error"))
+
+state_survey <- municipal_survey
+state_survey$UF[1] <- "AC"
+state_mismatch <- tryCatch(
+  harmonize_municipal_2025(state_survey, municipal_history),
+  error = function(e) "error"
+)
+stopifnot(identical(state_mismatch, "error"))
+
+
+# Metropolitan append ------------------------------------------------------
+
+metro_aliases <- data.frame(
+  abbrev_state = "AL",
+  source_name = "RM Maceió",
+  canonical_name = "Região Metropolitana de Maceió"
+)
+metro_history <- tibble::tibble(
+  metro_key = c(
+    "AL::Região Metropolitana de Maceió",
+    "AL::Região Metropolitana de Maceió",
+    "SP::Região Metropolitana de São Paulo",
+    "SP::Região Metropolitana de São Paulo"
+  ),
+  abbrev_state = c("AL", "AL", "SP", "SP"),
+  name_metro = c(
+    "Região Metropolitana de Maceió",
+    "Região Metropolitana de Maceió",
+    "Região Metropolitana de São Paulo",
+    "Região Metropolitana de São Paulo"
+  ),
+  year = c(2019, 2021, 2019, 2021),
+  `1.1.1` = c("Ônibus", "Ônibus", "Metrô", "Metrô"),
+  participated = c(TRUE, TRUE, TRUE, TRUE)
+)
+metro_survey <- data.frame(
+  UF = c("AL", "PE"),
+  `Região Metropolitana` = c("RM Maceió", "RM Recife"),
+  `1.1.1` = c("VLT", "Metrô"),
+  check.names = FALSE
+)
+
+metro <- harmonize_metro_2025(metro_survey, metro_history, metro_aliases)
+maceio_2025 <- metro[
+  metro$metro_key == "AL::Região Metropolitana de Maceió" & metro$year == 2025,
+]
+
+stopifnot(
+  nrow(metro) == 9L,
+  !anyDuplicated(metro[c("metro_key", "year")]),
+  identical(sort(unique(metro$year)), c(2019, 2021, 2025)),
+  identical(maceio_2025[["1.1.1"]], "VLT"),
+  identical(maceio_2025$name_metro_source, "RM Maceió"),
+  all(is.na(metro$name_metro_source[metro$year < 2025])),
+  isFALSE(metro$participated[
+    metro$abbrev_state == "SP" & metro$year == 2025
+  ]),
+  identical(
+    metro$participated[metro$abbrev_state == "PE"],
+    c(FALSE, FALSE, TRUE)
   )
 )

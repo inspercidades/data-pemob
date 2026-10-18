@@ -70,3 +70,24 @@ stopifnot(
   respondents$code_muni == 1111111,
   respondents$name_muni == "Respondent"
 )
+
+metro_participation <- build_pemob_participation(
+  list(
+    year_2024 = data.frame(
+      metro_key = c("AL::RM Maceió", "SP::RM São Paulo"),
+      abbrev_state = c("AL", "SP"),
+      name_metro = c("RM Maceió", "RM São Paulo")
+    ),
+    year_2019 = data.frame(
+      metro_key = "AL::RM Maceió",
+      abbrev_state = "AL",
+      name_metro = "RM Maceió"
+    )
+  ),
+  by = c("metro_key", "abbrev_state", "name_metro")
+)
+stopifnot(
+  nrow(metro_participation) == 3L,
+  identical(sort(unique(metro_participation$year)), c(2019, 2024)),
+  !anyDuplicated(metro_participation[c("metro_key", "year")])
+)

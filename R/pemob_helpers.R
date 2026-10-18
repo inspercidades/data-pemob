@@ -69,11 +69,287 @@ build_pemob_municipality_dimension <- function(editions) {
   return(result)
 }
 
-repair_pemob_municipal_crosswalk <- function(dat) {
+# Some source columns carry the wrong question code; the repair table lists
+# them by edition and column, with the question text that identifies them.
+read_pemob_code_repairs <- function(
+  path = here::here("tabelas", "pemob_code_repairs.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      column = readr::col_integer(),
+      .default = readr::col_character()
+    ),
+    progress = FALSE
+  )
+  return(result)
+}
+
+build_pemob_repaired_code <- function(code_2024) {
+  result <- paste0("repaired:", code_2024)
+  return(result)
+}
+
+repair_pemob_source_codes <- function(dat, edition, repairs) {
+  repairs <- repairs[repairs$edition == edition, ]
+  if (nrow(repairs) == 0L) {
+    return(dat)
+  }
+
+  current <- stringr::str_squish(
+    stringr::str_remove(names(dat)[repairs$column], "\\.\\.\\.[0-9]{1,3}$")
+  )
+  mismatch <- is.na(current) | current != repairs$source_code
+  if (any(mismatch)) {
+    cli::cli_abort(
+      "The {edition} source does not have the expected code in column{?s} {repairs$column[mismatch]}."
+    )
+  }
+
+  names(dat)[repairs$column] <- build_pemob_repaired_code(repairs$code_2024)
+  return(dat)
+}
+
+repair_pemob_municipal_crosswalk <- function(dat, repairs = NULL) {
   changed_question <- dat$x2024 == "1.4.1.B"
   dat$x2019[changed_question] <- NA_character_
 
+  if (is.null(repairs)) {
+    return(dat)
+  }
+
+  unknown <- !repairs$code_2024 %in% dat$x2024
+  if (any(unknown)) {
+    cli::cli_abort(
+      "Repaired codes absent from the crosswalk: {repairs$code_2024[unknown]}."
+    )
+  }
+  for (i in seq_len(nrow(repairs))) {
+    edition_col <- paste0("x", repairs$edition[[i]])
+    row <- dat$x2024 == repairs$code_2024[[i]]
+    dat[[edition_col]][row] <- build_pemob_repaired_code(repairs$code_2024[[i]])
+  }
+
   return(dat)
+}
+
+# Crosswalk codes that a source edition lacks. A listed gap is expected: the
+# question was not asked that year, or the crosswalk names a column range
+# that the pipeline does not combine yet.
+find_pemob_crosswalk_gaps <- function(crosswalk, editions) {
+  gaps <- purrr::imap(editions, function(dat, edition) {
+    year <- as.numeric(stringr::str_remove(edition, "^year_"))
+    edition_col <- paste0("x", year)
+    if (!edition_col %in% names(crosswalk)) {
+      return(NULL)
+    }
+    source_code <- crosswalk[[edition_col]]
+    absent <- !is.na(source_code) & !source_code %in% names(dat)
+    result <- tibble::tibble(
+      edition = rep(year, sum(absent)),
+      source_code = source_code[absent],
+      code_2024 = crosswalk$x2024[absent]
+    )
+    return(result)
+  })
+
+  result <- dplyr::bind_rows(gaps)
+  if (nrow(result) == 0L) {
+    result <- tibble::tibble(
+      edition = numeric(),
+      source_code = character(),
+      code_2024 = character()
+    )
+  }
+  result <- dplyr::arrange(result, edition, source_code)
+  return(result)
+}
+
+read_pemob_crosswalk_gaps <- function(
+  path = here::here("tabelas", "pemob_crosswalk_gaps.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      .default = readr::col_character()
+    ),
+    progress = FALSE
+  )
+  return(result)
+}
+
+check_pemob_crosswalk_gaps <- function(gaps, expected, level) {
+  expected <- expected[expected$level == level, ]
+  found_key <- paste(gaps$edition, gaps$source_code)
+  expected_key <- paste(expected$edition, expected$source_code)
+  unexpected <- setdiff(found_key, expected_key)
+  stale <- setdiff(expected_key, found_key)
+
+  if (length(unexpected) > 0L) {
+    cli::cli_abort(c(
+      "The {level} sources lack {length(unexpected)} crosswalk code{?s}.",
+      "x" = "{unexpected}",
+      "i" = "Repair the code or list it in {.file tabelas/pemob_crosswalk_gaps.csv}."
+    ))
+  }
+  if (length(stale) > 0L) {
+    cli::cli_abort(c(
+      "{length(stale)} listed {level} gap{?s} no longer occur{?s/}.",
+      "x" = "{stale}"
+    ))
+  }
+  return(invisible(TRUE))
+}
+
+## Checkbox ranges ---------------------------------------------------------
+
+# The 2019 questionnaires store some multiple-choice questions as one Sim/Não
+# column per option. Later editions store the chosen options in one cell,
+# separated by "; ".
+
+read_pemob_range_options <- function(
+  path = here::here("tabelas", "pemob_range_options.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      .default = readr::col_character()
+    ),
+    na = "",
+    progress = FALSE
+  )
+  return(result)
+}
+
+combine_pemob_range_answers <- function(answers, labels, none_label, range) {
+  answers <- trimws(answers)
+  normalized <- tolower(answers)
+  chosen <- normalized %in% "sim"
+  declined <- normalized %in% c("não", "nâo", "nao")
+  missing_codes <- unique(answers[!is.na(answers) & !chosen & !declined])
+
+  if (all(is.na(answers))) {
+    return(NA_character_)
+  }
+  if (any(chosen)) {
+    return(paste(labels[chosen], collapse = "; "))
+  }
+  if (all(declined)) {
+    if (is.na(none_label)) {
+      cli::cli_abort(
+        "{.val {range}} has a row with no option chosen and no none label."
+      )
+    }
+    return(none_label)
+  }
+  if (length(missing_codes) == 1L && all(!declined & !is.na(answers))) {
+    return(missing_codes)
+  }
+  cli::cli_abort(c(
+    "{.val {range}} has a row with no option chosen and mixed answers.",
+    "x" = "{answers}"
+  ))
+}
+
+combine_pemob_range_options <- function(dat, options, level, edition) {
+  options <- options[
+    options$level == level & options$edition == edition,
+  ]
+
+  for (range in unique(options$source_range)) {
+    range_options <- options[options$source_range == range, ]
+    absent <- setdiff(range_options$source_code, names(dat))
+    if (length(absent) > 0L) {
+      cli::cli_abort(c(
+        "The {edition} {level} source lacks options of {.val {range}}.",
+        "x" = "{absent}"
+      ))
+    }
+
+    answers <- as.matrix(dat[range_options$source_code])
+    unknown <- setdiff(
+      tolower(trimws(answers[!is.na(answers)])),
+      c("sim", "não", "nâo", "nao")
+    )
+    unknown <- unknown[is.na(parse_pemob_response(unknown)$missing_reason)]
+    if (length(unknown) > 0L) {
+      cli::cli_abort(c(
+        "{.val {range}} holds answers other than Sim, Não, or a missing code.",
+        "x" = "{unknown}"
+      ))
+    }
+
+    dat[[range]] <- apply(answers, 1, function(row) {
+      combine_pemob_range_answers(
+        row,
+        labels = range_options$option_label,
+        none_label = range_options$none_label[1],
+        range = range
+      )
+    })
+  }
+  return(dat)
+}
+
+# List rows where some options are "Sim" and others hold a missing code. The
+# combined answer keeps only the chosen labels, so it cannot tell these rows
+# from fully observed ones.
+list_pemob_incomplete_ranges <- function(
+  dat,
+  options,
+  level,
+  edition,
+  id_cols
+) {
+  options <- options[
+    options$level == level & options$edition == edition,
+  ]
+
+  result <- list()
+  for (range in unique(options$source_range)) {
+    range_options <- options[options$source_range == range, ]
+    answers <- as.matrix(dat[range_options$source_code])
+    normalized <- tolower(trimws(answers))
+    chosen <- !is.na(normalized) & normalized == "sim"
+    missing <- is.na(normalized) |
+      !normalized %in% c("sim", "não", "nâo", "nao")
+    incomplete <- which(rowSums(chosen) > 0L & rowSums(missing) > 0L)
+
+    for (row in incomplete) {
+      codes <- parse_pemob_response(answers[row, missing[row, ]])
+      result[[length(result) + 1L]] <- tibble::tibble(
+        dat[row, id_cols, drop = FALSE],
+        edition = edition,
+        source_range = range,
+        code_2024 = range_options$code_2024[1],
+        combined_answer = paste(
+          range_options$option_label[chosen[row, ]],
+          collapse = "; "
+        ),
+        missing_options = paste(
+          range_options$option_label[missing[row, ]],
+          collapse = "; "
+        ),
+        missing_codes = paste(unique(codes$missing_reason), collapse = "; ")
+      )
+    }
+  }
+
+  if (length(result) == 0L) {
+    return(tibble::tibble(
+      dat[0, id_cols, drop = FALSE],
+      edition = numeric(),
+      source_range = character(),
+      code_2024 = character(),
+      combined_answer = character(),
+      missing_options = character(),
+      missing_codes = character()
+    ))
+  }
+  return(dplyr::bind_rows(result))
 }
 
 pemob_metro_aliases <- data.frame(
@@ -204,6 +480,21 @@ read_pemob_source <- function(path, skip = 0) {
     result[[column]][dates] <- vapply(
       cells[[column]][dates],
       as.character,
+      character(1)
+    )
+    # Text import prints numeric cells with 17 digits (76.099999999999994).
+    numbers <- vapply(cells[[column]], is.double, logical(1)) & !dates
+    result[[column]][numbers] <- vapply(
+      cells[[column]][numbers],
+      function(x) {
+        format(
+          x,
+          digits = 15,
+          scientific = FALSE,
+          trim = TRUE,
+          decimal.mark = "."
+        )
+      },
       character(1)
     )
   }

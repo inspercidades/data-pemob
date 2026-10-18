@@ -31,7 +31,7 @@ read_pemob_target_series <- function() {
     historical_path,
     delim = ";",
     col_types = readr::cols(.default = readr::col_character()),
-    na = character(),
+    na = "",
     show_col_types = FALSE
   )
   required_cols <- c(id_cols, pemob_target_variables)

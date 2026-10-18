@@ -69,6 +69,26 @@ pemob19 <- read_pemob_source(path_19, skip = 1)
 
 pemob19 <- pemob19 |>
   rename(any_of(vl_names))
+pemob19 <- combine_pemob_range_options(
+  pemob19,
+  read_pemob_range_options(),
+  level = "metropolitan",
+  edition = 2019
+)
+
+# The combined answer drops missing codes in the other options; list those
+# responses so partial nonresponse stays visible.
+readr::write_excel_csv2(
+  list_pemob_incomplete_ranges(
+    pemob19,
+    read_pemob_range_options(),
+    level = "metropolitan",
+    edition = 2019,
+    id_cols = c("abbrev_state", "name_metro")
+  ),
+  here("data", "pemob_metro_range_incomplete.csv"),
+  na = ""
+)
 
 dict19 <- read_excel(path_19, range = "C1:LN2", col_names = FALSE, .name_repair = make_clean_names)
 dict19 <- header_to_dictionary(dict19)
@@ -177,7 +197,16 @@ pemob24 <- add_pemob_metro_identity(pemob24)
 
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob19)
 names(pemobs) <- rev(paste0("year_", c(2019, 2021:2024)))
+check_pemob_crosswalk_gaps(
+  find_pemob_crosswalk_gaps(keydict, pemobs),
+  read_pemob_crosswalk_gaps(),
+  "metropolitan"
+)
 sel_cols <- rev(paste0("x", c(2019, 2021:2024)))
+participation <- build_pemob_participation(
+  pemobs,
+  by = c("metro_key", "abbrev_state", "name_metro")
+)
 
 get_inds <- function(dat) {
   inds <- dat |>
@@ -301,13 +330,19 @@ if (length(prob_inds) > 0) {
 
 # Combine list into a single table
 id_cols <- c("metro_key", "abbrev_state", "name_metro", "year")
-full_pemob <- reduce(iter_pemob, full_join, by = id_cols)
+full_pemob <- reduce(iter_pemob, full_join, by = id_cols) |>
+  full_join(participation, by = id_cols) |>
+  mutate(participated = coalesce(participated, FALSE))
 
 full_pemob <- full_pemob |>
   select(all_of(id_cols), everything())
 
 # Export
-readr::write_excel_csv2(full_pemob, here("data", "pemob_metro_harmonizada_2024.csv"))
+readr::write_excel_csv2(
+  full_pemob,
+  here("data", "pemob_metro_harmonizada_2024.csv"),
+  na = ""
+)
 
 ## Evaluate errors ---------------------------------------------------------
 

@@ -29,7 +29,8 @@ keydict <- keydict |>
     srv_block = bloco,
     srv_section = secao
   )
-keydict <- repair_pemob_municipal_crosswalk(keydict)
+code_repairs <- read_pemob_code_repairs()
+keydict <- repair_pemob_municipal_crosswalk(keydict, code_repairs)
 
 dict_insper <- read_excel(here("data-raw/Pemob_Renomeado_2024.xlsx"), skip = 3)
 
@@ -73,6 +74,7 @@ vl_names <- c(
 path_19 <- here("data-raw/Pemob2019_Municipal.xlsx")
 
 pemob19 <- read_pemob_source(path_19, skip = 1)
+pemob19 <- repair_pemob_source_codes(pemob19, 2019, code_repairs)
 
 id_cols <- c("code_muni", "abbrev_state", "name_muni")
 
@@ -85,6 +87,26 @@ make_clean_names_pemob <- function(x) {
 }
 
 names(pemob19) <- str_squish(str_remove(names(pemob19), "\\.\\.\\.[0-9]{1,3}"))
+pemob19 <- combine_pemob_range_options(
+  pemob19,
+  read_pemob_range_options(),
+  level = "municipal",
+  edition = 2019
+)
+
+# The combined answer drops missing codes in the other options; list those
+# responses so partial nonresponse stays visible.
+readr::write_excel_csv2(
+  list_pemob_incomplete_ranges(
+    pemob19,
+    read_pemob_range_options(),
+    level = "municipal",
+    edition = 2019,
+    id_cols = "code_muni"
+  ),
+  here("data", "pemob_range_incomplete.csv"),
+  na = ""
+)
 
 dict19 <- read_excel(
   path_19,
@@ -114,13 +136,7 @@ survey19 <- survey19 |>
 path_20 <- here("data-raw/BancodeDados_PemobMunicipal_2020.xlsx")
 
 pemob20 <- read_pemob_source(path_20)
-# Nomes duplicados!
-#- Acredito que 4.4.1 (repetido) deveria ser 4.5.1
-#- Acredito que 4.4.2 (repetido) deveria ser 4.5.2
-#- Acredito que 4.5.1 (errado) deveria ser 4.6.1
-names(pemob20)[101] <- "4.5.1"
-names(pemob20)[102] <- "4.5.2"
-names(pemob20)[103] <- "4.6.1"
+pemob20 <- repair_pemob_source_codes(pemob20, 2020, code_repairs)
 
 pemob20 <- pemob20 |>
   rename(any_of(vl_names)) |>
@@ -267,6 +283,11 @@ lkey <- lkey |>
 pemobs <- list(pemob24, pemob23, pemob22, pemob21, pemob20, pemob19)
 names(pemobs) <- rev(paste0("year_", 2019:2024))
 pemobs <- lapply(pemobs, filter_pemob_municipal_respondents)
+check_pemob_crosswalk_gaps(
+  find_pemob_crosswalk_gaps(keydict, pemobs),
+  read_pemob_crosswalk_gaps(),
+  "municipal"
+)
 dim_muni <- build_pemob_municipality_dimension(pemobs)
 participation <- build_pemob_participation(pemobs, by = "code_muni")
 sel_cols <- rev(paste0("x", 2019:2024))
@@ -400,7 +421,11 @@ full_pemob <- full_pemob |>
   select(all_of(id_cols), everything())
 
 # Export
-readr::write_excel_csv2(full_pemob, here("data", "pemob_harmonizada_2024.csv"))
+readr::write_excel_csv2(
+  full_pemob,
+  here("data", "pemob_harmonizada_2024.csv"),
+  na = ""
+)
 
 ### Evaluate errors ---------------------------------------------------------
 

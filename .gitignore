@@ -16,7 +16,6 @@ reuniao_pemob.notes
 # Large / source data (keep small dict CSVs + portal JSONs)
 data/*.xlsx
 data/*.zip
-data/pemob_harmonizada_2024.csv
 data/pemob_review_candidates.csv
 data/pemob_interpolation_candidates.csv
 data/pemob_portal_teste.csv

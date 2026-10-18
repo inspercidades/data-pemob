@@ -31,6 +31,11 @@ keydict <- keydict |>
   )
 code_repairs <- read_pemob_code_repairs()
 keydict <- repair_pemob_municipal_crosswalk(keydict, code_repairs)
+keydict <- correct_pemob_crosswalk(
+  keydict,
+  read_pemob_crosswalk_corrections(),
+  level = "municipal"
+)
 
 dict_insper <- read_excel(here("data-raw/Pemob_Renomeado_2024.xlsx"), skip = 3)
 

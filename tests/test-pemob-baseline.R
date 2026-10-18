@@ -138,3 +138,14 @@ allowed_missing <- compare_pemob_baseline(
   allowed_missing = "1.4.1.B"
 )
 stopifnot(!"1.4.1.B" %in% allowed_missing$code_variable)
+
+corrected_differences <- compare_pemob_baseline(
+  baseline_table,
+  rebuilt_table,
+  key_cols = c("code_muni", "year"),
+  corrected = data.frame(edition = 2024, code_2024 = "1.4.1.B")
+)
+stopifnot(identical(
+  corrected_differences$difference,
+  c("missing_code_dropped", "crosswalk_correction", "logical_in_place_of_value")
+))

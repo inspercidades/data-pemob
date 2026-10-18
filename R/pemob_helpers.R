@@ -112,9 +112,6 @@ repair_pemob_source_codes <- function(dat, edition, repairs) {
 }
 
 repair_pemob_municipal_crosswalk <- function(dat, repairs = NULL) {
-  changed_question <- dat$x2024 == "1.4.1.B"
-  dat$x2019[changed_question] <- NA_character_
-
   if (is.null(repairs)) {
     return(dat)
   }
@@ -134,9 +131,95 @@ repair_pemob_municipal_crosswalk <- function(dat, repairs = NULL) {
   return(dat)
 }
 
+# Crosswalk links that the question text contradicts. Each correction names
+# the code the crosswalk holds, so a changed crosswalk stops the build instead
+# of being overwritten.
+read_pemob_crosswalk_corrections <- function(
+  path = here::here("tabelas", "pemob_crosswalk_corrections.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      .default = readr::col_character()
+    ),
+    na = "",
+    progress = FALSE
+  )
+  return(result)
+}
+
+correct_pemob_crosswalk <- function(dat, corrections, level) {
+  corrections <- corrections[corrections$level == level, ]
+
+  for (i in seq_len(nrow(corrections))) {
+    code_2024 <- corrections$code_2024[[i]]
+    edition_col <- paste0("x", corrections$edition[[i]])
+    row <- which(dat$x2024 == code_2024)
+    if (length(row) != 1L) {
+      cli::cli_abort(
+        "The {level} crosswalk has no single row for {.val {code_2024}}."
+      )
+    }
+    current <- dplyr::coalesce(as.character(dat[[edition_col]][row]), "")
+    if (
+      !identical(current, dplyr::coalesce(corrections$crosswalk_code[[i]], ""))
+    ) {
+      cli::cli_abort(c(
+        "The {level} crosswalk changed for {.val {code_2024}} in {corrections$edition[[i]]}.",
+        "x" = "Expected {.val {corrections$crosswalk_code[[i]]}}, found {.val {dat[[edition_col]][row]}}.",
+        "i" = "Update {.file tabelas/pemob_crosswalk_corrections.csv}."
+      ))
+    }
+    dat[[edition_col]][row] <- corrections$source_code[[i]]
+  }
+
+  # The pipeline reads the 2019-2023 columns; x2018 is unused.
+  edition_cols <- paste0("x", 2019:2023)
+  for (edition_col in intersect(edition_cols, names(dat))) {
+    codes <- dat[[edition_col]][!is.na(dat[[edition_col]])]
+    repeated <- unique(codes[duplicated(codes)])
+    if (length(repeated) > 0L) {
+      cli::cli_abort(c(
+        "The {level} crosswalk links a {sub('x', '', edition_col)} code to several questions.",
+        "x" = "{repeated}"
+      ))
+    }
+  }
+  return(dat)
+}
+
+# Some 2019 metropolitan cells list several answers, one per line or
+# separated by ";". The parts become columns named "<code>[1]", "<code>[2]".
+split_pemob_list_cells <- function(dat, codes, parts) {
+  for (code in codes) {
+    values <- dat[[code]]
+    pieces <- lapply(strsplit(dplyr::coalesce(values, ""), "[;\r\n]+"), trimws)
+    pieces <- lapply(pieces, function(x) x[x != ""])
+    too_many <- lengths(pieces) > parts
+    if (any(too_many)) {
+      cli::cli_abort(
+        "{.val {code}} has a cell with more than {parts} parts."
+      )
+    }
+
+    is_code <- !is.na(parse_pemob_response(values)$missing_reason) &
+      !is.na(values)
+    for (k in seq_len(parts)) {
+      part <- vapply(
+        pieces,
+        function(x) if (length(x) >= k) x[[k]] else NA_character_,
+        character(1)
+      )
+      part[is_code] <- trimws(values[is_code])
+      dat[[paste0(code, "[", k, "]")]] <- part
+    }
+  }
+  return(dat)
+}
+
 # Crosswalk codes that a source edition lacks. A listed gap is expected: the
-# question was not asked that year, or the crosswalk names a column range
-# that the pipeline does not combine yet.
+# question was not asked that year.
 find_pemob_crosswalk_gaps <- function(crosswalk, editions) {
   gaps <- purrr::imap(editions, function(dat, edition) {
     year <- as.numeric(stringr::str_remove(edition, "^year_"))

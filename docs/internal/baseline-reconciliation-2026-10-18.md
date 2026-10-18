@@ -28,19 +28,19 @@ The comparison covers 198,240 cells in the 472 questions the two files share.
 
 | Class | Cells | Cause |
 |---|---:|---|
-| Missing code dropped | 80,552 | The workbook leaves `NA`, `NR`, `ND`, and `-` blank. |
-| Number format | 11,271 | Same number, written differently (`0,2408` and `0.2408`, `2,000` and `2`). |
-| Logical in place of value | 223 | The workbook holds `TRUE` or `FALSE` where the source has a number; 145 are zeros shown as `FALSE`. Most fall in `1.6.1.L`. |
-| Answer dropped | 173 | The workbook is blank where the source has an answer, such as `Sim`/`Não` in 2019 `2.6.1.H` or `45km` in `1.6.1.G`. |
-| Excel date serial | 55 | The workbook shows date serials such as `44287`; the rebuild writes ISO dates. One workbook cell shows the year 2046 as the date `1905-08-07`. |
-| Whitespace | 31 | Extra spaces or line breaks. |
-| Code repair | 223 | Cells moved by the code repairs below. |
+| Missing code dropped | 78,946 | The workbook leaves `NA`, `NR`, `ND`, and `-` blank. |
+| Number format | 11,090 | Same number, written differently (`0,2408` and `0.2408`, `2,000` and `2`). |
+| Crosswalk correction | 1,656 | Questions whose 2019, 2020, or 2022 link the rebuild corrects; the workbook follows the old link. See `docs/internal/crosswalk-review-2026-10-18.md`. |
 | Range combined | 240 | 2019 checkbox questions, such as Mobility Plan themes (`4.6.1`), that the workbook leaves blank. The rebuild combines their option columns; see below. |
-| Value not in rebuild | 14 | 2019 `1.4.1.B`, which counts metro/rail stations in 2019 and accessible road terminals in 2024. The rebuild no longer links the two. |
+| Code repair | 223 | Cells moved by the code repairs below. |
+| Logical in place of value | 202 | The workbook holds `TRUE` or `FALSE` where the source has a number; 140 are zeros shown as `FALSE`. Most fall in `1.6.1.L`. |
+| Answer dropped | 122 | The workbook is blank where the source has an answer, such as `45km` in `1.6.1.G`. |
+| Excel date serial | 55 | The workbook shows date serials such as `44287`; the rebuild writes ISO dates. One workbook cell shows the year 2046 as the date `1905-08-07`. |
 | `NA` removed from text | 11 | The workbook deleted every `NA` inside text: `REGIÃO METROPOLITANA` became `REGIÃO METROPOLITA`, `CAMPINA GRANDE` became `CAMPI GRANDE`. |
+| Whitespace | 2 | Extra spaces or line breaks. |
 
-Outside the repaired cells, no cell holds two different numbers or two
-unrelated texts.
+Outside the repaired and corrected cells, no cell holds two different numbers
+or two unrelated texts.
 
 ## Misplaced question codes
 

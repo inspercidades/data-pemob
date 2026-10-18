@@ -436,6 +436,209 @@ build_pemob_review_candidates <- function(dat) {
   return(result)
 }
 
+build_pemob_interpolation_candidates <- function(dat) {
+  required_cols <- c(
+    "code_muni",
+    "name_muni",
+    "abbrev_state",
+    "year",
+    "code_variable",
+    "raw_response",
+    "participated",
+    "review_decision",
+    "review_evidence"
+  )
+  if (!all(required_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Interpolation inputs must include: {paste(required_cols, collapse = ', ')}."
+    )
+  }
+
+  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
+  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
+    cli::cli_abort(
+      "Interpolation inputs must have unique municipality-question-year keys."
+    )
+  }
+  if (!is.logical(dat$participated)) {
+    cli::cli_abort("Participation must be recorded as TRUE, FALSE, or NA.")
+  }
+
+  if (!"reference_time" %in% names(dat)) {
+    dat$reference_time <- as.numeric(dat$year)
+  }
+  if (!is.numeric(dat$year) || !is.numeric(dat$reference_time)) {
+    cli::cli_abort("Year and reference time must be numeric.")
+  }
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
+  groups <- split(
+    seq_len(nrow(result)),
+    interaction(result$code_muni, result$code_variable, drop = TRUE)
+  )
+  candidates <- list()
+
+  for (rows in groups) {
+    for (row in rows[result$parse_status[rows] == "missing"]) {
+      year <- result$year[row]
+      left <- rows[result$year[rows] == year - 1]
+      right <- rows[result$year[rows] == year + 1]
+      if (length(left) != 1L || length(right) != 1L) {
+        next
+      }
+
+      left <- left[[1]]
+      right <- right[[1]]
+      expected_unit <- if (result$code_variable[row] == "3.1.1.A") {
+        "BRL"
+      } else {
+        "km"
+      }
+      endpoint_units <- c(
+        result$parsed_unit[left],
+        result$parsed_unit[right]
+      )
+      endpoint_units[is.na(endpoint_units)] <- expected_unit
+      reasons <- character()
+
+      if (!identical(result$missing_reason[row], "NR")) {
+        reasons <- c(reasons, "missing_reason_not_item_nonresponse")
+      }
+      if (is.na(result$participated[row])) {
+        reasons <- c(reasons, "participation_unknown")
+      } else if (!result$participated[row]) {
+        reasons <- c(reasons, "nonparticipation")
+      }
+      if (
+        result$parse_status[left] != "parsed" ||
+          result$parse_status[right] != "parsed"
+      ) {
+        reasons <- c(reasons, "endpoint_not_numeric")
+      }
+      endpoint_values <- result$parsed_value[c(left, right)]
+      if (any(endpoint_values < 0, na.rm = TRUE)) {
+        reasons <- c(reasons, "endpoint_negative")
+      }
+      if (
+        any(endpoint_units != expected_unit) ||
+          endpoint_units[1] != endpoint_units[2]
+      ) {
+        reasons <- c(reasons, "endpoint_unit_mismatch")
+      }
+      endpoint_decisions <- result$review_decision[c(left, right)]
+      if (
+        anyNA(endpoint_decisions) ||
+          any(endpoint_decisions != "accepted")
+      ) {
+        reasons <- c(reasons, "endpoint_not_accepted")
+      }
+      endpoint_evidence <- result$review_evidence[c(left, right)]
+      if (
+        anyNA(endpoint_evidence) ||
+          any(!nzchar(trimws(endpoint_evidence)))
+      ) {
+        reasons <- c(reasons, "endpoint_evidence_missing")
+      }
+      reference_times <- result$reference_time[c(left, row, right)]
+      if (
+        anyNA(reference_times) ||
+          any(!is.finite(reference_times)) ||
+          reference_times[1] >= reference_times[2] ||
+          reference_times[2] >= reference_times[3]
+      ) {
+        reasons <- c(reasons, "invalid_reference_time")
+      }
+
+      eligible <- length(reasons) == 0L
+      estimate_value <- NA_real_
+      if (eligible) {
+        estimate_value <- result$parsed_value[left] +
+          (result$parsed_value[right] - result$parsed_value[left]) *
+            (reference_times[2] - reference_times[1]) /
+            (reference_times[3] - reference_times[1])
+      }
+      candidates[[length(candidates) + 1L]] <- data.frame(
+        code_muni = result$code_muni[row],
+        name_muni = result$name_muni[row],
+        abbrev_state = result$abbrev_state[row],
+        year = year,
+        code_variable = result$code_variable[row],
+        candidate_id = paste(
+          sprintf("%.0f", result$code_muni[row]),
+          result$code_variable[row],
+          year,
+          sep = "::"
+        ),
+        raw_response = result$raw_response[row],
+        missing_reason = result$missing_reason[row],
+        participated = result$participated[row],
+        endpoint_left_id = paste(
+          sprintf("%.0f", result$code_muni[left]),
+          result$code_variable[left],
+          result$year[left],
+          sep = "::"
+        ),
+        endpoint_left_year = result$year[left],
+        endpoint_left_value = result$parsed_value[left],
+        endpoint_left_review = result$review_decision[left],
+        endpoint_left_evidence = result$review_evidence[left],
+        endpoint_right_id = paste(
+          sprintf("%.0f", result$code_muni[right]),
+          result$code_variable[right],
+          result$year[right],
+          sep = "::"
+        ),
+        endpoint_right_year = result$year[right],
+        endpoint_right_value = result$parsed_value[right],
+        endpoint_right_review = result$review_decision[right],
+        endpoint_right_evidence = result$review_evidence[right],
+        estimate_value = estimate_value,
+        method = "linear_interpolation",
+        eligible = eligible,
+        eligibility_reason = if (eligible) {
+          "both adjacent endpoints reviewed; item nonresponse and participation confirmed"
+        } else {
+          paste(unique(reasons), collapse = ";")
+        },
+        stringsAsFactors = FALSE
+      )
+    }
+  }
+
+  if (length(candidates) == 0L) {
+    return(data.frame(
+      code_muni = numeric(),
+      name_muni = character(),
+      abbrev_state = character(),
+      year = numeric(),
+      code_variable = character(),
+      candidate_id = character(),
+      raw_response = character(),
+      missing_reason = character(),
+      participated = logical(),
+      endpoint_left_id = character(),
+      endpoint_left_year = numeric(),
+      endpoint_left_value = numeric(),
+      endpoint_left_review = character(),
+      endpoint_left_evidence = character(),
+      endpoint_right_id = character(),
+      endpoint_right_year = numeric(),
+      endpoint_right_value = numeric(),
+      endpoint_right_review = character(),
+      endpoint_right_evidence = character(),
+      estimate_value = numeric(),
+      method = character(),
+      eligible = logical(),
+      eligibility_reason = character(),
+      stringsAsFactors = FALSE
+    ))
+  }
+
+  result <- do.call(rbind, candidates)
+  rownames(result) <- NULL
+  return(result)
+}
+
 scale_pemob_share <- function(value, total) {
   value_scaled <- rep(NA_real_, length(value))
   valid <- !is.na(value) & !is.na(total) & total != 0

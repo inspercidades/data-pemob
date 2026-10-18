@@ -476,6 +476,151 @@ build_pemob_review_candidates <- function(dat) {
 }
 
 
+# Review decisions ---------------------------------------------------------
+
+apply_pemob_review_decisions <- function(dat, ledger) {
+  data_cols <- c(
+    "code_muni",
+    "year",
+    "code_variable",
+    "raw_response"
+  )
+  ledger_cols <- c(
+    "candidate_id",
+    "review_decision",
+    "treated_value",
+    "review_evidence",
+    "reviewer"
+  )
+  if (!is.data.frame(dat) || !all(data_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Review data must include: {paste(data_cols, collapse = ', ')}."
+    )
+  }
+  if (!is.data.frame(ledger) || !all(ledger_cols %in% names(ledger))) {
+    cli::cli_abort(
+      "Review ledger must include: {paste(ledger_cols, collapse = ', ')}."
+    )
+  }
+  reserved_cols <- c(
+    "candidate_id",
+    "parsed_value",
+    "parsed_unit",
+    "parse_status",
+    "missing_reason",
+    "treated_value",
+    "treatment_status",
+    "review_decision",
+    "review_evidence",
+    "reviewer"
+  )
+  if (any(reserved_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Review data already contains treatment output columns; pass raw observations."
+    )
+  }
+  if (
+    anyNA(dat[c("code_muni", "year", "code_variable")]) ||
+      anyDuplicated(dat[c("code_muni", "code_variable", "year")])
+  ) {
+    cli::cli_abort("Review data must have unique, complete observation keys.")
+  }
+  if (
+    anyNA(ledger$candidate_id) ||
+      any(!nzchar(trimws(ledger$candidate_id))) ||
+      anyDuplicated(ledger$candidate_id)
+  ) {
+    cli::cli_abort("Review ledger candidate IDs must be unique and complete.")
+  }
+  if (!is.numeric(ledger$treated_value)) {
+    cli::cli_abort("Review ledger {.field treated_value} must be numeric.")
+  }
+
+  dat$candidate_id <- build_pemob_candidate_id(
+    dat$code_muni,
+    dat$code_variable,
+    dat$year
+  )
+  ledger_rows <- match(ledger$candidate_id, dat$candidate_id)
+  if (anyNA(ledger_rows)) {
+    cli::cli_abort("Review ledger contains keys absent from the source data.")
+  }
+
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
+  result$treated_value <- result$parsed_value
+  result$treatment_status <- rep("reported", nrow(result))
+  result$review_decision <- rep(NA_character_, nrow(result))
+  result$review_evidence <- rep(NA_character_, nrow(result))
+  result$reviewer <- rep(NA_character_, nrow(result))
+
+  decisions <- as.character(ledger$review_decision)
+  allowed_decisions <- c("pending", "accepted", "corrected", "excluded")
+  invalid_decisions <- is.na(decisions) | !decisions %in% allowed_decisions
+  if (any(invalid_decisions)) {
+    cli::cli_abort(
+      "Review decisions must be pending, accepted, corrected, or excluded."
+    )
+  }
+
+  reviewed <- decisions != "pending"
+  evidence <- as.character(ledger$review_evidence)
+  reviewers <- as.character(ledger$reviewer)
+  has_evidence <- !is.na(evidence) & nzchar(trimws(evidence))
+  has_reviewer <- !is.na(reviewers) & nzchar(trimws(reviewers))
+  if (any(reviewed & (!has_evidence | !has_reviewer))) {
+    cli::cli_abort(
+      "Accepted treatment decisions require both reviewer and evidence."
+    )
+  }
+
+  for (ledger_row in seq_len(nrow(ledger))) {
+    data_row <- ledger_rows[[ledger_row]]
+    decision <- decisions[[ledger_row]]
+    ledger_value <- ledger$treated_value[[ledger_row]]
+    parsed_value <- result$parsed_value[[data_row]]
+
+    if (decision %in% c("pending", "accepted")) {
+      values_match <- isTRUE(all.equal(
+        ledger_value,
+        parsed_value,
+        tolerance = 0
+      ))
+      if (!values_match) {
+        cli::cli_abort(
+          "{decision} review rows must retain the parsed value."
+        )
+      }
+      if (
+        decision == "accepted" &&
+          result$parse_status[[data_row]] != "parsed"
+      ) {
+        cli::cli_abort("Only parsed responses can be accepted as valid.")
+      }
+    }
+    if (
+      decision == "corrected" &&
+        (is.na(ledger_value) || !is.finite(ledger_value))
+    ) {
+      cli::cli_abort("Corrected review rows require a finite treated value.")
+    }
+    if (decision == "excluded" && !is.na(ledger_value)) {
+      cli::cli_abort("Excluded review rows must have a missing treated value.")
+    }
+
+    result$treatment_status[[data_row]] <- decision
+    result$review_decision[[data_row]] <- decision
+    result$review_evidence[[data_row]] <- evidence[[ledger_row]]
+    result$reviewer[[data_row]] <- reviewers[[ledger_row]]
+    if (decision %in% c("corrected", "excluded")) {
+      result$treated_value[[data_row]] <- ledger_value
+    }
+  }
+
+  return(result)
+}
+
+
 # Interpolation candidates -------------------------------------------------
 
 build_pemob_interpolation_candidates <- function(dat) {

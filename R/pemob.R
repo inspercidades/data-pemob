@@ -189,8 +189,7 @@ path_23 <- here("data-raw/pemob2023_municipal.xlsx")
 pemob23 <- read_pemob_source(path_23, skip = 1)
 
 pemob23 <- pemob23 |>
-  rename(any_of(vl_names)) |>
-  mutate(`11.2.2.B` = format_pemob_excel_dates(`11.2.2.B`))
+  rename(any_of(vl_names))
 
 
 dict23 <- read_excel(

@@ -206,6 +206,13 @@ dashes, and additional Portuguese forms. Regression checks confirm that the
 converts numeric Excel date serials while preserving text entries such as
 `11/2028`.
 
+Date cells retain their Excel cell types through a second, cell-wise read.
+The reader converts date-formatted cells to ISO strings across all editions
+and columns while retaining the original text import for other cells. This
+replaces the special conversion for municipal 2023 `11.2.2.B`. Validation
+covered all 11 historical workbooks and 877 nonmissing date cells, and checked
+that other response cells remained unchanged.
+
 The checked-in source worksheets contain no native Excel error cells. `readxl`
 imports such cells as `NA`, so a future input containing them cannot be
 distinguished from a blank cell by this reader alone; check the workbook's

@@ -1,4 +1,4 @@
-source("R/pemob_helpers.R")
+source(here::here("R", "pemob_helpers.R"))
 
 aliases <- data.frame(
   abbrev_state = "AL",
@@ -42,7 +42,7 @@ stopifnot(
 )
 
 metro_2024_source <- readxl::read_excel(
-  "data-raw/pemob_metropolitana_2024.xlsx",
+  here::here("data-raw", "pemob_metropolitana_2024.xlsx"),
   skip = 1
 )
 metro_2024_names <- canonicalize_pemob_metro_name(
@@ -73,11 +73,11 @@ metro_2024_keys <- build_pemob_metro_key(
 stopifnot(all(alias_keys %in% metro_2024_keys))
 
 source_files <- c(
-  "data-raw/Pemob2019_Metropolitana.xlsx",
-  "data-raw/pemob21_metropolitana.xlsx",
-  "data-raw/pemob_metropolitana_2022.xlsx",
-  "data-raw/pemob2023_metropolitana.xlsx",
-  "data-raw/pemob_metropolitana_2024.xlsx"
+  here::here("data-raw", "Pemob2019_Metropolitana.xlsx"),
+  here::here("data-raw", "pemob21_metropolitana.xlsx"),
+  here::here("data-raw", "pemob_metropolitana_2022.xlsx"),
+  here::here("data-raw", "pemob2023_metropolitana.xlsx"),
+  here::here("data-raw", "pemob_metropolitana_2024.xlsx")
 )
 for (path in source_files) {
   source_data <- readxl::read_excel(path, skip = 1)
@@ -94,9 +94,12 @@ for (path in source_files) {
   stopifnot(!anyDuplicated(identity_data$metro_key))
 }
 
-source("R/pemob_2025.R")
+source(here::here("R", "pemob_2025.R"))
 metro_survey <- read_pemob_2025(
-  "data-raw/pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+  here::here(
+    "data-raw",
+    "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
+  )
 )
 metro <- harmonize_metro_2025(metro_survey)
 

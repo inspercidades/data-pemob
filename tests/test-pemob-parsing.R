@@ -1,8 +1,8 @@
-source("R/pemob_helpers.R")
-source("R/pemob_2025.R")
+source(here::here("R", "pemob_helpers.R"))
+source(here::here("R", "pemob_2025.R"))
 
 municipal_2019 <- read_pemob_source(
-  "data-raw/Pemob2019_Municipal.xlsx",
+  here::here("data-raw", "Pemob2019_Municipal.xlsx"),
   skip = 1
 )
 raw_fare_2019 <- municipal_2019[["3.1.1.A"]]
@@ -19,11 +19,11 @@ stopifnot(
 )
 
 municipal_2024 <- read_pemob_source(
-  "data-raw/pemob_municipal_2024.xlsx",
+  here::here("data-raw", "pemob_municipal_2024.xlsx"),
   skip = 1
 )
 metro_2024 <- read_pemob_source(
-  "data-raw/pemob_metropolitana_2024.xlsx",
+  here::here("data-raw", "pemob_metropolitana_2024.xlsx"),
   skip = 1
 )
 stopifnot(
@@ -124,7 +124,7 @@ stopifnot(
 )
 
 municipal_2025 <- read_pemob_2025(
-  "data-raw/pemob_municipal_2025(pemob_municipal_25).csv"
+  here::here("data-raw", "pemob_municipal_2025(pemob_municipal_25).csv")
 )
 fares_2025 <- parse_pemob_response(municipal_2025[["3.1.1.A"]])
 

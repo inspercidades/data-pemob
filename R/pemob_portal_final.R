@@ -96,7 +96,10 @@ dict_portal <- dict |>
   )
 
 # Export to Excel (here)
-readr::write_excel_csv2(dict_portal, "data/portal/dict_portal_v1.csv")
+readr::write_excel_csv2(
+  dict_portal,
+  here("data", "portal", "dict_portal_v1.csv")
+)
 
 # Por enquanto usando somente variáveis numéricas e binárias
 # Acredito que teria que ajustar UI para incorporar variáveis de texto

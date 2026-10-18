@@ -1,4 +1,4 @@
-source("R/pemob_helpers.R")
+source(here::here("R", "pemob_helpers.R"))
 
 editions <- list(
   year_2024 = data.frame(code_muni = 2222222, year_2024 = 20),

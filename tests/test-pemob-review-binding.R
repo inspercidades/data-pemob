@@ -1,4 +1,4 @@
-source("R/pemob_interpolation.R")
+source(here::here("R", "pemob_interpolation.R"))
 
 series <- data.frame(
   candidate_id = c("1::1.6.1.G::2020", "1::1.6.1.G::2022"),

@@ -1,4 +1,4 @@
-source("R/pemob_helpers.R")
+source(here::here("R", "pemob_helpers.R"))
 
 scaled <- scale_pemob_max(c(0, 5, 10, NA_real_))
 all_zero <- scale_pemob_max(c(0, 0, NA_real_))

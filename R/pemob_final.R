@@ -228,8 +228,14 @@ pemob_tables <- lapply(pemob_tables, format_tables)
 
 tbl_dashboard <- bind_rows(pemob_tables)
 
-readr::write_rds(pemob_tables, "data/portal/final/pemob_tables.rds")
-readr::write_csv(tbl_dashboard, "data/portal/final/dashboard.csv")
+readr::write_rds(
+  pemob_tables,
+  here("data", "portal", "final", "pemob_tables.rds")
+)
+readr::write_csv(
+  tbl_dashboard,
+  here("data", "portal", "final", "dashboard.csv")
+)
 
 
 export_pemob <- function(dat, y = 2023, destination = "tabela", print = FALSE) {

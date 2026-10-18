@@ -210,7 +210,15 @@ read_pemob_source <- function(path, skip = 0) {
     numbers <- vapply(cells[[column]], is.double, logical(1)) & !dates
     result[[column]][numbers] <- vapply(
       cells[[column]][numbers],
-      function(x) format(x, digits = 15, scientific = FALSE, trim = TRUE),
+      function(x) {
+        format(
+          x,
+          digits = 15,
+          scientific = FALSE,
+          trim = TRUE,
+          decimal.mark = "."
+        )
+      },
       character(1)
     )
   }

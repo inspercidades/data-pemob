@@ -45,6 +45,10 @@ writexl::write_xlsx(
   numeric_cells_file
 )
 numeric_cells <- read_pemob_source(numeric_cells_file)
+comma_locale_cells <- withr::with_options(
+  list(OutDec = ","),
+  read_pemob_source(numeric_cells_file)
+)
 unlink(numeric_cells_file)
 
 stopifnot(
@@ -52,6 +56,7 @@ stopifnot(
     numeric_cells$measured,
     c("76.1", "0.07", "9935487.59", "2429753", "0.23816", "100000")
   ),
+  identical(comma_locale_cells$measured, numeric_cells$measured),
   identical(
     numeric_cells$typed,
     c("1.320", "76.099999999999994", "15,24 km", "", "NR", "0")

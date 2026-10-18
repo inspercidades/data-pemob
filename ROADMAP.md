@@ -34,8 +34,8 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 
 | Area | State |
 |---|---|
-| Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 42 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
-| 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 43 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
+| Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 41 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
+| 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 41 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
 | Parsing | Currency, decimal commas, `km` suffixes, Excel dates, and missing tokens (`NA`, `NR`, `ND`, `-`) are parsed and tested. Ambiguous separators go to review. |
 | Review layer | 134 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
 | Interpolation | Candidate extract and gate exist. The gate currently admits no case. |
@@ -83,8 +83,8 @@ historical readers reaches the released data.
   values. Several 2019 and 2020 blocks were paired by position after the item
   order changed; `tabelas/pemob_crosswalk_corrections.csv` relinks them. See
   `docs/internal/crosswalk-review-2026-10-18.md`.
-- Merge metropolitan regions that appear under two names: `RM Porto Alegre`
-  and `RIDE Teresina` in 2019.
+- [x] Merge metropolitan regions that appeared under two names: 2019
+  `RM Porto Alegre` and `RIDE Teresina`.
 - Record the 2025 code changes reported by SIMU. In 2025, `12.1.1` is the
   municipal fund question that was `12.2.1` until 2024. `1.3.1.A` is new and
   has no reported values in the 2025 file.

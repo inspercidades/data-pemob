@@ -164,8 +164,10 @@ build_pemob_metro_key <- function(abbrev_state, name_metro) {
 add_pemob_metro_identity <- function(dat) {
   valid <- !is.na(dat$abbrev_state) &
     grepl("^[A-Z]{2}$", dat$abbrev_state) &
+    !dat$abbrev_state %in% c("NA", "NR", "ND") &
     !is.na(dat$name_metro) &
-    nzchar(trimws(dat$name_metro))
+    nzchar(trimws(dat$name_metro)) &
+    !toupper(trimws(dat$name_metro)) %in% c("NA", "NR", "ND", "-")
   result <- dat[valid, , drop = FALSE]
   result$name_metro <- canonicalize_pemob_metro_name(
     result$abbrev_state,
@@ -184,13 +186,71 @@ add_pemob_metro_identity <- function(dat) {
   return(result)
 }
 
+read_pemob_source <- function(path, skip = 0) {
+  result <- readxl::read_excel(
+    path,
+    skip = skip,
+    col_types = "text",
+    na = character()
+  )
+  cells <- readxl::read_excel(
+    path,
+    skip = skip,
+    col_types = "list",
+    na = character()
+  )
+  for (column in seq_along(result)) {
+    dates <- vapply(cells[[column]], inherits, logical(1), what = "POSIXt")
+    result[[column]][dates] <- vapply(
+      cells[[column]][dates],
+      as.character,
+      character(1)
+    )
+  }
+  # shortcut: readxl merges blank and Excel-error cells as NA; inspect XML if errors appear.
+  result[] <- lapply(result, function(column) {
+    column[is.na(column)] <- ""
+    return(column)
+  })
+
+  return(result)
+}
+
 parse_pemob_response <- function(response) {
   raw_response <- as.character(response)
   text <- trimws(raw_response)
+  normalized_text <- toupper(text)
   missing_reason <- rep(NA_character_, length(text))
-  missing_reason[is.na(text) | toupper(text) == "NA"] <- "NA"
-  missing_reason[toupper(text) == "NR"] <- "NR"
-  missing_reason[toupper(text) == "ND"] <- "ND"
+  missing_reason[is.na(text) | normalized_text == "NA"] <- "NA"
+  missing_reason[
+    normalized_text %in% c("NR", "NÃO RESPONDEU", "NAO RESPONDEU")
+  ] <- "NR"
+  missing_reason[normalized_text == "ND"] <- "ND"
+  missing_reason[normalized_text == "N/D"] <- "N/D"
+  missing_reason[normalized_text == "N/A"] <- "N/A"
+  missing_reason[
+    normalized_text %in% c("NÃO DISPONÍVEL", "NAO DISPONIVEL")
+  ] <- "not_available"
+  missing_reason[
+    normalized_text %in% c("SEM INFORMAÇÃO", "SEM INFORMACAO")
+  ] <- "no_information"
+  missing_reason[
+    normalized_text %in% c("NÃO SE APLICA", "NAO SE APLICA")
+  ] <- "not_applicable"
+  missing_reason[
+    normalized_text %in% c("NÃO INFORMADO", "NAO INFORMADO")
+  ] <- "not_reported"
+  excel_errors <- normalized_text %in%
+    c(
+      "#N/A",
+      "#VALUE!",
+      "#DIV/0!",
+      "#REF!",
+      "#NAME?",
+      "#NUM!",
+      "#NULL!"
+    )
+  missing_reason[excel_errors] <- normalized_text[excel_errors]
   missing_reason[text == "-"] <- "-"
   missing_reason[!is.na(text) & text == ""] <- "blank"
   is_missing <- !is.na(missing_reason)
@@ -270,6 +330,312 @@ parse_pemob_response <- function(response) {
     stringsAsFactors = FALSE
   )
 
+  return(result)
+}
+
+build_pemob_review_candidates <- function(dat) {
+  required_cols <- c(
+    "code_muni",
+    "name_muni",
+    "abbrev_state",
+    "year",
+    "code_variable",
+    "raw_response"
+  )
+  if (!all(required_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Review inputs must include: {paste(required_cols, collapse = ', ')}."
+    )
+  }
+
+  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
+  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
+    cli::cli_abort(
+      "Review inputs must have unique municipality-question-year keys."
+    )
+  }
+
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
+  expected_unit <- ifelse(result$code_variable == "3.1.1.A", "BRL", "km")
+  flags <- data.frame(
+    unparsed_response = result$parse_status == "review",
+    negative_value = !is.na(result$parsed_value) & result$parsed_value < 0,
+    unit_mismatch = !is.na(result$parsed_unit) &
+      result$parsed_unit != expected_unit,
+    cross_city_outlier = rep(FALSE, nrow(result)),
+    zero_transition = rep(FALSE, nrow(result)),
+    abrupt_change_10x = rep(FALSE, nrow(result))
+  )
+
+  by_question_year <- split(
+    seq_len(nrow(result)),
+    interaction(result$code_variable, result$year, drop = TRUE)
+  )
+  for (rows in by_question_year) {
+    values <- result$parsed_value[rows]
+    eligible <- !is.na(values) &
+      values > 0 &
+      (is.na(result$parsed_unit[rows]) |
+        result$parsed_unit[rows] == expected_unit[rows])
+    observed <- values[eligible]
+    if (length(observed) < 8L) {
+      next
+    }
+
+    spread <- stats::IQR(observed)
+    if (spread > 0) {
+      fence <- stats::quantile(observed, 0.75) + 3 * spread
+      flags$cross_city_outlier[rows[eligible]] <- observed > fence
+    }
+  }
+
+  order_rows <- order(result$code_muni, result$code_variable, result$year)
+  for (position in seq_along(order_rows)[-1L]) {
+    current <- order_rows[position]
+    previous <- order_rows[position - 1L]
+    same_series <- result$code_muni[current] == result$code_muni[previous] &
+      result$code_variable[current] == result$code_variable[previous] &
+      result$year[current] - result$year[previous] == 1
+    if (!same_series) {
+      next
+    }
+
+    current_value <- result$parsed_value[current]
+    previous_value <- result$parsed_value[previous]
+    if (is.na(current_value) || is.na(previous_value)) {
+      next
+    }
+    if (xor(current_value == 0, previous_value == 0)) {
+      flags$zero_transition[current] <- TRUE
+    }
+    if (
+      current_value > 0 &&
+        previous_value > 0 &&
+        max(current_value, previous_value) /
+          min(current_value, previous_value) >=
+          10
+    ) {
+      # shortcut: flag 10-fold changes for review; confirm them against records.
+      flags$abrupt_change_10x[current] <- TRUE
+    }
+  }
+
+  result$flag_reasons <- vapply(
+    seq_len(nrow(flags)),
+    function(row) {
+      row_flags <- unlist(flags[row, ], use.names = TRUE)
+      paste(names(row_flags)[row_flags], collapse = ";")
+    },
+    character(1)
+  )
+  result <- result[nzchar(result$flag_reasons), , drop = FALSE]
+  result$treated_value <- result$parsed_value
+  result$review_decision <- rep("pending", nrow(result))
+
+  return(result)
+}
+
+build_pemob_interpolation_candidates <- function(dat) {
+  required_cols <- c(
+    "code_muni",
+    "name_muni",
+    "abbrev_state",
+    "year",
+    "code_variable",
+    "raw_response",
+    "participated",
+    "review_decision",
+    "review_evidence"
+  )
+  if (!all(required_cols %in% names(dat))) {
+    cli::cli_abort(
+      "Interpolation inputs must include: {paste(required_cols, collapse = ', ')}."
+    )
+  }
+
+  dat <- dat[dat$code_variable %in% c("3.1.1.A", "1.6.1.G", "1.6.1.H"), ]
+  if (anyDuplicated(dat[c("code_muni", "code_variable", "year")])) {
+    cli::cli_abort(
+      "Interpolation inputs must have unique municipality-question-year keys."
+    )
+  }
+  if (!is.logical(dat$participated)) {
+    cli::cli_abort("Participation must be recorded as TRUE, FALSE, or NA.")
+  }
+
+  if (!"reference_time" %in% names(dat)) {
+    dat$reference_time <- as.numeric(dat$year)
+  }
+  if (!is.numeric(dat$year) || !is.numeric(dat$reference_time)) {
+    cli::cli_abort("Year and reference time must be numeric.")
+  }
+  parsed <- parse_pemob_response(dat$raw_response)
+  result <- cbind(dat, parsed[, setdiff(names(parsed), "raw_response")])
+  groups <- split(
+    seq_len(nrow(result)),
+    interaction(result$code_muni, result$code_variable, drop = TRUE)
+  )
+  candidates <- list()
+
+  for (rows in groups) {
+    for (row in rows[result$parse_status[rows] == "missing"]) {
+      year <- result$year[row]
+      left <- rows[result$year[rows] == year - 1]
+      right <- rows[result$year[rows] == year + 1]
+      if (length(left) != 1L || length(right) != 1L) {
+        next
+      }
+
+      left <- left[[1]]
+      right <- right[[1]]
+      expected_unit <- if (result$code_variable[row] == "3.1.1.A") {
+        "BRL"
+      } else {
+        "km"
+      }
+      endpoint_units <- c(
+        result$parsed_unit[left],
+        result$parsed_unit[right]
+      )
+      endpoint_units[is.na(endpoint_units)] <- expected_unit
+      reasons <- character()
+
+      if (!identical(result$missing_reason[row], "NR")) {
+        reasons <- c(reasons, "missing_reason_not_item_nonresponse")
+      }
+      if (is.na(result$participated[row])) {
+        reasons <- c(reasons, "participation_unknown")
+      } else if (!result$participated[row]) {
+        reasons <- c(reasons, "nonparticipation")
+      }
+      if (
+        result$parse_status[left] != "parsed" ||
+          result$parse_status[right] != "parsed"
+      ) {
+        reasons <- c(reasons, "endpoint_not_numeric")
+      }
+      endpoint_values <- result$parsed_value[c(left, right)]
+      if (any(endpoint_values < 0, na.rm = TRUE)) {
+        reasons <- c(reasons, "endpoint_negative")
+      }
+      if (
+        any(endpoint_units != expected_unit) ||
+          endpoint_units[1] != endpoint_units[2]
+      ) {
+        reasons <- c(reasons, "endpoint_unit_mismatch")
+      }
+      endpoint_decisions <- result$review_decision[c(left, right)]
+      if (
+        anyNA(endpoint_decisions) ||
+          any(endpoint_decisions != "accepted")
+      ) {
+        reasons <- c(reasons, "endpoint_not_accepted")
+      }
+      endpoint_evidence <- result$review_evidence[c(left, right)]
+      if (
+        anyNA(endpoint_evidence) ||
+          any(!nzchar(trimws(endpoint_evidence)))
+      ) {
+        reasons <- c(reasons, "endpoint_evidence_missing")
+      }
+      reference_times <- result$reference_time[c(left, row, right)]
+      if (
+        anyNA(reference_times) ||
+          any(!is.finite(reference_times)) ||
+          reference_times[1] >= reference_times[2] ||
+          reference_times[2] >= reference_times[3]
+      ) {
+        reasons <- c(reasons, "invalid_reference_time")
+      }
+
+      eligible <- length(reasons) == 0L
+      estimate_value <- NA_real_
+      if (eligible) {
+        estimate_value <- result$parsed_value[left] +
+          (result$parsed_value[right] - result$parsed_value[left]) *
+            (reference_times[2] - reference_times[1]) /
+            (reference_times[3] - reference_times[1])
+      }
+      candidates[[length(candidates) + 1L]] <- data.frame(
+        code_muni = result$code_muni[row],
+        name_muni = result$name_muni[row],
+        abbrev_state = result$abbrev_state[row],
+        year = year,
+        code_variable = result$code_variable[row],
+        candidate_id = paste(
+          sprintf("%.0f", result$code_muni[row]),
+          result$code_variable[row],
+          year,
+          sep = "::"
+        ),
+        raw_response = result$raw_response[row],
+        missing_reason = result$missing_reason[row],
+        participated = result$participated[row],
+        endpoint_left_id = paste(
+          sprintf("%.0f", result$code_muni[left]),
+          result$code_variable[left],
+          result$year[left],
+          sep = "::"
+        ),
+        endpoint_left_year = result$year[left],
+        endpoint_left_value = result$parsed_value[left],
+        endpoint_left_review = result$review_decision[left],
+        endpoint_left_evidence = result$review_evidence[left],
+        endpoint_right_id = paste(
+          sprintf("%.0f", result$code_muni[right]),
+          result$code_variable[right],
+          result$year[right],
+          sep = "::"
+        ),
+        endpoint_right_year = result$year[right],
+        endpoint_right_value = result$parsed_value[right],
+        endpoint_right_review = result$review_decision[right],
+        endpoint_right_evidence = result$review_evidence[right],
+        estimate_value = estimate_value,
+        method = "linear_interpolation",
+        eligible = eligible,
+        eligibility_reason = if (eligible) {
+          "both adjacent endpoints reviewed; item nonresponse and participation confirmed"
+        } else {
+          paste(unique(reasons), collapse = ";")
+        },
+        stringsAsFactors = FALSE
+      )
+    }
+  }
+
+  if (length(candidates) == 0L) {
+    return(data.frame(
+      code_muni = numeric(),
+      name_muni = character(),
+      abbrev_state = character(),
+      year = numeric(),
+      code_variable = character(),
+      candidate_id = character(),
+      raw_response = character(),
+      missing_reason = character(),
+      participated = logical(),
+      endpoint_left_id = character(),
+      endpoint_left_year = numeric(),
+      endpoint_left_value = numeric(),
+      endpoint_left_review = character(),
+      endpoint_left_evidence = character(),
+      endpoint_right_id = character(),
+      endpoint_right_year = numeric(),
+      endpoint_right_value = numeric(),
+      endpoint_right_review = character(),
+      endpoint_right_evidence = character(),
+      estimate_value = numeric(),
+      method = character(),
+      eligible = logical(),
+      eligibility_reason = character(),
+      stringsAsFactors = FALSE
+    ))
+  }
+
+  result <- do.call(rbind, candidates)
+  rownames(result) <- NULL
   return(result)
 }
 

@@ -28,6 +28,19 @@ stopifnot(
   length(unique(keys)) == 3L
 )
 
+placeholder_regions <- add_pemob_metro_identity(data.frame(
+  abbrev_state = c("SP", "NR", "ND"),
+  name_metro = c(
+    "Região Metropolitana de São Paulo",
+    "Não Respondeu",
+    "Não Disponível"
+  )
+))
+stopifnot(
+  nrow(placeholder_regions) == 1L,
+  placeholder_regions$abbrev_state == "SP"
+)
+
 metro_2024_source <- readxl::read_excel(
   "data-raw/pemob_metropolitana_2024.xlsx",
   skip = 1

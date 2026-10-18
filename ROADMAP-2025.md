@@ -69,6 +69,21 @@ values. Do not automatically divide large values by 1,000, delete all upper-tail
 observations, or enforce monotonic growth. Real projects, reclassification, and
 remeasurement can also produce jumps.
 
+### Short-gap interpolation gate (2026-10-17)
+
+`R/pemob_interpolation.R` now extracts one-year interior missing cells for
+review, but calculates an estimate only when the missing cell is an explicit
+`NR` during confirmed participation and both adjacent endpoints are explicitly
+accepted with review evidence. The parser's other missing markers (`NA`, `ND`,
+dashes, blanks, and Excel error strings) remain distinct and are not treated as
+item nonresponse. The generator found 738 bracketed missing cells in the
+2019–2025 pilot: 71 marked `NR` in cycling variables and 667 marked `NA`; none
+is currently eligible because no endpoints have been accepted with evidence.
+It produced no estimates. The actual pipeline uses edition year as the time
+coordinate because source-specific observation dates have not been verified.
+Masked-value validation and comparison with dated fare adjustments remain
+pending until an endpoint sample is reviewed.
+
 Implement this pilot with the following constraints and deliverables.
 
 - Keep source response, missing reason, parsed value, treated value, flags,

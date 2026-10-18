@@ -1,6 +1,85 @@
 source("R/pemob_helpers.R")
 source("R/pemob_2025.R")
 
+municipal_2019 <- read_pemob_source(
+  "data-raw/Pemob2019_Municipal.xlsx",
+  skip = 1
+)
+raw_fare_2019 <- municipal_2019[["3.1.1.A"]]
+parsed_fare_2019 <- parse_pemob_response(raw_fare_2019)
+
+stopifnot(
+  is.character(raw_fare_2019),
+  any(raw_fare_2019 == "NR", na.rm = TRUE),
+  any(parsed_fare_2019$missing_reason == "NR", na.rm = TRUE),
+  any(raw_fare_2019 == "", na.rm = TRUE),
+  any(parsed_fare_2019$missing_reason == "blank", na.rm = TRUE),
+  any(raw_fare_2019 == "RS3,45", na.rm = TRUE),
+  any(parsed_fare_2019$parsed_value == 3.45, na.rm = TRUE)
+)
+
+municipal_2024 <- read_pemob_source(
+  "data-raw/pemob_municipal_2024.xlsx",
+  skip = 1
+)
+metro_2024 <- read_pemob_source(
+  "data-raw/pemob_metropolitana_2024.xlsx",
+  skip = 1
+)
+stopifnot(
+  municipal_2024[["3.1.1.C"]][1] == "2022-10-01",
+  municipal_2024[["11.2.2.B"]][2] == "2030-12-01",
+  municipal_2024[["11.2.2.B"]][1] == "NA",
+  metro_2024[["3.1.1.J"]][1] == "2023-05-01",
+  metro_2024[["3.1.1.C"]][1] == "8.1"
+)
+
+missing_variants <- c(
+  "N/D",
+  "N/A",
+  "Não disponível",
+  "NAO DISPONIVEL",
+  "Sem informação",
+  "Sem informacao",
+  "Não se aplica",
+  "Não respondeu",
+  "NÃO INFORMADO"
+)
+parsed_missing_variants <- parse_pemob_response(missing_variants)
+stopifnot(
+  all(parsed_missing_variants$parse_status == "missing"),
+  identical(
+    parsed_missing_variants$missing_reason,
+    c(
+      "N/D",
+      "N/A",
+      "not_available",
+      "not_available",
+      "no_information",
+      "no_information",
+      "not_applicable",
+      "NR",
+      "not_reported"
+    )
+  ),
+  identical(parsed_missing_variants$raw_response, missing_variants)
+)
+
+excel_error_tokens <- c(
+  "#N/A",
+  "#VALUE!",
+  "#DIV/0!",
+  "#REF!",
+  "#NAME?",
+  "#NUM!",
+  "#NULL!"
+)
+parsed_excel_errors <- parse_pemob_response(excel_error_tokens)
+stopifnot(
+  all(parsed_excel_errors$parse_status == "missing"),
+  identical(parsed_excel_errors$missing_reason, excel_error_tokens)
+)
+
 responses <- c(
   "R$ 5.50",
   "R$ 5,50",
@@ -11,6 +90,7 @@ responses <- c(
   "NA",
   "NR",
   "ND",
+  "#REF!",
   "-",
   "",
   "Texto livre",
@@ -31,16 +111,16 @@ stopifnot(
   identical(parsed$parsed_value[1:5], c(5.5, 5.5, 3.45, 15.24, 18)),
   identical(parsed$parsed_unit[1:5], c("BRL", "BRL", "BRL", "km", "m")),
   parsed$parse_status[6] == "review",
-  all(parsed$parse_status[7:12] == c(rep("missing", 5), "review")),
-  parsed$missing_reason[7:11] == c("NA", "NR", "ND", "-", "blank"),
-  parsed$parsed_value[13] == 0,
-  parsed$parse_status[13] == "parsed",
-  identical(parsed$parsed_value[14:18], c(0.5, 0.5, 0, 1, 0)),
-  all(parsed$parse_status[14:20] == "parsed"),
-  identical(parsed$parsed_unit[19:20], c("m", "km")),
-  parsed$parse_status[21] == "missing",
-  parsed$missing_reason[21] == "NA",
-  is.na(parsed$raw_response[21])
+  all(parsed$parse_status[7:13] == c(rep("missing", 6), "review")),
+  parsed$missing_reason[7:12] == c("NA", "NR", "ND", "#REF!", "-", "blank"),
+  parsed$parsed_value[14] == 0,
+  parsed$parse_status[14] == "parsed",
+  identical(parsed$parsed_value[15:19], c(0.5, 0.5, 0, 1, 0)),
+  all(parsed$parse_status[15:21] == "parsed"),
+  identical(parsed$parsed_unit[20:21], c("m", "km")),
+  parsed$parse_status[22] == "missing",
+  parsed$missing_reason[22] == "NA",
+  is.na(parsed$raw_response[22])
 )
 
 municipal_2025 <- read_pemob_2025(
@@ -53,17 +133,6 @@ stopifnot(
   sum(fares_2025$parse_status == "missing") == 1L,
   all(fares_2025$parsed_unit[fares_2025$parse_status == "parsed"] == "BRL")
 )
-
-fare_2019 <- readxl::read_excel(
-  "data-raw/Pemob2019_Municipal.xlsx",
-  skip = 1,
-  col_types = "text"
-)[["3.1.1.A"]]
-parsed_fare_2019 <- parse_pemob_response(fare_2019)
-
-stopifnot(any(
-  fare_2019 == "RS3,45" & parsed_fare_2019$parsed_value == 3.45
-))
 
 shares <- scale_pemob_share(
   value = c(0, 2, NA_real_, 4),

@@ -193,6 +193,37 @@ when required questions fail. Repair the confirmed `1.4.1.B` correspondence
 before calculating accessibility shares. Verify the positional 2020 header corrections
 in `R/pemob.R:117-125` against their actual question text as part of this audit.
 
+**Follow-up status (2026-10-17).** Historical municipal and metropolitan
+readers now import response cells as text and retain `NA`, `NR`, `ND`, and `-`
+instead of collapsing them during import. Both harmonizers keep edition values
+as text rather than coercing them to the 2024 column class. The response parser
+retains raw tokens and gives separate missing reasons to `NA`, `NR`, `ND`,
+`N/D`, `N/A`, dashes, blanks, common Portuguese text forms, and literal Excel
+error strings; ambiguous numbers and mixed text remain review cases. A scan
+across source data cells found 102,480 `NA`, 24,261 `NR`, 1,463 `ND`, 189
+dashes, and additional Portuguese forms. Regression checks confirm that the
+2019 fare `RS3,45` remains available and parses as 3.45. The 2023 date field
+converts numeric Excel date serials while preserving text entries such as
+`11/2028`.
+
+Date cells retain their Excel cell types through a second, cell-wise read.
+The reader converts date-formatted cells to ISO strings across all editions
+and columns while retaining the original text import for other cells. This
+replaces the special conversion for municipal 2023 `11.2.2.B`. Validation
+covered all 11 historical workbooks and 877 nonmissing date cells, and checked
+that other response cells remained unchanged.
+
+The checked-in source worksheets contain no native Excel error cells. `readxl`
+imports such cells as `NA`, so a future input containing them cannot be
+distinguished from a blank cell by this reader alone; check the workbook's
+error cells before relying on blank-versus-error status.
+
+The municipal and metropolitan historical scripts now complete in a headless
+run; the metropolitan export has 210 unique region-year keys and excludes
+placeholder states. Generated outputs remain local pending review. This does
+not resolve all cross-edition question meanings or the 49 previously identified
+2024 differences, and import warnings still need classification.
+
 ### 7. Metropolitan identity currently relies on names alone
 
 **Evidence; high confidence for implementation; matching policy unresolved.**
@@ -274,6 +305,67 @@ establish that converted responses preserve meaning.
 Added on 17 October 2026 following the requested review of reporting errors.
 The treatment below is a proposed implementation policy. No observations have
 been corrected, removed, or imputed in this review.
+
+### Candidate generation results
+
+A first review pass covers fare (`3.1.1.A`), ciclovia (`1.6.1.G`), and
+ciclofaixa (`1.6.1.H`) from the rebuilt 2019–2024 municipal history and the raw
+2025 survey. The candidate generator retains the original response and parsed
+value, and initializes the treated value to the parsed value. It flags records
+for review only; it does not correct, exclude, or interpolate them. Reruns
+write the regenerable extract to `data/pemob_review_candidates.csv`; the
+tracked `docs/internal/pemob-review-ledger.csv` is a review snapshot, so
+rerunning the script cannot overwrite human decisions in that ledger.
+
+The snapshot contains 134 distinct candidates. Overlapping flags include 74
+zero transitions, 34 cross-city outliers, 16 abrupt tenfold changes, 14
+unparsed responses, and one explicit unit mismatch. No fare value met these
+screening rules. Zero transitions and outlier flags are leads for review, not
+proof of error. Suspected unit changes and ambiguous separators remain
+unparsed/unresolved, with treated values unchanged from parser output.
+
+Official municipal evidence confirms plausibility concerns but not exact
+corrections. Macaé reported 28.27 km of combined ciclovias, ciclofaixas, and
+ciclorrotas in 2022 ([municipal system presentation](https://macae.rj.gov.br/noticias/leitura/noticia/mobilidade-apresenta-projeto-para-atualizacao-do-sistema-cicloviario));
+the same page distinguishes 39.70 km of proposed routes from existing
+infrastructure. A 2025 Macaé page reports 30 km of ciclovias and ciclofaixas,
+but does not break the categories down and its page date conflicts with the
+date in its body ([cyclist-day article](https://www.macae.rj.gov.br/noticias/leitura/noticia/macae-celebra-o-dia-do-ciclista-com-muitos-motivos-para-pedalar)).
+São Vicente reported more than 12 km combined in 2025, plus lengths for two
+specific corridors ([municipal release](https://www.saovicente.sp.gov.br/informacao/sao-vicente-sobre-duas-rodas-pedalar-e-saude-e-sustentabilidade));
+its 2026–2029 PPA identifies a 2023 cycle lane and 2024 revitalization but
+gives no comparable citywide totals ([PPA](https://www.saovicente.sp.gov.br/transparencia/orcamento-municipal/ppa-plano-plurianual/ppa-2026-2029/projeto-de-lei-ppa-sv-2026-2029_compressed.pdf/%40%40download/file/Projeto%20de%20Lei%20-%20PPA%20SV%202026-2029_compressed.pdf)).
+These sources do not support dividing a response by 1,000, reallocating length
+between categories, or assigning an exact historical correction. The two
+cycling categories remain separate; cross-field agreement is not imposed
+because the published sources combine definitions and lack category totals.
+
+The generator has synthetic regression coverage for abrupt and cross-city
+changes, zeros, explicit unit mismatches, parser review cases, negative fares,
+missing reasons, pending decisions, and unchanged treated values. Short-gap
+interpolation, reviewed corrections, and treatment validation remain the next
+work; this stage does not authorize publication of treated values.
+
+### Short-gap interpolation gate
+
+The first interpolation review extract found 738 missing cells with an
+observation in each adjacent edition: 71 explicit `NR` cycling cells and 667
+`NA` cells. No fare gap is explicitly marked `NR`. The other missing forms are
+not treated as item nonresponse because their meanings differ, and nonresponse
+must also be distinguished from nonparticipation. No candidate is eligible for
+an estimate yet: no endpoint has been accepted with review evidence. The
+extract in `data/pemob_interpolation_candidates.csv` records endpoints,
+decisions, eligibility reasons, and a separate proposed value; all proposed
+values are currently missing.
+
+The proposal function supports irregular numeric reference times, but the
+actual data run uses survey edition year because no verified observation dates
+are available in the input. It rejects unreviewed endpoints, missing evidence,
+nonparticipation, non-`NR` markers, nonnumeric endpoints, and incompatible
+units. Synthetic tests cover those gates, zero endpoints, irregular reference
+times, unequal and equal values, long gaps, and no extrapolation. Masked-value
+validation is not possible until a reviewed endpoint sample exists; no treated
+series has been produced.
 
 ### Evidence from fares and cycling infrastructure
 

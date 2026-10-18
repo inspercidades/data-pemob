@@ -45,8 +45,6 @@ path_excel_files <- list.files(here("data-raw"), pattern = "\\.xlsx$", full.name
 
 path_pemob <- path_excel_files[!str_detect(path_excel_files, "códigos|Renomeado")]
 
-na_excel <- c("#REF!", "NR", "NA", "ND", "-")
-
 vl_names <- c(
   "code_metro" = "Código IBGE",
   "code_metro" = "CÓDIGO IBGE",
@@ -67,7 +65,7 @@ vl_names <- c(
 
 path_19 <- here("data-raw/Pemob2019_Metropolitana.xlsx")
 
-pemob19 <- read_excel(path_19, skip = 1, na = na_excel)
+pemob19 <- read_pemob_source(path_19, skip = 1)
 
 pemob19 <- pemob19 |>
   rename(any_of(vl_names))
@@ -91,7 +89,7 @@ survey19 <- survey19 |>
 
 path_21 <- here("data-raw/pemob21_metropolitana.xlsx")
 
-pemob21 <- read_excel(path_21, skip = 1, na = na_excel)
+pemob21 <- read_pemob_source(path_21, skip = 1)
 
 pemob21 <- pemob21 |>
   rename(any_of(vl_names))
@@ -107,7 +105,7 @@ names(dict21) <- c("name_variable", "code_variable")
 
 path_22 <- here("data-raw/pemob_metropolitana_2022.xlsx")
 
-pemob22 <- read_excel(path_22, skip = 1, na = na_excel)
+pemob22 <- read_pemob_source(path_22, skip = 1)
 
 pemob22 <- pemob22 |>
   rename(any_of(vl_names))
@@ -121,7 +119,7 @@ names(dict22) <- c("name_variable", "code_variable")
 
 path_23 <- here("data-raw/pemob2023_metropolitana.xlsx")
 
-pemob23 <- read_excel(path_23, skip = 1, na = na_excel)
+pemob23 <- read_pemob_source(path_23, skip = 1)
 
 pemob23 <- pemob23 |>
   rename(any_of(vl_names))
@@ -137,7 +135,7 @@ names(dict23) <- c("name_variable", "code_variable")
 
 path_24 <- here("data-raw/pemob_metropolitana_2024.xlsx")
 
-pemob24 <- read_excel(path_24, skip = 1, na = na_excel)
+pemob24 <- read_pemob_source(path_24, skip = 1)
 
 pemob24 <- pemob24 |>
   rename(any_of(vl_names))
@@ -241,16 +239,10 @@ pemob_get_variable <- function(var) {
   # Filter out NULL entries
   ls <- ls[!sapply(ls, is.null)]
 
-  ref_class <- class(ls$year_2024[[var]])
-
-  if (is.POSIXct(ls$year_2024[[var]])) {
-    ref_class <- "character"
-  }
-
   # Rename columns
   stacked <- map2(ls, names(ls), \(x, y) {
     result <- x[1:3]
-    result[[y]] <- do.call(paste0("as.", ref_class), list(x[[4]]))
+    result[[y]] <- as.character(x[[4]])
     return(result)
   })
 
@@ -387,12 +379,17 @@ sub_errors <- tbl_errors |>
                                   is_missing_2019)) |>
   select(name_variable, status_variable)
 
-control <- left_join(sub_errors, pemob_codigos)
-
-control |>
+control_errors <- left_join(sub_errors, pemob_codigos) |>
   mutate(
-    flag = ifelse(status_variable != status_variable_pemob | is.na(status_variable_pemob), 1L, 0L)
+    flag = ifelse(
+      status_variable != status_variable_pemob | is.na(status_variable_pemob),
+      1L,
+      0L
+    )
   ) |>
-  filter(flag == 1) |>
-  View()
+  filter(flag == 1)
+
+if (interactive()) {
+  View(control_errors)
+}
 

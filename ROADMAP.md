@@ -75,9 +75,10 @@ historical readers reaches the released data.
   build now stops unless every such code is listed in
   `tabelas/pemob_crosswalk_gaps.csv`. The remaining warnings come from footer
   rows in the 2019 file and from packages built under a newer R.
-- Combine the 2019 checkbox columns that the crosswalk lists as ranges (for
-  example `4.7.1.A-L` for 2024 `4.6.1`): six municipal questions and one
-  metropolitan question. Their 2019 values are absent today.
+- [x] Combine the 2019 checkbox columns that the crosswalk lists as ranges
+  (for example `4.7.1.A-L` for 2024 `4.6.1`) into one cell of chosen options,
+  worded as in later editions. `tabelas/pemob_range_options.csv` maps each
+  column to its option label.
 - Review cross-edition question correspondences against question text and
   unit. The known collision is `1.4.1.B` (metro/rail stations in 2019,
   accessible road terminals in 2024).

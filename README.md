@@ -17,6 +17,12 @@ históricos de 2019 a 2024 em `data/`, e depois `R/pemob_2025.R`, que acrescenta
 `data/pemob_metro_harmonizada_2025.csv`, com uma linha por local e edição e a
 coluna `participated`.
 
+Em 2019, cada opção das perguntas de múltipla escolha vinha numa coluna própria.
+O pipeline junta as opções marcadas com "Sim" numa única resposta. Quando outra
+opção da mesma pergunta traz um código de ausência, como "NR", a resposta fica
+listada em `data/pemob_range_incomplete.csv` e
+`data/pemob_metro_range_incomplete.csv`, com as opções sem resposta.
+
 ## Estrutura
 
 - `R/pemob.R`, `R/pemob_metropolitana.R`: leitura das edições, compatibilização

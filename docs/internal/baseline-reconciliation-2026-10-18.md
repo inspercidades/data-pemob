@@ -35,6 +35,7 @@ The comparison covers 198,240 cells in the 472 questions the two files share.
 | Excel date serial | 55 | The workbook shows date serials such as `44287`; the rebuild writes ISO dates. One workbook cell shows the year 2046 as the date `1905-08-07`. |
 | Whitespace | 31 | Extra spaces or line breaks. |
 | Code repair | 223 | Cells moved by the code repairs below. |
+| Range combined | 240 | 2019 checkbox questions, such as Mobility Plan themes (`4.6.1`), that the workbook leaves blank. The rebuild combines their option columns; see below. |
 | Value not in rebuild | 14 | 2019 `1.4.1.B`, which counts metro/rail stations in 2019 and accessible road terminals in 2024. The rebuild no longer links the two. |
 | `NA` removed from text | 11 | The workbook deleted every `NA` inside text: `REGIÃO METROPOLITANA` became `REGIÃO METROPOLITA`, `CAMPINA GRANDE` became `CAMPI GRANDE`. |
 
@@ -61,6 +62,22 @@ The live dashboard shows the 2019 error. For all 16 cities with a 2019 bicycle
 share, "POD - Percentual de viagens por transporte público" equals the bicycle
 share; Recife shows 2.4%. The 2020 Mobility Plan questions do not appear on
 the site.
+
+## Checkbox questions in 2019
+
+The 2019 questionnaires store six municipal and one metropolitan
+multiple-choice question as one Sim/Não column per option. Later editions
+store the chosen options in one cell, separated by `; `. The rebuild combines
+the 2019 columns into that form through `tabelas/pemob_range_options.csv`,
+which gives each column the option wording of later editions.
+
+- A row with at least one `Sim` lists the chosen options in questionnaire
+  order. A missing code in another option of the same row is dropped.
+- A row answered `Não` in every option gets the question's none label, such
+  as `Nenhuma das anteriores`. Questions `5.3.1` and `9.1.1` have no none
+  option in later editions; their 14 such rows use `Nenhuma das anteriores`.
+- A row with the same missing code in every option keeps that code.
+- Any other pattern stops the build.
 
 ## Number formatting
 

@@ -3,7 +3,7 @@
 # Run from the project root with `Rscript R/check_pemob_baseline.R` after
 # `R/build_pemob.R`. Prints counts by class and writes one row per differing
 # cell to `data/pemob_baseline_differences.csv`, except for blanked missing
-# codes and number formatting.
+# codes and number formatting outside repaired cells.
 
 source(here::here("R", "pemob_2025.R"))
 
@@ -102,11 +102,12 @@ compare_pemob_baseline <- function(
       difference = classify_pemob_difference(baseline_value, rebuilt_value)
     )
 
-  # Cells the repair table moves to another column differ by design.
+  # Cells the repair table moves to another column differ by design; the flag
+  # keeps their difference class so a value regression stays visible.
+  result$code_repair <- rep(FALSE, nrow(result))
   if (!is.null(repairs)) {
-    repaired <- paste(result$year, result$code_variable) %in%
+    result$code_repair <- paste(result$year, result$code_variable) %in%
       paste(repairs$edition, repairs$code_2024)
-    result$difference[repaired] <- "code_repair"
   }
   return(result)
 }
@@ -147,10 +148,11 @@ check_pemob_baseline <- function() {
     repairs = read_pemob_code_repairs()
   )
 
-  # Blanked missing codes and number formatting are counted, not listed.
+  # Blanked missing codes and number formatting are counted, not listed,
+  # except in repaired cells.
   bulk_classes <- c("missing_code_dropped", "number_format")
   readr::write_excel_csv2(
-    dplyr::filter(differences, !difference %in% bulk_classes),
+    dplyr::filter(differences, !difference %in% bulk_classes | code_repair),
     here::here("data", "pemob_baseline_differences.csv"),
     na = ""
   )
@@ -161,6 +163,9 @@ check_pemob_baseline <- function() {
     paste0(counts$difference, ": ", counts$n),
     rep("*", nrow(counts))
   ))
+  cli::cli_alert_info(
+    "{sum(differences$code_repair)} differing cell{?s} come{?s/} from code repairs."
+  )
   return(invisible(differences))
 }
 

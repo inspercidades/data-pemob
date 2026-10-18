@@ -87,6 +87,12 @@ make_clean_names_pemob <- function(x) {
 }
 
 names(pemob19) <- str_squish(str_remove(names(pemob19), "\\.\\.\\.[0-9]{1,3}"))
+pemob19 <- combine_pemob_range_options(
+  pemob19,
+  read_pemob_range_options(),
+  level = "municipal",
+  edition = 2019
+)
 
 dict19 <- read_excel(
   path_19,

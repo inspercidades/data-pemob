@@ -69,6 +69,12 @@ pemob19 <- read_pemob_source(path_19, skip = 1)
 
 pemob19 <- pemob19 |>
   rename(any_of(vl_names))
+pemob19 <- combine_pemob_range_options(
+  pemob19,
+  read_pemob_range_options(),
+  level = "metropolitan",
+  edition = 2019
+)
 
 dict19 <- read_excel(path_19, range = "C1:LN2", col_names = FALSE, .name_repair = make_clean_names)
 dict19 <- header_to_dictionary(dict19)

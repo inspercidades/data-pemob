@@ -203,6 +203,97 @@ check_pemob_crosswalk_gaps <- function(gaps, expected, level) {
   return(invisible(TRUE))
 }
 
+## Checkbox ranges ---------------------------------------------------------
+
+# The 2019 questionnaires store some multiple-choice questions as one Sim/Não
+# column per option. Later editions store the chosen options in one cell,
+# separated by "; ".
+
+read_pemob_range_options <- function(
+  path = here::here("tabelas", "pemob_range_options.csv")
+) {
+  result <- readr::read_csv(
+    path,
+    col_types = readr::cols(
+      edition = readr::col_double(),
+      .default = readr::col_character()
+    ),
+    na = "",
+    progress = FALSE
+  )
+  return(result)
+}
+
+combine_pemob_range_answers <- function(answers, labels, none_label, range) {
+  answers <- trimws(answers)
+  normalized <- tolower(answers)
+  chosen <- normalized %in% "sim"
+  declined <- normalized %in% c("não", "nâo", "nao")
+  missing_codes <- unique(answers[!is.na(answers) & !chosen & !declined])
+
+  if (all(is.na(answers))) {
+    return(NA_character_)
+  }
+  if (any(chosen)) {
+    return(paste(labels[chosen], collapse = "; "))
+  }
+  if (all(declined)) {
+    if (is.na(none_label)) {
+      cli::cli_abort(
+        "{.val {range}} has a row with no option chosen and no none label."
+      )
+    }
+    return(none_label)
+  }
+  if (length(missing_codes) == 1L && all(!declined & !is.na(answers))) {
+    return(missing_codes)
+  }
+  cli::cli_abort(c(
+    "{.val {range}} has a row with no option chosen and mixed answers.",
+    "x" = "{answers}"
+  ))
+}
+
+combine_pemob_range_options <- function(dat, options, level, edition) {
+  options <- options[
+    options$level == level & options$edition == edition,
+  ]
+
+  for (range in unique(options$source_range)) {
+    range_options <- options[options$source_range == range, ]
+    absent <- setdiff(range_options$source_code, names(dat))
+    if (length(absent) > 0L) {
+      cli::cli_abort(c(
+        "The {edition} {level} source lacks options of {.val {range}}.",
+        "x" = "{absent}"
+      ))
+    }
+
+    answers <- as.matrix(dat[range_options$source_code])
+    unknown <- setdiff(
+      tolower(trimws(answers[!is.na(answers)])),
+      c("sim", "não", "nâo", "nao")
+    )
+    unknown <- unknown[is.na(parse_pemob_response(unknown)$missing_reason)]
+    if (length(unknown) > 0L) {
+      cli::cli_abort(c(
+        "{.val {range}} holds answers other than Sim, Não, or a missing code.",
+        "x" = "{unknown}"
+      ))
+    }
+
+    dat[[range]] <- apply(answers, 1, function(row) {
+      combine_pemob_range_answers(
+        row,
+        labels = range_options$option_label,
+        none_label = range_options$none_label[1],
+        range = range
+      )
+    })
+  }
+  return(dat)
+}
+
 pemob_metro_aliases <- data.frame(
   abbrev_state = c(
     "AL",

@@ -63,7 +63,8 @@ compare_pemob_baseline <- function(
   baseline,
   rebuilt,
   key_cols,
-  repairs = NULL
+  repairs = NULL,
+  combined = NULL
 ) {
   codes <- intersect(
     setdiff(names(baseline), key_cols),
@@ -98,6 +99,12 @@ compare_pemob_baseline <- function(
     repaired <- paste(result$year, result$code_variable) %in%
       paste(repairs$edition, repairs$code_2024)
     result$difference[repaired] <- "code_repair"
+  }
+  # The workbook leaves the 2019 checkbox questions blank.
+  if (!is.null(combined)) {
+    from_range <- paste(result$year, result$code_variable) %in%
+      paste(combined$edition, combined$code_2024)
+    result$difference[from_range] <- "range_combined"
   }
   return(result)
 }
@@ -135,7 +142,8 @@ check_pemob_baseline <- function() {
     baseline[baseline_cols],
     rebuilt,
     key_cols = key_cols,
-    repairs = read_pemob_code_repairs()
+    repairs = read_pemob_code_repairs(),
+    combined = dplyr::filter(read_pemob_range_options(), level == "municipal")
   )
 
   # Blanked missing codes and number formatting are counted, not listed.

@@ -227,7 +227,7 @@ build_pemob_2025 <- function() {
     here::here("data", "pemob_metro_harmonizada_2025.csv")
   )
   cli::cli_alert_warning(
-    "Historical years still use the 2024 workbook cohort; see ROADMAP-2025.md."
+    "Historical years still use the 2024 workbook cohort; see ROADMAP.md."
   )
   cli::cli_alert_success(
     "Wrote the municipal and metropolitan harmonized datasets through 2025."

@@ -11,10 +11,10 @@ historical coverage, question mapping, and dashboard calculations before
 publishing 2025 or undertaking a broader refactor.
 
 This review covers the current working tree, including the uncommitted
-`R/pemob_2025.R`, its tests, and `ROADMAP-2025.md`. It supplements the roadmap;
+`R/pemob_2025.R`, its tests, and `ROADMAP-2025.md` (now `ROADMAP.md`). It supplements the roadmap;
 it does not implement its fixes. Existing code, data, and roadmap files were
 left unchanged. The sequenced implementation plan is in
-`.omx/plans/pemob-codebase-review-implementation.md`.
+`docs/internal/pemob-implementation-plan-2026-10-17.md`.
 
 ## Current workflow
 
@@ -345,6 +345,16 @@ changes, zeros, explicit unit mismatches, parser review cases, negative fares,
 missing reasons, pending decisions, and unchanged treated values. Short-gap
 interpolation, reviewed corrections, and treatment validation remain the next
 work; this stage does not authorize publication of treated values.
+
+The review layer now applies explicit ledger decisions to a raw long-form
+series while retaining each source response. Pending and accepted decisions
+leave parsed values unchanged; a correction needs a finite replacement value;
+an exclusion needs a missing treated value. Every non-pending decision needs a
+reviewer and evidence, and ledger keys must match source municipality,
+question, and edition keys. The current ledger has no approved decisions, so
+applying it produces no corrections or exclusions. This function establishes
+the treatment boundary; it does not validate the evidence or change portal
+outputs.
 
 ### Short-gap interpolation gate
 

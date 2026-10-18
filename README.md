@@ -1,42 +1,43 @@
 # PEMOB
 
-Pipeline em R para processamento, harmonização e publicação dos dados da PEMOB
-(Pesquisa Nacional de Mobilidade Urbana).
+Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
+(Pesquisa Nacional de Mobilidade Urbana) de 2019 a 2025. O
+[roteiro](ROADMAP.md) registra prioridades, decisões e situação atual.
+
+## Uso
+
+```sh
+Rscript tests/test-pemob.R          # testes
+Rscript R/pemob.R                   # histórico municipal 2019–2024
+Rscript R/pemob_metropolitana.R     # histórico metropolitano 2019–2024
+Rscript R/pemob_2025.R              # acrescenta 2025
+```
+
+Os três scripts gravam CSVs em `data/`. `R/pemob_2025.R` acrescenta 2025 à
+planilha harmonizada de 2024 em `tabelas/`, não ao histórico reconstruído.
 
 ## Estrutura
 
-- `R/` — scripts de processamento
-  - `pemob.R`, `pemob_final.R` — pipeline principal (municipal)
-  - `pemob_metropolitana.R` — pipeline regiões metropolitanas
-  - `pemob_portal.R` — preparação dos arquivos
-    JSON consumidos pelo portal
-  - `pemob_errors.R` — utilitários de validação
-- `data-raw/` — dados brutos PEMOB (2019–2025, municipal e metropolitana)
-- `data/` — dicionários, categorias e arquivos derivados
-- `tabelas/` — tabelas de referência (códigos, harmonização)
+- `R/pemob.R`, `R/pemob_metropolitana.R`: leitura das edições, compatibilização
+  dos códigos de perguntas e junção dos municípios e regiões.
+- `R/pemob_2025.R`: leitura dos CSVs de 2025 e junção ao histórico.
+- `R/pemob_helpers.R`, `R/pemob_series.R`: leitura das respostas, missing
+  reasons, parsing de valores e camada de revisão.
+- `R/pemob_review.R`, `R/pemob_interpolation.R`: candidatos a revisão e a
+  interpolação de tarifas e infraestrutura cicloviária.
+- `R/pemob_final.R`, `R/pemob_portal.R`, `R/pemob_portal_final.R`,
+  `R/pemob_data_portal.R`: cálculos e exportações antigas do portal. Dependem
+  de arquivos que não estão no repositório.
+- `data-raw/`: arquivos originais da PEMOB.
+- `tabelas/`: mapa de códigos das perguntas e planilha harmonizada de 2024.
+- `data/`: dicionários e saídas geradas.
+- `docs/internal/`: revisões, logs e planos de trabalho.
 
-## Saídas do portal
-
-`data/portal/v1/pemob_<ano>.json` (2019–2024) são os artefatos consumidos
-pelo frontend do Portal das Cidades.
-
-## Dados harmonizados até 2025
-
-Execute `Rscript tests/test-pemob.R` para conferir os contratos e as
-harmonizações e `Rscript R/pemob_2025.R` para gerar os CSVs municipal e
-metropolitano em `data/`. As séries anteriores a 2025 vêm da planilha
-harmonizada de 2024.
-O [roteiro de 2025](ROADMAP-2025.md) registra problemas de cobertura histórica
-que precisam ser resolvidos antes de publicar novos arquivos do portal.
+O dashboard e a tabela do [Observatório](https://observatorio.insper.edu.br/projetos/dashboard)
+leem arquivos próprios no repositório `observatorio`, não as saídas de
+`data/portal/v1/`.
 
 ## Notas
 
-- Arquivos grandes (`.xlsx`, CSVs harmonizados completos) ficam fora do
-  controle de versão — ver `.gitignore`.
-- Projeto RStudio: abrir `simu_pemob.Rproj`.
-
-## Próximos passos
-
-- Revisar a cobertura histórica e publicar o JSON municipal de 2025
-- Definir o formato de publicação dos dados metropolitanos
-- Refatorar código e usar {renv}
+- Arquivos grandes ficam fora do controle de versão; ver `.gitignore`.
+- Projeto RStudio: `simu_pemob.Rproj`.

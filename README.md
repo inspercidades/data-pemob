@@ -7,6 +7,7 @@ Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
 ## Uso
 
 ```sh
+Rscript -e 'renv::restore()'  # instala as versões fixadas em renv.lock
 Rscript tests/test-pemob.R    # testes
 Rscript R/build_pemob.R       # reconstrói 2019–2025 a partir dos arquivos originais
 ```
@@ -48,4 +49,6 @@ leem arquivos próprios no repositório `observatorio`, não as saídas de
 ## Notas
 
 - Arquivos grandes ficam fora do controle de versão; ver `.gitignore`.
+- O `renv` fixa os pacotes listados em `DESCRIPTION`, que cobrem o build e os
+  testes. Os scripts antigos do portal usam pacotes fora dessa lista.
 - Projeto RStudio: `simu_pemob.Rproj`.

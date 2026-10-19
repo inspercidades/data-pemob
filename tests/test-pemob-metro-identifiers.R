@@ -62,15 +62,17 @@ expected_name <- c(
 
 stopifnot(identical(historical_name, expected_name))
 stopifnot(all(expected_name %in% metro_2024_names))
-alias_keys <- build_pemob_metro_key(
-  pemob_metro_aliases$abbrev_state,
-  pemob_metro_aliases$canonical_name
-)
-metro_2024_keys <- build_pemob_metro_key(
-  metro_2024_source$UF,
-  metro_2024_names
-)
-stopifnot(all(alias_keys %in% metro_2024_keys))
+stopifnot(identical(
+  canonicalize_pemob_metro_name(
+    c("RS", "PI"),
+    c("RM Porto Alegre", "RIDE Teresina"),
+    pemob_metro_aliases
+  ),
+  c(
+    "Região Metropolitana de Porto Alegre",
+    "Região Integrada de Desenvolvimento da Grande Teresina"
+  )
+))
 
 source_files <- c(
   here::here("data-raw", "Pemob2019_Metropolitana.xlsx"),
@@ -79,6 +81,7 @@ source_files <- c(
   here::here("data-raw", "pemob2023_metropolitana.xlsx"),
   here::here("data-raw", "pemob_metropolitana_2024.xlsx")
 )
+later_keys <- character()
 for (path in source_files) {
   source_data <- readxl::read_excel(path, skip = 1)
   region_col <- intersect(
@@ -92,6 +95,9 @@ for (path in source_files) {
   )
   identity_data <- add_pemob_metro_identity(identity_data)
   stopifnot(!anyDuplicated(identity_data$metro_key))
+  if (!grepl("2019", path)) {
+    later_keys <- c(later_keys, identity_data$metro_key)
+  }
 }
 
 source(here::here("R", "pemob_2025.R"))
@@ -113,6 +119,17 @@ metro_history <- tibble::tibble(
   year = 2024,
   participated = TRUE
 )
+# Every alias points to a region that responds after 2019.
+later_keys <- c(
+  later_keys,
+  build_pemob_metro_key(metro_survey$UF, metro_survey$`Região Metropolitana`)
+)
+alias_keys <- build_pemob_metro_key(
+  pemob_metro_aliases$abbrev_state,
+  pemob_metro_aliases$canonical_name
+)
+stopifnot(all(alias_keys %in% later_keys))
+
 survey_codes <- setdiff(names(metro_survey), c("UF", "Região Metropolitana"))
 metro_history[survey_codes] <- NA_character_
 metro <- harmonize_metro_2025(metro_survey, metro_history)

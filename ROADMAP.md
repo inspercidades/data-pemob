@@ -34,8 +34,8 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 
 | Area | State |
 |---|---|
-| Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 42 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
-| 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 43 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
+| Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 41 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
+| 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 41 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
 | Parsing | Currency, decimal commas, `km` suffixes, Excel dates, and missing tokens (`NA`, `NR`, `ND`, `-`) are parsed and tested. Ambiguous separators go to review. |
 | Review layer | 134 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
 | Interpolation | Candidate extract and gate exist. The gate currently admits no case. |
@@ -64,7 +64,7 @@ historical readers reaches the released data.
 - [x] Write missing cells as empty in the CSVs, so they no longer look like a
   written `NA`.
 - [x] Reconcile the rebuilt history with the 2024 workbook. Every difference
-  traces to the workbook or to the `1.4.1.B` unlink; see
+  traces to the workbook or to a pipeline correction; see
   `docs/internal/baseline-reconciliation-2026-10-18.md` and
   `Rscript R/check_pemob_baseline.R`.
 - [x] Format numeric Excel cells with 15 significant digits instead of 17.
@@ -79,9 +79,12 @@ historical readers reaches the released data.
   (for example `4.7.1.A-L` for 2024 `4.6.1`) into one cell of chosen options,
   worded as in later editions. `tabelas/pemob_range_options.csv` maps each
   column to its option label.
-- Review cross-edition question correspondences against question text and
-  unit. The known collision is `1.4.1.B` (metro/rail stations in 2019,
-  accessible road terminals in 2024).
+- [x] Review cross-edition question links against question text and
+  values. Several 2019 and 2020 blocks were paired by position after the item
+  order changed; `tabelas/pemob_crosswalk_corrections.csv` relinks them. See
+  `docs/internal/crosswalk-review-2026-10-18.md`.
+- [x] Merge metropolitan regions that appeared under two names: 2019
+  `RM Porto Alegre` and `RIDE Teresina`.
 - Record the 2025 code changes reported by SIMU. In 2025, `12.1.1` is the
   municipal fund question that was `12.2.1` until 2024. `1.3.1.A` is new and
   has no reported values in the 2025 file.
@@ -256,6 +259,10 @@ export without hand edits.
 3. **Same view or separate views.** Decide after the concept links are
    reviewed: if few dashboard indicators exist at both levels, give
    metropolitan data its own view instead of a switch.
+4. **2019 public subsidy.** The 2019 questionnaire asks for one public
+   subsidy per mode; 2024 splits it into fare-benefit subsidy and direct
+   subsidy (subvenção). The rebuild leaves 2019 unlinked; it could feed the
+   direct subsidy instead.
 
 ## Related documents
 
@@ -265,4 +272,6 @@ export without hand edits.
 - `docs/internal/pipeline-reproduction-log-2026-10-18.md` — reproduction run.
 - `docs/internal/baseline-reconciliation-2026-10-18.md` — rebuilt history
   against the 2024 workbook.
+- `docs/internal/crosswalk-review-2026-10-18.md` — cross-edition question
+  links.
 - `docs/internal/pemob-dashboard-brief-and-fix-plan.md` — dashboard redesign.

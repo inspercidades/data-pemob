@@ -27,6 +27,11 @@ keydict <- keydict |>
     srv_block = bloco,
     srv_section = secao
   )
+keydict <- correct_pemob_crosswalk(
+  keydict,
+  read_pemob_crosswalk_corrections(),
+  level = "metropolitan"
+)
 
 dict_insper <- read_excel(here("data-raw/Pemob_Renomeado_2024.xlsx"), skip = 3)
 
@@ -74,6 +79,11 @@ pemob19 <- combine_pemob_range_options(
   read_pemob_range_options(),
   level = "metropolitan",
   edition = 2019
+)
+pemob19 <- split_pemob_list_cells(
+  pemob19,
+  c("3.1.2.A", "3.1.2.B", "3.1.4"),
+  parts = 3L
 )
 
 # The combined answer drops missing codes in the other options; list those

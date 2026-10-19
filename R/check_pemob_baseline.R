@@ -65,7 +65,8 @@ compare_pemob_baseline <- function(
   key_cols,
   repairs = NULL,
   combined = NULL,
-  allowed_missing = character()
+  allowed_missing = character(),
+  corrected = NULL
 ) {
   baseline_codes <- setdiff(names(baseline), key_cols)
   missing_codes <- setdiff(
@@ -116,6 +117,12 @@ compare_pemob_baseline <- function(
       paste(combined$edition, combined$code_2024)
     result$difference[from_range] <- "range_combined"
   }
+  # The workbook follows the crosswalk links that the corrections replace.
+  if (!is.null(corrected)) {
+    relinked <- paste(result$year, result$code_variable) %in%
+      paste(corrected$edition, corrected$code_2024)
+    result$difference[relinked] <- "crosswalk_correction"
+  }
   return(result)
 }
 
@@ -153,7 +160,11 @@ check_pemob_baseline <- function() {
     rebuilt,
     key_cols = key_cols,
     repairs = read_pemob_code_repairs(),
-    combined = dplyr::filter(read_pemob_range_options(), level == "municipal")
+    combined = dplyr::filter(read_pemob_range_options(), level == "municipal"),
+    corrected = dplyr::filter(
+      read_pemob_crosswalk_corrections(),
+      level == "municipal"
+    )
   )
 
   # Blanked missing codes and number formatting are counted, not listed,

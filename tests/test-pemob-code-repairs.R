@@ -60,7 +60,7 @@ repaired_crosswalk <- repair_pemob_municipal_crosswalk(
 
 stopifnot(
   identical(repaired_crosswalk$x2020, c("4.4.1", "repaired:4.5.1", "1.4.1.B")),
-  identical(repaired_crosswalk$x2019, c("4.4.1", "4.6.1", NA))
+  identical(repaired_crosswalk$x2019, crosswalk$x2019)
 )
 
 unknown_code <- synthetic_repairs

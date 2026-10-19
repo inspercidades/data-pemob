@@ -19,12 +19,21 @@ keydict <- readxl::read_excel(
 ) |>
   janitor::clean_names() |>
   tidyr::fill(bloco, secao)
-keydict <- repair_pemob_municipal_crosswalk(keydict)
+keydict <- repair_pemob_municipal_crosswalk(
+  keydict,
+  read_pemob_code_repairs()
+)
+keydict <- correct_pemob_crosswalk(
+  keydict,
+  read_pemob_crosswalk_corrections(),
+  level = "municipal"
+)
 accessible_terminals <- keydict[keydict$x2024 == "1.4.1.B", ]
+rail_stations <- keydict[keydict$x2024 == "1.4.1.E", ]
 
 stopifnot(
-  nrow(accessible_terminals) == 1L,
-  is.na(accessible_terminals$x2019)
+  identical(accessible_terminals$x2019, "1.4.1.C"),
+  identical(rail_stations$x2019, "1.4.1.B")
 )
 
 source_files <- c(

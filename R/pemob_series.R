@@ -18,7 +18,7 @@ pemob_municipal_source_files <- c(
 
 # Long series of the review targets, one row per municipality, question, and
 # edition. Responses stay as raw text.
-read_pemob_target_series <- function() {
+read_pemob_target_series <- function(variables = pemob_target_variables) {
   historical_path <- here::here("data", "pemob_harmonizada_2024.csv")
   id_cols <- c("code_muni", "name_muni", "abbrev_state", "year", "participated")
 
@@ -34,7 +34,7 @@ read_pemob_target_series <- function() {
     na = "",
     show_col_types = FALSE
   )
-  required_cols <- c(id_cols, pemob_target_variables)
+  required_cols <- c(id_cols, variables)
   missing_cols <- setdiff(required_cols, names(historical))
   if (length(missing_cols) > 0L) {
     cli::cli_abort(
@@ -50,7 +50,7 @@ read_pemob_target_series <- function() {
       code_muni = "CÓDIGO IBGE",
       name_muni = "Município",
       abbrev_state = "UF",
-      dplyr::all_of(pemob_target_variables)
+      dplyr::all_of(variables)
     ) |>
     dplyr::mutate(year = "2025", participated = "TRUE")
 
@@ -61,7 +61,7 @@ read_pemob_target_series <- function() {
 
   result <- wide |>
     tidyr::pivot_longer(
-      dplyr::all_of(pemob_target_variables),
+      dplyr::all_of(variables),
       names_to = "code_variable",
       values_to = "raw_response"
     ) |>

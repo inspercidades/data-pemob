@@ -1,0 +1,23 @@
+Type: project
+Title: PEMOB harmonization pipeline
+Description: Packages needed to rebuild the harmonized PEMOB datasets
+    with R/build_pemob.R and to run the tests. Legacy portal scripts are
+    not covered.
+Depends:
+    R (>= 4.5)
+Imports:
+    cli,
+    data.table,
+    dplyr,
+    here,
+    import,
+    janitor,
+    purrr,
+    readr,
+    readxl,
+    stringr,
+    tibble,
+    tidyr,
+    tidyverse,
+    withr,
+    writexl

@@ -1,6 +1,6 @@
 # PEMOB roadmap
 
-Updated 18 October 2026. This file is the single source for priorities and
+Updated 19 October 2026. This file is the single source for priorities and
 status. Dated documents under `docs/internal/` record the evidence behind it.
 
 ## Deliverables, in order
@@ -29,6 +29,7 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 | 2026-10-18 | The table shows a curated subset of questions selected by a quality rule, not every harmonized question. Both products are redesigned. |
 | 2026-10-18 | Frontend work goes to Lucas Tavares as a data handoff; we build `observatorio` locally to check it. |
 | 2026-10-18 | The dashboard and the table support municipal and metropolitan data. |
+| 2026-10-19 | Dataverse files use the long layout in Phase 4. |
 
 ## Status
 
@@ -41,14 +42,14 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 | Interpolation | Candidate extract and gate exist. The gate currently admits no case. |
 | Dashboard formulas | Scaling and missing-to-zero fixed in code; portal outputs not regenerated. |
 | Portal export | Not reproducible: `data/portal/dicionario_v1.xlsx` and `data/portal/final/pemob_tables.rds` are missing. The live site does not read `data/portal/v1/*.json` (see deliverable 2). |
-| Environment | No `renv.lock`; no CI. All tests pass with `Rscript tests/test-pemob.R`. |
+| Environment | `renv.lock` pins the packages listed in `DESCRIPTION`; no CI. All tests pass with `Rscript tests/test-pemob.R`. |
 
 ## Phase 1. Consolidate
 
 - [x] Merge the refactor branch.
 - [x] Move the implementation plan to `docs/internal/` and replace
   `ROADMAP-2025.md` with this file.
-- [ ] Commit the review-decision layer and the reproduction log.
+- [x] Commit the review-decision layer and the reproduction log.
 - [x] Update the README to describe the current scripts and outputs.
 
 ## Phase 2. One connected harmonization pipeline
@@ -85,10 +86,11 @@ historical readers reaches the released data.
   `docs/internal/crosswalk-review-2026-10-18.md`.
 - [x] Merge metropolitan regions that appeared under two names: 2019
   `RM Porto Alegre` and `RIDE Teresina`.
-- Record the 2025 code changes reported by SIMU. In 2025, `12.1.1` is the
-  municipal fund question that was `12.2.1` until 2024. `1.3.1.A` is new and
-  has no reported values in the 2025 file.
-- Add `renv` once the chain runs.
+- [x] Record the 2025 code changes reported by SIMU. In 2025, `12.1.1` is the
+  municipal fund question that was `12.2.1` until 2024; `R/pemob_2025.R`
+  renames it. `1.3.1.A` is new and has no reported values in the 2025 file.
+- [x] Add `renv`. The lockfile covers the build and the tests; the legacy
+  portal scripts are not covered.
 
 **Done when** one command rebuilds both datasets from `data-raw/` and
 `tabelas/pemob_códigos.xlsx` in a fresh checkout, keys are unique, every
@@ -252,14 +254,13 @@ export without hand edits.
 
 ## Open questions
 
-1. **Dataverse layout.** Confirm the long layout in Phase 4.
-2. **Meaning of the missing codes.** Ask SIMU what `NA`, `NR`, and `ND` mean
+1. **Meaning of the missing codes.** Ask SIMU what `NA`, `NR`, and `ND` mean
    in each edition. The parser also records an empty cell as `NA`; the release
    should keep empty cells and a written `NA` apart.
-3. **Same view or separate views.** Decide after the concept links are
+2. **Same view or separate views.** Decide after the concept links are
    reviewed: if few dashboard indicators exist at both levels, give
    metropolitan data its own view instead of a switch.
-4. **2019 public subsidy.** The 2019 questionnaire asks for one public
+3. **2019 public subsidy.** The 2019 questionnaire asks for one public
    subsidy per mode; 2024 splits it into fare-benefit subsidy and direct
    subsidy (subvenção). The rebuild leaves 2019 unlinked; it could feed the
    direct subsidy instead.

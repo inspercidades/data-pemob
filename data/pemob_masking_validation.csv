@@ -1,0 +1,7 @@
+code_variable,treatment_method,cells,exact_share,mean_absolute_error,median_absolute_percent_error
+1.6.1.G,equal_endpoints,20,0.95,0.09999999999999999,0
+1.6.1.G,linear,62,0.016129032258064516,5.488739838709677,6.794560159661268
+1.6.1.H,equal_endpoints,16,0.9375,0.49374999999999997,0
+1.6.1.H,linear,48,0,14.009270833333332,13.538950715421297
+3.1.1.A,fare_current_since_earlier_adjustment,53,0.9245283018867925,0.0660377358490566,0
+3.1.1.A,fare_previous_until_later_adjustment,22,0.8636363636363636,0.07681818181818183,0

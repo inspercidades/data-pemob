@@ -17,58 +17,33 @@ pemob_municipal_source_files <- c(
 # Target series --------------------------------------------------------------
 
 # Long series of the review targets, one row per municipality, question, and
-# edition. Responses stay as raw text.
-read_pemob_target_series <- function() {
-  historical_path <- here::here("data", "pemob_harmonizada_2024.csv")
+# edition. The series follows the completed municipal panel, so editions a
+# municipality skipped appear as nonparticipating rows. Responses stay as raw
+# text.
+read_pemob_target_series <- function(variables = pemob_target_variables) {
+  municipal_path <- here::here("data", "pemob_harmonizada_2025.csv")
   id_cols <- c("code_muni", "name_muni", "abbrev_state", "year", "participated")
 
-  if (!file.exists(historical_path)) {
+  if (!file.exists(municipal_path)) {
     cli::cli_abort(
-      "Run {.file R/pemob.R} to build the historical source data first."
+      "Run {.code Rscript R/build_pemob.R} to build the municipal panel first."
     )
   }
-  historical <- readr::read_delim(
-    historical_path,
-    delim = ";",
-    col_types = readr::cols(.default = readr::col_character()),
-    na = "",
-    show_col_types = FALSE
-  )
-  required_cols <- c(id_cols, pemob_target_variables)
-  missing_cols <- setdiff(required_cols, names(historical))
+  municipal <- read_pemob_history(municipal_path)
+  required_cols <- c(id_cols, variables)
+  missing_cols <- setdiff(required_cols, names(municipal))
   if (length(missing_cols) > 0L) {
     cli::cli_abort(
-      "The historical output lacks {.field {missing_cols}}; rerun {.file R/pemob.R}."
+      "The municipal panel lacks {.field {missing_cols}}; rerun {.file R/build_pemob.R}."
     )
   }
 
-  source_2025 <- read_pemob_2025(here::here(pemob_municipal_source_files[[
-    "2025"
-  ]]))
-  current <- source_2025 |>
-    dplyr::select(
-      code_muni = "CÓDIGO IBGE",
-      name_muni = "Município",
-      abbrev_state = "UF",
-      dplyr::all_of(pemob_target_variables)
-    ) |>
-    dplyr::mutate(year = "2025", participated = "TRUE")
-
-  wide <- dplyr::bind_rows(
-    dplyr::select(historical, dplyr::all_of(required_cols)),
-    current
-  )
-
-  result <- wide |>
+  result <- municipal |>
+    dplyr::select(dplyr::all_of(required_cols)) |>
     tidyr::pivot_longer(
-      dplyr::all_of(pemob_target_variables),
+      dplyr::all_of(variables),
       names_to = "code_variable",
       values_to = "raw_response"
-    ) |>
-    dplyr::mutate(
-      code_muni = as.numeric(code_muni),
-      year = as.numeric(year),
-      participated = as.logical(participated)
     )
 
   return(result)

@@ -200,6 +200,18 @@ stopifnot(
   all(is.na(stale_result$reviewer[1:2]))
 )
 
+# A pending row whose source response changed is stale, not a value mismatch.
+stale_pending_ledger <- treatment_ledger[3, ]
+stale_pending_ledger$raw_response <- "300"
+stale_pending_ledger$treated_value <- 300
+stale_pending_result <- suppressWarnings(
+  apply_pemob_review_decisions(treatment_data, stale_pending_ledger)
+)
+stopifnot(
+  identical(stale_pending_result$treated_value[3], 30),
+  identical(stale_pending_result$treatment_status[3], "pending")
+)
+
 missing_response_ledger <- treatment_ledger
 missing_response_ledger$raw_response <- NULL
 stopifnot(inherits(
@@ -220,262 +232,6 @@ stopifnot(inherits(
   "try-error"
 ))
 
-interpolation_fixture <- data.frame(
-  code_muni = c(
-    10,
-    10,
-    10,
-    11,
-    11,
-    11,
-    12,
-    12,
-    12,
-    13,
-    13,
-    13,
-    14,
-    14,
-    14,
-    14,
-    15,
-    15
-  ),
-  name_muni = paste(
-    "City",
-    c(
-      rep(10, 3),
-      rep(11, 3),
-      rep(12, 3),
-      rep(13, 3),
-      rep(14, 4),
-      rep(15, 2)
-    )
-  ),
-  abbrev_state = "SP",
-  year = c(
-    2020:2022,
-    2020:2022,
-    2020:2022,
-    2020:2022,
-    2020:2023,
-    2020,
-    2022
-  ),
-  reference_time = c(
-    1,
-    2,
-    5,
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    4,
-    1,
-    3
-  ),
-  code_variable = c(
-    rep("3.1.1.A", 3),
-    rep("1.6.1.G", 3),
-    rep("3.1.1.A", 3),
-    rep("3.1.1.A", 3),
-    rep("3.1.1.A", 4),
-    rep("3.1.1.A", 2)
-  ),
-  raw_response = c(
-    "5",
-    "NR",
-    "7",
-    "0 km",
-    "NR",
-    "10 km",
-    "5",
-    "NR",
-    "50",
-    "5",
-    "NA",
-    "7",
-    "2",
-    "NR",
-    "NR",
-    "8",
-    "2",
-    "8"
-  ),
-  participated = c(
-    rep(TRUE, 12),
-    TRUE,
-    FALSE,
-    TRUE,
-    TRUE,
-    TRUE,
-    TRUE
-  ),
-  review_decision = c(
-    "accepted",
-    "unreviewed",
-    "accepted",
-    "accepted",
-    "unreviewed",
-    "accepted",
-    "accepted",
-    "unreviewed",
-    "pending",
-    "accepted",
-    "unreviewed",
-    "accepted",
-    "accepted",
-    "unreviewed",
-    "unreviewed",
-    "accepted",
-    "accepted",
-    "accepted"
-  ),
-  stringsAsFactors = FALSE
-)
-interpolation_fixture$review_evidence <- ifelse(
-  interpolation_fixture$review_decision == "accepted",
-  "Synthetic endpoint review.",
-  NA_character_
-)
-interpolation_before <- interpolation_fixture
-interpolation_candidates <- build_pemob_interpolation_candidates(
-  interpolation_fixture
-)
-
-stopifnot(
-  interpolation_candidates$estimate_value[
-    interpolation_candidates$code_muni == 10
-  ] ==
-    5.5,
-  interpolation_candidates$estimate_value[
-    interpolation_candidates$code_muni == 11
-  ] ==
-    5,
-  interpolation_candidates$eligible[
-    interpolation_candidates$code_muni == 10
-  ],
-  interpolation_candidates$endpoint_left_year[
-    interpolation_candidates$code_muni == 10
-  ] ==
-    2020,
-  interpolation_candidates$endpoint_right_year[
-    interpolation_candidates$code_muni == 10
-  ] ==
-    2022,
-  !interpolation_candidates$eligible[
-    interpolation_candidates$code_muni == 12
-  ],
-  grepl(
-    "endpoint_not_accepted",
-    interpolation_candidates$eligibility_reason[
-      interpolation_candidates$code_muni == 12
-    ]
-  ),
-  !interpolation_candidates$eligible[
-    interpolation_candidates$code_muni == 13
-  ],
-  grepl(
-    "missing_reason_not_item_nonresponse",
-    interpolation_candidates$eligibility_reason[
-      interpolation_candidates$code_muni == 13
-    ]
-  ),
-  !interpolation_candidates$eligible[
-    interpolation_candidates$code_muni == 14
-  ],
-  any(grepl(
-    "nonparticipation",
-    interpolation_candidates$eligibility_reason[
-      interpolation_candidates$code_muni == 14
-    ]
-  )),
-  !15 %in% interpolation_candidates$code_muni,
-  identical(interpolation_fixture, interpolation_before),
-  all(interpolation_candidates$method == "linear_interpolation")
-)
-
-edge_fixture <- data.frame(
-  code_muni = rep(c(16, 17), each = 3),
-  name_muni = paste("City", rep(c(16, 17), each = 3)),
-  abbrev_state = "SP",
-  year = rep(2020:2022, 2),
-  code_variable = "3.1.1.A",
-  raw_response = c("2", "4", "NR", "NR", "2", "4"),
-  participated = TRUE,
-  review_decision = "accepted"
-)
-edge_fixture$review_evidence <- "Synthetic endpoint review."
-unit_fixture <- data.frame(
-  code_muni = 18,
-  name_muni = "Unit City",
-  abbrev_state = "SP",
-  year = 2020:2022,
-  code_variable = "1.6.1.G",
-  raw_response = c("1 km", "NR", "10 m"),
-  participated = TRUE,
-  review_decision = c("accepted", "unreviewed", "accepted")
-)
-unit_fixture$review_evidence <- c(
-  "Synthetic unit review.",
-  NA_character_,
-  "Synthetic unit review."
-)
-unit_candidate <- build_pemob_interpolation_candidates(unit_fixture)
-equal_fixture <- data.frame(
-  code_muni = 19,
-  name_muni = "Equal City",
-  abbrev_state = "SP",
-  year = 2020:2022,
-  code_variable = "3.1.1.A",
-  raw_response = c("5", "NR", "5"),
-  participated = TRUE,
-  review_decision = c("accepted", "unreviewed", "accepted"),
-  review_evidence = c(
-    "Synthetic fare review.",
-    NA_character_,
-    "Synthetic fare review."
-  )
-)
-equal_candidate <- build_pemob_interpolation_candidates(equal_fixture)
-negative_endpoint_fixture <- equal_fixture
-negative_endpoint_fixture$raw_response[1] <- "-1"
-negative_endpoint_candidate <- build_pemob_interpolation_candidates(
-  negative_endpoint_fixture
-)
-no_evidence_fixture <- interpolation_fixture[
-  interpolation_fixture$code_muni == 10,
-]
-no_evidence_fixture$review_evidence[3] <- NA_character_
-no_evidence_candidate <- build_pemob_interpolation_candidates(
-  no_evidence_fixture
-)
-stopifnot(
-  nrow(build_pemob_interpolation_candidates(edge_fixture)) == 0L,
-  !unit_candidate$eligible,
-  grepl("endpoint_unit_mismatch", unit_candidate$eligibility_reason),
-  equal_candidate$eligible,
-  equal_candidate$estimate_value == 5,
-  !negative_endpoint_candidate$eligible,
-  grepl(
-    "endpoint_negative",
-    negative_endpoint_candidate$eligibility_reason
-  ),
-  !no_evidence_candidate$eligible,
-  grepl(
-    "endpoint_evidence_missing",
-    no_evidence_candidate$eligibility_reason
-  )
-)
-
 shuffled_candidates <- build_pemob_review_candidates(
   review_fixture[rev(seq_len(nrow(review_fixture))), ]
 )
@@ -486,9 +242,6 @@ gap_fixture <- data.frame(
   year = c(2019, 2021),
   code_variable = "3.1.1.A",
   raw_response = c("0", "50")
-)
-interpolation_empty <- build_pemob_interpolation_candidates(
-  interpolation_fixture[FALSE, ]
 )
 stopifnot(
   setequal(
@@ -503,10 +256,5 @@ stopifnot(
       review_candidates$flag_reasons
     )
   ),
-  nrow(build_pemob_review_candidates(gap_fixture)) == 0L,
-  identical(names(interpolation_empty), names(interpolation_candidates)),
-  identical(
-    vapply(interpolation_empty, class, character(1)),
-    vapply(interpolation_candidates, class, character(1))
-  )
+  nrow(build_pemob_review_candidates(gap_fixture)) == 0L
 )

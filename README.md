@@ -10,6 +10,7 @@ Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
 Rscript -e 'renv::restore()'  # instala as versões fixadas em renv.lock
 Rscript tests/test-pemob.R    # testes
 Rscript R/build_pemob.R       # reconstrói 2019–2025 a partir dos arquivos originais
+Rscript R/pemob_dataverse.R   # prepara os arquivos locais para o Dataverse
 ```
 
 `R/build_pemob.R` roda `R/pemob.R` e `R/pemob_metropolitana.R`, que gravam os
@@ -18,6 +19,20 @@ históricos de 2019 a 2024 em `data/`, e depois `R/pemob_2025.R`, que acrescenta
 `data/pemob_metro_harmonizada_2025.csv`, com uma linha por local e edição e a
 coluna `participated`. Por fim, `R/pemob_treatment.R` trata as séries de tarifa e
 de infraestrutura cicloviária.
+
+`R/pemob_dataverse.R` grava os arquivos longos municipais e metropolitanos,
+participação, codebook, ledger de tratamentos e manifest em
+`data/dataverse_draft/`. O manifest registra o commit, a situação do worktree
+e os checksums. O arquivo é um rascunho local; a publicação no Dataverse
+depende de revisão. `value_type` e `unit` ficam vazios até o registro de
+perguntas ter metadados revisados. `parsed_unit` guarda apenas a unidade
+escrita na resposta. `missing_code = blank` identifica uma célula vazia;
+`value_raw` mantém o texto literal `NA` quando ele aparece na fonte. As linhas
+interpoladas de edições sem participação têm `participated = FALSE` e
+`value_raw` vazio.
+O exportador só substitui um diretório existente quando encontra o marcador
+do rascunho, os arquivos esperados e checksums válidos no manifest. Ele
+recusa diretórios do projeto e dos insumos.
 
 Em 2019, cada opção das perguntas de múltipla escolha vinha numa coluna própria.
 O pipeline junta as opções marcadas com "Sim" numa única resposta. Quando outra
@@ -39,6 +54,8 @@ listada em `data/pemob_range_incomplete.csv` e
   uma edição nas tarifas e na infraestrutura cicloviária. Grava
   `data/pemob_target_treated.csv`, com status para cada célula, a contagem
   por status e o erro da validação por mascaramento.
+- `R/pemob_dataverse.R`: prepara os arquivos locais da Fase 4 a partir do
+  rebuild e do tratamento.
 - `R/pemob_final.R`, `R/pemob_portal.R`, `R/pemob_portal_final.R`,
   `R/pemob_data_portal.R`: cálculos e exportações antigas do portal. Dependem
   de arquivos que não estão no repositório.

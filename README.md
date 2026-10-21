@@ -16,7 +16,8 @@ Rscript R/build_pemob.R       # reconstrói 2019–2025 a partir dos arquivos or
 históricos de 2019 a 2024 em `data/`, e depois `R/pemob_2025.R`, que acrescenta
 2025. As saídas são `data/pemob_harmonizada_2025.csv` e
 `data/pemob_metro_harmonizada_2025.csv`, com uma linha por local e edição e a
-coluna `participated`.
+coluna `participated`. Por fim, `R/pemob_treatment.R` trata as séries de tarifa e
+de infraestrutura cicloviária.
 
 Em 2019, cada opção das perguntas de múltipla escolha vinha numa coluna própria.
 O pipeline junta as opções marcadas com "Sim" numa única resposta. Quando outra
@@ -32,8 +33,12 @@ listada em `data/pemob_range_incomplete.csv` e
 - `R/pemob_2025.R`: leitura dos CSVs de 2025 e junção ao histórico.
 - `R/pemob_helpers.R`, `R/pemob_series.R`: leitura das respostas, missing
   reasons, parsing de valores e camada de revisão.
-- `R/pemob_review.R`, `R/pemob_interpolation.R`: candidatos a revisão e a
-  interpolação de tarifas e infraestrutura cicloviária.
+- `R/pemob_review.R`: candidatos a revisão de tarifas e infraestrutura
+  cicloviária.
+- `R/pemob_treatment.R`: aplica as decisões de revisão e preenche lacunas de
+  uma edição nas tarifas e na infraestrutura cicloviária. Grava
+  `data/pemob_target_treated.csv`, com status para cada célula, a contagem
+  por status e o erro da validação por mascaramento.
 - `R/pemob_final.R`, `R/pemob_portal.R`, `R/pemob_portal_final.R`,
   `R/pemob_data_portal.R`: cálculos e exportações antigas do portal. Dependem
   de arquivos que não estão no repositório.

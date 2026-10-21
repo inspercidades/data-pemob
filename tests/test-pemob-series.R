@@ -33,9 +33,24 @@ stopifnot(
   is.character(series$raw_response),
   setequal(series$code_variable, pemob_target_variables),
   all(2019:2025 %in% series$year),
-  all(series$participated[series$year == 2025]),
   !anyDuplicated(series[c("code_muni", "code_variable", "year")]),
   all(
     as.character(unique(series$year)) %in% names(pemob_municipal_source_files)
   )
+)
+
+# The series follows the completed municipal panel, so municipalities that
+# skipped 2025 or joined in 2025 keep one row per edition.
+municipal <- read_pemob_history(
+  here::here("data", "pemob_harmonizada_2025.csv")
+)
+
+stopifnot(
+  nrow(series) == nrow(municipal) * length(pemob_target_variables),
+  nrow(dplyr::anti_join(
+    dplyr::distinct(municipal, code_muni, year),
+    dplyr::distinct(series, code_muni, year),
+    by = c("code_muni", "year")
+  )) == 0L,
+  all(is.na(series$raw_response[!series$participated]))
 )

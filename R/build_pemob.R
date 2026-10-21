@@ -2,7 +2,8 @@
 #
 # Run from the project root with `Rscript R/build_pemob.R`. The historical
 # scripts write the 2019–2024 histories to `data/`; the 2025 step appends the
-# 2025 survey to those histories.
+# 2025 survey to those histories. The last step treats the fare and cycling
+# series: it applies review decisions and fills one-edition gaps.
 
 source(here::here("R", "pemob_2025.R"))
 
@@ -54,3 +55,10 @@ check_pemob_keys <- function(dat, key_col, label) {
 
 check_pemob_keys(pemob$municipal, "code_muni", "Municipal")
 check_pemob_keys(pemob$metro, "metro_key", "Metropolitan")
+
+
+# Treatment ----------------------------------------------------------------
+
+cli::cli_h1("Treating fare and cycling series")
+source(here::here("R", "pemob_treatment.R"))
+treatment <- build_pemob_treatment()

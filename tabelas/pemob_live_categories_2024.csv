@@ -1,0 +1,393 @@
+category,subcategory,label,source_commit,source_path
+Arrecadação,Multas,Valor Arrecadado com Multas de Trânsito,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Arrecadação,Tributos,Valor Arrecadado com Cobrança de Estacionamento,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e taxas - Alíquota ISS (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e Taxas - Taxa de Gerenciamento (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e Taxas - PIS (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e Taxas - Cofins (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e Taxas - Alíquota Outros Impostos (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Impostos e Taxas - Outros Impostos (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,"Custos (Aeromóvel) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Energia (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - IPTU (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Aeromóvel,Custos (Aeromóvel) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e taxas - Alíquota ISS (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e Taxas - Taxa de Gerenciamento (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e Taxas - PIS (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e Taxas - Cofins (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e Taxas - Alíquota Outros Impostos (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Impostos e Taxas - Outros Impostos (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,"Custos (Barco) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Barco,Custos (Barco) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e taxas - Alíquota ISS (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e Taxas - Taxa de Gerenciamento (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e Taxas - PIS (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e Taxas - Cofins (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e Taxas - Alíquota Outros Impostos (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Impostos e Taxas - Outros Impostos (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,"Custos (Metrô) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Energia (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - IPTU (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Metrô,Custos (Metrô) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e taxas - Alíquota ISS (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e Taxas - Taxa de Gerenciamento (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e Taxas - PIS (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e Taxas - Cofins (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e Taxas - Alíquota Outros Impostos (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Impostos e Taxas - Outros Impostos (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,"Custos (Monotrilho) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Energia (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - IPTU (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Monotrilho,Custos (Monotrilho) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e taxas - Alíquota ISS (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e Taxas - Taxa de Gerenciamento (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e Taxas - PIS (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e Taxas - Cofins (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e Taxas - Alíquota Outros Impostos (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Impostos e Taxas - Outros Impostos (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,"Custos (Trem) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Energia (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - IPTU (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Trem,Custos (Trem) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e taxas - Alíquota ISS (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e Taxas - Taxa de Gerenciamento (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e Taxas - PIS (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e Taxas - Cofins (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e Taxas - Alíquota Outros Impostos (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Impostos e Taxas - Outros Impostos (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,"Custos (VLT) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Energia (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - IPTU (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,VLT,Custos (VLT) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e taxas - Alíquota ISS (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e Taxas - Taxa de Gerenciamento (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e Taxas - PIS (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e Taxas - Cofins (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Impostos e Taxas - Outros Impostos (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,"Custos (Vans/Microônibus) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Vans/Microônibus,Custos (Vans/Microônibus) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e taxas - Alíquota ISS (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e Taxas - Taxa de Gerenciamento (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e Taxas - PIS (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e Taxas - Cofins (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e Taxas - Alíquota Outros Impostos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Impostos e Taxas - Outros Impostos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Operação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Administrativo (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Combustível (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Depreciação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Impostos e Tributação (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Despesas Administrativas (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Custos,Ônibus,Custos (Ônibus) - Outros insumos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Aeromóvel,Passageiros de Aeromóvel (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Automóvel,Passageiros de Transporte por Aplicativo,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Barco,Passageiros de Barco (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Metrô,Passageiros de Metrô (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Monotrilho,Passageiros de Monotrilho (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Trem,Passageiros de Trem (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,VLT,Passageiros de VLT (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Vans/Microônibus,Passageiros de Vans/Microônibus (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Comum),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Vale Transporte),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Estudante),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Integração),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Gratuidade),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Demanda,Ônibus,Passageiros de Ônibus (Equivalentes),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Aeromóvel,Frota (composição) de Aeromóvel,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Aeromóvel,Aeromóvel (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Aeromóvel,Quilômetros Percorridos (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Aeromóvel,Idade Média da Frota de Aeromóvel,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Automóvel,Quilômetros Percorridos de Transporte por Aplicativo,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Barco,Frota de Barcos,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Barco,Barcos (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Barco,Quilômetros Percorridos (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Bicicletas,Frota de Bicicletas Compartilhadas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Bicicletas,Extensão de Ciclovias Exclusivas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Bicicletas,Extensão de Ciclofaixas Exclusivas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Metrô,Frota (composição) de Metrôs,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Metrô,Metrô (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Metrô,Quilômetros Percorridos (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Metrô,Idade Média da Frota de Metrô,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Monotrilho,Frota (composição) de Monotrilhos,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Monotrilho,Monotrilho (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Monotrilho,Quilômetros Percorridos (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Monotrilho,Idade Média da Frota de Monotrilho,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Mototáxis,Frota de Mototáxis,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Trem,Frota de Trens,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Trem,Trem (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Trem,Quilômetros Percorridos (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Trem,Idade Média da Frota de Trens,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Idade Média da Frota de Táxis,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis com Fontes de Energia Alternativa,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis Movido a Etanol (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis Movido a Eletricidade (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis Movido a Gás Natural (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Táxis,Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,VLT,Frota (composição) de VLTs,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,VLT,VLT (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,VLT,Quilômetros Percorridos (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,VLT,Idade Média da Frota de VLTs,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Vans/Microônibus,Frota de Microônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Vans/Microônibus,Microônibus (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Vans/Microônibus,Quilômetros Percorridos (Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Vans/Microônibus,Idade Média da Frota de Microônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de ônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus (piso baixo),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus (com plataforma),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Articulados,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Articulados (capacidade média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Articulados (piso baixo),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Articulados (com plataforma),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Biarticulados,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Biarticulados (cap. média),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Biarticulados (piso baixo),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Ônibus Biarticulados (com plataforma),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Veículos Fretados para Passageiros,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Veículos Escolares,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Extensão de Vias Exclusivas para BRT,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Extensão de Corredores Exclusivos de Ônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Extensão de Faixas Exclusivas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Quilômetros Percorridos (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Idade Média da Frota de Ônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus com Fontes de Energia Alternativa,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Movido a Etanol (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Movido a Eletricidade (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Movido a Gás Natural (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Movido a Hidrogênio (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Movido a Biodiesel (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Frota,Ônibus,Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Aeromóvel,Extensão da malha (aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Aeromóvel,Velocidade Média do Aeromóvel (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Aeromóvel,Existe informação sobre pontualidade e regularidade (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Aeromóvel,Viagens de Aeromóvel Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Aeromóvel,Viagens de Aeromóvel Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Automóvel,Vagas de Estacionamento Reguladas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Automóvel,Percentual de Vagas de Estacionamento para Deficientes,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Automóvel,Percentual de Vagas de Estacionamento para Idosos,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Automóvel,Percentual de Vagas de Estacionamento para Gestantes,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Automóvel,Existe Fiscalização para Cobrança em Vagas Públicas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Barco,Existe informação sobre pontualidade e regularidade (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Barco,Viagens de Barco Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Barco,Viagens de Barco Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Equipamentos,Equipamentos de Fiscalização,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô,Extensão da malha (metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô,Velocidade Média do Metrô (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô,Existe informação sobre pontualidade e regularidade (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô,Viagens de Metrô Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô,Viagens de Metrô Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Número de Metroviárias,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,"Número de Metroviárias (acessibilidade, def. física)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,"Número de Metroviárias (acessibilidade, def. visual)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Número de Metroviárias com Intregração,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Estações Metroviárias com Itinerários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Estações Metroviárias com Informações sobre Horários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Estações Metroviárias com Informações sobre Tarifas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Metrô/Trem,Estações Metroviárias com Informações sobre Integrações,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Monotrilho,Extensão da malha (monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Monotrilho,Velocidade Média do Monotrilho (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Monotrilho,Existe informação sobre pontualidade e regularidade (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Monotrilho,Viagens de Monotrilho Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Monotrilho,Viagens de Monotrilho Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Pedestre,Extensão de Vias Exclusivas para Pedestres,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Pedestre,Extensão de Vias Exclusivas Temporárias para Pedestres,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Pedestre,Extensão de Calçadas para Pedestres,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trabalhadores,Agentes de Trânsito em Exercício,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trem,Extensão da malha (trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trem,Velocidade Média do Trem (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trem,Existe informação sobre pontualidade e regularidade (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trem,Viagens de Trem Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Trem,Viagens de Trem Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Táxis,Táxi no Corredor de Ônibus,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,VLT,Extensão da malha (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,VLT,Velocidade Média do VLT (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,VLT,Existe informação sobre pontualidade e regularidade (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,VLT,Viagens de VLT Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,VLT,Viagens de VLT Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Vans/Microônibus,Existe informação sobre pontualidade e regularidade (Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Vans/Microônibus,Viagens de Microônibus Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Vans/Microônibus,Viagens de Ônibus Incompletas Microônibus(%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Número de Rodoviárias,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,"Número de Rodoviárias (acessibilidade, def. física)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,"Número de Rodoviárias (acessibilidade, def. visual)",28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Número de Rodoviárias com Integração,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque/Desembarque (Total),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque com abrigo,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque (em nível),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque Georreferenciados,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Velocidade Média do BRT em faixas prioritárias (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Velocidade Média do Ônibus nos Corredores (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Velocidade Média do Ônibus nas Faixas Exclusivas (pico),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Velocidade Média do Transporte Público em Vias Mistas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Terminais Rodoviários com Itinerários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Terminais Rodoviários com Informações sobre Horários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Terminais Rodoviários com Informações sobre Tarifas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Terminais Rodoviários com Informações sobre Integrações,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque com Itinerários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque com Informações sobre Horários,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque com Informações sobre Tarifas,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Pontos de Embarque com Informações sobre Integrações,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Existe informação sobre pontualidade e regularidade (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Viagens de Ônibus Realizadas no Horário Programado (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Infraestrutura,Ônibus,Viagens de Ônibus Incompletas (%),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Existe Pesquisa de Satisfação de Usuário,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Plano Diretor,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Ano Plano Diretor,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Lei de Zoneamento ou Uso e Ocupação do Solo,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Contemplado em Plano de Mobilidade Urbana,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Governança e Leis,Conselho Municipal de Transporte e/ou Mobilidade Urbana,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Número médio de viagens diárias,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Distância média das viagens,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Tempo médio das viagens,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens a pé,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens de bicicleta,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens por transporte público,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens por automóvel individual,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens por moto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens por táxi ou carro de aplicativo,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Outros,Origem e Destino,POD - Percentual de viagens por outros modais,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Aeromóvel,Receita Tarifária (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Aeromóvel,Subsídios a Passageiros (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Aeromóvel,Subsídios ao Sistema (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Aeromóvel,Receita Extratarifária com Publicidade (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Aeromóvel,Receita Extratarifária de Outras Fontes (Aeromóvel),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Barco,Receita Tarifária (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Barco,Subsídios a Passageiros (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Barco,Subsídios ao Sistema (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Barco,Receita Extratarifária com Publicidade (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Barco,Receita Extratarifária de Outras Fontes (Barco),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Metrô,Receita Tarifária (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Metrô,Subsídios a Passageiros (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Metrô,Subsídios ao Sistema (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Metrô,Receita Extratarifária com Publicidade (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Metrô,Receita Extratarifária de Outras Fontes (Metrô),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Monotrilho,Receita Tarifária (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Monotrilho,Subsídios a Passageiros (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Monotrilho,Subsídios ao Sistema (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Monotrilho,Receita Extratarifária com Publicidade (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Monotrilho,Receita Extratarifária de Outras Fontes (Monotrilho),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Trem,Receita Tarifária (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Trem,Subsídios a Passageiros (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Trem,Subsídios ao Sistema (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Trem,Receita Extratarifária com Publicidade (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Trem,Receita Extratarifária de Outras Fontes (Trem),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,VLT,Receita Tarifária (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,VLT,Subsídios a Passageiros (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,VLT,Subsídios ao Sistema (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,VLT,Receita Extratarifária com Publicidade (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,VLT,Receita Extratarifária de Outras Fontes (VLT),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Vans/Microônibus,Receita Tarifária (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Vans/Microônibus,Subsídios a Passageiros (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Vans/Microônibus,Subsídios ao Sistema (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Vans/Microônibus,Receita Extratarifária com Publicidade (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Vans/Microônibus,Receita Extratarifária de Outras Fontes (Vans/Microônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Ônibus,Receita Tarifária (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Ônibus,Subsídios a Passageiros (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Ônibus,Subsídios ao Sistema (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Ônibus,Receita Extratarifária com Publicidade (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Receita,Ônibus,Receita Extratarifária de Outras Fontes (Ônibus),28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Mototáxis,Táxi - Valor da Bandeirada,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Mototáxis,Táxi - Valor da Bandeirada 1,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Mototáxis,Táxi - Valor da Bandeirada 2,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Mototáxis,Táxi - Valor Hora Parada,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Mototáxis,Táxi - Valor Tarifa Aeroporto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Subsídios,Baixa Renda - Percentual de Desconto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Subsídios,Idosos - Tarifa Paga,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Subsídios,Deficientes - Tarifa Paga,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Subsídios,Estudantes de Rede Pública - Percentual de Desconto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Subsídios,Estudantes de Rede Privada - Percentual de Desconto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Táxis,Táxi - Valor da Bandeirada,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Táxis,Táxi - Valor da Bandeirada 1,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Táxis,Táxi - Valor da Bandeirada 2,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Táxis,Táxi - Valor Hora Parada,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Táxis,Táxi - Valor Tarifa Aeroporto,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Valores,Valor da Tarifa,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts
+Tarifas,Valores,Valor Anterior da Tarifa,28d2cd8efae2061b01ab58cf785f8fa1e2cfb66f,src/app/projetos/(projetos)/dashboard/lib/filter-categories.ts

@@ -1,11 +1,12 @@
 # Prepare local long-form files for the Phase 4 Dataverse release.
 
 source(here::here("R", "pemob_treatment.R"))
+source(here::here("R", "pemob_question_registry.R"))
 
 
 # Long observations -------------------------------------------------------
 
-build_pemob_long <- function(panel, level, treated = NULL) {
+build_pemob_long <- function(panel, level, treated = NULL, registry = NULL) {
   if (!level %in% c("municipal", "metropolitan")) {
     cli::cli_abort("{.arg level} must be municipal or metropolitan.")
   }
@@ -55,6 +56,47 @@ build_pemob_long <- function(panel, level, treated = NULL) {
   )
   long$value_type <- NA_character_
   long$unit <- NA_character_
+  if (!is.null(registry)) {
+    metadata_cols <- c(
+      "level",
+      "code_variable",
+      "value_type",
+      "unit",
+      "reviewed_type_editions"
+    )
+    if (
+      !all(metadata_cols %in% names(registry)) ||
+        anyNA(registry[c("level", "code_variable")]) ||
+        anyDuplicated(registry[c("level", "code_variable")])
+    ) {
+      cli::cli_abort(
+        "The question registry needs unique, complete keys and metadata columns."
+      )
+    }
+    selected_registry <- registry[registry$level == level, ]
+    matches <- match(long$code_variable, selected_registry$code_variable)
+    if (anyNA(matches)) {
+      cli::cli_abort("The question registry lacks {level} panel codes.")
+    }
+    reviewed_years <- strsplit(
+      ifelse(
+        is.na(selected_registry$reviewed_type_editions[matches]),
+        "",
+        selected_registry$reviewed_type_editions[matches]
+      ),
+      ";",
+      fixed = TRUE
+    )
+    supported <- mapply(
+      function(year, editions) as.character(year) %in% editions,
+      long$year,
+      reviewed_years
+    )
+    long$value_type[supported] <- selected_registry$value_type[matches[
+      supported
+    ]]
+    long$unit[supported] <- selected_registry$unit[matches[supported]]
+  }
   long$value_treated <- long$value_num
   long$treatment_status <- ifelse(
     long$parse_status == "missing",
@@ -653,9 +695,19 @@ build_pemob_dataverse <- function(
     here::here("data", "pemob_target_treated.csv")
   )
   check_pemob_treatment_coverage(municipal, treated)
+  registry <- read_pemob_question_registry()
   exports <- list(
-    municipal_long = build_pemob_long(municipal, "municipal", treated),
-    metropolitan_long = build_pemob_long(metro, "metropolitan"),
+    municipal_long = build_pemob_long(
+      municipal,
+      "municipal",
+      treated,
+      registry
+    ),
+    metropolitan_long = build_pemob_long(
+      metro,
+      "metropolitan",
+      registry = registry
+    ),
     participation = build_pemob_participation_export(municipal, metro),
     codebook = build_pemob_codebook(),
     treatment_ledger = build_pemob_treatment_ledger_export(treated)

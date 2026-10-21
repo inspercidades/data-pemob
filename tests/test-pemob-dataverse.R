@@ -185,6 +185,78 @@ stopifnot(
   !long_fixture$participated[long_fixture$place_key == "3"]
 )
 
+registry_meta_fixture <- tibble::tibble(
+  level = "municipal",
+  code_variable = c("1.1.1", "3.1.1.A", "9.9.9"),
+  value_type = c(NA_character_, "numeric", NA_character_),
+  unit = c(NA_character_, "BRL", NA_character_),
+  reviewed_type_editions = c(NA_character_, "2024", NA_character_)
+)
+long_with_registry <- build_pemob_long(
+  panel_fixture,
+  "municipal",
+  treated_fixture,
+  registry_meta_fixture
+)
+stopifnot(
+  nrow(long_with_registry) == nrow(long_fixture),
+  all(
+    long_with_registry$value_raw == long_fixture$value_raw |
+      (is.na(long_with_registry$value_raw) & is.na(long_fixture$value_raw))
+  ),
+  identical(long_with_registry$treatment_status, long_fixture$treatment_status),
+  all(
+    long_with_registry$value_type[
+      long_with_registry$code_variable == "3.1.1.A"
+    ] ==
+      "numeric"
+  ),
+  all(
+    long_with_registry$unit[
+      long_with_registry$code_variable == "3.1.1.A"
+    ] ==
+      "BRL"
+  ),
+  all(is.na(long_with_registry$unit[
+    long_with_registry$code_variable == "1.1.1"
+  ]))
+)
+panel_earlier <- dplyr::mutate(panel_fixture, year = 2023)
+long_earlier <- build_pemob_long(
+  panel_earlier,
+  "municipal",
+  registry = registry_meta_fixture
+)
+stopifnot(all(is.na(long_earlier$unit)), all(is.na(long_earlier$value_type)))
+duplicate_registry <- dplyr::bind_rows(
+  registry_meta_fixture,
+  registry_meta_fixture
+)
+stopifnot(inherits(
+  try(
+    build_pemob_long(
+      panel_fixture,
+      "municipal",
+      treated_fixture,
+      duplicate_registry
+    ),
+    silent = TRUE
+  ),
+  "try-error"
+))
+stopifnot(inherits(
+  try(
+    build_pemob_long(
+      panel_fixture,
+      "municipal",
+      treated_fixture,
+      registry_meta_fixture[registry_meta_fixture$code_variable == "3.1.1.A", ]
+    ),
+    silent = TRUE
+  ),
+  "try-error"
+))
+
 stale_fixture <- treated_fixture
 stale_fixture$raw_response <- "4,50"
 stopifnot(inherits(

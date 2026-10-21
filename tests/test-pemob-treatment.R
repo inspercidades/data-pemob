@@ -147,13 +147,49 @@ fare_fixture <- tibble::tibble(
   adjustment_raw = "2021-01-01"
 )
 ledger_fixture <- tibble::tibble(
-  candidate_id = "4::1.6.1.G::2021",
-  raw_response = "17600",
+  candidate_id = c("4::1.6.1.G::2021", "5::1.6.1.G::2021"),
+  raw_response = c("17600", "500 m"),
   review_decision = "pending",
-  treated_value = 17600,
+  treated_value = c(17600, 500),
   review_evidence = NA_character_,
   reviewer = NA_character_
 )
+current_candidates <- build_pemob_review_candidates(series_fixture)
+stopifnot(identical(
+  build_pemob_candidate_id(
+    current_candidates$code_muni,
+    current_candidates$code_variable,
+    current_candidates$year
+  ),
+  "5::1.6.1.G::2021"
+))
+missing_candidate_ledger <- ledger_fixture[
+  ledger_fixture$candidate_id != "5::1.6.1.G::2021",
+]
+stopifnot(inherits(
+  try(
+    treat_pemob_target_series(
+      series_fixture,
+      missing_candidate_ledger,
+      fare_fixture
+    ),
+    silent = TRUE
+  ),
+  "try-error"
+))
+stale_candidate_ledger <- ledger_fixture
+stale_candidate_ledger$raw_response[2] <- "500 km"
+stopifnot(inherits(
+  suppressWarnings(try(
+    treat_pemob_target_series(
+      series_fixture,
+      stale_candidate_ledger,
+      fare_fixture
+    ),
+    silent = TRUE
+  )),
+  "try-error"
+))
 series_before <- series_fixture
 treated <- treat_pemob_target_series(
   series_fixture,
@@ -200,6 +236,52 @@ stopifnot(
   all(is.na(treated$treatment_method[
     !treated$treatment_status %in% c("reconstructed", "interpolated")
   ]))
+)
+
+endpoint_fixture <- tibble::tibble(
+  code_muni = 9,
+  name_muni = "Endpoint City",
+  abbrev_state = "SP",
+  year = 2019:2022,
+  participated = TRUE,
+  code_variable = "1.6.1.G",
+  raw_response = c("10", "1000", "NR", "1000")
+)
+endpoint_candidate <- build_pemob_review_candidates(endpoint_fixture)
+stopifnot(
+  nrow(endpoint_candidate) == 1L,
+  endpoint_candidate$year == 2020,
+  grepl("abrupt_change_10x", endpoint_candidate$flag_reasons)
+)
+endpoint_error <- tryCatch(
+  treat_pemob_target_series(
+    endpoint_fixture,
+    ledger_fixture[FALSE, ],
+    fare_fixture
+  ),
+  error = identity
+)
+stopifnot(
+  inherits(endpoint_error, "error"),
+  grepl("9::1.6.1.G::2020", conditionMessage(endpoint_error), fixed = TRUE)
+)
+endpoint_ledger <- tibble::tibble(
+  candidate_id = "9::1.6.1.G::2020",
+  raw_response = "1000",
+  review_decision = "pending",
+  treated_value = 1000,
+  review_evidence = NA_character_,
+  reviewer = NA_character_
+)
+endpoint_treated <- treat_pemob_target_series(
+  endpoint_fixture,
+  endpoint_ledger,
+  fare_fixture
+)
+stopifnot(
+  endpoint_treated$treatment_status[endpoint_treated$year == 2020] == "pending",
+  endpoint_treated$treatment_status[endpoint_treated$year == 2021] == "missing",
+  is.na(endpoint_treated$treated_value[endpoint_treated$year == 2021])
 )
 
 
@@ -254,4 +336,25 @@ stopifnot(
     masking_summary$code_variable == "1.6.1.G"
   ] ==
     1
+)
+
+zero_masked <- tibble::tibble(
+  code_variable = "1.6.1.G",
+  treatment_method = "equal_endpoints",
+  observed_value = c(0, 10),
+  error = c(0, 2)
+)
+zero_summary <- summarise_pemob_masking(zero_masked)
+stopifnot(
+  zero_summary$cells == 2L,
+  zero_summary$exact_share == 0.5,
+  zero_summary$mean_absolute_error == 1,
+  zero_summary$median_absolute_percent_error == 20
+)
+zero_only_summary <- summarise_pemob_masking(zero_masked[1, ])
+stopifnot(
+  zero_only_summary$cells == 1L,
+  zero_only_summary$exact_share == 1,
+  zero_only_summary$mean_absolute_error == 0,
+  is.na(zero_only_summary$median_absolute_percent_error)
 )

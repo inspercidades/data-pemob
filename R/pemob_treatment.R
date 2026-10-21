@@ -177,6 +177,23 @@ treat_pemob_target_series <- function(series, ledger, fare_records) {
     as.data.frame() |>
     apply_pemob_review_decisions(ledger) |>
     tibble::as_tibble()
+  candidates <- build_pemob_review_candidates(reviewed[series_cols])
+  candidate_ids <- build_pemob_candidate_id(
+    candidates$code_muni,
+    candidates$code_variable,
+    candidates$year
+  )
+  ledger_rows <- match(candidate_ids, ledger$candidate_id)
+  ledger_response <- as.character(ledger$raw_response[ledger_rows])
+  uncovered <- is.na(ledger_rows) |
+    is.na(ledger_response) |
+    ledger_response != candidates$raw_response
+  if (any(uncovered)) {
+    cli::cli_abort(c(
+      "Current review candidates must have matching ledger rows before treatment.",
+      "x" = "Missing or stale candidate IDs: {.val {candidate_ids[uncovered]}}."
+    ))
+  }
   reviewed$expected_unit <- unname(pemob_expected_units[reviewed$code_variable])
 
   # Endpoints must be reviewed or unflagged, nonnegative, and in the expected
@@ -282,7 +299,9 @@ summarise_pemob_masking <- function(masked) {
       exact_share = mean(abs(error) < 0.005),
       mean_absolute_error = mean(abs(error)),
       median_absolute_percent_error = stats::median(
-        abs(error) / observed_value * 100
+        abs(error[observed_value != 0]) /
+          observed_value[observed_value != 0] *
+          100
       ),
       .by = c(code_variable, treatment_method)
     ) |>

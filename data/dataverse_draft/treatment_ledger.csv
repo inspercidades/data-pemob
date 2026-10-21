@@ -1,0 +1,180 @@
+level,code_muni,name_muni,abbrev_state,year,code_variable,raw_response,parsed_value,treated_value,treatment_status,treatment_method,review_evidence,reviewer,source_file
+municipal,1100205,Porto Velho,RO,2020,1.6.1.G,,,9.705,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1200401,Rio Branco,AC,2022,1.6.1.G,,,22.85,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1302603,Manaus,AM,2021,1.6.1.G,,,7,interpolated,linear,,,data-raw/pemob21_municipal.xlsx
+municipal,1302603,Manaus,AM,2023,1.6.1.G,NR,,15.34,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,1501402,Belém,PA,2022,1.6.1.G,,,29.9,interpolated,equal_endpoints,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1501402,Belém,PA,2024,1.6.1.G,,,31.95,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,1506807,Santarém,PA,2020,1.6.1.G,,,1.45,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1506807,Santarém,PA,2022,1.6.1.G,,,2.205,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2111300,São Luís,MA,2022,1.6.1.G,314,314,314,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2403251,Parnamirim,RN,2023,1.6.1.G,,,7.5,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,2408003,Mossoró,RN,2021,1.6.1.G,0,0,0,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,2604106,Caruaru,PE,2024,1.6.1.G,NR,,8,interpolated,equal_endpoints,,,data-raw/pemob_municipal_2024.xlsx
+municipal,2607901,Jaboatão dos Guararapes,PE,2023,1.6.1.G,NR,,1.75,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,2609600,Olinda,PE,2022,1.6.1.G,10.891,,,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2927408,Salvador,BA,2019,1.6.1.G,153,153,153,pending,,,,data-raw/Pemob2019_Municipal.xlsx
+municipal,2927408,Salvador,BA,2025,1.6.1.G,310,310,310,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,2933307,Vitória da Conquista,BA,2022,1.6.1.G,NR,,18.5,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3154606,Ribeirão das Neves,MG,2020,1.6.1.G,,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3205002,Serra,ES,2022,1.6.1.G,,,48.7,interpolated,equal_endpoints,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3205200,Vila Velha,ES,2023,1.6.1.G,NR,,24.5,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3300456,Belford Roxo,RJ,2020,1.6.1.G,NR,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2020,1.6.1.G,,,40,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2022,1.6.1.G,,,43.25,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2024,1.6.1.G,30.665,,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3302403,Macaé,RJ,2021,1.6.1.G,5500,5500,5500,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3302403,Macaé,RJ,2022,1.6.1.G,5500,5500,5500,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3302403,Macaé,RJ,2025,1.6.1.G,16430,16430,16430,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3303302,Niterói,RJ,2022,1.6.1.G,,,35.53,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3303302,Niterói,RJ,2024,1.6.1.G,,,45.655,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3304904,São Gonçalo,RJ,2020,1.6.1.G,,,2.5,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3305109,São João de Meriti,RJ,2022,1.6.1.G,,,1.59203,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3306305,Volta Redonda,RJ,2024,1.6.1.G,,,5.65,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3505708,Barueri,SP,2020,1.6.1.G,,,2.9,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3506003,Bauru,SP,2023,1.6.1.G,16.465,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3509502,Campinas,SP,2024,1.6.1.G,NR,,69.5,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3513801,Diadema,SP,2023,1.6.1.G,3.8,3.8,3.8,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3518800,Guarulhos,SP,2024,1.6.1.G,,,20.5,interpolated,equal_endpoints,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3529401,Mauá,SP,2023,1.6.1.G,2.4,2.4,2.4,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3534401,Osasco,SP,2020,1.6.1.G,,,2.45,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3534401,Osasco,SP,2023,1.6.1.G,,,3,interpolated,equal_endpoints,,,data-raw/pemob2023_municipal.xlsx
+municipal,3547809,Santo André,SP,2023,1.6.1.G,,,9.8,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548500,Santos,SP,2023,1.6.1.G,,,53.4,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2023,1.6.1.G,NR,,10.99,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2025,1.6.1.G,"14,388",,,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3548906,São Carlos,SP,2020,1.6.1.G,,,8,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3550308,São Paulo,SP,2021,1.6.1.G,152.4,152.4,152.4,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3550308,São Paulo,SP,2022,1.6.1.G,699.2,699.2,699.2,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3551009,São Vicente,SP,2020,1.6.1.G,NR,,13.135000000000002,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3551009,São Vicente,SP,2024,1.6.1.G,17600,17600,17600,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3551009,São Vicente,SP,2025,1.6.1.G,17.6,17.6,17.6,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3552205,Sorocaba,SP,2021,1.6.1.G,,,126,interpolated,equal_endpoints,,,data-raw/pemob21_municipal.xlsx
+municipal,3552205,Sorocaba,SP,2023,1.6.1.G,,,126,interpolated,equal_endpoints,,,data-raw/pemob2023_municipal.xlsx
+municipal,3552809,Taboão da Serra,SP,2019,1.6.1.G,937,937,937,pending,,,,data-raw/Pemob2019_Municipal.xlsx
+municipal,3552809,Taboão da Serra,SP,2024,1.6.1.G,,,0.932,interpolated,equal_endpoints,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4108304,Foz do Iguaçu,PR,2024,1.6.1.G,51.391,,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4125506,São José dos Pinhais,PR,2023,1.6.1.G,1.617,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4204202,Chapecó,SC,2023,1.6.1.G,"21,6 total de ciclovias/ciclofaixas",,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4209102,Joinville,SC,2022,1.6.1.G,,,12.79,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,4209102,Joinville,SC,2024,1.6.1.G,,,13.09,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4304606,Canoas,RS,2020,1.6.1.G,,,6.85,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,4305108,Caxias do Sul,RS,2022,1.6.1.G,0,0,0,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,4316907,Santa Maria,RS,2019,1.6.1.G,1200,1200,1200,pending,,,,data-raw/Pemob2019_Municipal.xlsx
+municipal,5002704,Campo Grande,MS,2023,1.6.1.G,82.817,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,5002704,Campo Grande,MS,2025,1.6.1.G,107.946,,,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,5201108,Anápolis,GO,2020,1.6.1.G,,,8.7,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,5201108,Anápolis,GO,2022,1.6.1.G,124,124,124,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,5300108,Brasília,DF,2020,1.6.1.G,289,289,289,pending,,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,5300108,Brasília,DF,2021,1.6.1.G,317,317,317,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,5300108,Brasília,DF,2022,1.6.1.G,450,450,450,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,5300108,Brasília,DF,2024,1.6.1.G,597,597,597,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,1100205,Porto Velho,RO,2020,1.6.1.H,,,18.1,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1200401,Rio Branco,AC,2022,1.6.1.H,,,47,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1302603,Manaus,AM,2021,1.6.1.H,,,20.5,interpolated,linear,,,data-raw/pemob21_municipal.xlsx
+municipal,1302603,Manaus,AM,2023,1.6.1.H,NR,,23.12,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,1400100,Boa Vista,RR,2024,1.6.1.H,5 km,5,5,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,1501402,Belém,PA,2022,1.6.1.H,,,99.425,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1501402,Belém,PA,2024,1.6.1.H,,,116.075,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,1506807,Santarém,PA,2020,1.6.1.H,,,1.15,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1506807,Santarém,PA,2022,1.6.1.H,,,7.705,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1721000,Palmas,TO,2020,1.6.1.H,NR,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1721000,Palmas,TO,2022,1.6.1.H,,,27.35,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2111300,São Luís,MA,2022,1.6.1.H,47,47,47,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2304400,Fortaleza,CE,2019,1.6.1.H,163.1,163.1,163.1,pending,,,,data-raw/Pemob2019_Municipal.xlsx
+municipal,2304400,Fortaleza,CE,2022,1.6.1.H,413,413,413,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2304400,Fortaleza,CE,2025,1.6.1.H,318.7,318.7,318.7,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,2403251,Parnamirim,RN,2023,1.6.1.H,,,7.5,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,2408003,Mossoró,RN,2021,1.6.1.H,0,0,0,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,2504009,Campina Grande,PB,2023,1.6.1.H,108.175,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,2607901,Jaboatão dos Guararapes,PE,2022,1.6.1.H,2,2,2,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2704302,Maceió,AL,2024,1.6.1.H,NR,,28.045,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,2910800,Feira de Santana,BA,2020,1.6.1.H,,,1.265,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,2927408,Salvador,BA,2019,1.6.1.H,88,88,88,pending,,,,data-raw/Pemob2019_Municipal.xlsx
+municipal,2927408,Salvador,BA,2023,1.6.1.H,184,184,184,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,2927408,Salvador,BA,2024,1.6.1.H,136.53,136.53,136.53,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,2933307,Vitória da Conquista,BA,2022,1.6.1.H,NR,,11.25,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3106200,Belo Horizonte,MG,2020,1.6.1.H,0,0,0,pending,,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3136702,Juiz de Fora,MG,2021,1.6.1.H,,,15,interpolated,linear,,,data-raw/pemob21_municipal.xlsx
+municipal,3154606,Ribeirão das Neves,MG,2020,1.6.1.H,,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3154606,Ribeirão das Neves,MG,2022,1.6.1.H,1,1,1,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3205002,Serra,ES,2022,1.6.1.H,,,22.1,interpolated,equal_endpoints,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3205200,Vila Velha,ES,2023,1.6.1.H,NR,,0.6,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3300456,Belford Roxo,RJ,2020,1.6.1.H,NR,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2020,1.6.1.H,,,33.85,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2022,1.6.1.H,,,33.25,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3302403,Macaé,RJ,2021,1.6.1.H,9690,9690,9690,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3302403,Macaé,RJ,2022,1.6.1.H,9690,9690,9690,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3302403,Macaé,RJ,2025,1.6.1.H,13163,13163,13163,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3303302,Niterói,RJ,2022,1.6.1.H,,,17.195,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3303302,Niterói,RJ,2024,1.6.1.H,,,18.6,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3304904,São Gonçalo,RJ,2020,1.6.1.H,,,3,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3505708,Barueri,SP,2020,1.6.1.H,,,1.4,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3506003,Bauru,SP,2022,1.6.1.H,,,16.4,interpolated,linear,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3506003,Bauru,SP,2024,1.6.1.H,,,17.835,interpolated,linear,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3509502,Campinas,SP,2021,1.6.1.H,,,44.5,interpolated,linear,,,data-raw/pemob21_municipal.xlsx
+municipal,3513801,Diadema,SP,2022,1.6.1.H,11,11,11,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3516200,Franca,SP,2024,1.6.1.H,"8,047km",,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3516200,Franca,SP,2025,1.6.1.H,8.047,,,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3518800,Guarulhos,SP,2024,1.6.1.H,,,20,interpolated,equal_endpoints,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3525904,Jundiaí,SP,2023,1.6.1.H,1,1,1,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3529401,Mauá,SP,2022,1.6.1.H,23,23,23,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3529401,Mauá,SP,2023,1.6.1.H,1,1,1,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3529401,Mauá,SP,2025,1.6.1.H,0,0,0,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3534401,Osasco,SP,2020,1.6.1.H,,,4.4,interpolated,linear,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3534401,Osasco,SP,2023,1.6.1.H,,,8,interpolated,equal_endpoints,,,data-raw/pemob2023_municipal.xlsx
+municipal,3547809,Santo André,SP,2023,1.6.1.H,,,8.25,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548500,Santos,SP,2023,1.6.1.H,,,0.4,interpolated,equal_endpoints,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2020,1.6.1.H,0,0,0,pending,,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2021,1.6.1.H,2.3,2.3,2.3,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2022,1.6.1.H,2350,2350,2350,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2024,1.6.1.H,1.320 Km,,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3548708,São Bernardo do Campo,SP,2025,1.6.1.H,"1,320",,,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3548906,São Carlos,SP,2020,1.6.1.H,,,9,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3550308,São Paulo,SP,2021,1.6.1.H,497,497,497,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3550308,São Paulo,SP,2022,1.6.1.H,511.2,511.2,511.2,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3550308,São Paulo,SP,2023,1.6.1.H,551.8,551.8,551.8,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,3550308,São Paulo,SP,2024,1.6.1.H,532,532,532,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3551009,São Vicente,SP,2021,1.6.1.H,760,760,760,pending,,,,data-raw/pemob21_municipal.xlsx
+municipal,3551009,São Vicente,SP,2022,1.6.1.H,760,760,760,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,3551009,São Vicente,SP,2024,1.6.1.H,1460,1460,1460,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3551009,São Vicente,SP,2025,1.6.1.H,1.46,1.46,1.46,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,3552809,Taboão da Serra,SP,2020,1.6.1.H,,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,4108304,Foz do Iguaçu,PR,2024,1.6.1.H,10.782 metros,,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4119905,Ponta Grossa,PR,2023,1.6.1.H,256,256,256,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4119905,Ponta Grossa,PR,2024,1.6.1.H,6.46,6.46,6.46,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4125506,São José dos Pinhais,PR,2023,1.6.1.H,7.719,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4204202,Chapecó,SC,2023,1.6.1.H,"21,6 total de ciclovias/ciclofaixas",,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4205407,Florianópolis,SC,2024,1.6.1.H,91.143,,,pending,,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4209102,Joinville,SC,2023,1.6.1.H,221.96,221.96,221.96,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,4209102,Joinville,SC,2025,1.6.1.H,220.27,220.27,220.27,pending,,,,data-raw/pemob_municipal_2025(pemob_municipal_25).csv
+municipal,4305108,Caxias do Sul,RS,2022,1.6.1.H,0,0,0,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,4316907,Santa Maria,RS,2022,1.6.1.H,3,3,3,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,5002704,Campo Grande,MS,2022,1.6.1.H,0,0,0,pending,,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,5002704,Campo Grande,MS,2023,1.6.1.H,17.282,,,pending,,,,data-raw/pemob2023_municipal.xlsx
+municipal,5201108,Anápolis,GO,2020,1.6.1.H,,,0,interpolated,equal_endpoints,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,5300108,Brasília,DF,2023,1.6.1.H,,,79.5,interpolated,linear,,,data-raw/pemob2023_municipal.xlsx
+municipal,1100205,Porto Velho,RO,2020,3.1.1.A,,,4.5,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1302603,Manaus,AM,2021,3.1.1.A,,,3.8,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob21_municipal.xlsx
+municipal,1501402,Belém,PA,2022,3.1.1.A,,,3.6,reconstructed,fare_previous_until_later_adjustment,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,1501402,Belém,PA,2024,3.1.1.A,,,4,reconstructed,fare_previous_until_later_adjustment,,,data-raw/pemob_municipal_2024.xlsx
+municipal,1506807,Santarém,PA,2020,3.1.1.A,,,3,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,1721000,Palmas,TO,2022,3.1.1.A,,,3.85,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/copy_of_pemob_municipal_2022.xlsx
+municipal,2307304,Juazeiro do Norte,CE,2024,3.1.1.A,,,3,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob_municipal_2024.xlsx
+municipal,2607901,Jaboatão dos Guararapes,PE,2020,3.1.1.A,,,3,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3136702,Juiz de Fora,MG,2021,3.1.1.A,,,3.75,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob21_municipal.xlsx
+municipal,3301009,Campos dos Goytacazes,RJ,2020,3.1.1.A,,,2.75,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3505708,Barueri,SP,2020,3.1.1.A,,,4.5,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3518800,Guarulhos,SP,2024,3.1.1.A,,,6.2,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob_municipal_2024.xlsx
+municipal,3534401,Osasco,SP,2020,3.1.1.A,,,4.5,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,3534401,Osasco,SP,2023,3.1.1.A,,,5,reconstructed,fare_previous_until_later_adjustment,,,data-raw/pemob2023_municipal.xlsx
+municipal,3548500,Santos,SP,2021,3.1.1.A,,,4.65,reconstructed,fare_previous_until_later_adjustment,,,data-raw/pemob21_municipal.xlsx
+municipal,3551009,São Vicente,SP,2023,3.1.1.A,,,3.95,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob2023_municipal.xlsx
+municipal,3552205,Sorocaba,SP,2021,3.1.1.A,,,4.4,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob21_municipal.xlsx
+municipal,3552205,Sorocaba,SP,2023,3.1.1.A,,,4.4,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob2023_municipal.xlsx
+municipal,4209102,Joinville,SC,2024,3.1.1.A,,,5.5,reconstructed,fare_previous_until_later_adjustment,,,data-raw/pemob_municipal_2024.xlsx
+municipal,4304606,Canoas,RS,2020,3.1.1.A,,,4.6,reconstructed,fare_previous_until_later_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,4309209,Gravataí,RS,2020,3.1.1.A,,,4.8,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,4316907,Santa Maria,RS,2020,3.1.1.A,,,4.2,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,5201108,Anápolis,GO,2020,3.1.1.A,,,4.25,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/BancodeDados_PemobMunicipal_2020.xlsx
+municipal,5300108,Brasília,DF,2023,3.1.1.A,,,5.5,reconstructed,fare_current_since_earlier_adjustment,,,data-raw/pemob2023_municipal.xlsx

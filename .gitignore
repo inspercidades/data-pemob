@@ -17,7 +17,6 @@ reuniao_pemob.notes
 data/*.xlsx
 data/*.zip
 data/pemob_review_candidates.csv
-data/pemob_interpolation_candidates.csv
 data/pemob_portal_teste.csv
 data/portal/**/*.xlsx
 data/portal/**/*.zip

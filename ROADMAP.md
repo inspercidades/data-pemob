@@ -38,8 +38,8 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 | Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 41 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
 | 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 41 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
 | Parsing | Currency, decimal commas, `km` suffixes, Excel dates, and missing tokens (`NA`, `NR`, `ND`, `-`) are parsed and tested. Ambiguous separators go to review. |
-| Review layer | 134 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
-| Interpolation | Candidate extract and gate exist. The gate currently admits no case. |
+| Review layer | 78 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending, regenerated after the crosswalk review. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
+| Interpolation | `R/pemob_treatment.R` fills 101 one-edition gaps: 24 fares reconstructed and 77 cycling values interpolated. Masking errors are in `data/pemob_masking_validation.csv`. |
 | Dashboard formulas | Scaling and missing-to-zero fixed in code; portal outputs not regenerated. |
 | Portal export | Not reproducible: `data/portal/dicionario_v1.xlsx` and `data/portal/final/pemob_tables.rds` are missing. The live site does not read `data/portal/v1/*.json` (see deliverable 2). |
 | Environment | `renv.lock` pins the packages listed in `DESCRIPTION`; no CI. All tests pass with `Rscript tests/test-pemob.R`. |
@@ -112,36 +112,40 @@ Never divide by 1,000 automatically.
 
 ### Interpolation: easy cases
 
-The current candidate extract
-(`data/pemob_interpolation_candidates.csv`) shows where interpolation can help.
+`R/pemob_treatment.R` writes the treated series to
+`data/pemob_target_treated.csv`, with a status and method for every cell. A
+gap is a missing value in an edition the municipality skipped or marked `NR`.
+Most filled gaps are skipped editions, mainly 2020, so the release flags them
+as imputed. Endpoints must be reported, accepted, or corrected values; pending
+review candidates are not endpoints.
 
-| Gap type | Fare | Ciclovia | Ciclofaixa |
-|---|---:|---:|---:|
-| One-year gap, municipality did not answer that edition, numeric endpoints | 48 | 37 | 36 |
-| of which equal endpoints | 16 | 8 | 10 |
-| One-year gap, municipality answered but marked `NR`, numeric endpoints | 0 | 7 | 4 |
+The first release applies these rules:
 
-Most usable gaps are editions the municipality skipped, mainly 2020 (39 of
-121). Filling them imputes a whole missed edition, not a skipped question, so
-the release must flag these values as imputed. The current gate rejects them;
-it needs to change.
-
-Apply these rules in the first release:
-
-1. **Fares, reconstructed.** When the next edition reports the previous fare
-   (`3.1.1.B`) and the last adjustment date (`3.1.1.C`), use them to recover
-   the fare in force during the gap year. Flag the value as reconstructed.
+1. **Fares, reconstructed.** The next edition reports the previous fare
+   (`3.1.1.B`) and the month of the last adjustment (`3.1.1.C`). An adjustment
+   before the gap year means the next edition's fare was in force all year.
+   An adjustment after the gap year means the previous fare was in force, if
+   it equals the fare of the edition before the gap. An adjustment during the
+   gap year leaves the gap unfilled. Flag the value as reconstructed.
 2. **Equal endpoints.** Carry the common value when both endpoints are parsed,
    unflagged, and in the same unit. Flag it as interpolated.
 3. **Cycling, unequal endpoints.** Use linear interpolation between unflagged,
    same-unit endpoints. Flag it as interpolated.
-4. **Not filled.** Unequal fare endpoints without adjustment records, gaps
-   longer than one edition, leading or trailing gaps, flagged endpoints, and
-   unparsed responses.
+4. **Not filled.** Fares adjusted during the gap year or with a previous
+   fare that contradicts the earlier edition, unequal fare endpoints without
+   adjustment records, gaps longer than one edition, leading or trailing gaps,
+   flagged endpoints, and unparsed responses.
 
-Validate by masking observed values that satisfy the same rules and report
-the error by variable. Report counts of reported, corrected, excluded, and
-imputed cells by variable and year.
+Masking hides each observed value that the same rules could estimate and
+compares the estimate with it. Reconstructed fares match the observed fare in
+about nine of ten cases; the misses come from inconsistent fare records.
+Linear interpolation of cycling infrastructure has a median absolute error of
+about 7% for ciclovias and 14% for ciclofaixas. `data/pemob_treatment_counts.csv`
+counts cells by variable, year, and status.
+
+- [x] Fill the easy cases and report masking errors and status counts.
+- [ ] Review the cycling candidates; corrections and exclusions change which
+  endpoints are usable.
 
 **Done when** the treated series carries a status for every cell, the counts
 and masking errors are reported, and raw responses remain unchanged.

@@ -1,0 +1,8 @@
+level,code_variable,label,category,subcategory,mode,unit,value_type,reviewed_type_editions,concept_id,valid_values,valid_pattern,validity_editions,evidence,reviewer
+municipal,3.6.1.F,Mototáxi - Valor da Bandeirada,,,,,,,,,,,"2024 and 2025 source text asks the mototaxi flag-fall fare; v1 seed repeats taxi label",Phase 5 source review
+municipal,3.6.1.G,Mototáxi - Valor da Bandeirada 1,,,,,,,,,,,"2024 and 2025 source text asks the mototaxi fare per kilometer; v1 seed repeats taxi label",Phase 5 source review
+municipal,3.6.1.H,Mototáxi - Valor da Bandeirada 2,,,,,,,,,,,"2024 and 2025 source text asks the second mototaxi fare per kilometer; v1 seed repeats taxi label",Phase 5 source review
+municipal,3.6.1.I,Mototáxi - Valor Hora Parada,,,,,,,,,,,"2024 and 2025 source text asks the mototaxi stopped-hour fare; v1 seed repeats taxi label",Phase 5 source review
+municipal,3.6.1.J,Mototáxi - Valor Tarifa Aeroporto,,,,,,,,,,,"2024 and 2025 source text asks the mototaxi airport fare; v1 seed repeats taxi label",Phase 5 source review
+municipal,4.7.1.H,,,,,percent,numeric,2024;2025,od_bicycle_mode_share,,,,"2024 and 2025 municipal and metropolitan codebook text identically asks bicycle percentage of trips from OD surveys; same target and scope apart from geography",Phase 5 source review
+metropolitan,4.2.1.H,,,,,percent,numeric,2024;2025,od_bicycle_mode_share,,,,"2024 and 2025 municipal and metropolitan codebook text identically asks bicycle percentage of trips from OD surveys; same target and scope apart from geography",Phase 5 source review

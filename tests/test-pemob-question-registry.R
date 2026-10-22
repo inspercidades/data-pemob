@@ -59,6 +59,47 @@ stopifnot(
     "1.0"
 )
 
+dictionary_fixture <- tibble::tibble(
+  level = "municipal",
+  year = 2024,
+  source_code = c("1.0", "1.0", "1.0", "9.9"),
+  question_text = c(
+    "Número de veículos",
+    "Número de viagens",
+    "Número de viagens",
+    "Source-only question"
+  )
+)
+dictionary_extra <- find_pemob_dictionary_evidence(
+  codebook_fixture,
+  dictionary_fixture
+)
+dictionary_evidence <- build_pemob_question_evidence(
+  codebook_fixture,
+  seed_fixture,
+  dictionary_extra
+)
+stopifnot(
+  nrow(dictionary_extra) == 2L,
+  nrow(dictionary_evidence) == 6L,
+  dictionary_evidence$source_mapping_status[
+    dictionary_evidence$question_text == "Número de viagens"
+  ] ==
+    "unresolved_ambiguous_source_code",
+  dictionary_evidence$source_mapping_status[
+    dictionary_evidence$question_text == "Número de veículos" &
+      dictionary_evidence$year == 2024
+  ] ==
+    "unresolved_ambiguous_source_code",
+  is.na(dictionary_evidence$code_variable[
+    dictionary_evidence$question_text == "Número de viagens"
+  ]),
+  dictionary_evidence$source_mapping_status[
+    dictionary_evidence$question_text == "Source-only question"
+  ] ==
+    "unresolved_unmapped_source_code"
+)
+
 review_fixture <- tibble::tibble(
   level = "municipal",
   code_variable = "1.1",
@@ -141,6 +182,22 @@ numeric_fixture <- dplyr::mutate(
 quality_result <- score_pemob_question_eligibility(
   numeric_fixture,
   quality_fixture
+)
+low_edition_quality <- quality_fixture |>
+  dplyr::mutate(
+    value_raw = ifelse(year == 2023, NA_character_, value_raw),
+    parse_status = ifelse(year == 2023, "missing", parse_status)
+  )
+low_edition_result <- score_pemob_question_eligibility(
+  numeric_fixture,
+  low_edition_quality
+)
+low_table <- low_edition_result |>
+  dplyr::filter(level == "municipal", product == "table")
+stopifnot(
+  low_table$editions_meeting_coverage == 4L,
+  low_table$decision == "excluded",
+  low_table$reason == "coverage_below_floor"
 )
 stopifnot(
   quality_result$decision[
@@ -243,6 +300,32 @@ stopifnot(
   nrow(real_pairs) == 815L,
   sum(real_pairs$level == "municipal") == 473L,
   sum(real_pairs$level == "metropolitan") == 342L
+)
+municipal_2019 <- readr::read_csv(
+  here::here("data", "dicionario_variaveis_pemob_2019.csv"),
+  col_types = readr::cols(.default = readr::col_character()),
+  show_col_types = FALSE
+)
+municipal_entries <- tibble::tibble(
+  level = "municipal",
+  year = 2019,
+  source_code = municipal_2019$code_variable,
+  question_text = municipal_2019$name_variable
+)
+municipal_extra <- find_pemob_dictionary_evidence(
+  real_codebook,
+  municipal_entries
+)
+conflicting_entries <- municipal_extra |>
+  dplyr::filter(source_code %in% c("4.8.1.H", "7.2.1.A"))
+stopifnot(
+  sum(conflicting_entries$source_code == "4.8.1.H") == 1L,
+  sum(conflicting_entries$source_code == "7.2.1.A") == 3L,
+  all(
+    conflicting_entries$source_mapping_status ==
+      "unresolved_ambiguous_source_code"
+  ),
+  all(is.na(conflicting_entries$code_variable))
 )
 live_snapshot <- readr::read_csv(
   here::here("tabelas", "pemob_live_labels_2024.csv"),

@@ -226,6 +226,26 @@ build_pemob_question_registry <- function(
   return(registry)
 }
 
+find_pemob_dictionary_evidence <- function(codebook, dictionary) {
+  keys <- c("level", "year", "source_code", "question_text")
+  entries <- dplyr::distinct(dictionary[keys])
+  represented <- dplyr::distinct(codebook[keys])
+  extra <- dplyr::anti_join(entries, represented, by = keys)
+  linked_codes <- dplyr::distinct(codebook[c("level", "year", "source_code")])
+  extra <- dplyr::left_join(
+    extra,
+    dplyr::mutate(
+      linked_codes,
+      source_mapping_status = "unresolved_ambiguous_source_code"
+    ),
+    by = c("level", "year", "source_code")
+  )
+  extra$source_mapping_status[is.na(extra$source_mapping_status)] <-
+    "unresolved_unmapped_source_code"
+  extra$code_variable <- NA_character_
+  return(extra)
+}
+
 build_pemob_question_evidence <- function(
   codebook,
   seed,
@@ -244,11 +264,34 @@ build_pemob_question_evidence <- function(
     cli::cli_abort("The codebook lacks evidence columns.")
   }
   result <- codebook[required]
+  result$source_mapping_status <- "codebook_linked"
   if (!is.null(source_only)) {
+    if ("source_mapping_status" %in% names(source_only)) {
+      ambiguous <- source_only |>
+        dplyr::filter(
+          source_mapping_status == "unresolved_ambiguous_source_code"
+        ) |>
+        dplyr::distinct(level, year, source_code)
+      mapped <- dplyr::semi_join(
+        result,
+        ambiguous,
+        by = c("level", "year", "source_code")
+      )
+      mapped_keys <- paste(mapped$level, mapped$year, mapped$source_code)
+      result_keys <- paste(result$level, result$year, result$source_code)
+      result$source_mapping_status[result_keys %in% mapped_keys] <-
+        "unresolved_ambiguous_source_code"
+    }
     for (col in setdiff(required, names(source_only))) {
       source_only[[col]] <- NA
     }
-    result <- dplyr::bind_rows(result, source_only[required])
+    if (!"source_mapping_status" %in% names(source_only)) {
+      source_only$source_mapping_status <- "unresolved_unmapped_source_code"
+    }
+    result <- dplyr::bind_rows(
+      result,
+      source_only[c(required, "source_mapping_status")]
+    )
   }
   seed_cols <- intersect(
     c(
@@ -709,6 +752,8 @@ score_pemob_question_eligibility <- function(
         "missing_participation_or_coverage"
       } else if (qualified < min_editions) {
         "insufficient_coverage_editions"
+      } else if (any(editions$coverage[screened] < min_coverage)) {
+        "coverage_below_floor"
       } else if (validity < min_validity) {
         "insufficient_type_validity"
       } else {

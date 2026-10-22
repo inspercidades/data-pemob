@@ -76,19 +76,13 @@ build_pemob_registry_artifacts <- function(
         source_code = dictionary$code_variable,
         question_text = dictionary$name_variable
       )
-      linked <- codebook |>
-        dplyr::filter(.data$level == level, .data$year == year) |>
-        dplyr::select(level, year, source_code)
-      extra <- dplyr::anti_join(
-        entries,
-        linked,
-        by = c("level", "year", "source_code")
-      )
-      extra$code_variable <- NA_character_
-      source_only[[length(source_only) + 1L]] <- extra
+      source_only[[length(source_only) + 1L]] <- entries
     }
   }
-  source_only <- dplyr::bind_rows(source_only)
+  source_only <- find_pemob_dictionary_evidence(
+    codebook,
+    dplyr::bind_rows(source_only)
+  )
   evidence <- build_pemob_question_evidence(
     codebook,
     seed,

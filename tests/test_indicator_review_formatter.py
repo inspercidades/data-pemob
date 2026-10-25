@@ -32,13 +32,14 @@ class FormatterTest(unittest.TestCase):
             "subject": "Oferta", "type": "sim/não", "coverage_cities": "12",
             "coverage_years": "2019-2025", "response_rate_mean": "0.5",
             "panel_cities": "4", "quality_flags": "", "dashboard_pemob": "sim",
-            "tabela_pemob": "não", "interest": "", "checklist": "", "notes": "",
+            "tabela_pemob": "não", "include_table": "", "include_dashboard": "",
+            "notes": "",
         }])
         write_csv(self.path, "indicator_review_metropolitan.csv", [{
             "code": "1.1.1", "full_question": "Há serviço metropolitano?",
             "coverage_places": "8", "coverage_years": "2019, 2021-2025",
             "response_rate_mean": "0.4", "panel_places": "3", "quality_flags": "",
-            "interest": "", "checklist": "", "notes": "",
+            "include_table": "", "include_dashboard": "", "notes": "",
         }])
         write_csv(self.path, "indicator_diagnostics.csv", [
             {"level": "municipal", "code": "1.1.1", "n_answers": "20",
@@ -55,11 +56,12 @@ class FormatterTest(unittest.TestCase):
             "participated_4_plus": "4", "participated_2021_2025": "1",
         }])
         write_csv(self.path, "snapshot_long.csv", [{
-            "name_city": "Cidade", "abbrev_state": "SP", "year": "2025",
+            "code_muni": "3550308", "name_city": "Cidade", "abbrev_state": "SP",
+            "year": "2025",
             "code_indicator": "1.1.1", "value": "SIM", "is_number": "FALSE",
         }])
         write_csv(self.path, "snapshot_long_metropolitan.csv", [{
-            "place_key": "SP::Região", "place_name": "Região", "abbrev_state": "SP",
+            "place_name": "Região", "abbrev_state": "SP",
             "year": "2025", "code_indicator": "1.1.1", "value": "SIM",
             "is_number": "FALSE",
         }])
@@ -77,8 +79,9 @@ class FormatterTest(unittest.TestCase):
                 "coverage_years": "Anos com resposta",
                 "response_rate_mean": "Taxa de resposta média",
                 "panel_cities": "Cidades com 4+ edições",
-                "quality_flags": "Alertas de qualidade", "interest": "Interesse",
-                "checklist": "Incluir?", "notes": "Notas",
+                "quality_flags": "Alertas de qualidade",
+                "include_table": "Tabela?", "include_dashboard": "Dashboard?",
+                "notes": "Notas",
             }.items()
         ])
 
@@ -93,45 +96,74 @@ class FormatterTest(unittest.TestCase):
         self.assertEqual(metropolitan["A2"].value, "1.1.1")
         self.assertLess(municipal.max_column, 20)
         self.assertLess(metropolitan.max_column, 15)
-        self.assertEqual(municipal.max_column, 14)
-        self.assertEqual(metropolitan.max_column, 10)
         municipal_headers = [cell.value for cell in municipal[1]]
+        self.assertEqual(municipal_headers, [
+            "Código", "Pergunta resumida", "Pergunta completa", "Tema",
+            "Tipo de resposta", "Cidades com resposta", "Anos com resposta",
+            "Taxa de resposta média", "Alertas de qualidade", "Hoje no site",
+            "Tabela?", "Dashboard?", "Notas",
+        ])
+        self.assertEqual([cell.value for cell in metropolitan[1]], [
+            "Código", "Pergunta completa", "Regiões com resposta",
+            "Anos com resposta", "Taxa de resposta média",
+            "Alertas de qualidade", "Tabela?", "Dashboard?", "Notas",
+        ])
         self.assertEqual(
-            municipal.cell(2, municipal_headers.index("Presença no site") + 1).value,
+            municipal.cell(2, municipal_headers.index("Hoje no site") + 1).value,
             "Só dashboard",
         )
+        for sheet in (municipal, metropolitan):
+            headers = [cell.value for cell in sheet[1]]
+            validated = {
+                str(validation.sqref): validation.formula1
+                for validation in sheet.data_validations.dataValidation
+            }
+            for label in ("Tabela?", "Dashboard?"):
+                letter = chr(ord("A") + headers.index(label))
+                self.assertEqual(validated[f"{letter}2"], '"sim,não"')
         self.assertNotIn("2020", [cell.value for cell in metropolitan[1]])
         self.assertEqual(workbook["diagnósticos"].max_row, 3)
         diagnostic_headers = [cell.value for cell in workbook["diagnósticos"][1]]
         self.assertEqual(len(diagnostic_headers), len(set(diagnostic_headers)))
         self.assertIn("Municípios 2019", diagnostic_headers)
         self.assertIn("Regiões 2019", diagnostic_headers)
-        self.assertIn("Chave", [cell.value for cell in workbook["dados metropolitanos"][1]])
+        self.assertEqual(
+            [cell.value for cell in workbook["dados municipais"][1]],
+            ["Ano", "Código IBGE", "Município", "UF", "1.1.1"],
+        )
+        self.assertEqual(
+            [cell.value for cell in workbook["dados municipais"][2]],
+            [2025, 3550308, "Cidade", "SP", "SIM"],
+        )
+        self.assertEqual(
+            [cell.value for cell in workbook["dados metropolitanos"][1]],
+            ["Ano", "Região metropolitana", "UF", "1.1.1"],
+        )
 
     def test_preserves_reviewer_entries_by_level_and_code(self):
         old = Workbook()
         sheet = old.active
-        sheet.title = "revisão"
-        sheet.append(["Código", "Interesse", "Incluir?", "Notas"])
-        sheet.append(["1.1.1", "alta", "sim", "Conferir fonte"])
+        sheet.title = "municipal"
+        sheet.append(["Código", "Tabela?", "Dashboard?", "Notas"])
+        sheet.append(["1.1.1", "sim", "não", "Conferir fonte"])
         old_path = self.path / "old.xlsx"
         old.save(old_path)
         workbook = formatter.build_workbook(self.path, existing_path=old_path)
         sheet = workbook["municipal"]
         headers = [cell.value for cell in sheet[1]]
-        self.assertEqual(sheet.cell(2, headers.index("Interesse") + 1).value, "alta")
-        self.assertEqual(sheet.cell(2, headers.index("Incluir?") + 1).value, "sim")
+        self.assertEqual(sheet.cell(2, headers.index("Tabela?") + 1).value, "sim")
+        self.assertEqual(sheet.cell(2, headers.index("Dashboard?") + 1).value, "não")
         self.assertEqual(sheet.cell(2, headers.index("Notas") + 1).value, "Conferir fonte")
         metro = workbook["metropolitana"]
         metro_headers = [cell.value for cell in metro[1]]
-        self.assertIsNone(metro.cell(2, metro_headers.index("Interesse") + 1).value)
+        self.assertIsNone(metro.cell(2, metro_headers.index("Tabela?") + 1).value)
 
     def test_fails_if_reviewed_question_disappears(self):
         old = Workbook()
         sheet = old.active
         sheet.title = "revisão"
-        sheet.append(["Código", "Interesse", "Incluir?", "Notas"])
-        sheet.append(["9.9.9", "alta", "sim", "Keep this decision"])
+        sheet.append(["Código", "Tabela?", "Dashboard?", "Notas"])
+        sheet.append(["9.9.9", "sim", "sim", "Keep this decision"])
         old_path = self.path / "old.xlsx"
         old.save(old_path)
         with self.assertRaisesRegex(ValueError, "Reviewed keys missing"):

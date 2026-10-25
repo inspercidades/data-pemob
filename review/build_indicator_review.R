@@ -367,8 +367,8 @@ column_labels <- c(
   coverage_cities = "Cidades com resposta",
   coverage_years = "Anos com resposta",
   quality_flags = "Alertas de qualidade",
-  interest = "Interesse",
-  checklist = "Incluir?",
+  include_table = "Tabela?",
+  include_dashboard = "Dashboard?",
   notes = "Notas",
   panel_cities = "Cidades com 4+ edições",
   panel_cities_full = "Cidades em todas de 2021 a 2025",
@@ -408,14 +408,14 @@ type_labels <- c(
 
 column_definitions <- c(
   code = "Código da pergunta na PEMOB, harmonizado entre edições.",
-  short_question = "Rótulo do registro de perguntas. Sem rótulo no registro, usa o rótulo do site.",
+  short_question = "Rótulo do registro de perguntas. Sem rótulo no registro, usa o rótulo do site; sem nenhum dos dois, repete a pergunta completa.",
   full_question = "Texto da pergunta na edição mais recente que a fez.",
   subject = "Categoria do registro, a mesma do menu do site.",
   coverage_cities = "Municípios com ao menos uma resposta válida em qualquer edição. Em branco, NR, ND e códigos parecidos não contam; valores imputados também não.",
   coverage_years = "Edições com ao menos uma resposta válida.",
   quality_flags = "Problemas apontados pelas métricas à direita. Os limites são sensíveis de propósito: o alerta pede uma olhada e nunca exclui a pergunta. Poucas edições: 3 ou menos. Baixa resposta: taxa média abaixo de 30%. Série curta: menos de 20 cidades com 4 ou mais edições. Muitos zeros: mais de 30% das respostas. Respostas não numéricas: mais de 5% das respostas a uma pergunta numérica são texto. Saltos frequentes: mais de 10% das respostas consecutivas de uma cidade mudam 3 vezes ou mais. Valores repetidos: mais de 20% das respostas consecutivas idênticas, só em custos, receita e demanda, sem contar taxas. Escala de % mista: pergunta percentual respondida ora como 0,45, ora como 45. Quebra entre edições: ver a coluna própria. Enunciado mudou: ver Versões do enunciado.",
-  interest = "Avaliação do revisor: quão útil a pergunta é para nossos objetivos (alta, média ou baixa).",
-  checklist = "Decisão do revisor: incluir a pergunta nos produtos finais (sim ou não).",
+  include_table = "Decisão do revisor: incluir a pergunta na Tabela PEMOB (sim ou não).",
+  include_dashboard = "Decisão do revisor: incluir a pergunta no Dashboard PEMOB (sim ou não).",
   notes = "Observações livres do revisor.",
   panel_cities = "Municípios com resposta válida em 4 ou mais edições. O limite máximo está na aba participação.",
   panel_cities_full = "Municípios com resposta válida em todas as edições de 2021 a 2025. O limite máximo está na aba participação.",
@@ -500,8 +500,13 @@ review <- questions |>
       in_menu_registry %in% TRUE ~ "no menu, sem dados",
       .default = "não"
     ),
-    short_question = coalesce(registry_label, live_label),
+    short_question = coalesce(registry_label, live_label, full_question),
     subject = coalesce(subject, dict_subject),
+    subject = if_else(
+      subject == "Pesquisa Origem e Destino",
+      "Origem e Destino",
+      subject
+    ),
     topic = coalesce(topic, dict_topic),
     code_sort = code_variable
   ) |>
@@ -538,8 +543,8 @@ review <- questions |>
   ) |>
   mutate(
     type = recode_values(type, from = names(type_labels), to = type_labels),
-    interest = NA_character_,
-    checklist = NA_character_,
+    include_table = NA_character_,
+    include_dashboard = NA_character_,
     notes = NA_character_
   ) |>
   select(
@@ -554,8 +559,8 @@ review <- questions |>
     n_years,
     coverage_cities_positive,
     quality_flags,
-    interest,
-    checklist,
+    include_table,
+    include_dashboard,
     notes,
     panel_cities,
     panel_cities_full,
@@ -598,6 +603,7 @@ snapshot <- long |>
   ) |>
   arrange(abbrev_state, place_name, year, code_order) |>
   select(
+    code_muni,
     name_city = place_name,
     abbrev_state,
     year,
@@ -632,9 +638,14 @@ write_csv(
 )
 
 write_csv(menu_unmatched, file.path(out_dir, "menu_unmatched.csv"), na = "")
-write_csv(snapshot, file.path(out_dir, "snapshot_long.csv"), na = "")
+# The data sheets keep only the questions under review, in review order.
 write_csv(
-  tibble(code_indicator = review$code),
+  filter(snapshot, code_indicator %in% review_pass$code),
+  file.path(out_dir, "snapshot_long.csv"),
+  na = ""
+)
+write_csv(
+  tibble(code_indicator = review_pass$code),
   file.path(out_dir, "snapshot_codes.csv")
 )
 
@@ -783,8 +794,8 @@ metro_review <- metro_questions |>
     zero_share = NA_real_,
     unparsed_share = NA_real_,
     repeat_share = NA_real_,
-    interest = NA_character_,
-    checklist = NA_character_,
+    include_table = NA_character_,
+    include_dashboard = NA_character_,
     notes = NA_character_,
     code_sort = code_variable
   ) |>
@@ -811,8 +822,8 @@ metro_review <- metro_questions |>
     n_years,
     coverage_places_positive,
     quality_flags,
-    interest,
-    checklist,
+    include_table,
+    include_dashboard,
     notes,
     panel_places,
     panel_places_full,
@@ -842,7 +853,6 @@ metro_snapshot <- metro_long |>
   ) |>
   arrange(abbrev_state, place_name, place_key, year, code_order) |>
   select(
-    place_key,
     place_name,
     abbrev_state,
     year,
@@ -862,13 +872,19 @@ municipal_diagnostics <- review_pass |>
     -topic,
     -type,
     -quality_flags,
-    -interest,
-    -checklist,
+    -include_table,
+    -include_dashboard,
     -notes
   ) |>
   mutate(level = "municipal", .before = 1)
 metro_diagnostics <- metro_review_pass |>
-  select(-full_question, -quality_flags, -interest, -checklist, -notes) |>
+  select(
+    -full_question,
+    -quality_flags,
+    -include_table,
+    -include_dashboard,
+    -notes
+  ) |>
   mutate(level = "metropolitan", .before = 1)
 diagnostics <- bind_rows(municipal_diagnostics, metro_diagnostics)
 if (anyDuplicated(diagnostics[c("level", "code")])) {
@@ -889,12 +905,12 @@ write_csv(
   file.path(out_dir, "panel_bounds_metropolitan.csv")
 )
 write_csv(
-  metro_snapshot,
+  filter(metro_snapshot, code_indicator %in% metro_review_pass$code),
   file.path(out_dir, "snapshot_long_metropolitan.csv"),
   na = ""
 )
 write_csv(
-  tibble(code_indicator = metro_review$code),
+  tibble(code_indicator = metro_review_pass$code),
   file.path(out_dir, "snapshot_codes_metropolitan.csv")
 )
 write_csv(diagnostics, file.path(out_dir, "indicator_diagnostics.csv"), na = "")

@@ -40,7 +40,9 @@ stopifnot(
   ),
   setequal(diagnostics$code[diagnostics$level == "metropolitan"], metro$code),
   setequal(diagnostics$code[diagnostics$level == "municipal"], municipal$code),
-  !any(c("interest", "checklist", "notes") %in% names(diagnostics))
+  !any(
+    c("include_table", "include_dashboard", "notes") %in% names(diagnostics)
+  )
 )
 
 participants <- long |>
@@ -103,4 +105,41 @@ stopifnot(
   sum(zero_answers$value_num == 0, na.rm = TRUE) == 3L,
   isTRUE(all.equal(zero_row$zero_share, 3 / 26)),
   !grepl("muitos zeros", zero_row$quality_flags, fixed = TRUE)
+)
+
+# Reviewers decide on the Tabela and the Dashboard separately.
+snapshot <- readr::read_csv(
+  file.path(out_dir, "snapshot_long.csv"),
+  show_col_types = FALSE
+)
+snapshot_codes <- readr::read_csv(
+  file.path(out_dir, "snapshot_codes.csv"),
+  show_col_types = FALSE
+)$code_indicator
+metro_snapshot_codes <- readr::read_csv(
+  file.path(out_dir, "snapshot_codes_metropolitan.csv"),
+  show_col_types = FALSE
+)$code_indicator
+metro_snapshot <- readr::read_csv(
+  file.path(out_dir, "snapshot_long_metropolitan.csv"),
+  show_col_types = FALSE
+)
+stopifnot(
+  all(c("include_table", "include_dashboard") %in% names(municipal)),
+  all(c("include_table", "include_dashboard") %in% names(metro)),
+  !any(c("interest", "checklist") %in% c(names(municipal), names(metro))),
+  !anyNA(municipal$short_question),
+  !"Pesquisa Origem e Destino" %in% municipal$subject,
+  "code_muni" %in% names(snapshot),
+  !"place_key" %in% names(metro_snapshot),
+  !anyDuplicated(metro_snapshot[c(
+    "place_name",
+    "abbrev_state",
+    "year",
+    "code_indicator"
+  )]),
+  identical(snapshot_codes, municipal$code),
+  identical(metro_snapshot_codes, metro$code),
+  all(snapshot$code_indicator %in% municipal$code),
+  all(metro_snapshot$code_indicator %in% metro$code)
 )

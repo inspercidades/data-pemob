@@ -1,6 +1,6 @@
 # PEMOB indicator review workbook
 
-`pemob_indicator_review.xlsx` has separate municipal and metropolitan question-review sheets, a diagnostics sheet, participation summaries, answer snapshots, and field definitions. The builder includes questions with at least two valid reported answers. Reviewer entries in `Interesse`, `Incluir?`, and `Notas` survive regeneration by questionnaire level and question code; regeneration stops if a reviewed question disappears.
+`pemob_indicator_review.xlsx` has separate municipal and metropolitan question-review sheets, a diagnostics sheet, participation summaries, answer snapshots, and field definitions. The builder includes questions with at least two valid reported answers. Reviewers mark each question `sim` or `não` in `Tabela?` and `Dashboard?`, one decision per product. These entries and `Notas` survive regeneration by questionnaire level and question code; regeneration stops if a reviewed question disappears. The data sheets hold one row per place and edition, identified by `Ano`, `Código IBGE`, `Município` and `UF` (or `Região metropolitana` and `UF`), with one column per reviewed question code.
 
 ## Rebuild
 

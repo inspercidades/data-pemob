@@ -1,13 +1,13 @@
 from,to,definition
 code,Código,"Código da pergunta na PEMOB, harmonizado entre edições."
-short_question,Pergunta resumida,"Rótulo do registro de perguntas. Sem rótulo no registro, usa o rótulo do site."
+short_question,Pergunta resumida,"Rótulo do registro de perguntas. Sem rótulo no registro, usa o rótulo do site; sem nenhum dos dois, repete a pergunta completa."
 full_question,Pergunta completa,Texto da pergunta na edição mais recente que a fez.
 subject,Tema,"Categoria do registro, a mesma do menu do site."
 coverage_cities,Cidades com resposta,"Municípios com ao menos uma resposta válida em qualquer edição. Em branco, NR, ND e códigos parecidos não contam; valores imputados também não."
 coverage_years,Anos com resposta,Edições com ao menos uma resposta válida.
 quality_flags,Alertas de qualidade,"Problemas apontados pelas métricas à direita. Os limites são sensíveis de propósito: o alerta pede uma olhada e nunca exclui a pergunta. Poucas edições: 3 ou menos. Baixa resposta: taxa média abaixo de 30%. Série curta: menos de 20 cidades com 4 ou mais edições. Muitos zeros: mais de 30% das respostas. Respostas não numéricas: mais de 5% das respostas a uma pergunta numérica são texto. Saltos frequentes: mais de 10% das respostas consecutivas de uma cidade mudam 3 vezes ou mais. Valores repetidos: mais de 20% das respostas consecutivas idênticas, só em custos, receita e demanda, sem contar taxas. Escala de % mista: pergunta percentual respondida ora como 0,45, ora como 45. Quebra entre edições: ver a coluna própria. Enunciado mudou: ver Versões do enunciado."
-interest,Interesse,"Avaliação do revisor: quão útil a pergunta é para nossos objetivos (alta, média ou baixa)."
-checklist,Incluir?,Decisão do revisor: incluir a pergunta nos produtos finais (sim ou não).
+include_table,Tabela?,Decisão do revisor: incluir a pergunta na Tabela PEMOB (sim ou não).
+include_dashboard,Dashboard?,Decisão do revisor: incluir a pergunta no Dashboard PEMOB (sim ou não).
 notes,Notas,Observações livres do revisor.
 panel_cities,Cidades com 4+ edições,Municípios com resposta válida em 4 ou mais edições. O limite máximo está na aba participação.
 panel_cities_full,Cidades em todas de 2021 a 2025,Municípios com resposta válida em todas as edições de 2021 a 2025. O limite máximo está na aba participação.

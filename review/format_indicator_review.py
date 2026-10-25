@@ -18,22 +18,21 @@ MUNICIPAL = [
     ("code", 10), ("short_question", 38), ("full_question", 70),
     ("subject", 15), ("type", 14), ("coverage_cities", 17),
     ("coverage_years", 18), ("response_rate_mean", 17),
-    ("panel_cities", 19), ("quality_flags", 35),
-    ("site_presence", 23), ("interest", 12), ("checklist", 12),
-    ("notes", 35),
+    ("quality_flags", 35), ("site_presence", 20),
+    ("include_table", 12), ("include_dashboard", 13), ("notes", 35),
 ]
 METROPOLITAN = [
     ("code", 10), ("full_question", 70), ("coverage_places", 18),
     ("coverage_years", 18), ("response_rate_mean", 17),
-    ("panel_places", 20), ("quality_flags", 35),
-    ("interest", 12), ("checklist", 12), ("notes", 35),
+    ("quality_flags", 35), ("include_table", 12),
+    ("include_dashboard", 13), ("notes", 35),
 ]
 EXTRA_LABELS = {
     "coverage_places": "Regiões com resposta",
     "coverage_places_positive": "Regiões com valor positivo",
     "panel_places": "Regiões com 4+ edições",
     "panel_places_full": "Regiões em todas de 2021 a 2025",
-    "site_presence": "Presença no site",
+    "site_presence": "Hoje no site",
     "level": "Questionário",
     **{f"cities_{year}": f"Municípios {year}" for year in range(2019, 2026)},
     **{f"places_{year}": f"Regiões {year}" for year in (2019, 2021, 2022, 2023, 2024, 2025)},
@@ -43,7 +42,7 @@ EXTRA_DEFINITIONS = {
     "coverage_places_positive": "Regiões metropolitanas com valor numérico positivo.",
     "panel_places": "Regiões metropolitanas com resposta válida em quatro ou mais das seis edições disponíveis (2019 e 2021 a 2025).",
     "panel_places_full": "Regiões metropolitanas com resposta válida em todas as edições de 2021 a 2025.",
-    "site_presence": "Resume a presença da pergunta no dashboard e na tabela do site. A pergunta metropolitana não recebe esse campo sem evidência específica.",
+    "site_presence": "Presença da pergunta no snapshot de 2019 a 2024 do site. Tabela e dashboard: aparece nas duas páginas. Menu sem dados: está no menu da tabela, mas sem valores. Não: fora do site. O site ainda não mostra perguntas metropolitanas.",
     "level": "Questionário municipal ou metropolitano; o código da pergunta só é único dentro de cada questionário.",
     **{f"cities_{year}": f"Municípios com resposta válida em {year}." for year in range(2019, 2026)},
     **{f"places_{year}": f"Regiões metropolitanas com resposta válida em {year}." for year in (2019, 2021, 2022, 2023, 2024, 2025)},
@@ -59,9 +58,10 @@ SHARES = {
     "response_rate_mean", "response_rate_latest", "zero_share",
     "unparsed_share", "jump_share", "repeat_share",
 }
-REVIEWER = ("interest", "checklist", "notes")
-REVIEW_LABELS = ("Interesse", "Incluir?", "Notas")
-CHOICES = {"interest": '"alta,média,baixa"', "checklist": '"sim,não"'}
+REVIEWER = ("include_table", "include_dashboard", "notes")
+REVIEW_LABELS = ("Tabela?", "Dashboard?", "Notas")
+LEGACY_LABELS = ("Interesse", "Incluir?")
+CHOICES = {"include_table": '"sim,não"', "include_dashboard": '"sim,não"'}
 HEADER_FILL = PatternFill("solid", fgColor="1F3A5F")
 REVIEW_FILL = PatternFill("solid", fgColor="FFF4CC")
 YES_FILL = PatternFill("solid", fgColor="D9EAD3")
@@ -105,8 +105,10 @@ def reviewer_entries(path):
         headers = [cell.value for cell in sheet[1]]
         if "Código" not in headers:
             raise ValueError(f"Missing Código header in {sheet_name}")
-        indexes = {name: headers.index(name) for name in REVIEW_LABELS if name in headers}
-        if set(indexes) != set(REVIEW_LABELS):
+        legacy = set(LEGACY_LABELS) <= set(headers)
+        expected = ("Notas",) if legacy else REVIEW_LABELS
+        indexes = {name: headers.index(name) for name in expected if name in headers}
+        if set(indexes) != set(expected):
             raise ValueError(f"Missing reviewer columns in {sheet_name}")
         code_index = headers.index("Código")
         for row in sheet.iter_rows(min_row=2, values_only=True):
@@ -116,8 +118,17 @@ def reviewer_entries(path):
             key = (level, str(code))
             if key in entries:
                 raise ValueError(f"Duplicate reviewed key: {key}")
+            # One old include decision cannot be split into Tabela and
+            # Dashboard decisions, so only notes carry over.
+            if legacy and any(row[headers.index(label)] not in (None, "")
+                              for label in LEGACY_LABELS):
+                raise ValueError(
+                    f"Legacy reviewer decisions in {sheet_name} for {key}: "
+                    "move them to Tabela? and Dashboard? before regenerating"
+                )
             entries[key] = {internal: row[indexes[label]]
-                            for internal, label in zip(REVIEWER, REVIEW_LABELS)}
+                            for internal, label in zip(REVIEWER, REVIEW_LABELS)
+                            if label in indexes}
     workbook.close()
     return entries
 
@@ -149,13 +160,13 @@ def write_review(sheet, rows, columns, labels):
             validation.error = "Escolha uma das opções da lista."
             sheet.add_data_validation(validation)
             validation.add(f"{letters[name]}2:{letters[name]}{n}")
-        last = get_column_letter(len(columns))
-        check = letters["checklist"]
-        for answer, fill in (("sim", YES_FILL), ("não", NO_FILL)):
-            sheet.conditional_formatting.add(
-                f"A2:{last}{n}",
-                FormulaRule(formula=[f'${check}2="{answer}"'], fill=fill),
-            )
+        for name in CHOICES:
+            letter = letters[name]
+            for answer, fill in (("sim", YES_FILL), ("não", NO_FILL)):
+                sheet.conditional_formatting.add(
+                    f"{letter}2:{letter}{n}",
+                    FormulaRule(formula=[f'{letter}2="{answer}"'], fill=fill),
+                )
     sheet.freeze_panes = "C2"
     sheet.auto_filter.ref = f"A1:{get_column_letter(len(columns))}{n}"
     sheet.row_dimensions[1].height = 45
@@ -205,7 +216,8 @@ def write_participation(sheet, rows, bounds, unit):
 def write_snapshot(sheet, rows, codes, id_fields, id_labels):
     cells = {}
     for row in rows:
-        key = tuple(row[field] if field != "year" else int(row[field]) for field in id_fields)
+        key = tuple(int(row[field]) if field in ("year", "code_muni") else row[field]
+                    for field in id_fields)
         code = row["code_indicator"]
         answers = cells.setdefault(key, {})
         if code in answers:
@@ -217,7 +229,7 @@ def write_snapshot(sheet, rows, codes, id_fields, id_labels):
         sheet.append(list(key) + [answers.get(code) for code in codes])
     styled_header(sheet[1])
     for index, field in enumerate(id_fields, 1):
-        sheet.column_dimensions[get_column_letter(index)].width = 28 if "name" in field or "key" in field else 10
+        sheet.column_dimensions[get_column_letter(index)].width = 28 if "name" in field else 12
     sheet.freeze_panes = f"{get_column_letter(len(id_fields) + 1)}2"
     sheet.auto_filter.ref = f"A1:{get_column_letter(sheet.max_column)}{sheet.max_row}"
 
@@ -274,7 +286,7 @@ def build_workbook(source_dir=HERE, existing_path=None):
         dashboard = row.get("dashboard_pemob") == "sim"
         table = row.get("tabela_pemob") == "sim"
         if dashboard and table:
-            row["site_presence"] = "Dashboard e tabela"
+            row["site_presence"] = "Tabela e dashboard"
         elif dashboard:
             row["site_presence"] = "Só dashboard"
         elif table:
@@ -302,13 +314,13 @@ def build_workbook(source_dir=HERE, existing_path=None):
     write_snapshot(workbook.create_sheet("dados municipais"),
                    read_csv(source_dir, "snapshot_long.csv"),
                    [row["code_indicator"] for row in read_csv(source_dir, "snapshot_codes.csv")],
-                   ["name_city", "abbrev_state", "year"],
-                   ["Município", "UF", "Edição"])
+                   ["year", "code_muni", "name_city", "abbrev_state"],
+                   ["Ano", "Código IBGE", "Município", "UF"])
     write_snapshot(workbook.create_sheet("dados metropolitanos"),
                    read_csv(source_dir, "snapshot_long_metropolitan.csv"),
                    [row["code_indicator"] for row in read_csv(source_dir, "snapshot_codes_metropolitan.csv")],
-                   ["place_key", "place_name", "abbrev_state", "year"],
-                   ["Chave", "Região metropolitana", "UF", "Edição"])
+                   ["year", "place_name", "abbrev_state"],
+                   ["Ano", "Região metropolitana", "UF"])
     write_definitions(workbook.create_sheet("definições"), label_rows, diagnostics[0])
     return workbook
 

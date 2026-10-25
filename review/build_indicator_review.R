@@ -260,7 +260,7 @@ numeric_answers <- answered |>
 numeric_quality <- numeric_answers |>
   summarise(
     unparsed_share = mean(is.na(value_num)),
-    zero_share = mean(value_num == 0, na.rm = TRUE),
+    zero_share = sum(value_num == 0, na.rm = TRUE) / n(),
     jump_share = mean(
       ratio[which(both_positive)] > jump_ratio |
         ratio[which(both_positive)] < 1 / jump_ratio

@@ -83,3 +83,24 @@ stopifnot(isTRUE(all.equal(
   metro$response_rate_mean[metro$code == code],
   expected_rate
 )))
+
+# Unparseable reported answers remain in the zero-share denominator.
+municipal_long <- readr::read_csv(
+  here::here("data", "dataverse_draft", "municipal_long.csv"),
+  show_col_types = FALSE,
+  guess_max = 1e6
+)
+zero_code <- "3.7.1.J"
+zero_answers <- municipal_long |>
+  dplyr::filter(
+    code_variable == zero_code,
+    participated,
+    parse_status != "missing"
+  )
+zero_row <- municipal[municipal$code == zero_code, ]
+stopifnot(
+  nrow(zero_answers) == 26L,
+  sum(zero_answers$value_num == 0, na.rm = TRUE) == 3L,
+  isTRUE(all.equal(zero_row$zero_share, 3 / 26)),
+  !grepl("muitos zeros", zero_row$quality_flags, fixed = TRUE)
+)

@@ -60,6 +60,7 @@ SHARES = {
 }
 REVIEWER = ("include_table", "include_dashboard", "notes")
 REVIEW_LABELS = ("Tabela?", "Dashboard?", "Notas")
+LEGACY_LABELS = ("Interesse", "Incluir?")
 CHOICES = {"include_table": '"sim,não"', "include_dashboard": '"sim,não"'}
 HEADER_FILL = PatternFill("solid", fgColor="1F3A5F")
 REVIEW_FILL = PatternFill("solid", fgColor="FFF4CC")
@@ -104,8 +105,10 @@ def reviewer_entries(path):
         headers = [cell.value for cell in sheet[1]]
         if "Código" not in headers:
             raise ValueError(f"Missing Código header in {sheet_name}")
-        indexes = {name: headers.index(name) for name in REVIEW_LABELS if name in headers}
-        if set(indexes) != set(REVIEW_LABELS):
+        legacy = set(LEGACY_LABELS) <= set(headers)
+        expected = ("Notas",) if legacy else REVIEW_LABELS
+        indexes = {name: headers.index(name) for name in expected if name in headers}
+        if set(indexes) != set(expected):
             raise ValueError(f"Missing reviewer columns in {sheet_name}")
         code_index = headers.index("Código")
         for row in sheet.iter_rows(min_row=2, values_only=True):
@@ -115,8 +118,17 @@ def reviewer_entries(path):
             key = (level, str(code))
             if key in entries:
                 raise ValueError(f"Duplicate reviewed key: {key}")
+            # One old include decision cannot be split into Tabela and
+            # Dashboard decisions, so only notes carry over.
+            if legacy and any(row[headers.index(label)] not in (None, "")
+                              for label in LEGACY_LABELS):
+                raise ValueError(
+                    f"Legacy reviewer decisions in {sheet_name} for {key}: "
+                    "move them to Tabela? and Dashboard? before regenerating"
+                )
             entries[key] = {internal: row[indexes[label]]
-                            for internal, label in zip(REVIEWER, REVIEW_LABELS)}
+                            for internal, label in zip(REVIEWER, REVIEW_LABELS)
+                            if label in indexes}
     workbook.close()
     return entries
 

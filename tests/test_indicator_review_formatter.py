@@ -158,6 +158,30 @@ class FormatterTest(unittest.TestCase):
         metro_headers = [cell.value for cell in metro[1]]
         self.assertIsNone(metro.cell(2, metro_headers.index("Tabela?") + 1).value)
 
+    def legacy_workbook(self, interest, include, notes):
+        old = Workbook()
+        sheet = old.active
+        sheet.title = "municipal"
+        sheet.append(["Código", "Interesse", "Incluir?", "Notas"])
+        sheet.append(["1.1.1", interest, include, notes])
+        old_path = self.path / "legacy.xlsx"
+        old.save(old_path)
+        return old_path
+
+    def test_migrates_notes_from_legacy_reviewer_columns(self):
+        old_path = self.legacy_workbook(None, None, "Conferir fonte")
+        workbook = formatter.build_workbook(self.path, existing_path=old_path)
+        sheet = workbook["municipal"]
+        headers = [cell.value for cell in sheet[1]]
+        self.assertEqual(sheet.cell(2, headers.index("Notas") + 1).value, "Conferir fonte")
+        self.assertIsNone(sheet.cell(2, headers.index("Tabela?") + 1).value)
+        self.assertIsNone(sheet.cell(2, headers.index("Dashboard?") + 1).value)
+
+    def test_refuses_to_drop_legacy_decisions(self):
+        old_path = self.legacy_workbook("alta", "sim", "Conferir fonte")
+        with self.assertRaisesRegex(ValueError, "Legacy reviewer decisions"):
+            formatter.build_workbook(self.path, existing_path=old_path)
+
     def test_fails_if_reviewed_question_disappears(self):
         old = Workbook()
         sheet = old.active

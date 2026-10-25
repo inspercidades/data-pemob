@@ -1,0 +1,51 @@
+from,to,definition
+code,Código,"Código da pergunta na PEMOB, harmonizado entre edições."
+short_question,Pergunta resumida,"Rótulo do registro de perguntas. Sem rótulo no registro, usa o rótulo do site."
+full_question,Pergunta completa,Texto da pergunta na edição mais recente que a fez.
+subject,Tema,"Categoria do registro, a mesma do menu do site."
+coverage_cities,Cidades com resposta,"Municípios com ao menos uma resposta válida em qualquer edição. Em branco, NR, ND e códigos parecidos não contam; valores imputados também não."
+coverage_years,Anos com resposta,Edições com ao menos uma resposta válida.
+quality_flags,Alertas de qualidade,"Problemas apontados pelas métricas à direita. Os limites são sensíveis de propósito: o alerta pede uma olhada e nunca exclui a pergunta. Poucas edições: 3 ou menos. Baixa resposta: taxa média abaixo de 30%. Série curta: menos de 20 cidades com 4 ou mais edições. Muitos zeros: mais de 30% das respostas. Respostas não numéricas: mais de 5% das respostas a uma pergunta numérica são texto. Saltos frequentes: mais de 10% das respostas consecutivas de uma cidade mudam 3 vezes ou mais. Valores repetidos: mais de 20% das respostas consecutivas idênticas, só em custos, receita e demanda, sem contar taxas. Escala de % mista: pergunta percentual respondida ora como 0,45, ora como 45. Quebra entre edições: ver a coluna própria. Enunciado mudou: ver Versões do enunciado."
+interest,Interesse,"Avaliação do revisor: quão útil a pergunta é para nossos objetivos (alta, média ou baixa)."
+checklist,Incluir?,Decisão do revisor: incluir a pergunta nos produtos finais (sim ou não).
+notes,Notas,Observações livres do revisor.
+panel_cities,Cidades com 4+ edições,Municípios com resposta válida em 4 ou mais edições. O limite máximo está na aba participação.
+panel_cities_full,Cidades em todas de 2021 a 2025,Municípios com resposta válida em todas as edições de 2021 a 2025. O limite máximo está na aba participação.
+jump_share,Saltos bruscos,Só perguntas numéricas: parcela das respostas consecutivas positivas de uma cidade que mudam 3 vezes ou mais. Valores altos sugerem erro de unidade ou escala. Fica vazia com menos de 5 pares.
+edition_breaks,Quebras entre edições,"Só perguntas numéricas: edições em que o valor da cidade mediana dobrou ou caiu à metade em relação à resposta anterior, com ao menos 5 cidades. Sugere mudança de unidade ou escala. Uma quebra em 2021 também pode refletir a pandemia."
+response_rate_mean,Taxa de resposta média,"Respostas válidas divididas pelos municípios participantes, em média nas edições que fizeram a pergunta."
+response_rate_latest,Taxa de resposta na última edição,A mesma taxa na edição mais recente que fez a pergunta.
+n_answers,Respostas válidas,"Respostas válidas, contadas por cidade e edição. A aba lista as perguntas com ao menos duas."
+coverage_cities_positive,Cidades com valor positivo,Só perguntas numéricas: municípios que informaram valor acima de zero. Um número baixo ao lado de muitas cidades com resposta indica que a maioria respondeu zero.
+zero_share,Respostas iguais a zero,Só perguntas numéricas: parcela das respostas válidas iguais a zero. Zero costuma indicar que a cidade não tem o serviço.
+unparsed_share,Respostas não numéricas,"Só perguntas numéricas: parcela das respostas em texto, não em número."
+repeat_share,Valores repetidos,"Só perguntas numéricas: parcela das respostas consecutivas positivas de uma cidade que se repetem. Em fluxos anuais, sugere valor copiado. Fica vazia com menos de 5 pares."
+topic,Subtema,"Subcategoria do registro, em geral o modo de transporte."
+type,Tipo de resposta,Tipo de resposta segundo o dicionário do portal.
+dashboard_pemob,No dashboard,"Se a pergunta aparece no snapshot de 2019 a 2024 do dashboard da PEMOB (observatorio.insper.edu.br/projetos/dashboard), obtido do commit 28d2cd8. O dashboard lista uma pergunta num ano quando ela está marcada para exibição, tem rótulo e ao menos uma cidade com valor diferente de zero."
+dashboard_years,Anos no dashboard,Edições em que a pergunta aparece no dashboard.
+tabela_pemob,Na tabela,"Se a pergunta aparece no snapshot de 2019 a 2024 da tabela da PEMOB (observatorio.insper.edu.br/projetos/tabela), obtido do commit 28d2cd8. Sim: está no menu e mostra valores. No menu, sem dados: está no menu, mas a tabela fica vazia porque a pergunta não está marcada para exibição. Não: fora do menu."
+table_years,Anos na tabela,Edições em que a tabela mostra valores para a pergunta.
+live_label,Rótulo no site,Rótulo exibido no snapshot de 2019 a 2024 do site (commit 28d2cd8).
+n_years,Edições com resposta,Número de edições com ao menos uma resposta válida.
+question_wording_versions,Versões do enunciado,"Enunciados distintos nas edições de 2021 a 2025, sem contar o ano de referência. Acima de 1, o texto mudou e a comparabilidade precisa ser conferida. 2019 e 2020 ficam de fora porque o dicionário dessas edições traz só cabeçalhos curtos ou nenhum texto."
+cities_2019,2019,Municípios com resposta válida em 2019.
+cities_2020,2020,Municípios com resposta válida em 2020.
+cities_2021,2021,Municípios com resposta válida em 2021.
+cities_2022,2022,Municípios com resposta válida em 2022.
+cities_2023,2023,Municípios com resposta válida em 2023.
+cities_2024,2024,Municípios com resposta válida em 2024.
+cities_2025,2025,Municípios com resposta válida em 2025.
+coverage_places,Regiões com resposta,Regiões metropolitanas com ao menos uma resposta válida; respostas ausentes e imputadas não contam.
+coverage_places_positive,Regiões com valor positivo,Não calculado: o tipo de resposta não foi revisado para a maioria das perguntas e edições metropolitanas.
+panel_places,Regiões com 4+ edições,Regiões com resposta válida em 4 ou mais edições da pergunta.
+panel_places_full,Regiões em todas de 2021 a 2025,Regiões com resposta válida em todas as edições de 2021 a 2025.
+places_2019,2019,Regiões com resposta válida em 2019.
+places_2021,2021,Regiões com resposta válida em 2021.
+places_2022,2022,Regiões com resposta válida em 2022.
+places_2023,2023,Regiões com resposta válida em 2023.
+places_2024,2024,Regiões com resposta válida em 2024.
+places_2025,2025,Regiões com resposta válida em 2025.
+metro_quality_method,Alertas da metropolitana,Poucas edições: até 2 com resposta. Baixa resposta: média abaixo de 30%. Série curta: menos de 5 regiões com resposta em 4 ou mais edições. Enunciado mudou: mais de uma versão entre 2021 e 2025.
+metro_response_method,Taxa de resposta metropolitana,"Respostas válidas divididas pelas regiões participantes, em média apenas nas edições em que a pergunta foi feita (2019 e/ou 2021-2025). Não há edição metropolitana de 2020."
+metro_numeric_method,Métricas numéricas metropolitanas,"As métricas de zero, valor positivo, saltos, repetição e respostas não numéricas ficam vazias até haver tipos de resposta revisados para as perguntas e edições metropolitanas avaliadas."

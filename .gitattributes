@@ -1,0 +1,4 @@
+# Generated snapshots retain whitespace embedded in reported answers.
+review/*.csv linguist-generated=true
+review/snapshot_long*.csv -whitespace
+review/site_labels_snapshot.csv -whitespace

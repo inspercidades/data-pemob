@@ -1,0 +1,961 @@
+label,question,is_dashboard,has_value,has_nonzero,year
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2019
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2019
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,True,True,2019
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2019
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2019
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2019
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2019
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2019
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2019
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2019
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2019
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2019
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,True,True,2019
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2019
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2019
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2019
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,True,True,2019
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,True,True,2019
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,True,True,2019
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,True,True,2019
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2019
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2019
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,True,True,2019
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,True,True,2019
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,True,True,2019
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,True,2019
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,True,True,2019
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2019
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2019
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2019
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2019
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2019
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2019
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2019
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2019
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2019
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,False,False,2019
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2019
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2019
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2019
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,False,False,2019
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,False,False,2019
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2019
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,False,False,2019
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2019
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2019
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2019
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2019
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2019
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2019
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2019
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,False,2019
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,False,2019
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,False,2019
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2019
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,True,True,2019
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2019
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,True,True,2019
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2019
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,True,True,2019
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,True,True,2019
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,True,True,2019
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,False,False,2019
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,True,True,2019
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,True,True,2019
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,True,True,2019
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,True,True,2019
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2019
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2019
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2019
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2019
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2019
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2019
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2019
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2019
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2019
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,False,False,2019
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2019
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2019
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2019
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2019
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2019
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2019
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2019
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2019
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,False,False,2019
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2019
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2019
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2019
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2019
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,False,False,2019
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2019
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,False,False,2019
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2019
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2019
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2019
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,True,2019
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2019
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2019
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,False,False,2019
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,True,True,2019
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2019
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2019
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2019
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2019
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2019
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2019
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,True,True,2019
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,True,True,2019
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,True,True,2019
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,False,False,2019
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,False,False,2019
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,True,True,2019
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,True,True,2019
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,True,True,2019
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,True,True,2019
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,True,True,2019
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,True,True,2019
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,True,True,2019
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2019
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2019
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2019
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2019
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,False,False,2019
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2019
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2019
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2019
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2019
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2019
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2019
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,True,True,2019
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,True,True,2019
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2019
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,True,True,2019
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,True,True,2019
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2019
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2019
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2019
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2019
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2019
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2019
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2019
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2019
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2019
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2020
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2020
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,False,False,2020
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2020
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2020
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,False,False,2020
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,False,False,2020
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2020
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2020
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,False,False,2020
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,False,False,2020
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,False,False,2020
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,False,False,2020
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2020
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2020
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2020
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,False,False,2020
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,False,False,2020
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,False,False,2020
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,False,False,2020
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,False,False,2020
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,False,False,2020
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,False,False,2020
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,False,2020
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,False,False,2020
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2020
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2020
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2020
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2020
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2020
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2020
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2020
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2020
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2020
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,False,False,2020
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2020
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2020
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2020
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,True,True,2020
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,True,True,2020
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2020
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,True,True,2020
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2020
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2020
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2020
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2020
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2020
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2020
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2020
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,False,2020
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,False,2020
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,False,2020
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2020
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,False,False,2020
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2020
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,False,False,2020
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2020
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2020
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,False,False,2020
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,False,False,2020
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,False,False,2020
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,False,False,2020
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,False,False,2020
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,False,False,2020
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,False,False,2020
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2020
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2020
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2020
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2020
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2020
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2020
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2020
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2020
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2020
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,False,False,2020
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2020
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2020
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2020
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2020
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2020
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2020
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2020
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2020
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,False,False,2020
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2020
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2020
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2020
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2020
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,True,True,2020
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2020
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,True,True,2020
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,False,False,2020
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2020
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2020
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2020
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2020
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2020
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2020
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2020
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,False,2020
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2020
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2020
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,False,False,2020
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,False,False,2020
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2020
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2020
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2020
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2020
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2020
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2020
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,False,False,2020
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,False,False,2020
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,False,False,2020
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,False,False,2020
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,False,False,2020
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,False,False,2020
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,False,False,2020
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,False,False,2020
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,False,False,2020
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,False,False,2020
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,False,False,2020
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,False,False,2020
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2020
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2020
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2020
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2020
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,False,False,2020
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2020
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2020
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2020
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2020
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2020
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2020
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,False,False,2020
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,False,False,2020
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,False,False,2020
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,False,False,2020
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,False,False,2020
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,False,False,2020
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2020
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2020
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2020
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2020
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2020
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2020
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2020
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2020
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2021
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2021
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,True,True,2021
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2021
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2021
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,True,True,2021
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2021
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2021
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2021
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,True,True,2021
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,True,True,2021
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,True,True,2021
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,True,True,2021
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2021
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2021
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2021
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,False,False,2021
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,False,False,2021
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,True,False,2021
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,False,False,2021
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,False,False,2021
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,True,False,2021
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,True,True,2021
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,True,2021
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,True,True,2021
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2021
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2021
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2021
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2021
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2021
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2021
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2021
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2021
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2021
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,False,False,2021
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2021
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2021
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2021
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,True,True,2021
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,True,True,2021
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2021
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,True,True,2021
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2021
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2021
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2021
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2021
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2021
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2021
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2021
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,False,2021
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,False,2021
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,True,2021
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2021
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,True,True,2021
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2021
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,True,True,2021
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2021
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,True,True,2021
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,True,True,2021
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,True,True,2021
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,False,False,2021
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,True,True,2021
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,True,True,2021
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,True,True,2021
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,True,True,2021
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2021
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2021
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2021
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2021
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2021
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2021
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2021
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2021
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2021
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,False,False,2021
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2021
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2021
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2021
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2021
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2021
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2021
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2021
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2021
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,False,False,2021
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2021
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2021
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2021
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2021
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,True,True,2021
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2021
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,True,True,2021
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,False,False,2021
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2021
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2021
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2021
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,True,2021
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2021
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2021
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,False,False,2021
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,True,True,2021
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2021
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2021
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2021
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2021
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2021
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2021
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,True,True,2021
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,True,True,2021
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,True,True,2021
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,True,True,2021
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,True,True,2021
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,True,True,2021
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,True,False,2021
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,True,True,2021
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,True,True,2021
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,True,True,2021
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,True,True,2021
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,True,True,2021
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2021
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2021
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2021
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2021
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,True,True,2021
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2021
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2021
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2021
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2021
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2021
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2021
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,True,True,2021
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,True,True,2021
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,False,False,2021
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,True,True,2021
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,False,False,2021
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2021
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2021
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2021
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2021
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2021
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2021
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2021
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2021
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2021
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2022
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2022
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,True,True,2022
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2022
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2022
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,True,True,2022
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2022
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2022
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2022
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,True,True,2022
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,True,True,2022
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,True,True,2022
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,True,True,2022
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2022
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2022
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2022
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,True,True,2022
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,True,False,2022
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,True,True,2022
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,False,False,2022
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,True,True,2022
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,True,True,2022
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,True,True,2022
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,True,2022
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,True,True,2022
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2022
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2022
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2022
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2022
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2022
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2022
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2022
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2022
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2022
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,True,True,2022
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2022
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2022
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2022
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,True,True,2022
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,True,True,2022
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2022
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,True,True,2022
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2022
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2022
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2022
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2022
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2022
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2022
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2022
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,False,2022
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,False,2022
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,True,2022
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2022
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,True,True,2022
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2022
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,True,True,2022
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2022
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,True,True,2022
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,True,True,2022
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,True,True,2022
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,True,True,2022
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,True,True,2022
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,True,True,2022
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,True,True,2022
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,True,True,2022
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2022
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2022
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2022
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2022
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2022
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2022
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2022
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2022
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2022
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,False,False,2022
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2022
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2022
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2022
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2022
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2022
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2022
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2022
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2022
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,False,False,2022
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2022
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2022
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2022
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2022
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,True,True,2022
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2022
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,True,True,2022
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2022
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2022
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2022
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,True,2022
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2022
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2022
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,True,True,2022
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,True,True,2022
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2022
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2022
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2022
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2022
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2022
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2022
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,True,True,2022
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,True,True,2022
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,True,True,2022
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,True,True,2022
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,True,True,2022
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,True,True,2022
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,True,True,2022
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,True,True,2022
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,True,True,2022
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,True,True,2022
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,True,True,2022
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,True,True,2022
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2022
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2022
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2022
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2022
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,False,False,2022
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2022
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2022
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2022
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2022
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2022
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2022
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,True,True,2022
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,True,True,2022
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2022
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,True,True,2022
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,True,True,2022
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2022
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2022
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2022
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2022
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2022
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2022
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2022
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2022
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2022
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2023
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2023
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,True,True,2023
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2023
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2023
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,True,True,2023
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2023
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2023
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2023
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,True,True,2023
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,True,True,2023
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,True,True,2023
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,True,True,2023
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2023
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2023
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,True,True,2023
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,True,True,2023
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,True,True,2023
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,True,2023
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,True,True,2023
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2023
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2023
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2023
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2023
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2023
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2023
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2023
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2023
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2023
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,True,True,2023
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2023
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2023
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2023
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,True,True,2023
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,True,True,2023
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2023
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,True,True,2023
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2023
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2023
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2023
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2023
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2023
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2023
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2023
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,False,2023
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,False,2023
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,False,2023
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2023
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,True,True,2023
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2023
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,True,True,2023
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2023
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,True,True,2023
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,True,True,2023
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,True,True,2023
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,True,True,2023
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,True,True,2023
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,True,True,2023
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,True,True,2023
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,True,True,2023
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2023
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2023
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2023
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2023
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2023
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2023
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2023
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2023
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2023
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,False,False,2023
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2023
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2023
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2023
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2023
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2023
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2023
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2023
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2023
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,False,False,2023
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2023
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2023
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2023
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2023
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,True,True,2023
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2023
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,True,True,2023
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,True,True,2023
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2023
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2023
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2023
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,True,True,2023
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,False,False,2023
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2023
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2023
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2023
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,True,2023
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2023
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2023
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,True,True,2023
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,True,True,2023
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2023
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2023
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2023
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2023
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2023
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2023
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,True,True,2023
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,True,True,2023
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,True,True,2023
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,True,True,2023
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,True,True,2023
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,True,True,2023
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,True,True,2023
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,True,True,2023
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,True,True,2023
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,True,True,2023
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,True,True,2023
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,True,True,2023
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2023
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2023
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2023
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2023
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,False,False,2023
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2023
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2023
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2023
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2023
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2023
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2023
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,True,True,2023
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,True,True,2023
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2023
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,True,True,2023
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,True,True,2023
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2023
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2023
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2023
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2023
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2023
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2023
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2023
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2023
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2023
+Agentes de Trânsito em Exercício,Qual o número de agentes de trânsito em exercício no município no ano?,True,True,True,2024
+Ano Plano Diretor,Qual o ano de elaboração ou última atualização do Plano Diretor?,False,True,True,2024
+Baixa Renda - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?,True,True,True,2024
+Barcos (capacidade média),Qual a capacidade média da frota de barco no município?,True,True,True,2024
+Contemplado em Plano de Mobilidade Urbana,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?,False,True,True,2024
+Custos (Ônibus) - Administrativo (Ônibus),Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Combustível (Ônibus),Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Depreciação (Ônibus),Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Despesas Administrativas (Ônibus),Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Impostos e Tributação (Ônibus),Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Operação (Ônibus),Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Custos (Ônibus) - Outros insumos (Ônibus),Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+"Custos (Ônibus) - Peças, acessórios e material de rodagem (Ônibus)","Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?",True,True,True,2024
+Custos (Ônibus) - Remuneração pelo Serviço Prestado (Ônibus),Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?,True,True,True,2024
+Deficientes - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?,True,True,True,2024
+Equipamentos de Fiscalização,Qual o número de equipamentos de fiscalização de velocidade existentes?,True,True,True,2024
+Estações Metroviárias com Informações sobre Horários,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?,True,True,True,2024
+Estações Metroviárias com Informações sobre Integrações,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?,True,True,True,2024
+Estações Metroviárias com Informações sobre Tarifas,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?,True,True,True,2024
+Estações Metroviárias com Itinerários,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?,True,True,True,2024
+Estudantes de Rede Privada - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?,True,True,True,2024
+Estudantes de Rede Pública - Percentual de Desconto,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?,True,True,True,2024
+Existe Pesquisa de Satisfação de Usuário,O município realiza pesquisa de satisfação dos usuários?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (Barco),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (Metrô),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (Microônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (Trem),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (VLT),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?,False,True,True,2024
+Existe informação sobre pontualidade e regularidade (Ônibus),O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?,False,True,True,2024
+Extensão da malha (VLT),Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?,False,True,True,2024
+Extensão da malha (metrô),Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?,False,True,True,2024
+Extensão da malha (trem),Qual a quilometragem de vias dedicadas exclusivamente a trem no município?,False,True,True,2024
+Extensão de Calçadas para Pedestres,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?,False,True,True,2024
+Extensão de Ciclofaixas Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?,False,True,True,2024
+Extensão de Ciclovias Exclusivas,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?,False,True,True,2024
+Extensão de Corredores Exclusivos de Ônibus,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?,False,True,True,2024
+Extensão de Faixas Exclusivas,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?,False,True,True,2024
+Extensão de Vias Exclusivas Temporárias para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?,False,True,True,2024
+Extensão de Vias Exclusivas para BRT,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?,False,True,True,2024
+Extensão de Vias Exclusivas para Pedestres,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?,False,True,True,2024
+Frota de Barcos,Qual a frota de barcos operacionais no município?,True,True,True,2024
+Frota de Bicicletas Compartilhadas,Qual a frota de bicicletas compartilhadas operacionais no município?,True,True,True,2024
+Frota de Microônibus,Qual a frota de veículos operacionais de vans/microônibus no município?,True,True,True,2024
+Frota de Mototáxis,Qual a frota de veículos operacionais de mototáxi no município?,True,True,True,2024
+Frota de Táxis,Qual a frota de veículos operacionais de táxi no município?,True,True,True,2024
+Frota de Táxis Híbridos (Eletricidade + Gasolina) (%),Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?,True,True,True,2024
+Frota de Táxis Movido a Eletricidade (%),Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?,True,True,True,2024
+Frota de Táxis Movido a Etanol (%),Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?,True,True,True,2024
+Frota de Táxis Movido a Gás Natural (%),Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?,True,True,True,2024
+Frota de Veículos Escolares,Qual a frota de veículos para transporte escolar no município?,True,True,True,2024
+Frota de Veículos Fretados para Passageiros,Qual a frota de veículos para fretamento para transporte de passageiro no município?,True,True,True,2024
+Frota de Ônibus Articulados,Qual a frota de veículos operacionais de ônibus articulado no município?,True,True,True,2024
+Frota de Ônibus Biarticulados,Qual a frota de veículos operacionais de ônibus biarticulado no município?,True,True,True,2024
+Frota de Ônibus Híbridos (Eletricidade + Diesel) (%),Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?,True,True,True,2024
+Frota de Ônibus Movido a Biodiesel (%),Qual o percentual da frota que utiliza biodiesel como fonte de energia?,True,True,True,2024
+Frota de Ônibus Movido a Eletricidade (%),Qual o percentual da frota que utiliza eletricidade como fonte de energia?,True,True,True,2024
+Frota de Ônibus Movido a Etanol (%),Qual o percentual da frota que utiliza etanol como fonte de energia?,True,True,True,2024
+Frota de Ônibus Movido a Gás Natural (%),Qual o percentual da frota que utiliza gás natural como fonte de energia?,True,True,True,2024
+Frota de Ônibus Movido a Hidrogênio (%),Qual o percentual da frota que utiliza hidrogênio como fonte de energia?,True,True,False,2024
+Frota de ônibus,Qual a frota de veículos operacionais de ônibus convencional no município?,False,True,True,2024
+Idade Média da Frota de Microônibus,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos),False,True,True,2024
+Idade Média da Frota de Táxis,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos),False,True,True,2024
+Idade Média da Frota de Ônibus,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos),False,True,True,2024
+Idosos - Tarifa Paga,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?,True,True,True,2024
+Impostos e Taxas - Alíquota Outros Impostos (Vans/Microônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?,True,True,True,2024
+Impostos e Taxas - Alíquota Outros Impostos (Ônibus),Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?,True,True,True,2024
+Impostos e Taxas - Cofins (Ônibus),Qual o percentual de Cofins incidente no serviço de transporte por ônibus?,True,True,True,2024
+Impostos e Taxas - Outros Impostos (Ônibus),Quais outros impostos incidem no serviço de transporte por ônibus?,True,False,False,2024
+Impostos e Taxas - PIS (Ônibus),Qual o percentual de PIS incidente no serviço de transporte por ônibus?,True,True,True,2024
+Impostos e Taxas - Taxa de Gerenciamento (Ônibus),Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?,True,True,True,2024
+Impostos e taxas - Alíquota ISS (Vans/Microônibus),Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?,True,True,True,2024
+Impostos e taxas - Alíquota ISS (Ônibus),Qual o percentual de ISS incidente no serviço de transporte por ônibus?,True,True,True,2024
+Lei de Zoneamento ou Uso e Ocupação do Solo,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?,False,True,True,2024
+Microônibus (capacidade média),Qual a capacidade média da frota de vans/microônibus operacionais no município?,True,True,True,2024
+,Quais os impostos incidentes no serviço de transporte por vans/microônibus?,True,False,False,2024
+,Quais os impostos incidentes no serviço de transporte por ônibus?,True,False,False,2024
+,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2024
+,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2024
+,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2024
+,Qual o percentual de membros dos operados dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2024
+,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %),True,True,True,2024
+,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?,True,True,True,2024
+Número de Metroviárias,Qual o número total de estações metroferroviárias no município?,False,True,True,2024
+"Número de Metroviárias (acessibilidade, def. física)","Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2024
+"Número de Metroviárias (acessibilidade, def. visual)",Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?,False,True,True,2024
+Número de Metroviárias com Intregração,Qual o número total de estações metroferroviárias com integração física?,False,True,True,2024
+Número de Rodoviárias,Qual o número total de terminais rodoviários no município?,False,True,True,2024
+"Número de Rodoviárias (acessibilidade, def. física)","Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?",False,True,True,2024
+"Número de Rodoviárias (acessibilidade, def. visual)",Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?,False,True,True,2024
+Número de Rodoviárias com Integração,Qual o número total de terminais rodoviários com integração física?,False,True,True,2024
+Outros insumos detalhamento (Ônibus),"Se houver outros insumos, especificar:",False,True,False,2024
+POD - Percentual de viagens a pé,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)",True,True,True,2024
+POD - Percentual de viagens de bicicleta,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)",True,True,True,2024
+POD - Percentual de viagens por automóvel individual,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)",True,True,True,2024
+POD - Percentual de viagens por moto,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)",True,True,True,2024
+POD - Percentual de viagens por outros modais,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)",True,True,True,2024
+POD - Percentual de viagens por transporte público,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)",True,True,True,2024
+POD - Percentual de viagens por táxi ou carro de aplicativo,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)",True,True,True,2024
+Passageiros de Barco (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por barco no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Vans/Microônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Comum),Qual o número de passageiros comuns transportados no serviço de transporte por ônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Equivalentes),Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Estudante),Qual o número de estudantes transportados no serviço de transporte por ônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Gratuidade),Qual o número de gratuidades no serviço de transporte por ônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Integração),Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus no ano?,True,True,True,2024
+Passageiros de Ônibus (Vale Transporte),Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus no ano?,True,True,True,2024
+Percentual de Vagas de Estacionamento para Deficientes,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %),True,True,True,2024
+Percentual de Vagas de Estacionamento para Gestantes,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %),True,True,True,2024
+Percentual de Vagas de Estacionamento para Idosos,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %),True,True,True,2024
+Plano Diretor,O município possui Plano Diretor?,False,True,True,2024
+Pontos de Embarque (em nível),"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?",True,True,True,2024
+Pontos de Embarque Georreferenciados,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?,True,True,True,2024
+Pontos de Embarque com Informações sobre Horários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?,True,True,True,2024
+Pontos de Embarque com Informações sobre Integrações,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?,True,True,True,2024
+Pontos de Embarque com Informações sobre Tarifas,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?,True,True,True,2024
+Pontos de Embarque com Itinerários,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?,True,True,True,2024
+Pontos de Embarque com abrigo,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?",True,True,True,2024
+Pontos de Embarque/Desembarque (Total),"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?",False,True,True,2024
+Quilômetros Percorridos (Microônibus),Qual a quilometragem percorrida no ano pela frota de vans/microônibus do município?,True,True,True,2024
+Quilômetros Percorridos (Ônibus),Qual a quilometragem percorrida no ano pela frota de ônibus do município?,True,True,True,2024
+Receita Extratarifária com Publicidade (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus no ano?",True,True,True,2024
+Receita Extratarifária de Outras Fontes (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus no ano?",True,True,True,2024
+Receita Tarifária (Vans/Microônibus),Qual o valor da receita tarifária anual por vans/microônibus arrecadado no ano?,True,True,True,2024
+Receita Tarifária (Ônibus),Qual o valor da receita tarifária anual por ônibus arrecadado no ano?,True,True,True,2024
+Subsídios a Passageiros (Ônibus),"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus no ano?",True,True,True,2024
+Subsídios ao Sistema (Ônibus),"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus no ano?",True,True,True,2024
+Terminais Rodoviários com Informações sobre Horários,Qual o número de terminais rodoviários com informações aos usuários sobre horários?,False,True,True,2024
+Terminais Rodoviários com Informações sobre Integrações,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?,False,True,True,2024
+Terminais Rodoviários com Informações sobre Tarifas,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?,False,True,True,2024
+Terminais Rodoviários com Itinerários,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?,False,True,True,2024
+Táxi - Valor Hora Parada,"Qual o valor do serviço de táxi, por hora parada, se houver?",True,True,True,2024
+Táxi - Valor Tarifa Aeroporto,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?",True,True,True,2024
+Táxi - Valor da Bandeirada,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?",True,True,True,2024
+Táxi - Valor da Bandeirada,Qual o valor da Bandeirada do transporte público individual (táxi) no município?,True,True,True,2024
+Táxi no Corredor de Ônibus,É possível a circulação de táxis nos corredores de ônibus?,False,False,False,2024
+Vagas de Estacionamento Reguladas,Qual o número de vagas de estacionamento regulamentados existentes no município?,True,True,True,2024
+Valor Arrecadado com Cobrança de Estacionamento,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2023?,True,True,True,2024
+Valor Arrecadado com Multas de Trânsito,Qual foi a arrecadação anual no ano com multas de trânsito?,True,True,True,2024
+Valor da Tarifa,Qual o valor da atual tarifa predominante do município?,True,True,True,2024
+Velocidade Média do BRT em faixas prioritárias (pico),Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?,True,True,True,2024
+Velocidade Média do Transporte Público em Vias Mistas,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?,True,True,True,2024
+Velocidade Média do Ônibus nas Faixas Exclusivas (pico),Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?,True,True,True,2024
+Velocidade Média do Ônibus nos Corredores (pico),Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?,True,True,True,2024
+Viagens de Microônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2024
+Viagens de Ônibus Incompletas (%),Qual a porcentagem de viagens por ônibus não foram completadas no ano? (%),True,True,True,2024
+Viagens de Ônibus Incompletas Microônibus(%),Qual o percentual de viagens por vans/microônibus não foram completadas no ano? (%),True,True,True,2024
+Viagens de Ônibus Realizadas no Horário Programado (%),Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado no ano? (%),True,True,True,2024
+Ônibus (capacidade média),Qual a capacidade média da frota de ônibus convencionais operacionais no município?,True,True,True,2024
+Ônibus (com plataforma),Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?,True,True,True,2024
+Ônibus (piso baixo),Qual o número de ônibus convencionais operacionais de piso baixo no município?,True,True,True,2024
+Ônibus Articulados (capacidade média),Qual a capacidade média de ônibus articulado operacionais no município?,True,True,True,2024
+Ônibus Articulados (com plataforma),Qual o número de ônibus articulados operacionais com plataforma elevatória no município?,True,True,True,2024
+Ônibus Articulados (piso baixo),Qual o número de ônibus articulados operacionais de piso baixo?,True,True,True,2024
+Ônibus Biarticulados (cap. média),Qual a capacidade média de ônibus biarticulado operacionais no município?,True,True,True,2024
+Ônibus Biarticulados (com plataforma),Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?,True,True,True,2024

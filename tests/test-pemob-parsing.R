@@ -152,6 +152,32 @@ stopifnot(
   is.na(parsed$raw_response[22])
 )
 
+# Percent strings become fractions, matching the 2019-2024 workbooks that
+# store percent cells as fractions. Text around a percent stays in review.
+percent_responses <- c(
+  "31.67%",
+  "40,5%",
+  "5 %",
+  "0.00%",
+  "100%",
+  "1,5% (sobre receitas)",
+  "2%; 3%",
+  "% sobre a Receita Bruta",
+  "R$ 5%"
+)
+parsed_percent <- parse_pemob_response(percent_responses)
+
+stopifnot(
+  isTRUE(all.equal(
+    parsed_percent$parsed_value[1:5],
+    c(0.3167, 0.405, 0.05, 0, 1)
+  )),
+  all(parsed_percent$parse_status[1:5] == "parsed"),
+  all(parsed_percent$parsed_unit[1:5] == "percent"),
+  all(parsed_percent$parse_status[6:9] == "review"),
+  all(is.na(parsed_percent$parsed_value[6:9]))
+)
+
 municipal_2025 <- read_pemob_2025(
   here::here("data-raw", "pemob_municipal_2025(pemob_municipal_25).csv")
 )
@@ -161,6 +187,21 @@ stopifnot(
   sum(fares_2025$parse_status == "parsed") == 81L,
   sum(fares_2025$parse_status == "missing") == 1L,
   all(fares_2025$parsed_unit[fares_2025$parse_status == "parsed"] == "BRL")
+)
+
+cost_share_2025 <- parse_pemob_response(municipal_2025[["3.7.1.A"]])
+parsed_shares <- cost_share_2025$parsed_value[
+  cost_share_2025$parse_status == "parsed"
+]
+stopifnot(
+  length(parsed_shares) > 0L,
+  all(
+    cost_share_2025$parsed_unit[
+      cost_share_2025$parse_status == "parsed"
+    ] ==
+      "percent"
+  ),
+  all(parsed_shares >= 0 & parsed_shares <= 1)
 )
 
 shares <- scale_pemob_share(

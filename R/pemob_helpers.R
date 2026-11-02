@@ -644,7 +644,12 @@ parse_pemob_response <- function(response) {
   )
   has_m <- !has_km &
     grepl("[[:space:]]*(m|metros?)$", number, ignore.case = TRUE)
+  # The 2019-2024 workbooks store percent cells as fractions; 2025 exports
+  # them as text ("31.67%"), so these become fractions as well.
+  has_percent <- grepl("^[^%]*[0-9][[:space:]]*%$", number)
+  number[has_percent] <- sub("[[:space:]]*%$", "", number[has_percent])
   parsed_unit <- rep(NA_character_, length(number))
+  parsed_unit[has_percent] <- "percent"
   parsed_unit[has_currency] <- "BRL"
   parsed_unit[has_km] <- "km"
   parsed_unit[has_m] <- "m"
@@ -670,6 +675,7 @@ parse_pemob_response <- function(response) {
   parseable <- (!is.na(number) &
     !is_missing &
     !ambiguous_separator &
+    !(has_currency & has_percent) &
     (grouped_thousands | grouped_decimal | scientific_number | simple_number)) |
     logical_response
 
@@ -694,6 +700,8 @@ parse_pemob_response <- function(response) {
   parsed_value <- rep(NA_real_, length(number))
   numeric_values <- parseable & !logical_response
   parsed_value[numeric_values] <- as.numeric(normalized_number[numeric_values])
+  percent_values <- numeric_values & has_percent
+  parsed_value[percent_values] <- parsed_value[percent_values] / 100
   parsed_value[logical_response] <- as.numeric(
     toupper(text[logical_response]) %in% c("TRUE", "SIM")
   )

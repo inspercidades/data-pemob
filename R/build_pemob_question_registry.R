@@ -103,10 +103,10 @@ build_pemob_registry_artifacts <- function(
   )
 
   municipal <- read_pemob_history(
-    here::here("data", "pemob_harmonizada_2025.csv")
+    here::here("data", "pemob_harmonizada_2026.csv")
   )
   metro <- read_pemob_history(
-    here::here("data", "pemob_metro_harmonizada_2025.csv")
+    here::here("data", "pemob_metro_harmonizada_2026.csv")
   )
   treated <- read_pemob_treated_export(
     here::here("data", "pemob_target_treated.csv")

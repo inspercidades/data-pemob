@@ -10,7 +10,8 @@ pemob_municipal_source_files <- c(
   "2022" = "data-raw/copy_of_pemob_municipal_2022.xlsx",
   "2023" = "data-raw/pemob2023_municipal.xlsx",
   "2024" = "data-raw/pemob_municipal_2024.xlsx",
-  "2025" = "data-raw/pemob_municipal_2025(pemob_municipal_25).csv"
+  "2025" = "data-raw/pemob_municipal_2025(pemob_municipal_25).csv",
+  "2026" = "data-raw/pemob_municipal_2026.xlsx"
 )
 
 
@@ -21,7 +22,7 @@ pemob_municipal_source_files <- c(
 # municipality skipped appear as nonparticipating rows. Responses stay as raw
 # text.
 read_pemob_target_series <- function(variables = pemob_target_variables) {
-  municipal_path <- here::here("data", "pemob_harmonizada_2025.csv")
+  municipal_path <- here::here("data", "pemob_harmonizada_2026.csv")
   id_cols <- c("code_muni", "name_muni", "abbrev_state", "year", "participated")
 
   if (!file.exists(municipal_path)) {

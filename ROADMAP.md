@@ -1,6 +1,6 @@
 # PEMOB roadmap
 
-Updated 19 October 2026. This file is the single source for priorities and
+Updated 1 November 2026. This file is the single source for priorities and
 status. Dated documents under `docs/internal/` record the evidence behind it.
 
 ## Deliverables, in order
@@ -37,9 +37,10 @@ The live site keeps its current 2019–2024 data until deliverable 3 ships.
 |---|---|
 | Historical rebuild | `R/pemob.R` and `R/pemob_metropolitana.R` run from sources: 107 municipalities and 41 regions across 2019–2024. Union joins; raw responses and missing reasons retained. |
 | 2025 extension | `Rscript R/build_pemob.R` rebuilds 2019–2025 from the sources in one run. Municipal: 113 places, with 64, 32, 62, 64, 67, 70, and 82 respondents from 2019 to 2025. Metropolitan: 41 regions, with 22, 13, 6, 13, 29, and 29 respondents in 2019 and 2021–2025. Every place-year carries `participated`. |
+| 2026 extension | The build now appends the official municipal and metropolitan XLSX files. The completed panels contain 120 municipalities and 50 regions; 96 municipalities and 37 regions responded in 2026. Earlier responses remain unchanged. The local Dataverse draft and question codebook include 2026. |
 | Parsing | Currency, decimal commas, `km` suffixes, Excel dates, and missing tokens (`NA`, `NR`, `ND`, `-`) are parsed and tested. Ambiguous separators go to review. |
-| Review layer | 78 cycling candidates in `docs/internal/pemob-review-ledger.csv`, all pending, regenerated after the crosswalk review. `apply_pemob_review_decisions()` applies ledger decisions. No fare value was flagged. |
-| Interpolation | `R/pemob_treatment.R` fills 101 one-edition gaps: 24 fares reconstructed and 77 cycling values interpolated. Masking errors are in `data/pemob_masking_validation.csv`. |
+| Review layer | 87 cycling candidates in `docs/internal/pemob-review-ledger.csv`, including nine from 2026. All remain pending. `apply_pemob_review_decisions()` applies ledger decisions. |
+| Interpolation | `R/pemob_treatment.R` fills 118 one-edition gaps in the 2019–2026 series. Masking errors are in `data/pemob_masking_validation.csv`. |
 | Dashboard formulas | Scaling and missing-to-zero fixed in code; portal outputs not regenerated. |
 | Portal export | Not reproducible: `data/portal/dicionario_v1.xlsx` and `data/portal/final/pemob_tables.rds` are missing. The live site does not read `data/portal/v1/*.json` (see deliverable 2). |
 | Environment | `renv.lock` pins the packages listed in `DESCRIPTION`; no CI. All tests pass with `Rscript tests/test-pemob.R`. |

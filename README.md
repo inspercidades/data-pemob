@@ -1,7 +1,7 @@
 # PEMOB
 
 Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
-(Pesquisa Nacional de Mobilidade Urbana) de 2019 a 2025. O
+(Pesquisa Nacional de Mobilidade Urbana) de 2019 a 2026. O
 [roteiro](ROADMAP.md) registra prioridades, decisões e situação atual.
 
 ## Uso
@@ -9,16 +9,25 @@ Pipeline em R que harmoniza os dados municipais e metropolitanos da PEMOB
 ```sh
 Rscript -e 'renv::restore()'  # instala as versões fixadas em renv.lock
 Rscript tests/test-pemob.R    # testes
-Rscript R/build_pemob.R       # reconstrói 2019–2025 a partir dos arquivos originais
+Rscript R/build_pemob.R       # reconstrói 2019–2026 a partir dos arquivos originais
+Rscript R/build_pemob_question_registry.R  # atualiza o registro de perguntas
 Rscript R/pemob_dataverse.R   # prepara os arquivos locais para o Dataverse
 ```
 
 `R/build_pemob.R` roda `R/pemob.R` e `R/pemob_metropolitana.R`, que gravam os
-históricos de 2019 a 2024 em `data/`, e depois `R/pemob_2025.R`, que acrescenta
-2025. As saídas são `data/pemob_harmonizada_2025.csv` e
-`data/pemob_metro_harmonizada_2025.csv`, com uma linha por local e edição e a
+históricos de 2019 a 2024 em `data/`. Em seguida, `R/pemob_2025.R` e
+`R/pemob_2026.R` acrescentam as edições seguintes. As saídas mais recentes são
+`data/pemob_harmonizada_2026.csv` e
+`data/pemob_metro_harmonizada_2026.csv`, com uma linha por local e edição e a
 coluna `participated`. Por fim, `R/pemob_treatment.R` trata as séries de tarifa e
 de infraestrutura cicloviária.
+
+Os arquivos originais de 2026 vêm da [página do Ministério das Cidades](https://www.gov.br/cidades/pt-br/assuntos/mobilidade-urbana/pesquisa-nacional-de-mobilidade-urbana-pemob-2026).
+O pipeline preserva as respostas anteriores e acrescenta 96 municípios e 37
+regiões respondentes em 2026. Nove respostas de infraestrutura cicloviária
+entraram no ledger como `pending`; exigem revisão antes de servir como pontos
+de apoio para tratamento. Os metadados de tipo e unidade da edição 2026
+continuam vazios onde ainda não houve revisão específica.
 
 `R/pemob_dataverse.R` grava os arquivos longos municipais e metropolitanos,
 participação, codebook, ledger de tratamentos e manifest em
@@ -46,6 +55,7 @@ listada em `data/pemob_range_incomplete.csv` e
   dos códigos de perguntas e junção dos municípios e regiões.
 - `R/build_pemob.R`: ponto de entrada do pipeline.
 - `R/pemob_2025.R`: leitura dos CSVs de 2025 e junção ao histórico.
+- `R/pemob_2026.R`: leitura dos XLSX de 2026 e junção ao histórico.
 - `R/pemob_helpers.R`, `R/pemob_series.R`: leitura das respostas, missing
   reasons, parsing de valores e camada de revisão.
 - `R/pemob_review.R`: candidatos a revisão de tarifas e infraestrutura

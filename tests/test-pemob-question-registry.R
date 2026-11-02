@@ -393,3 +393,19 @@ stopifnot(
   all(cycle_metadata$value_type[cycle_metadata$year == 2021] == "numeric"),
   all(cycle_metadata$unit[cycle_metadata$year == 2021] == "km")
 )
+
+future_panel <- recovered_panel[recovered_panel$year == 2021, ]
+future_panel$year <- 2026L
+future_long <- build_pemob_long(
+  future_panel,
+  "municipal",
+  registry = recovered_registry
+)
+future_metadata <- future_long[
+  future_long$code_variable %in% recovered_codes,
+]
+stopifnot(
+  nrow(future_metadata) > 0L,
+  all(is.na(future_metadata$value_type)),
+  all(is.na(future_metadata$unit))
+)

@@ -107,6 +107,11 @@ metro_survey <- read_pemob_2025(
     "pemob_metropolitana_2025(pemob_metropolitana_2025).csv"
   )
 )
+source(here::here("R", "pemob_2026.R"))
+metro_survey_2026 <- read_pemob_2026(
+  here::here("data-raw", "pemob_metropolitana_2026.xlsx"),
+  level = "metropolitan"
+)
 metro_2024_identity <- add_pemob_metro_identity(data.frame(
   abbrev_state = metro_2024_source$UF,
   name_metro = metro_2024_source$REGIÃO,
@@ -122,7 +127,15 @@ metro_history <- tibble::tibble(
 # Every alias points to a region that responds after 2019.
 later_keys <- c(
   later_keys,
-  build_pemob_metro_key(metro_survey$UF, metro_survey$`Região Metropolitana`)
+  build_pemob_metro_key(metro_survey$UF, metro_survey$`Região Metropolitana`),
+  build_pemob_metro_key(
+    metro_survey_2026$UF,
+    canonicalize_pemob_metro_name(
+      metro_survey_2026$UF,
+      metro_survey_2026$`Região Metropolitana`,
+      pemob_metro_aliases
+    )
+  )
 )
 alias_keys <- build_pemob_metro_key(
   pemob_metro_aliases$abbrev_state,

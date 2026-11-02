@@ -22,6 +22,31 @@ stopifnot(
   sum(municipal_source[["1.3.1.A"]] == "NR", na.rm = TRUE) == 2L
 )
 
+renamed_metro_names <- c(
+  "Região Metropolitana de Fortaleza",
+  "Região Metropolitana de Sobral",
+  "Região Metropolitana do Cariri",
+  "Região Metropolitana do Vale do Itajaí/RM do Vale Europeu"
+)
+historical_metro_names <- c(
+  "RM Fortaleza",
+  "RM Sobral",
+  "RM Cariri",
+  "Região Metropolitana do Vale do Itajaí"
+)
+renamed_states <- c("CE", "CE", "CE", "SC")
+stopifnot(
+  all(renamed_metro_names %in% metro_source[["Região Metropolitana"]]),
+  identical(
+    canonicalize_pemob_metro_name(
+      renamed_states,
+      renamed_metro_names,
+      pemob_metro_aliases
+    ),
+    historical_metro_names
+  )
+)
+
 municipal_history <- tibble::tibble(
   code_muni = 1200401,
   name_muni = "Rio Branco",
@@ -72,3 +97,24 @@ for (level in c("municipal", "metro")) {
       if (level == "metro") 37L else 96L
   )
 }
+
+metro_panel <- read_pemob_history(
+  here::here("data", "pemob_metro_harmonizada_2026.csv")
+)
+historical_keys <- build_pemob_metro_key(
+  renamed_states,
+  historical_metro_names
+)
+stopifnot(
+  dplyr::n_distinct(metro_panel$metro_key) == 46L,
+  all(
+    historical_keys %in%
+      metro_panel$metro_key[
+        metro_panel$year == 2026 & metro_panel$participated
+      ]
+  ),
+  !any(
+    build_pemob_metro_key(renamed_states, renamed_metro_names) %in%
+      metro_panel$metro_key
+  )
+)

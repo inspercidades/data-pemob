@@ -40,42 +40,21 @@ metropolitan,CE::RM Cariri,RM Cariri,CE,2022,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2023,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2024,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2025,FALSE
-metropolitan,CE::RM Cariri,RM Cariri,CE,2026,FALSE
+metropolitan,CE::RM Cariri,RM Cariri,CE,2026,TRUE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2019,TRUE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2021,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2022,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2023,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2024,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2025,FALSE
-metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2026,FALSE
+metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2026,TRUE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2019,TRUE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2021,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2022,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2023,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2024,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2025,FALSE
-metropolitan,CE::RM Sobral,RM Sobral,CE,2026,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2019,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2021,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2022,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2023,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2024,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2025,FALSE
-metropolitan,CE::Região Metropolitana de Fortaleza,Região Metropolitana de Fortaleza,CE,2026,TRUE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2019,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2021,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2022,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2023,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2024,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2025,FALSE
-metropolitan,CE::Região Metropolitana de Sobral,Região Metropolitana de Sobral,CE,2026,TRUE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2019,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2021,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2022,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2023,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2024,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2025,FALSE
-metropolitan,CE::Região Metropolitana do Cariri,Região Metropolitana do Cariri,CE,2026,TRUE
+metropolitan,CE::RM Sobral,RM Sobral,CE,2026,TRUE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2019,FALSE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2021,TRUE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2022,FALSE
@@ -299,14 +278,7 @@ metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana 
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2025,TRUE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2026,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2019,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2021,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2022,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2023,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2024,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2025,FALSE
-metropolitan,SC::Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,TRUE
+metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2026,TRUE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2019,TRUE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2021,FALSE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2022,FALSE

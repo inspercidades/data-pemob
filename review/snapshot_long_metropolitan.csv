@@ -1783,6 +1783,49 @@ RM Cariri,CE,2019,7.2.2.B,2019-12-01,FALSE
 RM Cariri,CE,2019,7.3.1,Passageiro equivalente,FALSE
 RM Cariri,CE,2019,8.1.1.A,NR,FALSE
 RM Cariri,CE,2019,8.1.1,NR,FALSE
+RM Cariri,CE,2026,1.1.1,VLT,FALSE
+RM Cariri,CE,2026,1.2.2.A,10.000000000000000000,TRUE
+RM Cariri,CE,2026,1.2.2.B,10.000000000000000000,TRUE
+RM Cariri,CE,2026,1.2.2.C,1.000000000000000000,TRUE
+RM Cariri,CE,2026,1.2.3.A,https://www.ce.gov.br/metrofor/gtfs/,FALSE
+RM Cariri,CE,2026,1.2.3,Sim,FALSE
+RM Cariri,CE,2026,1.3.5.A,1.000000000000000000,TRUE
+RM Cariri,CE,2026,1.3.5.B,330.000000000000000000,TRUE
+RM Cariri,CE,2026,1.4.5,176582.000000000000000000,TRUE
+RM Cariri,CE,2026,2.1.4,16.000000000000000000,TRUE
+RM Cariri,CE,2026,2.2.2.A,10.000000000000000000,TRUE
+RM Cariri,CE,2026,2.2.2.B,10.000000000000000000,TRUE
+RM Cariri,CE,2026,2.2.2.C,10.000000000000000000,TRUE
+RM Cariri,CE,2026,2.2.2.D,1.000000000000000000,TRUE
+RM Cariri,CE,2026,2.3.1,Não,FALSE
+RM Cariri,CE,2026,2.4.5.A,0.800000000000000044,TRUE
+RM Cariri,CE,2026,2.4.5.B,0.110000000000000001,TRUE
+RM Cariri,CE,2026,2.4.5,Sim,FALSE
+RM Cariri,CE,2026,3.1.5.A,1.000000000000000000,TRUE
+RM Cariri,CE,2026,3.1.5.C,43800.000000000000000000,TRUE
+RM Cariri,CE,2026,3.1.8,Não,FALSE
+RM Cariri,CE,2026,3.2.5.A,374291.500000000000000000,TRUE
+RM Cariri,CE,2026,3.2.5.B,NR,FALSE
+RM Cariri,CE,2026,3.2.5.C,4816309.320000000298023224,TRUE
+RM Cariri,CE,2026,3.2.5.D,NR,FALSE
+RM Cariri,CE,2026,3.3.5.E,NR,FALSE
+RM Cariri,CE,2026,3.3.5,Outros,FALSE
+RM Cariri,CE,2026,3.4.5.A,360473.000000000000000000,TRUE
+RM Cariri,CE,2026,3.4.5.B,1.000000000000000000,TRUE
+RM Cariri,CE,2026,3.4.5.C,27637.000000000000000000,TRUE
+RM Cariri,CE,2026,3.4.5.D,1.000000000000000000,TRUE
+RM Cariri,CE,2026,3.4.5.E,39104.000000000000000000,TRUE
+RM Cariri,CE,2026,3.4.5.F,374292.000000000000000000,TRUE
+RM Cariri,CE,2026,3.5.1.C,1.000000000000000000,TRUE
+RM Cariri,CE,2026,3.5.1.D,0.500000000000000000,TRUE
+RM Cariri,CE,2026,3.5.1.E,0.500000000000000000,TRUE
+RM Cariri,CE,2026,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino,FALSE
+RM Cariri,CE,2026,3.6.5,Não,FALSE
+RM Cariri,CE,2026,4.1.1,Não,FALSE
+RM Cariri,CE,2026,4.1.2,Não,FALSE
+RM Cariri,CE,2026,4.2.1,Não,FALSE
+RM Cariri,CE,2026,6.1.1,Não possui órgão estruturado,FALSE
+RM Cariri,CE,2026,7.1.1,Operação direta,FALSE
 RM Fortaleza,CE,2019,1.1.1,Ônibus; Metrô; VLT,FALSE
 RM Fortaleza,CE,2019,1.2.1.A,0.000000000000000000,TRUE
 RM Fortaleza,CE,2019,1.2.1.B,0.000000000000000000,TRUE
@@ -1936,6 +1979,130 @@ RM Fortaleza,CE,2019,7.2.2.B,2019-12-01,FALSE
 RM Fortaleza,CE,2019,7.3.1,Passageiro equivalente,FALSE
 RM Fortaleza,CE,2019,8.1.1.A,NR,FALSE
 RM Fortaleza,CE,2019,8.1.1,NR,FALSE
+RM Fortaleza,CE,2026,1.1.1,VLT; Metrô; Ônibus metropolitano,FALSE
+RM Fortaleza,CE,2026,1.2.1.A,NR,FALSE
+RM Fortaleza,CE,2026,1.2.1.B,NR,FALSE
+RM Fortaleza,CE,2026,1.2.1.C,NR,FALSE
+RM Fortaleza,CE,2026,1.2.2.A,42.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.2.2.B,41.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.2.2.C,20.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.2.3.A,https://www.ce.gov.br/metrofor/gtfs/,FALSE
+RM Fortaleza,CE,2026,1.2.3,Sim,FALSE
+RM Fortaleza,CE,2026,1.3.1.A,270.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.1.B,80.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.1.C,NR,FALSE
+RM Fortaleza,CE,2026,1.3.1.D,NR,FALSE
+RM Fortaleza,CE,2026,1.3.1.E,270.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.1.F,80.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.2.A,5.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.2.B,894.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.5.A,5.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.3.5.B,756.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.4.1,33146457.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.4.2,472842.000000000000000000,TRUE
+RM Fortaleza,CE,2026,1.4.5,134924.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.1.1,3.899999999999999911,TRUE
+RM Fortaleza,CE,2026,2.1.2,15.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.1.4,11.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.2.1.A,NR,FALSE
+RM Fortaleza,CE,2026,2.2.1.B,NR,FALSE
+RM Fortaleza,CE,2026,2.2.1.C,NR,FALSE
+RM Fortaleza,CE,2026,2.2.1.D,NR,FALSE
+RM Fortaleza,CE,2026,2.2.2.A,42.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.2.2.B,42.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.2.2.C,42.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.2.2.D,1.000000000000000000,TRUE
+RM Fortaleza,CE,2026,2.3.1,Não,FALSE
+RM Fortaleza,CE,2026,2.4.1,Não,FALSE
+RM Fortaleza,CE,2026,2.4.2.A,0.949999999999999956,TRUE
+RM Fortaleza,CE,2026,2.4.2.B,0.050000000000000003,TRUE
+RM Fortaleza,CE,2026,2.4.2,Sim,FALSE
+RM Fortaleza,CE,2026,2.4.5.A,0.910000000000000031,TRUE
+RM Fortaleza,CE,2026,2.4.5.B,0.020000000000000000,TRUE
+RM Fortaleza,CE,2026,2.4.5,Sim,FALSE
+RM Fortaleza,CE,2026,3.1.1.A,Fortaleza - Terminal Metrópole,FALSE
+RM Fortaleza,CE,2026,3.1.1.B,5.950000000000000178,TRUE
+RM Fortaleza,CE,2026,3.1.1.C,4.799999999999999822,TRUE
+RM Fortaleza,CE,2026,3.1.1.D,Fortaleza - Planalto Caucaia,FALSE
+RM Fortaleza,CE,2026,3.1.1.E,5.950000000000000178,TRUE
+RM Fortaleza,CE,2026,3.1.1.F,4.799999999999999822,TRUE
+RM Fortaleza,CE,2026,3.1.1.G,Fortaleza - Maranguape,FALSE
+RM Fortaleza,CE,2026,3.1.1.H,8.150000000000000355,TRUE
+RM Fortaleza,CE,2026,3.1.1.I,5.400000000000000355,TRUE
+RM Fortaleza,CE,2026,3.1.1.J,46082.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.1.2.A,3.600000000000000089,TRUE
+RM Fortaleza,CE,2026,3.1.2.B,3.399999999999999911,TRUE
+RM Fortaleza,CE,2026,3.1.2.C,43525.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.1.5.A,1.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.1.5.C,39508.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.1.8.A,Temporal,FALSE
+RM Fortaleza,CE,2026,3.1.8,Sim,FALSE
+RM Fortaleza,CE,2026,3.2.1.A,103430000.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.2.1.B,82520000.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.2.1.C,NR,FALSE
+RM Fortaleza,CE,2026,3.2.1.D,NR,FALSE
+RM Fortaleza,CE,2026,3.2.2.A,26884788.050000000745058060,TRUE
+RM Fortaleza,CE,2026,3.2.2.B,NR,FALSE
+RM Fortaleza,CE,2026,3.2.2.C,178354433.050000011920928955,TRUE
+RM Fortaleza,CE,2026,3.2.2.D,2011881.959999999962747097,TRUE
+RM Fortaleza,CE,2026,3.2.5.A,1402761.500000000000000000,TRUE
+RM Fortaleza,CE,2026,3.2.5.B,NR,FALSE
+RM Fortaleza,CE,2026,3.2.5.C,47670102.520000003278255463,TRUE
+RM Fortaleza,CE,2026,3.2.5.D,NR,FALSE
+RM Fortaleza,CE,2026,3.3.1.A,0.020000000000000000,TRUE
+RM Fortaleza,CE,2026,3.3.1.E,NR,FALSE
+RM Fortaleza,CE,2026,3.3.1.F,CPRB e INSS,FALSE
+RM Fortaleza,CE,2026,3.3.1,Outros; ISS,FALSE
+RM Fortaleza,CE,2026,3.3.2.E,NR,FALSE
+RM Fortaleza,CE,2026,3.3.2,Outros,FALSE
+RM Fortaleza,CE,2026,3.3.5.E,NR,FALSE
+RM Fortaleza,CE,2026,3.3.5,Outros,FALSE
+RM Fortaleza,CE,2026,3.4.1.A,4215879.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.1.B,10925407.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.1.C,320864.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.1.D,2759546.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.1.E,5710955.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.1.F,16366386.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.2.A,6774168.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.2.B,NR,FALSE
+RM Fortaleza,CE,2026,3.4.2.C,1529792.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.2.D,NR,FALSE
+RM Fortaleza,CE,2026,3.4.2.E,1438747.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.2.F,7539064.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.5.A,1382699.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.5.B,NR,FALSE
+RM Fortaleza,CE,2026,3.4.5.C,40125.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.5.D,NR,FALSE
+RM Fortaleza,CE,2026,3.4.5.E,996942.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.4.5.F,1402761.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.5.1.C,1.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.5.1.D,1.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.5.1.E,1.000000000000000000,TRUE
+RM Fortaleza,CE,2026,3.5.1,Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino,FALSE
+RM Fortaleza,CE,2026,3.6.1.A,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.B,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.C,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.D,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.E,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.F,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.G,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.H,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1.I,NR,FALSE
+RM Fortaleza,CE,2026,3.6.1,Sim,FALSE
+RM Fortaleza,CE,2026,3.6.2,Não,FALSE
+RM Fortaleza,CE,2026,3.6.5,Não,FALSE
+RM Fortaleza,CE,2026,4.1.1,Não,FALSE
+RM Fortaleza,CE,2026,4.1.2,Não,FALSE
+RM Fortaleza,CE,2026,4.2.1,Não,FALSE
+RM Fortaleza,CE,2026,5.1.1,Não,FALSE
+RM Fortaleza,CE,2026,6.1.1,Órgão da administração indireta,FALSE
+RM Fortaleza,CE,2026,7.1.1,Operação por delegação,FALSE
+RM Fortaleza,CE,2026,7.1.2,Concessão; Permissão,FALSE
+RM Fortaleza,CE,2026,7.2.1.A,5.000000000000000000,TRUE
+RM Fortaleza,CE,2026,7.2.1,Sim,FALSE
+RM Fortaleza,CE,2026,7.2.2.B,47058.000000000000000000,TRUE
+RM Fortaleza,CE,2026,7.3.1,Custo da operação por quilômetro percorrido pela frota,FALSE
+RM Fortaleza,CE,2026,8.1.1,"Informação em tempo real aos usuários (AVL - Automatic Vehicle Location); Monitoramento eletrônico de frotas (GPS, câmeras, sensores, transmissão por rádio, etc.); Bilhetagem eletrônica; Centro de controle operacional",FALSE
 RM Sobral,CE,2019,1.1.1,Ônibus; VLT,FALSE
 RM Sobral,CE,2019,1.2.1.A,0.000000000000000000,TRUE
 RM Sobral,CE,2019,1.2.1.B,0.000000000000000000,TRUE
@@ -2055,219 +2222,52 @@ RM Sobral,CE,2019,7.2.2.B,NR,FALSE
 RM Sobral,CE,2019,7.3.1,Passageiro equivalente,FALSE
 RM Sobral,CE,2019,8.1.1.A,NR,FALSE
 RM Sobral,CE,2019,8.1.1,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.1.1,VLT; Metrô; Ônibus metropolitano,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.2.1.A,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.2.1.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.2.1.C,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.2.2.A,42.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.2.2.B,41.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.2.2.C,20.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.2.3.A,https://www.ce.gov.br/metrofor/gtfs/,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.2.3,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.A,270.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.B,80.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.C,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.E,270.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.1.F,80.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.2.A,5.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.2.B,894.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.5.A,5.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.3.5.B,756.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.4.1,33146457.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.4.2,472842.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,1.4.5,134924.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.1.1,3.899999999999999911,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.1.2,15.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.1.4,11.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.2.1.A,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.2.1.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.2.1.C,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.2.1.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.2.2.A,42.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.2.2.B,42.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.2.2.C,42.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.2.2.D,1.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.3.1,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.4.1,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.4.2.A,0.949999999999999956,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.4.2.B,0.050000000000000003,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.4.2,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,2.4.5.A,0.910000000000000031,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.4.5.B,0.020000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,2.4.5,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.A,Fortaleza - Terminal Metrópole,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.B,5.950000000000000178,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.C,4.799999999999999822,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.D,Fortaleza - Planalto Caucaia,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.E,5.950000000000000178,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.F,4.799999999999999822,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.G,Fortaleza - Maranguape,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.H,8.150000000000000355,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.I,5.400000000000000355,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.1.J,46082.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.2.A,3.600000000000000089,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.2.B,3.399999999999999911,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.2.C,43525.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.5.A,1.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.5.C,39508.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.1.8.A,Temporal,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.1.8,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.2.1.A,103430000.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.1.B,82520000.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.1.C,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.2.1.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.2.2.A,26884788.050000000745058060,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.2.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.2.2.C,178354433.050000011920928955,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.2.D,2011881.959999999962747097,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.5.A,1402761.500000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.5.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.2.5.C,47670102.520000003278255463,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.2.5.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.1.A,0.020000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.3.1.E,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.1.F,CPRB e INSS,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.1,Outros; ISS,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.2.E,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.2,Outros,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.5.E,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.3.5,Outros,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.A,4215879.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.B,10925407.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.C,320864.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.D,2759546.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.E,5710955.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.1.F,16366386.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.A,6774168.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.C,1529792.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.E,1438747.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.2.F,7539064.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.A,1382699.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.C,40125.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.E,996942.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.4.5.F,1402761.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.5.1.C,1.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.5.1.D,1.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.5.1.E,1.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,3.5.1,Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.A,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.B,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.C,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.D,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.E,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.F,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.G,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.H,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1.I,NR,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.1,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.2,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,3.6.5,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,4.1.1,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,4.1.2,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,4.2.1,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,5.1.1,Não,FALSE
-Região Metropolitana de Fortaleza,CE,2026,6.1.1,Órgão da administração indireta,FALSE
-Região Metropolitana de Fortaleza,CE,2026,7.1.1,Operação por delegação,FALSE
-Região Metropolitana de Fortaleza,CE,2026,7.1.2,Concessão; Permissão,FALSE
-Região Metropolitana de Fortaleza,CE,2026,7.2.1.A,5.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,7.2.1,Sim,FALSE
-Região Metropolitana de Fortaleza,CE,2026,7.2.2.B,47058.000000000000000000,TRUE
-Região Metropolitana de Fortaleza,CE,2026,7.3.1,Custo da operação por quilômetro percorrido pela frota,FALSE
-Região Metropolitana de Fortaleza,CE,2026,8.1.1,"Informação em tempo real aos usuários (AVL - Automatic Vehicle Location); Monitoramento eletrônico de frotas (GPS, câmeras, sensores, transmissão por rádio, etc.); Bilhetagem eletrônica; Centro de controle operacional",FALSE
-Região Metropolitana de Sobral,CE,2026,1.1.1,VLT,FALSE
-Região Metropolitana de Sobral,CE,2026,1.2.2.A,12.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,1.2.2.B,12.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,1.2.2.C,NR,FALSE
-Região Metropolitana de Sobral,CE,2026,1.2.3.A,NR,FALSE
-Região Metropolitana de Sobral,CE,2026,1.2.3,Sim,FALSE
-Região Metropolitana de Sobral,CE,2026,1.3.5.A,3.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,1.3.5.B,330.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,1.4.5,294900.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.1.4,14.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.2.2.A,12.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.2.2.B,12.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.2.2.C,12.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.2.2.D,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,2.3.1,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,2.4.5.A,0.760000000000000009,TRUE
-Região Metropolitana de Sobral,CE,2026,2.4.5.B,0.080000000000000002,TRUE
-Região Metropolitana de Sobral,CE,2026,2.4.5,Sim,FALSE
-Região Metropolitana de Sobral,CE,2026,3.1.5.A,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.1.5.B,3.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.1.5.C,42979.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.1.8,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,3.2.5.A,733647.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.2.5.B,NR,FALSE
-Região Metropolitana de Sobral,CE,2026,3.2.5.C,6469398.719999999739229679,TRUE
-Região Metropolitana de Sobral,CE,2026,3.2.5.D,NR,FALSE
-Região Metropolitana de Sobral,CE,2026,3.3.5.E,NR,FALSE
-Região Metropolitana de Sobral,CE,2026,3.3.5,Outros,FALSE
-Região Metropolitana de Sobral,CE,2026,3.4.5.A,596065.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.4.5.B,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.4.5.C,147413.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.4.5.D,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.4.5.E,61233.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.4.5.F,669771.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.5.1.B,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.5.1.C,1.000000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.5.1.D,0.500000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.5.1.E,0.500000000000000000,TRUE
-Região Metropolitana de Sobral,CE,2026,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
-Região Metropolitana de Sobral,CE,2026,3.6.5,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,4.1.1,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,4.1.2,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,4.2.1,Não,FALSE
-Região Metropolitana de Sobral,CE,2026,6.1.1,Não possui órgão estruturado,FALSE
-Região Metropolitana de Sobral,CE,2026,7.1.1,Operação direta,FALSE
-Região Metropolitana de Sobral,CE,2026,8.1.1,Bilhetagem eletrônica; Centro de controle operacional,FALSE
-Região Metropolitana do Cariri,CE,2026,1.1.1,VLT,FALSE
-Região Metropolitana do Cariri,CE,2026,1.2.2.A,10.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,1.2.2.B,10.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,1.2.2.C,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,1.2.3.A,https://www.ce.gov.br/metrofor/gtfs/,FALSE
-Região Metropolitana do Cariri,CE,2026,1.2.3,Sim,FALSE
-Região Metropolitana do Cariri,CE,2026,1.3.5.A,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,1.3.5.B,330.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,1.4.5,176582.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.1.4,16.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.2.2.A,10.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.2.2.B,10.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.2.2.C,10.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.2.2.D,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,2.3.1,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,2.4.5.A,0.800000000000000044,TRUE
-Região Metropolitana do Cariri,CE,2026,2.4.5.B,0.110000000000000001,TRUE
-Região Metropolitana do Cariri,CE,2026,2.4.5,Sim,FALSE
-Região Metropolitana do Cariri,CE,2026,3.1.5.A,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.1.5.C,43800.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.1.8,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,3.2.5.A,374291.500000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.2.5.B,NR,FALSE
-Região Metropolitana do Cariri,CE,2026,3.2.5.C,4816309.320000000298023224,TRUE
-Região Metropolitana do Cariri,CE,2026,3.2.5.D,NR,FALSE
-Região Metropolitana do Cariri,CE,2026,3.3.5.E,NR,FALSE
-Região Metropolitana do Cariri,CE,2026,3.3.5,Outros,FALSE
-Região Metropolitana do Cariri,CE,2026,3.4.5.A,360473.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.4.5.B,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.4.5.C,27637.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.4.5.D,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.4.5.E,39104.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.4.5.F,374292.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.5.1.C,1.000000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.5.1.D,0.500000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.5.1.E,0.500000000000000000,TRUE
-Região Metropolitana do Cariri,CE,2026,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino,FALSE
-Região Metropolitana do Cariri,CE,2026,3.6.5,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,4.1.1,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,4.1.2,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,4.2.1,Não,FALSE
-Região Metropolitana do Cariri,CE,2026,6.1.1,Não possui órgão estruturado,FALSE
-Região Metropolitana do Cariri,CE,2026,7.1.1,Operação direta,FALSE
+RM Sobral,CE,2026,1.1.1,VLT,FALSE
+RM Sobral,CE,2026,1.2.2.A,12.000000000000000000,TRUE
+RM Sobral,CE,2026,1.2.2.B,12.000000000000000000,TRUE
+RM Sobral,CE,2026,1.2.2.C,NR,FALSE
+RM Sobral,CE,2026,1.2.3.A,NR,FALSE
+RM Sobral,CE,2026,1.2.3,Sim,FALSE
+RM Sobral,CE,2026,1.3.5.A,3.000000000000000000,TRUE
+RM Sobral,CE,2026,1.3.5.B,330.000000000000000000,TRUE
+RM Sobral,CE,2026,1.4.5,294900.000000000000000000,TRUE
+RM Sobral,CE,2026,2.1.4,14.000000000000000000,TRUE
+RM Sobral,CE,2026,2.2.2.A,12.000000000000000000,TRUE
+RM Sobral,CE,2026,2.2.2.B,12.000000000000000000,TRUE
+RM Sobral,CE,2026,2.2.2.C,12.000000000000000000,TRUE
+RM Sobral,CE,2026,2.2.2.D,1.000000000000000000,TRUE
+RM Sobral,CE,2026,2.3.1,Não,FALSE
+RM Sobral,CE,2026,2.4.5.A,0.760000000000000009,TRUE
+RM Sobral,CE,2026,2.4.5.B,0.080000000000000002,TRUE
+RM Sobral,CE,2026,2.4.5,Sim,FALSE
+RM Sobral,CE,2026,3.1.5.A,1.000000000000000000,TRUE
+RM Sobral,CE,2026,3.1.5.B,3.000000000000000000,TRUE
+RM Sobral,CE,2026,3.1.5.C,42979.000000000000000000,TRUE
+RM Sobral,CE,2026,3.1.8,Não,FALSE
+RM Sobral,CE,2026,3.2.5.A,733647.000000000000000000,TRUE
+RM Sobral,CE,2026,3.2.5.B,NR,FALSE
+RM Sobral,CE,2026,3.2.5.C,6469398.719999999739229679,TRUE
+RM Sobral,CE,2026,3.2.5.D,NR,FALSE
+RM Sobral,CE,2026,3.3.5.E,NR,FALSE
+RM Sobral,CE,2026,3.3.5,Outros,FALSE
+RM Sobral,CE,2026,3.4.5.A,596065.000000000000000000,TRUE
+RM Sobral,CE,2026,3.4.5.B,1.000000000000000000,TRUE
+RM Sobral,CE,2026,3.4.5.C,147413.000000000000000000,TRUE
+RM Sobral,CE,2026,3.4.5.D,1.000000000000000000,TRUE
+RM Sobral,CE,2026,3.4.5.E,61233.000000000000000000,TRUE
+RM Sobral,CE,2026,3.4.5.F,669771.000000000000000000,TRUE
+RM Sobral,CE,2026,3.5.1.B,1.000000000000000000,TRUE
+RM Sobral,CE,2026,3.5.1.C,1.000000000000000000,TRUE
+RM Sobral,CE,2026,3.5.1.D,0.500000000000000000,TRUE
+RM Sobral,CE,2026,3.5.1.E,0.500000000000000000,TRUE
+RM Sobral,CE,2026,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
+RM Sobral,CE,2026,3.6.5,Não,FALSE
+RM Sobral,CE,2026,4.1.1,Não,FALSE
+RM Sobral,CE,2026,4.1.2,Não,FALSE
+RM Sobral,CE,2026,4.2.1,Não,FALSE
+RM Sobral,CE,2026,6.1.1,Não possui órgão estruturado,FALSE
+RM Sobral,CE,2026,7.1.1,Operação direta,FALSE
+RM Sobral,CE,2026,8.1.1,Bilhetagem eletrônica; Centro de controle operacional,FALSE
 Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2021,1.1.1,Ônibus metropolitano,FALSE
 Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2021,1.2.1.A,NR,FALSE
 Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2021,1.2.1.B,-,FALSE
@@ -10538,72 +10538,72 @@ Região Metropolitana do Vale do Itajaí,SC,2025,7.1.1,Operação por delegaçã
 Região Metropolitana do Vale do Itajaí,SC,2025,7.1.2,Autorização,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,7.2.1,Não,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,8.1.1,"Bilhetagem eletrônica; Monitoramento eletrônico de frotas (GPS, câmeras, sensores, transmissão por rádio, etc.)",FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.1.1,Ônibus metropolitano,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.2.1.A,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.2.1.B,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.2.1.C,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.2.3,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.A,47.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.B,42.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.C,0.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.D,0.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.E,0.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.3.1.F,42.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,1.4.1,1245000.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.1.1,15.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.2.1.A,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.2.1.B,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.2.1.C,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.2.1.D,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.3.1,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,2.4.1,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.A,Indaial/Blumenau,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.B,8.650000000000000355,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.C,5.700000000000000178,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.D,Testo Rega/Blumenau,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.E,12.900000000000000355,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.F,9.349999999999999645,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.G,Testo Rega/Testo Salto,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.H,7.900000000000000355,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.I,7.900000000000000355,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.1.J,45931.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.1.8,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.2.1.A,4222236.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.2.1.B,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.2.1.C,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.2.1.D,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.3.1.B,0.010000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.3.1,Taxa de Gerenciamento,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.A,200685.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.B,344374.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.C,252740.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.D,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.E,64837.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.4.1.F,621429.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.5.1.B,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.5.1.C,1.000000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.5.1.D,0.500000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.5.1.E,0.500000000000000000,TRUE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.A,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.B,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.C,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.D,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.E,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.F,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.G,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.H,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1.I,NR,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,3.6.1,Sim,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,4.1.1,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,4.1.2,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,4.2.1,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,5.1.1,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,6.1.1,Secretaria de mobilidade/transporte junto a outras políticas,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,7.1.1,Operação por delegação,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,7.1.2,Autorização,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,7.2.1,Não,FALSE
-Região Metropolitana do Vale do Itajaí/RM do Vale Europeu,SC,2026,8.1.1,Bilhetagem eletrônica,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.1.1,Ônibus metropolitano,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.2.1.A,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.2.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.2.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.2.3,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.A,47.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.B,42.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.C,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.D,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.E,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.3.1.F,42.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,1.4.1,1245000.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.1.1,15.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.2.1.A,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.2.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.2.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.2.1.D,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.3.1,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,2.4.1,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.A,Indaial/Blumenau,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.B,8.650000000000000355,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.C,5.700000000000000178,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.D,Testo Rega/Blumenau,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.E,12.900000000000000355,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.F,9.349999999999999645,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.G,Testo Rega/Testo Salto,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.H,7.900000000000000355,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.I,7.900000000000000355,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.1.J,45931.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.1.8,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.2.1.A,4222236.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.2.1.B,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.2.1.C,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.2.1.D,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.3.1,Taxa de Gerenciamento,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.A,200685.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.B,344374.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.C,252740.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.D,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.E,64837.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.4.1.F,621429.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.5.1.E,0.500000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.A,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.B,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.C,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.D,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.E,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.F,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.G,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.H,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1.I,NR,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,3.6.1,Sim,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,4.1.1,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,4.1.2,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,4.2.1,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,5.1.1,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,6.1.1,Secretaria de mobilidade/transporte junto a outras políticas,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,7.1.1,Operação por delegação,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,7.1.2,Autorização,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,7.2.1,Não,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2026,8.1.1,Bilhetagem eletrônica,FALSE
 AU Jundiaí,SP,2019,1.1.1,Trem,FALSE
 AU Jundiaí,SP,2019,1.2.1.A,NR,FALSE
 AU Jundiaí,SP,2019,1.2.2.A,4.000000000000000000,TRUE

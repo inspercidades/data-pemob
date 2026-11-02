@@ -88,7 +88,7 @@ complete_pemob_panel <- function(dat, place_cols, key_col) {
 
 # Harmonize municipal data -------------------------------------------------
 
-harmonize_municipal_2025 <- function(survey, history) {
+harmonize_municipal_edition <- function(survey, history, year) {
   place_cols <- c("code_muni", "name_muni", "abbrev_state")
   history_cols <- c(place_cols, "year", "participated")
   if (!all(history_cols %in% names(history))) {
@@ -99,7 +99,7 @@ harmonize_municipal_2025 <- function(survey, history) {
   required_cols <- c(id_cols, "12.1.1", "1.3.1.A")
   if (!all(required_cols %in% names(survey))) {
     cli::cli_abort(
-      "The municipal 2025 file lacks a required identifier or code."
+      "The municipal {year} file lacks a required identifier or code."
     )
   }
 
@@ -114,13 +114,15 @@ harmonize_municipal_2025 <- function(survey, history) {
   unknown_codes <- setdiff(survey_codes, indicator_cols)
   if (length(unknown_codes) > 0L) {
     cli::cli_abort(
-      "Unmapped municipal 2025 codes: {paste(unknown_codes, collapse = ', ')}"
+      "Unmapped municipal {year} codes: {paste(unknown_codes, collapse = ', ')}"
     )
   }
 
   code_muni <- suppressWarnings(as.numeric(survey[["CÓDIGO IBGE"]]))
   if (anyNA(code_muni) || anyDuplicated(code_muni)) {
-    cli::cli_abort("The municipal 2025 identifiers must be unique IBGE codes.")
+    cli::cli_abort(
+      "The municipal {year} identifiers must be unique IBGE codes."
+    )
   }
 
   history_states <- dplyr::distinct(history, code_muni, abbrev_state)
@@ -129,7 +131,7 @@ harmonize_municipal_2025 <- function(survey, history) {
     history_states$abbrev_state[known] != survey[["UF"]]
   if (any(state_mismatch)) {
     cli::cli_abort(
-      "The municipal 2025 states do not match the history for {sum(state_mismatch)} municipalit{?y/ies}."
+      "The municipal {year} states do not match the history for {sum(state_mismatch)} municipalit{?y/ies}."
     )
   }
 
@@ -137,12 +139,12 @@ harmonize_municipal_2025 <- function(survey, history) {
     code_muni = code_muni,
     name_muni = survey[["Município"]],
     abbrev_state = survey[["UF"]],
-    year = 2025,
+    year = year,
     participated = TRUE
   )
   current[survey_codes] <- survey[survey_codes]
 
-  # The history's municipality names take precedence over the 2025 spelling.
+  # The history's municipality names take precedence over the source spelling.
   history_names <- dplyr::distinct(history, code_muni, name_muni)
   known_names <- match(current$code_muni, history_names$code_muni)
   current$name_muni[!is.na(known_names)] <- history_names$name_muni[
@@ -160,12 +162,17 @@ harmonize_municipal_2025 <- function(survey, history) {
   return(result)
 }
 
+harmonize_municipal_2025 <- function(survey, history) {
+  return(harmonize_municipal_edition(survey, history, year = 2025))
+}
+
 
 # Harmonize metropolitan data ---------------------------------------------
 
-harmonize_metro_2025 <- function(
+harmonize_metro_edition <- function(
   survey,
   history,
+  year,
   aliases = pemob_metro_aliases
 ) {
   place_cols <- c("metro_key", "abbrev_state", "name_metro")
@@ -176,7 +183,7 @@ harmonize_metro_2025 <- function(
 
   id_cols <- c("UF", "Região Metropolitana")
   if (!all(id_cols %in% names(survey))) {
-    cli::cli_abort("The metropolitan 2025 file lacks an identifier column.")
+    cli::cli_abort("The metropolitan {year} file lacks an identifier column.")
   }
 
   indicator_cols <- setdiff(
@@ -187,7 +194,7 @@ harmonize_metro_2025 <- function(
   unknown_codes <- setdiff(survey_codes, indicator_cols)
   if (length(unknown_codes) > 0L) {
     cli::cli_abort(
-      "Unmapped metropolitan 2025 codes: {paste(unknown_codes, collapse = ', ')}"
+      "Unmapped metropolitan {year} codes: {paste(unknown_codes, collapse = ', ')}"
     )
   }
 
@@ -200,7 +207,7 @@ harmonize_metro_2025 <- function(
       any(!grepl("^[A-Z]{2}$", abbrev_state))
   ) {
     cli::cli_abort(
-      "The metropolitan 2025 identifiers are invalid or duplicated."
+      "The metropolitan {year} identifiers are invalid or duplicated."
     )
   }
   name_metro <- canonicalize_pemob_metro_name(
@@ -213,7 +220,7 @@ harmonize_metro_2025 <- function(
     metro_key = build_pemob_metro_key(abbrev_state, name_metro),
     abbrev_state = abbrev_state,
     name_metro = name_metro,
-    year = 2025,
+    year = year,
     participated = TRUE,
     name_metro_source = name_metro_source
   )
@@ -226,6 +233,19 @@ harmonize_metro_2025 <- function(
 
   result <- complete_pemob_panel(combined, place_cols, "metro_key")
   return(result)
+}
+
+harmonize_metro_2025 <- function(
+  survey,
+  history,
+  aliases = pemob_metro_aliases
+) {
+  return(harmonize_metro_edition(
+    survey,
+    history,
+    year = 2025,
+    aliases = aliases
+  ))
 }
 
 

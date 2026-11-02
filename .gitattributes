@@ -2,3 +2,5 @@
 review/*.csv linguist-generated=true
 review/snapshot_long*.csv -whitespace
 review/site_labels_snapshot.csv -whitespace
+data/dataverse_draft/*_long.csv -whitespace
+data/pemob_*harmonizada_2026.csv -whitespace

@@ -1,11 +1,11 @@
 # Rebuild the harmonized PEMOB datasets from the source files.
 #
 # Run from the project root with `Rscript R/build_pemob.R`. The historical
-# scripts write the 2019–2024 histories to `data/`; the 2025 step appends the
-# 2025 survey to those histories. The last step treats the fare and cycling
+# scripts write the 2019–2024 histories to `data/`; the next steps append the
+# 2025 and 2026 surveys. The last step treats the fare and cycling
 # series: it applies review decisions and fills one-edition gaps.
 
-source(here::here("R", "pemob_2025.R"))
+source(here::here("R", "pemob_2026.R"))
 
 run_pemob_script <- function(file) {
   cli::cli_h1("Running {.file {file}}")
@@ -20,7 +20,9 @@ run_pemob_script("pemob.R")
 run_pemob_script("pemob_metropolitana.R")
 
 cli::cli_h1("Appending 2025")
-pemob <- build_pemob_2025()
+build_pemob_2025()
+cli::cli_h1("Appending 2026")
+pemob <- build_pemob_2026()
 
 
 # Checks -------------------------------------------------------------------

@@ -46,7 +46,7 @@ live_by_year <- read_csv(
 live <- live_by_year |>
   distinct(label, question, is_dashboard)
 
-# Years as compact runs: 2019, 2021-2025.
+# Years as compact runs: 2019, 2021-2026.
 collapse_years <- function(years) {
   years <- sort(unique(years))
   runs <- split(years, cumsum(c(1, diff(years) != 1)))
@@ -203,8 +203,8 @@ response <- codebook |>
   )
 
 # Panel depth: cities with valid answers in four or more editions, and in
-# every edition from 2021 to 2025 (the full-questionnaire editions).
-panel_years <- 2021:2025
+# every edition from 2021 to 2026 (the full-questionnaire editions).
+panel_years <- 2021:2026
 
 panel <- answered |>
   distinct(code_variable, code_muni, year) |>
@@ -230,7 +230,7 @@ panel_bounds <- long |>
   ) |>
   summarise(
     participated_4_plus = sum(n_editions >= 4),
-    participated_2021_2025 = sum(full_panel)
+    participated_2021_2026 = sum(full_panel)
   )
 
 n_answers <- answered |>
@@ -371,7 +371,7 @@ column_labels <- c(
   include_dashboard = "Dashboard?",
   notes = "Notas",
   panel_cities = "Cidades com 4+ edições",
-  panel_cities_full = "Cidades em todas de 2021 a 2025",
+  panel_cities_full = "Cidades em todas de 2021 a 2026",
   jump_share = "Saltos bruscos",
   edition_breaks = "Quebras entre edições",
   response_rate_mean = "Taxa de resposta média",
@@ -396,7 +396,8 @@ column_labels <- c(
   cities_2022 = "2022",
   cities_2023 = "2023",
   cities_2024 = "2024",
-  cities_2025 = "2025"
+  cities_2025 = "2025",
+  cities_2026 = "2026"
 )
 
 type_labels <- c(
@@ -418,7 +419,7 @@ column_definitions <- c(
   include_dashboard = "Decisão do revisor: incluir a pergunta no Dashboard PEMOB (sim ou não).",
   notes = "Observações livres do revisor.",
   panel_cities = "Municípios com resposta válida em 4 ou mais edições. O limite máximo está na aba participação.",
-  panel_cities_full = "Municípios com resposta válida em todas as edições de 2021 a 2025. O limite máximo está na aba participação.",
+  panel_cities_full = "Municípios com resposta válida em todas as edições de 2021 a 2026. O limite máximo está na aba participação.",
   jump_share = "Só perguntas numéricas: parcela das respostas consecutivas positivas de uma cidade que mudam 3 vezes ou mais. Valores altos sugerem erro de unidade ou escala. Fica vazia com menos de 5 pares.",
   edition_breaks = "Só perguntas numéricas: edições em que o valor da cidade mediana dobrou ou caiu à metade em relação à resposta anterior, com ao menos 5 cidades. Sugere mudança de unidade ou escala. Uma quebra em 2021 também pode refletir a pandemia.",
   response_rate_mean = "Respostas válidas divididas pelos municípios participantes, em média nas edições que fizeram a pergunta.",
@@ -436,10 +437,10 @@ column_definitions <- c(
   table_years = "Edições em que a tabela mostra valores para a pergunta.",
   live_label = "Rótulo exibido no snapshot de 2019 a 2024 do site (commit 28d2cd8).",
   n_years = "Número de edições com ao menos uma resposta válida.",
-  question_wording_versions = "Enunciados distintos nas edições de 2021 a 2025, sem contar o ano de referência. Acima de 1, o texto mudou e a comparabilidade precisa ser conferida. 2019 e 2020 ficam de fora porque o dicionário dessas edições traz só cabeçalhos curtos ou nenhum texto.",
+  question_wording_versions = "Enunciados distintos nas edições de 2021 a 2026, sem contar o ano de referência. Acima de 1, o texto mudou e a comparabilidade precisa ser conferida. 2019 e 2020 ficam de fora porque o dicionário dessas edições traz só cabeçalhos curtos ou nenhum texto.",
   set_names(
-    str_glue("Municípios com resposta válida em {2019:2025}."),
-    str_glue("cities_{2019:2025}")
+    str_glue("Municípios com resposta válida em {2019:2026}."),
+    str_glue("cities_{2019:2026}")
   )
 )
 
@@ -678,9 +679,9 @@ if (anyDuplicated(metro_codebook[c("year", "code_variable")])) {
 }
 
 metro_years <- sort(unique(metro_codebook$year))
-if (!setequal(metro_years, c(2019, 2021:2025)) || length(metro_years) != 6) {
+if (!setequal(metro_years, c(2019, 2021:2026)) || length(metro_years) != 7) {
   cli::cli_abort(
-    "Metropolitan codebook editions differ from 2019 and 2021-2025."
+    "Metropolitan codebook editions differ from 2019 and 2021-2026."
   )
 }
 
@@ -746,7 +747,7 @@ metro_panel_bounds <- metro_long |>
   ) |>
   summarise(
     participated_4_plus = sum(n_editions >= 4),
-    participated_2021_2025 = sum(full_panel)
+    participated_2021_2026 = sum(full_panel)
   )
 metro_coverage_wide <- metro_coverage_by_year |>
   arrange(year) |>
@@ -919,19 +920,20 @@ metro_labels <- c(
   coverage_places = "Regiões com resposta",
   coverage_places_positive = "Regiões com valor positivo",
   panel_places = "Regiões com 4+ edições",
-  panel_places_full = "Regiões em todas de 2021 a 2025",
+  panel_places_full = "Regiões em todas de 2021 a 2026",
   places_2019 = "2019",
   places_2021 = "2021",
   places_2022 = "2022",
   places_2023 = "2023",
   places_2024 = "2024",
-  places_2025 = "2025"
+  places_2025 = "2025",
+  places_2026 = "2026"
 )
 metro_definitions <- c(
   coverage_places = "Regiões metropolitanas com ao menos uma resposta válida; respostas ausentes e imputadas não contam.",
   coverage_places_positive = "Não calculado: o tipo de resposta não foi revisado para a maioria das perguntas e edições metropolitanas.",
   panel_places = "Regiões com resposta válida em 4 ou mais edições da pergunta.",
-  panel_places_full = "Regiões com resposta válida em todas as edições de 2021 a 2025.",
+  panel_places_full = "Regiões com resposta válida em todas as edições de 2021 a 2026.",
   set_names(
     str_glue("Regiões com resposta válida em {metro_years}."),
     str_glue("places_{metro_years}")
@@ -954,8 +956,8 @@ metro_method_definitions <- tibble(
     "Métricas numéricas metropolitanas"
   ),
   definition = c(
-    "Poucas edições: até 2 com resposta. Baixa resposta: média abaixo de 30%. Série curta: menos de 5 regiões com resposta em 4 ou mais edições. Enunciado mudou: mais de uma versão entre 2021 e 2025.",
-    "Respostas válidas divididas pelas regiões participantes, em média apenas nas edições em que a pergunta foi feita (2019 e/ou 2021-2025). Não há edição metropolitana de 2020.",
+    "Poucas edições: até 2 com resposta. Baixa resposta: média abaixo de 30%. Série curta: menos de 5 regiões com resposta em 4 ou mais edições. Enunciado mudou: mais de uma versão entre 2021 e 2026.",
+    "Respostas válidas divididas pelas regiões participantes, em média apenas nas edições em que a pergunta foi feita (2019 e/ou 2021-2026). Não há edição metropolitana de 2020.",
     "As métricas de zero, valor positivo, saltos, repetição e respostas não numéricas ficam vazias até haver tipos de resposta revisados para as perguntas e edições metropolitanas avaliadas."
   )
 )

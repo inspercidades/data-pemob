@@ -30,39 +30,41 @@ class FormatterTest(unittest.TestCase):
         write_csv(self.path, "indicator_review.csv", [{
             "code": "1.1.1", "short_question": "Ônibus", "full_question": "Há ônibus?",
             "subject": "Oferta", "type": "sim/não", "coverage_cities": "12",
-            "coverage_years": "2019-2025", "response_rate_mean": "0.5",
+            "coverage_years": "2019-2026", "response_rate_mean": "0.5",
             "panel_cities": "4", "quality_flags": "", "dashboard_pemob": "sim",
             "tabela_pemob": "não", "include_table": "", "include_dashboard": "",
             "notes": "",
         }])
         write_csv(self.path, "indicator_review_metropolitan.csv", [{
             "code": "1.1.1", "full_question": "Há serviço metropolitano?",
-            "coverage_places": "8", "coverage_years": "2019, 2021-2025",
+            "coverage_places": "8", "coverage_years": "2019, 2021-2026",
             "response_rate_mean": "0.4", "panel_places": "3", "quality_flags": "",
             "include_table": "", "include_dashboard": "", "notes": "",
         }])
         write_csv(self.path, "indicator_diagnostics.csv", [
             {"level": "municipal", "code": "1.1.1", "n_answers": "20",
-             "cities_2019": "12", "places_2019": ""},
+             "cities_2019": "12", "cities_2026": "12", "places_2019": "",
+             "places_2026": ""},
             {"level": "metropolitan", "code": "1.1.1", "n_answers": "10",
-             "cities_2019": "", "places_2019": "8"},
+             "cities_2019": "", "cities_2026": "", "places_2019": "8",
+             "places_2026": "8"},
         ])
-        write_csv(self.path, "participants.csv", [{"year": "2025", "participants": "12"}])
-        write_csv(self.path, "participants_metropolitan.csv", [{"year": "2025", "participants": "8"}])
+        write_csv(self.path, "participants.csv", [{"year": "2026", "participants": "12"}])
+        write_csv(self.path, "participants_metropolitan.csv", [{"year": "2026", "participants": "8"}])
         write_csv(self.path, "panel_bounds.csv", [{
-            "participated_4_plus": "5", "participated_2021_2025": "2",
+            "participated_4_plus": "5", "participated_2021_2026": "2",
         }])
         write_csv(self.path, "panel_bounds_metropolitan.csv", [{
-            "participated_4_plus": "4", "participated_2021_2025": "1",
+            "participated_4_plus": "4", "participated_2021_2026": "1",
         }])
         write_csv(self.path, "snapshot_long.csv", [{
             "code_muni": "3550308", "name_city": "Cidade", "abbrev_state": "SP",
-            "year": "2025",
+            "year": "2026",
             "code_indicator": "1.1.1", "value": "SIM", "is_number": "FALSE",
         }])
         write_csv(self.path, "snapshot_long_metropolitan.csv", [{
             "place_name": "Região", "abbrev_state": "SP",
-            "year": "2025", "code_indicator": "1.1.1", "value": "SIM",
+            "year": "2026", "code_indicator": "1.1.1", "value": "SIM",
             "is_number": "FALSE",
         }])
         write_csv(self.path, "snapshot_codes.csv", [{"code_indicator": "1.1.1"}])
@@ -127,13 +129,15 @@ class FormatterTest(unittest.TestCase):
         self.assertEqual(len(diagnostic_headers), len(set(diagnostic_headers)))
         self.assertIn("Municípios 2019", diagnostic_headers)
         self.assertIn("Regiões 2019", diagnostic_headers)
+        self.assertIn("Municípios 2026", diagnostic_headers)
+        self.assertIn("Regiões 2026", diagnostic_headers)
         self.assertEqual(
             [cell.value for cell in workbook["dados municipais"][1]],
             ["Ano", "Código IBGE", "Município", "UF", "1.1.1"],
         )
         self.assertEqual(
             [cell.value for cell in workbook["dados municipais"][2]],
-            [2025, 3550308, "Cidade", "SP", "SIM"],
+            [2026, 3550308, "Cidade", "SP", "SIM"],
         )
         self.assertEqual(
             [cell.value for cell in workbook["dados metropolitanos"][1]],

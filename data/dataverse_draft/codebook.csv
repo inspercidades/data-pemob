@@ -1972,6 +1972,348 @@ metropolitan,2025,7.2.2.B,7.2.2.B,Qual é a data de vencimento do contrato?
 metropolitan,2025,7.3.1,7.3.1,"Para a remuneração do operador do sistema de transporte público coletivo, quais aspectos são levados em conta?"
 metropolitan,2025,8.1.1,8.1.1,Quais as inovações tecnológicas presentes na mobilidade urbana da Região Metropolitana ou Aglomeração Urbana?
 metropolitan,2025,8.1.1.A,8.1.1.A,Quais outras inovações tecnológicas na mobilidade urbana estão presentes na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.1.1,1.1.1,"Quais os serviços de transporte público urbano o Governo do Estado é responsável pela gestão, seja por operação direta ou por delegação, na Região Metropolitana ou Aglomeração Urbana?"
+metropolitan,2026,1.2.1.A,1.2.1.A,Qual o número total de terminais rodoviários na Região Metropolitana ou Aglomeração Urbana sob gestão do Governo do Estado?
+metropolitan,2026,1.2.1.B,1.2.1.B,"Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?"
+metropolitan,2026,1.2.1.C,1.2.1.C,Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.2.2.A,1.2.2.A,Qual o número total de estações metroferroviárias na Região Metropolitana ou Aglomeração Urbana sob gestão do Governo do Estado?
+metropolitan,2026,1.2.2.B,1.2.2.B,"Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?"
+metropolitan,2026,1.2.2.C,1.2.2.C,Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.2.3,1.2.3,"Os locais georreferenciados dos terminais rodoviários e estações metroferroviárias de transporte, ofertados pelo poder público estadual, estão disponíveis na internet?"
+metropolitan,2026,1.2.3.A,1.2.3.A,Em qual website é possível obter os pontos de embarque e desembarque georreferenciados?
+metropolitan,2026,1.3.1.A,1.3.1.A,Qual a frota de veículos operacionais de ônibus na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.1.B,1.3.1.B,Qual a capacidade média da frota de ônibus operacionais na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.1.C,1.3.1.C,Qual o número de ônibus operacionais de piso baixo na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.1.D,1.3.1.D,Qual a capacidade média da frota de ônibus com piso baixo na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.1.E,1.3.1.E,Qual o número de ônibus operacionais com plataforma elevatória na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.1.F,1.3.1.F,Qual a capacidade média da frota de ônibus com plataforma elevatória na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.2.A,1.3.2.A,Qual a frota de veículos operacionais de metrô (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.2.B,1.3.2.B,Qual a capacidade média de um veículo de metrô (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.3.A,1.3.3.A,Qual a frota de veículos operacionais de trem (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.3.B,1.3.3.B,Qual a capacidade média de um veículo de trem (composição) na Região Metropolitana ou Aglomeração Urbna?
+metropolitan,2026,1.3.4.A,1.3.4.A,Qual a frota de barcos operacionais na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.4.B,1.3.4.B,Qual a capacidade média da frota de barco na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.5.A,1.3.5.A,Qual a frota de veículos operacionais de VLT (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.5.B,1.3.5.B,Qual a capacidade média de um veículo de VLT (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.6.A,1.3.6.A,Qual a frota de veículos operacionais de monotrilho (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.6.B,1.3.6.B,Qual a capacidade média de um veículo de monotrilho (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.7.A,1.3.7.A,Qual a frota de veículos operacionais de aeromóvel (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.3.7.B,1.3.7.B,Qual a capacidade média de um aeromóvel (composição) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.1,1.4.1,Qual a quilometragem percorrida no ano de 2025 pela frota de ônibus sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.2,1.4.2,Qual a quilometragem percorrida no ano de 2025 pela frota de metrô sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.3,1.4.3,Qual a quilometragem percorrida no ano de 2025 pela frota de trem sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.4,1.4.4,Qual a quilometragem percorrida no ano de 2025 pela frota de barco sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.5,1.4.5,Qual a quilometragem percorrida no ano de 2025 pela frota de VLT sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.6,1.4.6,Qual a quilometragem percorrida no ano de 2025 pela frota de monotrilho sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,1.4.7,1.4.7,Qual a quilometragem percorrida no ano de 2025 pela frota de aeromóvel sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.1.1,2.1.1,Qual a idade média da frota do serviço de transporte por ônibus na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.1.2,2.1.2,Qual a idade média da frota do serviço de transporte por metrô na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.1.3,2.1.3,Qual a idade média da frota do serviço de transporte por trem na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.1.4,2.1.4,Qual a idade média da frota do serviço de transporte por VLT na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.1.5,2.1.5,Qual a idade média da frota do serviço de transporte por monotrilho na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.1.6,2.1.6,Qual a idade média da frota do serviço de transporte por aeromóvel na Região Metropolitana ou Aglomeração Urbana? (em anos)
+metropolitan,2026,2.2.1.A,2.2.1.A,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.1.B,2.2.1.B,Qual o número de terminais rodoviários com informações aos usuários sobre horários sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.1.C,2.2.1.C,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.1.D,2.2.1.D,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.2.A,2.2.2.A,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.2.B,2.2.2.B,Qual o número de estações metroferroviárias com informações aos usuários sobre horários sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.2.C,2.2.2.C,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.2.2.D,2.2.2.D,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte sob gestão do Governo do Estado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.3.1,2.3.1,O Governo do Estado realiza pesquisa de satisfação dos usuários na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,2.3.1.A,2.3.1.A,Ano de realização da pesquisa:
+metropolitan,2026,2.3.1.B,2.3.1.B,Em qual website é possível obter a pesquisa de satisfação dos usuários em formato digital?
+metropolitan,2026,2.4.1,2.4.1,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?
+metropolitan,2026,2.4.1.A,2.4.1.A,Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.1.B,2.4.1.B,Qual a porcentagem de viagens por ônibus não foram completadas em 2025? (%)
+metropolitan,2026,2.4.2,2.4.2,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?
+metropolitan,2026,2.4.2.A,2.4.2.A,Qual a porcentagem de viagens por metrô foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.2.B,2.4.2.B,Qual o percentual de viagens por metrô não foram completadas em 2025? (%)
+metropolitan,2026,2.4.3,2.4.3,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?
+metropolitan,2026,2.4.3.A,2.4.3.A,Qual a porcentagem de viagens por trem foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.3.B,2.4.3.B,Qual o percentual de viagens por trem não foram completadas em 2025? (%)
+metropolitan,2026,2.4.4,2.4.4,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?
+metropolitan,2026,2.4.4.A,2.4.4.A,Qual a porcentagem de viagens por barco foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.4.B,2.4.4.B,Qual o percentual de viagens por barco não foram completadas completadas em 2025? (%)
+metropolitan,2026,2.4.5,2.4.5,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?
+metropolitan,2026,2.4.5.A,2.4.5.A,Qual a porcentagem de viagens por VLT foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.5.B,2.4.5.B,Qual o percentual de viagens por VLT não foram completadas em 2025? (%)
+metropolitan,2026,2.4.6,2.4.6,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por aeromóvel?
+metropolitan,2026,2.4.6.A,2.4.6.A,Qual a porcentagem de viagens por Monotrilho foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.6.B,2.4.6.B,Qual o percentual de viagens por monotrilho não foram completadas em 2025? (%)
+metropolitan,2026,2.4.7,2.4.7,O Governo do Estado possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por monotrilho?
+metropolitan,2026,2.4.7.A,2.4.7.A,Qual a porcentagem de viagens por aeromóvel foram realizadas dentro do horário programado em 2025? (%)
+metropolitan,2026,2.4.7.B,2.4.7.B,Qual o percentual de viagens por aeromóvel não foram completadas em 2025? (%)
+metropolitan,2026,3.1.1.A,3.1.1.A,"No caso do transporte público intermunicipal por ônibus, qual o maior fluxo de deslocamento intermunicipal na Região Metropolitana ou Aglomeração Urbana?"
+metropolitan,2026,3.1.1.B,3.1.1.B,"Qual o valor da tarifa predominante no deslocamento intermunicipal de maior fluxo da Região Metropolitana ou Aglomeração Urbana, considerando o centro da cidade origem até o centro da cidade núcleo?"
+metropolitan,2026,3.1.1.C,3.1.1.C,Qual o valor anterior da tarifa predominante no maior fluxo de deslocamento intermunicipal da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.D,3.1.1.D,"No caso do transporte público intermunicipal por ônibus, qual o segundo maior fluxo de deslocamento intermunicipal na Região Metropolitana ou Aglomeração Urbana?"
+metropolitan,2026,3.1.1.E,3.1.1.E,Qual o valor da tarifa predominante no segundo maior fluxo de deslocamento intermunicipal da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.F,3.1.1.F,Qual o valor anterior da tarifa predominante no segundo maior fluxo de deslocamento intermunicipal da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.G,3.1.1.G,Qual o terceiro maior fluxo de deslocamento intermunicipal no transporte público intermunicipal por ônibus da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.H,3.1.1.H,Qual o valor da tarifa predominante no terceiro maior fluxo de deslocamento intermunicipal da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.I,3.1.1.I,Qual o valor anterior da tarifa predominante no terceiro maior fluxo de deslocamento intermunicipal da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.1.J,3.1.1.J,Qual a data do último reajuste no transporte público intermunicipal por ônibus na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.2.A,3.1.2.A,Qual o valor da tarifa predominante (pública) no transporte por metrô na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.2.B,3.1.2.B,Qual o valor anterior da tarifa predominante no transporte por metrô na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.2.C,3.1.2.C,Qual a data do último reajuste no transporte por metrô na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.3.A,3.1.3.A,Qual o valor da tarifa predominante (pública) no transporte por trem na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.3.B,3.1.3.B,Qual o valor anterior da tarifa predominante no transporte por trem na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.3.C,3.1.3.C,Qual a data do último reajuste no transporte por trem na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.4.A,3.1.4.A,Qual o valor da tarifa predominante (pública) no transporte por barco na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.4.B,3.1.4.B,Qual o valor anterior da tarifa predominante no transporte por barco na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.4.C,3.1.4.C,Qual a data do último reajuste no transporte por barco na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.5.A,3.1.5.A,Qual o valor da tarifa predominante (pública) no transporte por VLT na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.5.B,3.1.5.B,Qual o valor anterior da tarifa predominante no transporte por VLT na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.5.C,3.1.5.C,Qual a data do último reajuste no transporte por VLT na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.6.A,3.1.6.A,Qual o valor da tarifa predominante (pública) no transporte por Aeromóvel na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.6.B,3.1.6.B,Qual o valor anterior da tarifa predominante no transporte por Aeromóvel na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.6.C,3.1.6.C,Qual a data do último reajuste no transporte por Aeromóvel na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.7.A,3.1.7.A,Qual o valor da tarifa predominante (pública) no transporte por Monotrilho na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.7.B,3.1.7.B,Qual o valor anterior da tarifa predominante no transporte por Monotrilho na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.7.C,3.1.7.C,Qual a data do último reajuste no transporte por Monotrilho na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.1.8,3.1.8,O sistema de transporte público metropolitano possui integração tarifária com outros sistemas de mobilidade urbana municipais?
+metropolitan,2026,3.1.8.A,3.1.8.A,Quais são os tipos de integração tarifária existente?
+metropolitan,2026,3.2.1.A,3.2.1.A,Qual o valor da receita tarifária anual por ônibus arrecadado em 2025?
+metropolitan,2026,3.2.1.B,3.2.1.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus em 2025?"
+metropolitan,2026,3.2.1.C,3.2.1.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus em 2025?"
+metropolitan,2026,3.2.1.D,3.2.1.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus em 2025?"
+metropolitan,2026,3.2.2.A,3.2.2.A,Qual o valor da receita tarifária anual por metrô arrecadado em 2025?
+metropolitan,2026,3.2.2.B,3.2.2.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por metrô em 2025?"
+metropolitan,2026,3.2.2.C,3.2.2.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por metrô em 2025?"
+metropolitan,2026,3.2.2.D,3.2.2.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por metrô em 2025?"
+metropolitan,2026,3.2.3.A,3.2.3.A,Qual o valor da receita tarifária anual por trem arrecadado em 2025?
+metropolitan,2026,3.2.3.B,3.2.3.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por trem em 2025?"
+metropolitan,2026,3.2.3.C,3.2.3.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por trem em 2025?"
+metropolitan,2026,3.2.3.D,3.2.3.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por trem em 2025?"
+metropolitan,2026,3.2.4.A,3.2.4.A,Qual o valor da receita tarifária anual por barco arrecadado em 2025?
+metropolitan,2026,3.2.4.B,3.2.4.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por barco em 2025?"
+metropolitan,2026,3.2.4.C,3.2.4.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por barco em 2025?"
+metropolitan,2026,3.2.4.D,3.2.4.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por barco em 2025?"
+metropolitan,2026,3.2.5.A,3.2.5.A,Qual o valor da receita tarifária anual por VLT arrecadado em 2025?
+metropolitan,2026,3.2.5.B,3.2.5.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por VLT em 2025?"
+metropolitan,2026,3.2.5.C,3.2.5.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por VLT em 2025?"
+metropolitan,2026,3.2.5.D,3.2.5.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por VLT em 2025?"
+metropolitan,2026,3.2.6.A,3.2.6.A,Qual o valor da receita tarifária anual por monotrilho arrecadado em 2025?
+metropolitan,2026,3.2.6.B,3.2.6.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por monotrilho em 2025?"
+metropolitan,2026,3.2.6.C,3.2.6.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por monotrilho em 2025?"
+metropolitan,2026,3.2.6.D,3.2.6.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por monotrilho em 2025?"
+metropolitan,2026,3.2.7.A,3.2.7.A,Qual o valor da receita tarifária anual por aeromóvel arrecadado em 2025?
+metropolitan,2026,3.2.7.B,3.2.7.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por aeromóvel em 2025?"
+metropolitan,2026,3.2.7.C,3.2.7.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por aeromóvel em 2025?"
+metropolitan,2026,3.2.7.D,3.2.7.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por aeromóvel em 2025?"
+metropolitan,2026,3.3.1,3.3.1,Quais os impostos incidentes no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.A,3.3.1.A,Qual o percentual de ISS incidente no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.B,3.3.1.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.C,3.3.1.C,Qual o percentual de PIS incidente no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.D,3.3.1.D,Qual o percentual de Cofins incidente no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.E,3.3.1.E,Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?
+metropolitan,2026,3.3.1.F,3.3.1.F,Quais outros impostos incidem no serviço de transporte por ônibus?
+metropolitan,2026,3.3.2,3.3.2,Quais os impostos incidentes no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.A,3.3.2.A,Qual o percentual de ISS incidente no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.B,3.3.2.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.C,3.3.2.C,Qual o percentual de PIS incidente no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.D,3.3.2.D,Qual o percentual de Cofins incidente no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.E,3.3.2.E,Qual o percentual de outros impostos incidentes no serviço de transporte por metrô?
+metropolitan,2026,3.3.2.F,3.3.2.F,Quais outros impostos incidem no serviço de transporte por metrô?
+metropolitan,2026,3.3.3,3.3.3,Quais os impostos incidentes no serviço de transporte por trem?
+metropolitan,2026,3.3.3.A,3.3.3.A,Qual o percentual de ISS incidente no serviço de transporte por trem?
+metropolitan,2026,3.3.3.B,3.3.3.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por trem?
+metropolitan,2026,3.3.3.C,3.3.3.C,Qual o percentual de PIS incidente no serviço de transporte por trem?
+metropolitan,2026,3.3.3.D,3.3.3.D,Qual o percentual de Cofins incidente no serviço de transporte por trem?
+metropolitan,2026,3.3.3.E,3.3.3.E,Qual o percentual de outros impostos incidentes no serviço de transporte por trem?
+metropolitan,2026,3.3.3.F,3.3.3.F,Quais outros impostos incidem no serviço de transporte por trem?
+metropolitan,2026,3.3.4,3.3.4,Quais os impostos incidentes no serviço de transporte por barco?
+metropolitan,2026,3.3.4.A,3.3.4.A,Qual o percentual de ISS incidente no serviço de transporte por barco?
+metropolitan,2026,3.3.4.B,3.3.4.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por barco?
+metropolitan,2026,3.3.4.C,3.3.4.C,Qual o percentual de PIS incidente no serviço de transporte por barco?
+metropolitan,2026,3.3.4.D,3.3.4.D,Qual o percentual de Cofins incidente no serviço de transporte por barco?
+metropolitan,2026,3.3.4.E,3.3.4.E,Qual o percentual de outros impostos incidentes no serviço de transporte por barco?
+metropolitan,2026,3.3.4.F,3.3.4.F,Quais outros impostos incidem no serviço de transporte por barco?
+metropolitan,2026,3.3.5,3.3.5,Quais os impostos incidentes no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.A,3.3.5.A,Qual o percentual de ISS incidente no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.B,3.3.5.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.C,3.3.5.C,Qual o percentual de PIS incidente no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.D,3.3.5.D,Qual o percentual de Cofins incidente no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.E,3.3.5.E,Qual o percentual de outros impostos incidentes no serviço de transporte por VLT?
+metropolitan,2026,3.3.5.F,3.3.5.F,Quais outros impostos incidem no serviço de transporte por VLT?
+metropolitan,2026,3.3.6,3.3.6,Quais os impostos incidentes no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.A,3.3.6.A,Qual o percentual de ISS incidente no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.B,3.3.6.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.C,3.3.6.C,Qual o percentual de PIS incidente no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.D,3.3.6.D,Qual o percentual de Cofins incidente no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.E,3.3.6.E,Qual o percentual de outros impostos incidentes no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.6.F,3.3.6.F,Quais outros impostos incidem no serviço de transporte por monotrilho?
+metropolitan,2026,3.3.7,3.3.7,Quais os impostos incidentes no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.A,3.3.7.A,Qual o percentual de ISS incidente no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.B,3.3.7.B,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.C,3.3.7.C,Qual o percentual de PIS incidente no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.D,3.3.7.D,Qual o percentual de Cofins incidente no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.E,3.3.7.E,Qual o percentual de outros impostos incidentes no serviço de transporte por aeromóvel?
+metropolitan,2026,3.3.7.F,3.3.7.F,Quais outros impostos incidem no serviço de transporte por aeromóvel?
+metropolitan,2026,3.4.1.A,3.4.1.A,Qual o número de passageiros comuns transportados no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.1.B,3.4.1.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.1.C,3.4.1.C,Qual o número de estudantes transportados no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.1.D,3.4.1.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.1.E,3.4.1.E,Qual o número de gratuidades no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.1.F,3.4.1.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus em 2025?
+metropolitan,2026,3.4.2.A,3.4.2.A,Qual o número de passageiros comuns transportados no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.2.B,3.4.2.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.2.C,3.4.2.C,Qual o número de estudantes transportados no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.2.D,3.4.2.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.2.E,3.4.2.E,Qual o número de gratuidades no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.2.F,3.4.2.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por metrô em 2025?
+metropolitan,2026,3.4.3.A,3.4.3.A,Qual o número de passageiros comuns transportados no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.3.B,3.4.3.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.3.C,3.4.3.C,Qual o número de estudantes transportados no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.3.D,3.4.3.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.3.E,3.4.3.E,Qual o número de gratuidades no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.3.F,3.4.3.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por trem em 2025?
+metropolitan,2026,3.4.4.A,3.4.4.A,Qual o número de passageiros comuns transportados no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.4.B,3.4.4.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.4.C,3.4.4.C,Qual o número de estudantes transportados no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.4.D,3.4.4.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.4.E,3.4.4.E,Qual o número de gratuidades no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.4.F,3.4.4.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por barco em 2025?
+metropolitan,2026,3.4.5.A,3.4.5.A,Qual o número de passageiros comuns transportados no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.5.B,3.4.5.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.5.C,3.4.5.C,Qual o número de estudantes transportados no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.5.D,3.4.5.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.5.E,3.4.5.E,Qual o número de gratuidades no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.5.F,3.4.5.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por VLT em 2025?
+metropolitan,2026,3.4.6.A,3.4.6.A,Qual o número de passageiros comuns transportados no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.6.B,3.4.6.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.6.C,3.4.6.C,Qual o número de estudantes transportados no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.6.D,3.4.6.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.6.E,3.4.6.E,Qual o número de gratuidades no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.6.F,3.4.6.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por monotrilho em 2025?
+metropolitan,2026,3.4.7.A,3.4.7.A,Qual o número de passageiros comuns transportados no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.4.7.B,3.4.7.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.4.7.C,3.4.7.C,Qual o número de estudantes transportados no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.4.7.D,3.4.7.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.4.7.E,3.4.7.E,Qual o número de gratuidades no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.4.7.F,3.4.7.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por aeromóvel em 2025?
+metropolitan,2026,3.5.1,3.5.1,Quais categorias de passageiros recebem desconto no valor da tarifa do serviço de transporte público na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,3.5.1.A,3.5.1.A,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?
+metropolitan,2026,3.5.1.AA,3.5.1.AA,Qual a renda máxima das pessoas de baixa renda que recebem desconto na no valor da tarifa? (Em salários mínimos)
+metropolitan,2026,3.5.1.B,3.5.1.B,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?
+metropolitan,2026,3.5.1.C,3.5.1.C,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?
+metropolitan,2026,3.5.1.D,3.5.1.D,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?
+metropolitan,2026,3.5.1.E,3.5.1.E,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?
+metropolitan,2026,3.6.1,3.6.1,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de ônibus?
+metropolitan,2026,3.6.1.A,3.6.1.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.B,3.6.1.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.C,3.6.1.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.D,3.6.1.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.E,3.6.1.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.F,3.6.1.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?"
+metropolitan,2026,3.6.1.G,3.6.1.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.H,3.6.1.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.1.I,3.6.1.I,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+metropolitan,2026,3.6.2,3.6.2,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de metrô?
+metropolitan,2026,3.6.2.A,3.6.2.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.B,3.6.2.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.C,3.6.2.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.D,3.6.2.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.E,3.6.2.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.F,3.6.2.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por metrô?"
+metropolitan,2026,3.6.2.G,3.6.2.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.H,3.6.2.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.I,3.6.2.I,Energia diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.J,3.6.2.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.2.L,3.6.2.L,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+metropolitan,2026,3.6.3,3.6.3,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem?
+metropolitan,2026,3.6.3.A,3.6.3.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.B,3.6.3.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.C,3.6.3.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.D,3.6.3.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.E,3.6.3.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.F,3.6.3.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por trem?"
+metropolitan,2026,3.6.3.G,3.6.3.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.H,3.6.3.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.I,3.6.3.I,Energia diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.J,3.6.3.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.3.L,3.6.3.L,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por trem?
+metropolitan,2026,3.6.4,3.6.4,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de barco?
+metropolitan,2026,3.6.4.A,3.6.4.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.B,3.6.4.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.C,3.6.4.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.D,3.6.4.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.E,3.6.4.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.F,3.6.4.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por barco?"
+metropolitan,2026,3.6.4.G,3.6.4.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.H,3.6.4.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.4.I,3.6.4.I,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por barco?
+metropolitan,2026,3.6.5,3.6.5,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de VLT?
+metropolitan,2026,3.6.5.A,3.6.5.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.B,3.6.5.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.C,3.6.5.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.D,3.6.5.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.E,3.6.5.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.F,3.6.5.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por VLT?"
+metropolitan,2026,3.6.5.G,3.6.5.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.H,3.6.5.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.I,3.6.5.I,Energia diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.J,3.6.5.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.5.L,3.6.5.L,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+metropolitan,2026,3.6.6,3.6.6,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de monotrilho?
+metropolitan,2026,3.6.6.A,3.6.6.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.B,3.6.6.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.C,3.6.6.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.D,3.6.6.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.E,3.6.6.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.F,3.6.6.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?"
+metropolitan,2026,3.6.6.G,3.6.6.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.H,3.6.6.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.I,3.6.6.I,Energia diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.J,3.6.6.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.6.L,3.6.6.L,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+metropolitan,2026,3.6.7,3.6.7,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de aeromóvel?
+metropolitan,2026,3.6.7.A,3.6.7.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.B,3.6.7.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.C,3.6.7.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.D,3.6.7.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.E,3.6.7.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.F,3.6.7.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?"
+metropolitan,2026,3.6.7.G,3.6.7.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.H,3.6.7.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.I,3.6.7.I,Energia diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.J,3.6.7.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,3.6.7.L,3.6.7.L,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+metropolitan,2026,4.1.1,4.1.1,A Região Metropolitana ou Aglomeração Urbana está contemplada em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,4.1.1.A,4.1.1.A,Em qual website é possível obter o Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana em formato digital?
+metropolitan,2026,4.1.2,4.1.2,A Região Metropolitana ou Aglomeração Urbana está contemplada em algum Plano de Desenvolvimento Urbano Integrado (PDUI) (Lei Federal nº 13.089/2015 - Estatuto da Metrópole)?
+metropolitan,2026,4.1.2.A,4.1.2.A,Em qual website é possível obter o Plano de Desenvolvimento Urbano Integrado (PDUI) em formato digital?
+metropolitan,2026,4.2.1,4.2.1,O Governo do Estado já realizou pesquisa Origem-Destino (O/D) na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,4.2.1.A,4.2.1.A,Qual o ano de realização da última pesquisa O/D?
+metropolitan,2026,4.2.1.B,4.2.1.B,Qual a periodicidade de realização da pesquisa?
+metropolitan,2026,4.2.1.C,4.2.1.C,Em qual website é possível obter a Pesquisa Origem-Destino em formato digital?
+metropolitan,2026,4.2.1.D,4.2.1.D,"Considerando todos os modos de transporte e as pesquisas O/D realizadas, qual o número médio de viagens diárias?"
+metropolitan,2026,4.2.1.E,4.2.1.E,"Considerando todos os modos de transporte e as pesquisas O/D realizadas, qual a distância média das viagens? (Em km)"
+metropolitan,2026,4.2.1.F,4.2.1.F,"Considerando todos os modos de transportes e as pesquisas O/D realizadas, qual o tempo médio das viagens realizadas? (Em minutos)"
+metropolitan,2026,4.2.1.G,4.2.1.G,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)"
+metropolitan,2026,4.2.1.H,4.2.1.H,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)"
+metropolitan,2026,4.2.1.I,4.2.1.I,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)"
+metropolitan,2026,4.2.1.J,4.2.1.J,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)"
+metropolitan,2026,4.2.1.K,4.2.1.K,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)"
+metropolitan,2026,4.2.1.L,4.2.1.L,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)"
+metropolitan,2026,4.2.1.M,4.2.1.M,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)"
+metropolitan,2026,5.1.1,5.1.1,"Na composição da frota de transporte público coletivo, existem ônibus que utilizam tecnologia veicular ou fontes de energia alternativa?"
+metropolitan,2026,5.1.1.A,5.1.1.A,Qual o percentual da frota que utiliza etanol como fonte de energia?
+metropolitan,2026,5.1.1.B,5.1.1.B,Qual o percentual da frota que utiliza eletricidade como fonte de energia?
+metropolitan,2026,5.1.1.C,5.1.1.C,Qual o percentual da frota que utiliza gás natural como fonte de energia?
+metropolitan,2026,5.1.1.D,5.1.1.D,Qual o percentual da frota que utiliza hidrogênio como fonte de energia?
+metropolitan,2026,5.1.1.E,5.1.1.E,Qual o percentual da frota que utiliza biodiesel como fonte de energia?
+metropolitan,2026,5.1.1.F,5.1.1.F,Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?
+metropolitan,2026,6.1.1,6.1.1,O órgão responsável pela gestão do sistema de mobilidade urbana na Região Metropolitana ou Aglomeração Urbana caracteriza-se como:
+metropolitan,2026,7.1.1,7.1.1,De que modo o serviço de transporte público coletivo regulamentado é ofertado na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,7.1.2,7.1.2,Quais as modalidades de delegação de serviço de transporte público coletivo existe na Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,7.2.1,7.2.1,O serviço de transporte público coletivo regulamentado é licitado?
+metropolitan,2026,7.2.1.A,7.2.1.A,Qual o prazo do contrato? (Em anos)
+metropolitan,2026,7.2.2.B,7.2.2.B,Qual é a data de vencimento do contrato?
+metropolitan,2026,7.3.1,7.3.1,"Para a remuneração do operador do sistema de transporte público coletivo, quais aspectos são levados em conta?"
+metropolitan,2026,8.1.1,8.1.1,Quais as inovações tecnológicas presentes na mobilidade urbana da Região Metropolitana ou Aglomeração Urbana?
+metropolitan,2026,8.1.1.A,8.1.1.A,Quais outras inovações tecnológicas na mobilidade urbana estão presentes na Região Metropolitana ou Aglomeração Urbana?
 municipal,2019,1.1.1,1.1.1,Serviços de transporte público municipal
 municipal,2019,1.2.1,1.2.1,Serviços de transporte público intermunicipal/ metropolitano
 municipal,2019,1.2.3,1.2.2,Serviços de transporte público por consórcio
@@ -4874,3 +5216,476 @@ municipal,2025,9.1.1,9.1.1,Marque as medidas de moderação de tráfego presente
 municipal,2025,9.1.2,9.1.2,Qual o número de agentes de trânsito em exercício no município em 2024?
 municipal,2025,9.1.3,9.1.3,Qual o número de equipamentos de fiscalização de velocidade existentes?
 municipal,2025,9.1.4,9.1.4,Qual foi a arrecadação anual em 2024 com multas de trânsito?
+municipal,2026,1.1.1,1.1.1,"Quais os serviços de transporte público urbano estão presentes no município, sob gestão da prefeitura, seja por operação direta ou por delegação?"
+municipal,2026,1.2.1,1.2.1,"Quais os serviços de transporte público urbano estão presentes no município em que o Governo do Estado é responsável pela gestão, seja gestão direta ou indireta?"
+municipal,2026,1.2.2,1.2.2,"Quais os serviços de transporte público urbano estão presentes no município em que o Governo Federal é responsável pela gestão, seja gestão direta ou indireta?"
+municipal,2026,1.2.3,1.2.3,"Quais os serviços de transporte público urbano estão presentes no município, sob gestão de um consórcio público ou de um convênio de cooperação para gestão do transporte metropolitano, seja de gestão direta ou indireta?"
+municipal,2026,1.3.1,1.3.1,Quais os tipos de integração física entre os diferentes modos de transporte urbano existem em seu município?
+municipal,2026,1.3.1.A,1.3.1.A,Qual outro tipo de integração física entre os diferentes modos de transporte urbano existe em seu município?
+municipal,2026,1.4.1.A,1.4.1.A,Qual o número total de terminais rodoviários no município?
+municipal,2026,1.4.1.B,1.4.1.B,"Qual o número total de terminais rodoviários acessíveis com rampas, plataformas de embarque em nível?"
+municipal,2026,1.4.1.C,1.4.1.C,Qual o número total de terminais rodoviários acessíveis com informações para pessoas com deficiência visual?
+municipal,2026,1.4.1.D,1.4.1.D,Qual o número total de terminais rodoviários com integração física?
+municipal,2026,1.4.1.E,1.4.1.E,Qual o número total de estações metroferroviárias no município?
+municipal,2026,1.4.1.F,1.4.1.F,"Qual o número total de estações metroferroviárias acessíveis com rampas, plataformas de embarque em nível?"
+municipal,2026,1.4.1.G,1.4.1.G,Qual o número total de estações metroferroviárias acessíveis com informações para pessoas com deficiência visual?
+municipal,2026,1.4.1.H,1.4.1.H,Qual o número total de estações metroferroviárias com integração física?
+municipal,2026,1.4.2,1.4.2,"Qual o número total de pontos de embarque e desembarque, considerando todos os modos de transporte?"
+municipal,2026,1.4.3,1.4.3,"Qual o número total de pontos de embarque e desembarque com abrigo para usuários, considerando todos os modos de transporte?"
+municipal,2026,1.4.4,1.4.4,"Qual o número total de pontos de embarque e desembarque com plataforma de embarque em nível para usuários, considerando todos os modos de transporte?"
+municipal,2026,1.4.5,1.4.5,O município disponibiliza o local de pontos de embarque de desembarque georreferenciados na internet?
+municipal,2026,1.4.5.A,1.4.5.A,Em qual website é possível obter os pontos de embarque e desembarque georreferenciados?
+municipal,2026,1.5.1.A,1.5.1.A,Qual a frota de veículos operacionais de ônibus convencional no município?
+municipal,2026,1.5.1.AA,1.5.1.AA,Qual a frota de veículos operacionais de aeromóvel (composição) no município?
+municipal,2026,1.5.1.AB,1.5.1.AB,Qual a capacidade média de um aeromóvel no município?
+municipal,2026,1.5.1.AC,1.5.1.AC,Qual a frota de bicicletas compartilhadas operacionais no município?
+municipal,2026,1.5.1.B,1.5.1.B,Qual a capacidade média da frota de ônibus convencionais operacionais no município?
+municipal,2026,1.5.1.C,1.5.1.C,Qual o número de ônibus convencionais operacionais de piso baixo no município?
+municipal,2026,1.5.1.D,1.5.1.D,Qual o número de ônibus convencionais operacionais com plataforma elevatória no município?
+municipal,2026,1.5.1.E,1.5.1.E,Qual a frota de veículos operacionais de ônibus articulado no município?
+municipal,2026,1.5.1.F,1.5.1.F,Qual a capacidade média de ônibus articulado operacionais no município?
+municipal,2026,1.5.1.G,1.5.1.G,Qual o número de ônibus articulados operacionais de piso baixo?
+municipal,2026,1.5.1.H,1.5.1.H,Qual o número de ônibus articulados operacionais com plataforma elevatória no município?
+municipal,2026,1.5.1.I,1.5.1.I,Qual a frota de veículos operacionais de ônibus biarticulado no município?
+municipal,2026,1.5.1.J,1.5.1.J,Qual a capacidade média de ônibus biarticulado operacionais no município?
+municipal,2026,1.5.1.K,1.5.1.K,Qual o número de ônibus biarticulados operacionais de piso baixo?
+municipal,2026,1.5.1.L,1.5.1.L,Qual o número de ônibus biarticulados operacionais com plataforma elevatória no município?
+municipal,2026,1.5.1.M,1.5.1.M,Qual a frota de veículos operacionais de vans/microônibus no município?
+municipal,2026,1.5.1.N,1.5.1.N,Qual a capacidade média da frota de vans/microônibus operacionais no município?
+municipal,2026,1.5.1.O,1.5.1.O,Qual a frota de veículos operacionais de táxi no município?
+municipal,2026,1.5.1.P,1.5.1.P,Qual a frota de veículos operacionais de mototáxi no município?
+municipal,2026,1.5.1.Q,1.5.1.Q,Qual a frota de veículos operacionais de metrô (composição) no município?
+municipal,2026,1.5.1.R,1.5.1.R,Qual a capacidade média de um veículo de metrô (composição) no município?
+municipal,2026,1.5.1.S,1.5.1.S,Qual a frota de veículos operacionais de trem (composição) no município?
+municipal,2026,1.5.1.T,1.5.1.T,Qual a capacidade média de um veículo de trem (composição) no município?
+municipal,2026,1.5.1.U,1.5.1.U,Qual a frota de barcos operacionais no município?
+municipal,2026,1.5.1.V,1.5.1.V,Qual a capacidade média da frota de barco no município?
+municipal,2026,1.5.1.W,1.5.1.W,Qual a frota de veículos operacionais de VLT (composição) no município?
+municipal,2026,1.5.1.X,1.5.1.X,Qual a capacidade média de um veículo de VLT (composição) no município?
+municipal,2026,1.5.1.Y,1.5.1.Y,Qual a frota de veículos operacionais de monotrilho (composição) no município?
+municipal,2026,1.5.1.Z,1.5.1.Z,Qual a capacidade média de um veículo de monotrilho (composição) no município?
+municipal,2026,1.5.2.A,1.5.2.A,Qual a frota de veículos para fretamento para transporte de passageiro no município?
+municipal,2026,1.5.2.B,1.5.2.B,Qual a frota de veículos para transporte escolar no município?
+municipal,2026,1.6.1.A,1.6.1.A,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (permanente)?
+municipal,2026,1.6.1.B,1.6.1.B,Qual a quilometragem de vias dedicadas onde apenas pedestres podem circular (temporária)?
+municipal,2026,1.6.1.C,1.6.1.C,Qual a quilometragem de calçadas no município (parte da via reservada ao trânsito de pedestres)?
+municipal,2026,1.6.1.D,1.6.1.D,Qual a quilometragem de vias dedicadas exclusivas para BRTs no município?
+municipal,2026,1.6.1.E,1.6.1.E,Qual a quilometragem de vias dedicadas exclusivamente a corredores de ônibus no município?
+municipal,2026,1.6.1.F,1.6.1.F,Qual a quilometragem de vias dedicadas a faixas exclusivas no município?
+municipal,2026,1.6.1.G,1.6.1.G,Qual a quilometragem de vias dedicadas exclusivamente a ciclovias no município?
+municipal,2026,1.6.1.H,1.6.1.H,Qual a quilometragem de vias dedicadas exclusivamente a ciclofaixas no município?
+municipal,2026,1.6.1.I,1.6.1.I,Qual a quilometragem de vias dedicadas exclusivamente a metrô no município?
+municipal,2026,1.6.1.J,1.6.1.J,Qual a quilometragem de vias dedicadas exclusivamente a trem no município?
+municipal,2026,1.6.1.K,1.6.1.K,Qual a quilometragem de vias dedicadas exclusivamente a VLT no município?
+municipal,2026,1.6.1.L,1.6.1.L,Qual a quilometragem de vias dedicadas exclusivamente a monotrilho no município?
+municipal,2026,1.6.1.M,1.6.1.M,Qual a quilometragem de vias dedicadas exclusivamente a aeromóvel no município?
+municipal,2026,1.7.1.A,1.7.1.A,Qual a quilometragem percorrida no ano de 2025 pela frota de ônibus do município?
+municipal,2026,1.7.1.B,1.7.1.B,Qual a quilometragem percorrida no ano de 2025 pela frota de vans/microônibus do município?
+municipal,2026,1.7.1.C,1.7.1.C,Qual a quilometragem percorrida no ano de 2025 pela frota de metrô do município?
+municipal,2026,1.7.1.D,1.7.1.D,Qual a quilometragem percorrida no ano de 2025 pela frota de trem do município?
+municipal,2026,1.7.1.E,1.7.1.E,Qual a quilometragem percorrida no ano de 2025 pela frota de barco/catamarã do município?
+municipal,2026,1.7.1.F,1.7.1.F,Qual a quilometragem percorrida no ano de 2025 pela frota de VLT do município?
+municipal,2026,1.7.1.G,1.7.1.G,Qual a quilometragem percorrida no ano de 2025 pela frota de monotrilho do município?
+municipal,2026,1.7.1.H,1.7.1.H,Qual a quilometragem percorrida no ano de 2025 pela frota de aeromóvel do município?
+municipal,2026,10.1.1,10.1.1,O órgão responsável pela gestão do sistema de mobilidade urbana na prefeitura caracteriza-se como:
+municipal,2026,11.1.1,11.1.1,De que modo o serviço de transporte público coletivo regulamentado no município é ofertado?
+municipal,2026,11.1.2,11.1.2,Quais as modalidades de delegação de serviço de transporte público coletivo existe no município?
+municipal,2026,11.2.1,11.2.1,O serviço de transporte público coletivo regulamentado é licitado?
+municipal,2026,11.2.1.A,11.2.1.A,Qual o prazo do contrato? (Em anos)
+municipal,2026,11.2.2.B,11.2.2.B,Qual é a data de vencimento do contrato?
+municipal,2026,11.3.1,11.3.1,"Para a remuneração do operador do sistema de transporte público coletivo, quais aspectos são levados em conta?"
+municipal,2026,11.4.1,11.4.1,Existe transporte não regulamentado no município?
+municipal,2026,11.4.1.A,11.4.1.A,Quais tipos de veículos realizam o transporte não regulamentado?
+municipal,2026,11.5.1,11.5.1,"O município possui regulamentação para o transporte remunerado privado individual de passageiros (Uber, 99, entre outros)?"
+municipal,2026,11.5.1.A,11.5.1.A,Qual o número de viagens realizadas em 2025 por transporte remunerado privado individual de passageiros no município (considerando todos os aplicativos)?
+municipal,2026,11.5.1.B,11.5.1.B,Qual a quilometragem percorrida em 2025 por transporte remunerado privado individual de passageiros no município (considerando todos os aplicativos)? (Em km)
+municipal,2026,11.5.1.C,11.5.1.C,Qual foi a arrecadação em 2025 por transporte remunerado privado individual de passageiros no município? (Em R$)
+municipal,2026,12.1.2,12.1.2,O município faz uso de algum instrumento urbanístico previsto no Estatuto da Cidade (Lei Federal nº 10.257/2001) para viabilizar investimentos em mobilidade urbana?
+municipal,2026,12.2.1,12.1.1,O município possui fundo municipal específico de transporte e/ou mobilidade urbana?
+municipal,2026,13.1.1,13.1.1,Quais as inovações tecnológicas presentes na mobilidade urbana do município?
+municipal,2026,13.1.1.A,13.1.1.A,Quais outras inovações tecnológicas na mobilidade urbana estão presentes no município?
+municipal,2026,2.1.1.A,2.1.1.A,Qual a velocidade média operacional (km/h) do sistema de BRT do município em faixas prioritárias no horário de pico?
+municipal,2026,2.1.1.B,2.1.1.B,Qual a velocidade média operacional (km/h) nos corredores de ônibus do município no horário de pico?
+municipal,2026,2.1.1.C,2.1.1.C,Qual a velocidade média operacional (km/h) nas faixas exclusivas de ônibus do município no horário de pico?
+municipal,2026,2.1.1.D,2.1.1.D,Qual a velocidade média operacional (km/h) do sistema de metrô do município no horário de pico?
+municipal,2026,2.1.1.E,2.1.1.E,Qual a velocidade média operacional (km/h) do sistema de trem do município no horário de pico?
+municipal,2026,2.1.1.F,2.1.1.F,Qual a velocidade média operacional (km/h) do sistema de VLT do município no horário de pico?
+municipal,2026,2.1.1.G,2.1.1.G,Qual a velocidade média operacional (km/h) do sistema de monotrilho do município no horário de pico?
+municipal,2026,2.1.1.H,2.1.1.H,Qual a velocidade média operacional (km/h) do sistema de aeromóvel do município no horário de pico?
+municipal,2026,2.1.2,2.1.2,Qual a velocidade média operacional (km/h) do sistema de transporte público coletivo em vias de tráfego misto no horário de pico?
+municipal,2026,2.2.1,2.2.1,É possível a circulação de táxis nos corredores de ônibus?
+municipal,2026,2.3.1.A,2.3.1.A,Qual a idade média da frota do serviço de transporte por ônibus no município? (em anos)
+municipal,2026,2.3.1.B,2.3.1.B,Qual a idade média da frota do serviço de transporte por vans/microônibus no município? (em anos)
+municipal,2026,2.3.1.C,2.3.1.C,Qual a idade média da frota do serviço de transporte por metrô no município? (em anos)
+municipal,2026,2.3.1.D,2.3.1.D,Qual a idade média da frota do serviço de transporte por trem no município? (em anos)
+municipal,2026,2.3.1.E,2.3.1.E,Qual a idade média da frota do serviço de transporte por VLT no município? (em anos)
+municipal,2026,2.3.1.F,2.3.1.F,Qual a idade média da frota do serviço de transporte por monotrilho no município? (em anos)
+municipal,2026,2.3.1.G,2.3.1.G,Qual a idade média da frota do serviço de transporte por aeromóvel no município? (em anos)
+municipal,2026,2.3.1.H,2.3.1.H,Qual a idade média da frota do serviço de transporte por Táxi no município? (em anos)
+municipal,2026,2.4.1.A,2.4.1.A,Qual o número de terminais rodoviários com informações aos usuários sobre itinerários?
+municipal,2026,2.4.1.B,2.4.1.B,Qual o número de terminais rodoviários com informações aos usuários sobre horários?
+municipal,2026,2.4.1.C,2.4.1.C,Qual o número de terminais rodoviários com informações aos usuários sobre tarifas dos serviços?
+municipal,2026,2.4.1.D,2.4.1.D,Qual o número de terminais rodoviários com informações aos usuários sobre formas de integração com outros modos de transporte?
+municipal,2026,2.4.1.E,2.4.1.E,Qual o número de estações metroferroviárias com informações aos usuários sobre itinerários?
+municipal,2026,2.4.1.F,2.4.1.F,Qual o número de estações metroferroviárias com informações aos usuários sobre horários?
+municipal,2026,2.4.1.G,2.4.1.G,Qual o número de estações metroferroviárias com informações aos usuários sobre tarifas dos serviços?
+municipal,2026,2.4.1.H,2.4.1.H,Qual o número de estações metroferroviárias com informações aos usuários sobre formas de integração com outros modos de transporte?
+municipal,2026,2.4.2.A,2.4.2.A,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre itinerários?
+municipal,2026,2.4.2.B,2.4.2.B,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre horários?
+municipal,2026,2.4.2.C,2.4.2.C,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre tarifas?
+municipal,2026,2.4.2.D,2.4.2.D,Qual o número total de pontos de embarque e desembarque com informações aos usuários sobre modos de interação com outros modos de transporte?
+municipal,2026,2.5.1,2.5.1,O município realiza pesquisa de satisfação dos usuários?
+municipal,2026,2.5.1.A,2.5.1.A,Ano de realização da pesquisa:
+municipal,2026,2.5.1.B,2.5.1.B,Em qual website é possível obter a pesquisa de satisfação dos usuários em formato digital?
+municipal,2026,2.6.1.A,2.6.1.A,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por ônibus?
+municipal,2026,2.6.1.B,2.6.1.B,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por vans/microônibus?
+municipal,2026,2.6.1.C,2.6.1.C,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por metrô?
+municipal,2026,2.6.1.D,2.6.1.D,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por trem?
+municipal,2026,2.6.1.E,2.6.1.E,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por barco?
+municipal,2026,2.6.1.F,2.6.1.F,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por VLT?
+municipal,2026,2.6.1.G,2.6.1.G,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por monotrilho?
+municipal,2026,2.6.1.H,2.6.1.H,O município possui informações sobre pontualidade e regularidade na prestação do serviço de transporte por aeromóvel?
+municipal,2026,2.6.2.A,2.6.2.A,Qual a porcentagem de viagens por ônibus foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.B,2.6.2.B,Qual a porcentagem de viagens por vans/microônibus foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.C,2.6.2.C,Qual a porcentagem de viagens por metrô foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.D,2.6.2.D,Qual a porcentagem de viagens por trem foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.E,2.6.2.E,Qual a porcentagem de viagens por barco foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.F,2.6.2.F,Qual a porcentagem de viagens por VLT foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.G,2.6.2.G,Qual a porcentagem de viagens por Monotrilho foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.H,2.6.2.H,Qual a porcentagem de viagens por aeromóvel foram realizadas dentro do horário programado em 2025? (%)
+municipal,2026,2.6.2.I,2.6.2.I,Qual a porcentagem de viagens por ônibus não foram completadas em 2025? (%)
+municipal,2026,2.6.2.J,2.6.2.J,Qual o percentual de viagens por vans/microônibus não foram completadas em 2025? (%)
+municipal,2026,2.6.2.K,2.6.2.K,Qual o percentual de viagens por metrô não foram completadas em 2025? (%)
+municipal,2026,2.6.2.L,2.6.2.L,Qual o percentual de viagens por trem não foram completadas em 2025? (%)
+municipal,2026,2.6.2.M,2.6.2.M,Qual o percentual de viagens por barco não foram completadas em 2025? (%)
+municipal,2026,2.6.2.N,2.6.2.N,Qual o percentual de viagens por VLT não foram completadas em 2025? (%)
+municipal,2026,2.6.2.O,2.6.2.O,Qual o percentual de viagens por monotrilho não foram completadas em 2025? (%)
+municipal,2026,2.6.2.P,2.6.2.P,Qual o percentual de viagens por aeromóvel não foram completadas em 2025? (%)
+municipal,2026,3.1.1.A,3.1.1.A,Qual o valor da atual tarifa predominante do município?
+municipal,2026,3.1.1.B,3.1.1.B,Qual o valor anterior da tarifa predominante no município?
+municipal,2026,3.1.1.C,3.1.1.C,Qual a data do último reajuste?
+municipal,2026,3.1.2,3.1.2,Existe outros valores de tarifas na rede de transporte público coletivo no município?
+municipal,2026,3.1.2.A,3.1.2.A,Quais outros serviços e respectivos valores de tarifas públicas existem no município?
+municipal,2026,3.1.3,3.1.3,Quais as formas de integração tarifária existentes?
+municipal,2026,3.2.1.A,3.2.1.A,Qual o valor da receita tarifária anual por ônibus arrecadado em 2025?
+municipal,2026,3.2.1.B,3.2.1.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por ônibus em 2025?"
+municipal,2026,3.2.1.C,3.2.1.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por ônibus em 2025?"
+municipal,2026,3.2.1.D,3.2.1.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por ônibus em 2025?"
+municipal,2026,3.2.1.E,3.2.1.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por ônibus em 2025?"
+municipal,2026,3.2.2.A,3.2.2.A,Qual o valor da receita tarifária anual por vans/microônibus arrecadado em 2025?
+municipal,2026,3.2.2.B,3.2.2.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por vans/microônibus em 2025?"
+municipal,2026,3.2.2.C,3.2.2.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por vans/microônibus em 2025?"
+municipal,2026,3.2.2.D,3.2.2.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por vans/microônibus em 2025?"
+municipal,2026,3.2.2.E,3.2.2.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por vans/microônibus em 2025?"
+municipal,2026,3.2.3.A,3.2.3.A,Qual o valor da receita tarifária anual por metrô arrecadado em 2025?
+municipal,2026,3.2.3.B,3.2.3.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por metrô em 2025?"
+municipal,2026,3.2.3.C,3.2.3.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por metrô em 2025?"
+municipal,2026,3.2.3.D,3.2.3.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por metrô em 2025?"
+municipal,2026,3.2.3.E,3.2.3.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por metrô em 2025?"
+municipal,2026,3.2.4.A,3.2.4.A,Qual o valor da receita tarifária anual por trem arrecadado em 2025?
+municipal,2026,3.2.4.B,3.2.4.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por trem em 2025?"
+municipal,2026,3.2.4.C,3.2.4.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por trem em 2025?"
+municipal,2026,3.2.4.D,3.2.4.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por trem em 2025?"
+municipal,2026,3.2.4.E,3.2.4.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por trem em 2025?"
+municipal,2026,3.2.5.A,3.2.5.A,Qual o valor da receita tarifária anual por barco arrecadado em 2025?
+municipal,2026,3.2.5.B,3.2.5.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por barco em 2025?"
+municipal,2026,3.2.5.C,3.2.5.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por barco em 2025?"
+municipal,2026,3.2.5.D,3.2.5.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por barco em 2025?"
+municipal,2026,3.2.5.E,3.2.5.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por barco em 2025?"
+municipal,2026,3.2.6.A,3.2.6.A,Qual o valor da receita tarifária anual por VLT arrecado em 2025?
+municipal,2026,3.2.6.B,3.2.6.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por VLT em 2025?"
+municipal,2026,3.2.6.C,3.2.6.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por VLT em 2025?"
+municipal,2026,3.2.6.D,3.2.6.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por VLT em 2025?"
+municipal,2026,3.2.6.E,3.2.6.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por VLT em 2025?"
+municipal,2026,3.2.7.A,3.2.7.A,Qual o valor da receita tarifária anual por monotrilho arrecadado em 2025?
+municipal,2026,3.2.7.B,3.2.7.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por monotrilho em 2025?"
+municipal,2026,3.2.7.C,3.2.7.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por monotrilho em 2025?"
+municipal,2026,3.2.7.D,3.2.7.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por monotrilho em 2025?"
+municipal,2026,3.2.7.E,3.2.7.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por monotrilho em 2025?"
+municipal,2026,3.2.8.A,3.2.8.A,Qual o valor da receita tarifária anual por aeromóvel arrecado em 2025?
+municipal,2026,3.2.8.B,3.2.8.B,"Se houver receita extratarifária, qual o valor de subsídio associado a passageiros com benefícios tarifários utilizado no sistema por aeromóvel em 2025?"
+municipal,2026,3.2.8.C,3.2.8.C,"Se houver receita extratarifária, qual o valor arrecadado com subsídio direto ao sistema (subvenção) no sistema por aeromóvel em 2025?"
+municipal,2026,3.2.8.D,3.2.8.D,"Se houver receita extratarifária, qual o valor arrecadado com publicidade em abrigos, terminais e veículos no sistema por aeromóvel em 2025?"
+municipal,2026,3.2.8.E,3.2.8.E,"Se houver receita extratarifária, qual o valor arrecadado com outras fontes de recursos no sistema por aeromóvel em 2025?"
+municipal,2026,3.3.1.A,3.3.1.A,Quais os impostos incidentes no serviço de transporte por ônibus?
+municipal,2026,3.3.1.AA,3.3.1.AA,Qual o percentual de outros impostos incidentes no serviço de transporte por trem?
+municipal,2026,3.3.1.AB,3.3.1.AB,Quais outros impostos incidem no serviço de transporte por trem?
+municipal,2026,3.3.1.AC,3.3.1.AC,Quais os impostos incidentes no serviço de transporte por barco?
+municipal,2026,3.3.1.AD,3.3.1.AD,Qual o percentual de ISS incidente no serviço de transporte por barco?
+municipal,2026,3.3.1.AE,3.3.1.AE,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por barco?
+municipal,2026,3.3.1.AF,3.3.1.AF,Qual o percentual de PIS incidente no serviço de transporte por barco?
+municipal,2026,3.3.1.AG,3.3.1.AG,Qual o percentual de Cofins incidente no serviço de transporte por barco?
+municipal,2026,3.3.1.AH,3.3.1.AH,Qual o percentual de outros impostos incidentes no serviço de transporte por barco?
+municipal,2026,3.3.1.AI,3.3.1.AI,Quais outros impostos incidem no serviço de transporte por barco?
+municipal,2026,3.3.1.AJ,3.3.1.AJ,Quais os impostos incidentes no serviço de transporte por VLT?
+municipal,2026,3.3.1.AK,3.3.1.AK,Qual o percentual de ISS incidente no serviço de transporte por VLT?
+municipal,2026,3.3.1.AL,3.3.1.AL,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por VLT?
+municipal,2026,3.3.1.AM,3.3.1.AM,Qual o percentual de PIS incidente no serviço de transporte por VLT?
+municipal,2026,3.3.1.AN,3.3.1.AN,Qual o percentual de Cofins incidente no serviço de transporte por VLT?
+municipal,2026,3.3.1.AO,3.3.1.AO,Qual o percentual de outros impostos incidentes no serviço de transporte por VLT?
+municipal,2026,3.3.1.AP,3.3.1.AP,Quais outros impostos incidem no serviço de transporte por VLT?
+municipal,2026,3.3.1.AQ,3.3.1.AQ,Quais os impostos incidentes no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AR,3.3.1.AR,Qual o percentual de ISS incidente no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AS,3.3.1.AS,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AT,3.3.1.AT,Qual o percentual de PIS incidente no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AU,3.3.1.AU,Qual o percentual de Cofins incidente no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AV,3.3.1.AV,Qual o percentual de outros impostos incidentes no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AW,3.3.1.AW,Quais outros impostos incidem no serviço de transporte por monotrilho?
+municipal,2026,3.3.1.AX,3.3.1.AX,Quais os impostos incidentes no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.AY,3.3.1.AY,Qual o percentual de ISS incidente no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.AZ,3.3.1.AZ,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.B,3.3.1.B,Qual o percentual de ISS incidente no serviço de transporte por ônibus?
+municipal,2026,3.3.1.BA,3.3.1.BA,Qual o percentual de PIS incidente no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.BC,3.3.1.BC,Qual o percentual de Cofins incidente no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.BD,3.3.1.BD,Qual o percentual de outros impostos incidentes no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.BE,3.3.1.BE,Quais outros impostos incidem no serviço de transporte por aeromóvel?
+municipal,2026,3.3.1.C,3.3.1.C,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por ônibus?
+municipal,2026,3.3.1.D,3.3.1.D,Qual o percentual de PIS incidente no serviço de transporte por ônibus?
+municipal,2026,3.3.1.E,3.3.1.E,Qual o percentual de Cofins incidente no serviço de transporte por ônibus?
+municipal,2026,3.3.1.F,3.3.1.F,Qual o percentual de outros impostos incidentes no serviço de transporte por ônibus?
+municipal,2026,3.3.1.G,3.3.1.G,Quais outros impostos incidem no serviço de transporte por ônibus?
+municipal,2026,3.3.1.H,3.3.1.H,Quais os impostos incidentes no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.I,3.3.1.I,Qual o percentual de ISS incidente no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.J,3.3.1.J,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.K,3.3.1.K,Qual o percentual de PIS incidente no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.L,3.3.1.L,Qual o percentual de Cofins incidente no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.M,3.3.1.M,Qual o percentual de outros impostos incidentes no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.N,3.3.1.N,Quais outros impostos incidem no serviço de transporte por vans/microônibus?
+municipal,2026,3.3.1.O,3.3.1.O,Quais os impostos incidentes no serviço de transporte por metrô?
+municipal,2026,3.3.1.P,3.3.1.P,Qual o percentual de ISS incidente no serviço de transporte por metrô?
+municipal,2026,3.3.1.Q,3.3.1.Q,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por metrô?
+municipal,2026,3.3.1.R,3.3.1.R,Qual o percentual de PIS incidente no serviço de transporte por metrô?
+municipal,2026,3.3.1.S,3.3.1.S,Qual o percentual de Cofins incidente no serviço de transporte por metrô?
+municipal,2026,3.3.1.T,3.3.1.T,Qual o percentual de outros impostos incidentes no serviço de transporte por metrô?
+municipal,2026,3.3.1.U,3.3.1.U,Quais outros impostos incidem no serviço de transporte por metrô?
+municipal,2026,3.3.1.V,3.3.1.V,Quais os impostos incidentes no serviço de transporte por trem?
+municipal,2026,3.3.1.W,3.3.1.W,Qual o percentual de ISS incidente no serviço de transporte por trem?
+municipal,2026,3.3.1.X,3.3.1.X,Qual o percentual de Taxa de Gerenciamento incidente no serviço de transporte por trem?
+municipal,2026,3.3.1.Y,3.3.1.Y,Qual o percentual de PIS incidente no serviço de transporte por trem?
+municipal,2026,3.3.1.Z,3.3.1.Z,Qual o percentual de Cofins incidente no serviço de transporte por trem?
+municipal,2026,3.4.1.A,3.4.1.A,Qual o número de passageiros comuns transportados no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.AA,3.4.1.AA,Qual o número de estudantes transportados no serviço de transporte por barco em 2025?
+municipal,2026,3.4.1.AB,3.4.1.AB,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por barco em 2025?
+municipal,2026,3.4.1.AC,3.4.1.AC,Qual o número de gratuidades no serviço de transporte por barco em 2025?
+municipal,2026,3.4.1.AD,3.4.1.AD,Qual o número de passageiros equivalentes transportados no serviço de transporte por barco em 2025?
+municipal,2026,3.4.1.AE,3.4.1.AE,Qual o número de passageiros comuns transportados no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AF,3.4.1.AF,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AG,3.4.1.AG,Qual o número de estudantes transportados no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AH,3.4.1.AH,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AI,3.4.1.AI,Qual o número de gratuidades no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AJ,3.4.1.AJ,Qual o número de passageiros equivalentes transportados no serviço de transporte por VLT em 2025?
+municipal,2026,3.4.1.AK,3.4.1.AK,Qual o número de passageiros comuns transportados no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AL,3.4.1.AL,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AM,3.4.1.AM,Qual o número de estudantes transportados no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AN,3.4.1.AN,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AO,3.4.1.AO,Qual o número de gratuidades no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AP,3.4.1.AP,Qual o número de passageiros equivalentes transportados no serviço de transporte por monotrilho em 2025?
+municipal,2026,3.4.1.AQ,3.4.1.AQ,Qual o número de passageiros comuns transportados no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.AR,3.4.1.AR,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.AS,3.4.1.AS,Qual o número de estudantes transportados no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.AT,3.4.1.AT,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.AU,3.4.1.AU,Qual o número de gratuidades no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.AV,3.4.1.AV,Qual o número de passageiros equivalentes transportados no serviço de transporte por aeromóvel em 2025?
+municipal,2026,3.4.1.B,3.4.1.B,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.C,3.4.1.C,Qual o número de estudantes transportados no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.D,3.4.1.D,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.E,3.4.1.E,Qual o número de gratuidades no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.F,3.4.1.F,Qual o número de passageiros equivalentes transportados no serviço de transporte por ônibus em 2025?
+municipal,2026,3.4.1.G,3.4.1.G,Qual o número de passageiros comuns transportados no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.H,3.4.1.H,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.I,3.4.1.I,Qual o número de estudantes transportados no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.J,3.4.1.J,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.K,3.4.1.K,Qual o número de gratuidades no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.L,3.4.1.L,Qual o número de passageiros equivalentes transportados no serviço de transporte por vans/microônibus em 2025?
+municipal,2026,3.4.1.M,3.4.1.M,Qual o número de passageiros comuns transportados no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.N,3.4.1.N,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.O,3.4.1.O,Qual o número de estudantes transportados no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.P,3.4.1.P,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.Q,3.4.1.Q,Qual o número de gratuidades no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.R,3.4.1.R,Qual o número de passageiros equivalentes transportados no serviço de transporte por metrô em 2025?
+municipal,2026,3.4.1.S,3.4.1.S,Qual o número de passageiros comuns transportados no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.T,3.4.1.T,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.U,3.4.1.U,Qual o número de estudantes transportados no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.V,3.4.1.V,Qual o número de passageiros transportados com integração tarifária no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.W,3.4.1.W,Qual o número de gratuidades no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.X,3.4.1.X,Qual o número de passageiros equivalentes transportados no serviço de transporte por trem em 2025?
+municipal,2026,3.4.1.Y,3.4.1.Y,Qual o número de passageiros comuns transportados no serviço de transporte por barco em 2025?
+municipal,2026,3.4.1.Z,3.4.1.Z,Qual o número de passageiros transportados com Vale Transporte no serviço de transporte por barco em 2025?
+municipal,2026,3.5.1,3.5.1,Quais categorias de passageiros recebem desconto no valor da tarifa do serviço de transporte público no município?
+municipal,2026,3.5.1.A,3.5.1.A,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros de baixa renda?
+municipal,2026,3.5.1.AA,3.5.1.AA,Qual a renda máxima das pessoas de baixa renda que recebem desconto na no valor da tarifa? (Em salários mínimos)
+municipal,2026,3.5.1.B,3.5.1.B,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com idade de 60 a 64 anos?
+municipal,2026,3.5.1.C,3.5.1.C,Qual o percentual de desconto sobre a valor da tarifa pago pelos passageiros com deficiência e mobilidade reduzida?
+municipal,2026,3.5.1.D,3.5.1.D,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede pública de ensino?
+municipal,2026,3.5.1.E,3.5.1.E,Qual o percentual de desconto sobre a valor da tarifa pago pelos estudantes da rede privada de ensino?
+municipal,2026,3.6.1.A,3.6.1.A,Qual o valor da Bandeirada do transporte público individual (táxi) no município?
+municipal,2026,3.6.1.B,3.6.1.B,"Qual o valor da Bandeirada 1 do serviço de táxi, por quilômetro rodado, se houver?"
+municipal,2026,3.6.1.C,3.6.1.C,"Qual o valor da Bandeirada 2 do serviço de táxi, por quilômetro rodado, se houver?"
+municipal,2026,3.6.1.D,3.6.1.D,"Qual o valor do serviço de táxi, por hora parada, se houver?"
+municipal,2026,3.6.1.E,3.6.1.E,"Qual o valor da tarifa aeroporto do serviço de táxi, se houver?"
+municipal,2026,3.6.1.F,3.6.1.F,"Qual o valor da Bandeirada do serviço de mototáxi no município, se houver?"
+municipal,2026,3.6.1.G,3.6.1.G,"Qual o valor da Bandeirada 1 do serviço de mototáxi, por quilômetro rodado, se houver?"
+municipal,2026,3.6.1.H,3.6.1.H,"Qual o valor da Bandeirada 2 do serviço de mototáxi, por quilômetro rodado, se houver?"
+municipal,2026,3.6.1.I,3.6.1.I,"Qual o valor do serviço de mototáxi, por hora parada, se houver?"
+municipal,2026,3.6.1.J,3.6.1.J,"Qual o valor da tarifa aeroporto do serviço de mototáxi, se houver?"
+municipal,2026,3.7.1,3.7.1,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de ônibus no município?
+municipal,2026,3.7.1.A,3.7.1.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.B,3.7.1.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.C,3.7.1.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.D,3.7.1.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.E,3.7.1.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.F,3.7.1.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por ônibus?"
+municipal,2026,3.7.1.G,3.7.1.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.H,3.7.1.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.I,3.7.1.I,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por ônibus?
+municipal,2026,3.7.1.J,3.7.1.J,"Se houver outros insumos, especificar:"
+municipal,2026,3.7.2,3.7.2,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de vans/microônibus no município?
+municipal,2026,3.7.2.A,3.7.2.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.B,3.7.2.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.C,3.7.2.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.D,3.7.2.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.E,3.7.2.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por microônibus?
+municipal,2026,3.7.2.F,3.7.2.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por van/microônibus?"
+municipal,2026,3.7.2.G,3.7.2.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.H,3.7.2.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.2.I,3.7.2.I,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por vans/microônibus?
+municipal,2026,3.7.3,3.7.3,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de metrô no município?
+municipal,2026,3.7.3.A,3.7.3.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.B,3.7.3.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.C,3.7.3.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.D,3.7.3.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.E,3.7.3.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.F,3.7.3.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por metrô?"
+municipal,2026,3.7.3.G,3.7.3.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.H,3.7.3.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.I,3.7.3.I,Energia diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.J,3.7.3.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.3.K,3.7.3.K,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por metrô?
+municipal,2026,3.7.4,3.7.4,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de trem no município?
+municipal,2026,3.7.4.A,3.7.4.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.B,3.7.4.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.C,3.7.4.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.D,3.7.4.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.E,3.7.4.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.F,3.7.4.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por trem?"
+municipal,2026,3.7.4.G,3.7.4.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.H,3.7.4.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.I,3.7.4.I,Energia diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.J,3.7.4.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.4.K,3.7.4.K,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por trem?
+municipal,2026,3.7.5,3.7.5,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de barco no município?
+municipal,2026,3.7.5.A,3.7.5.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.B,3.7.5.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.C,3.7.5.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.D,3.7.5.D,Depreciação de equipamentos diz respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.E,3.7.5.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.F,3.7.5.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por barco?"
+municipal,2026,3.7.5.G,3.7.5.G,Impostos dizem respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.H,3.7.5.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.5.I,3.7.5.I,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por barco?
+municipal,2026,3.7.6,3.7.6,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de VLT no município?
+municipal,2026,3.7.6.A,3.7.6.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.B,3.7.6.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.C,3.7.6.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.D,3.7.6.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.E,3.7.6.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.F,3.7.6.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por VLT?"
+municipal,2026,3.7.6.G,3.7.6.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.H,3.7.6.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.I,3.7.6.I,Energia diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.J,3.7.6.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.6.K,3.7.6.K,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por VLT?
+municipal,2026,3.7.7,3.7.7,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de monotrilho no município?
+municipal,2026,3.7.7.A,3.7.7.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.B,3.7.7.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.C,3.7.7.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.D,3.7.7.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.E,3.7.7.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.F,3.7.7.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?"
+municipal,2026,3.7.7.G,3.7.7.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.H,3.7.7.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.I,3.7.7.I,Energia diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.J,3.7.7.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.7.K,3.7.7.K,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por monotrilho?
+municipal,2026,3.7.8,3.7.8,É utilizada planilha de custos para reajuste ou revisão da tarifa do serviço de aeromóvel no município?
+municipal,2026,3.7.8.A,3.7.8.A,Mão de obra 1 (operação) diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.B,3.7.8.B,Mão de obra 2 (administrativo) diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.C,3.7.8.C,Combustíveis dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.D,3.7.8.D,Depreciação de veículos diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.E,3.7.8.E,Remuneração pela prestação do serviço diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.F,3.7.8.F,"Peças, acessórios e material de rodagem dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?"
+municipal,2026,3.7.8.G,3.7.8.G,Impostos e tributação dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.H,3.7.8.H,Despesas administrativas dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.I,3.7.8.I,Energia diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.J,3.7.8.J,IPTU diz respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,3.7.8.K,3.7.8.K,Outros insumos dizem respeito a qual percentual da planilha de custos do serviço por aeromóvel?
+municipal,2026,4.1.1,4.1.1,O município possui Plano Diretor?
+municipal,2026,4.1.1.A,4.1.1.A,Qual o ano de elaboração ou última atualização do Plano Diretor?
+municipal,2026,4.1.2,4.1.2,O município possui Lei de Zoneamento ou Uso e Ocupação do Solo?
+municipal,2026,4.3.1,4.3.1,O município está contemplado em algum Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana?
+municipal,2026,4.3.1.A,4.3.1.A,O Plano de Mobilidade Urbana diz respeito a qual Região Metropolitana ou Aglomeração Urbana?
+municipal,2026,4.3.1.B,4.3.1.B,Em qual website é possível obter o Plano de Mobilidade Urbana de Região Metropolitana ou Aglomeração Urbana em formato digital?
+municipal,2026,4.3.2,4.3.2,O município está contemplado em algum Plano de Desenvolvimento Urbano Integrado (PDUI) (Lei Federal nº 13.089/2015 - Estatuto da Metrópole)?
+municipal,2026,4.3.2.A,4.3.2.A,O PDUI diz respeito a qual Região Metropolitana ou Aglomeração Urbana?
+municipal,2026,4.3.2.B,4.3.2.B,Em qual website é possível obter o Plano de Desenvolvimento Urbano Integrado (PDUI) em formato digital?
+municipal,2026,4.4.1,4.4.1,O município possui Plano de Mobilidade Urbana?
+municipal,2026,4.4.2,4.4.2,Qual o ano de elaboração ou última atualização do Plano de Mobilidade Urbana?
+municipal,2026,4.4.3,4.4.3,Qual o instrumento normativo que aprovou o Plano de Mobilidade Urbana?
+municipal,2026,4.4.3.A,4.4.3.A,Qual o número da Lei ou instrumento normativo que aprovou o plano?
+municipal,2026,4.4.3.B,4.4.3.B,Em qual website é possível obter o Plano de Mobilidade Urbana em formato digital?
+municipal,2026,4.5.1,4.5.1,Quais metodologias de participação social foram utilizadas durante a elaboração do Plano de Mobilidade Urbana?
+municipal,2026,4.5.2,4.5.2,Quais itens a seguir foram considerados na metodologia de elaboração do Plano de Mobilidade Urbana?
+municipal,2026,4.6.1,4.6.1,Quais temas a seguir estão contemplados no Plano de Mobilidade Urbana?
+municipal,2026,4.7.1,4.7.1,O município já realizou pesquisa Origem-Destino (O/D)?
+municipal,2026,4.7.1.A,4.7.1.A,Qual o ano de realização da última pesquisa O/D?
+municipal,2026,4.7.1.B,4.7.1.B,Qual a periodicidade de realização da pesquisa?
+municipal,2026,4.7.1.C,4.7.1.C,Em qual website é possível obter a Pesquisa Origem-Destino em formato digital?
+municipal,2026,4.7.1.D,4.7.1.D,"Considerando todos os modos de transporte e as pesquisas O/D realizadas, qual o número médio de viagens diárias no município?"
+municipal,2026,4.7.1.E,4.7.1.E,"Considerando todos os modos de transporte e as pesquisas O/D realizadas, qual a distância média das viagens no município? (Em km)"
+municipal,2026,4.7.1.F,4.7.1.F,"Considerando todos os modos de transportes e as pesquisas O/D realizadas, qual o tempo médio das viagens realizadas no município? (Em minutos)"
+municipal,2026,4.7.1.G,4.7.1.G,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas a pé? (Em %)"
+municipal,2026,4.7.1.H,4.7.1.H,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas de bicicleta? (Em %)"
+municipal,2026,4.7.1.I,4.7.1.I,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte coletivo? (Em %)"
+municipal,2026,4.7.1.J,4.7.1.J,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (automóvel)? (Em %)"
+municipal,2026,4.7.1.K,4.7.1.K,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual motorizado (moto)? (Em %)"
+municipal,2026,4.7.1.L,4.7.1.L,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por transporte individual remunerado (táxi, aplicativos)? (Em %)"
+municipal,2026,4.7.1.M,4.7.1.M,"Considerando a divisão modal identificada pelas pesquisas O/D realizadas, qual o percentual de viagens realizadas por outros modos de transporte? (Em %)"
+municipal,2026,4.8.1,4.8.1,"Quais ações, medidas, programas ou instrumentos destinados à promoção de acessibilidade o município possui?"
+municipal,2026,4.8.2,4.8.2,A questão da acessibilidade é abordada em quais leis municipais?
+municipal,2026,5.1.1,5.1.1,Em seu município existe a cobrança de tributos sobre modos e serviços de transporte urbano pela utilização da infraestrutura em perímetro urbano (taxação de congestionamento)?
+municipal,2026,5.1.1.A,5.1.1.A,Qual a arrecadação anual no ano de 2025 do município com a cobrança de tributos pela utilização da infraestrutura em perímetro urbano (taxação de congestionamento)?
+municipal,2026,5.2.1,5.2.1,Qual o número de vagas de estacionamento regulamentados existentes no município?
+municipal,2026,5.2.1.A,5.2.1.A,Qual o percentual de vagas de estacionamento reservadas para pessoas com deficiência e mobilidade reduzida? (Em %)
+municipal,2026,5.2.1.B,5.2.1.B,Qual o percentual de vagas de estacionamento reservadas para idosos? (Em %)
+municipal,2026,5.2.1.C,5.2.1.C,Qual o percentual de vagas de estacionamento reservadas para gestantes? (Em %)
+municipal,2026,5.2.2,5.2.2,"Existe controle ou cobrança para estacionamento em vagas públicas, como por exemplo, Área Azul?"
+municipal,2026,5.2.2.A,5.2.2.A,Qual o valor arrecadado com a cobrança de estacionamento no ano de 2025?
+municipal,2026,5.3.1,5.3.1,Marque os instrumentos de gestão presentes em seu município:
+municipal,2026,7.1.1,7.1.1,"Na composição da frota de transporte público coletivo, existem ônibus que utilizam tecnologia veicular ou fontes de energia alternativa?"
+municipal,2026,7.1.1.B,7.1.1.B,Qual o percentual da frota que utiliza eletricidade como fonte de energia?
+municipal,2026,7.1.1.C,7.1.1.C,Qual o percentual da frota que utiliza gás natural como fonte de energia?
+municipal,2026,7.1.1.D,7.1.1.D,Qual o percentual da frota que utiliza hidrogênio como fonte de energia?
+municipal,2026,7.1.1.E,7.1.1.E,Qual o percentual da frota que utiliza biodiesel como fonte de energia?
+municipal,2026,7.1.1.F,7.1.1.F,Qual o percentual da frota que utiliza energia híbrida (eletricidade + diesel)?
+municipal,2026,7.1.1A,7.1.1A,Qual o percentual da frota que utiliza etanol como fonte de energia?
+municipal,2026,7.2.1,7.2.1,"Na composição da frota de táxi, existem veículos que utilizam combustíveis menos poluentes ou fontes de energia alternativa?"
+municipal,2026,7.2.1.A,7.2.1.A,Qual o percentual da frota de táxi que utiliza etanol como fonte de energia?
+municipal,2026,7.2.1.B,7.2.1.B,Qual o percentual da frota de táxi que utiliza eletricidade como fonte de energia?
+municipal,2026,7.2.1.C,7.2.1.C,Qual o percentual da frota de táxi que utiliza gás natural como fonte de energia?
+municipal,2026,7.2.1.D,7.2.1.D,Qual o percentual da frota de táxi que utiliza energia híbrida (eletricidade + gasolina)?
+municipal,2026,7.3.1,7.3.1,Em qual tipo de veículo é realizada inspeção veicular ambiental no município?
+municipal,2026,8.1.1,8.1.1,O município possui conselho municipal de transporte e/ou mobilidade urbana?
+municipal,2026,8.1.2,8.1.2,A mobilidade urbana é discutida no Conselho da Cidade ou outro órgão colegiado similar com representação da sociedade civil?
+municipal,2026,8.2.1,8.2.1,Qual o caráter do conselho que trata sobre mobilidade urbana no município?
+municipal,2026,8.2.2.A,8.2.2.A,Qual o percentual de membros do Poder Executivo na composição do Conselho de mobilidade urbana ou similar? (Em %)
+municipal,2026,8.2.2.B,8.2.2.B,Qual o percentual de membro do Poder Legislativo na composição do Conselho de mobilidade urbana ou similar? (Em %)
+municipal,2026,8.2.2.C,8.2.2.C,Qual o percentual de membros da Sociedade Civil na composição do Conselho de mobilidade urbana ou similar? (Em %)
+municipal,2026,8.2.2.D,8.2.2.D,Qual o percentual de membros dos operadores dos serviços na composição do Conselho de mobilidade urbana ou similar? (Em %)
+municipal,2026,8.2.2.E,8.2.2.E,Qual o percentual de outros membros na composição dos Conselho de mobilidade urbana ou similar? (Em %)
+municipal,2026,8.2.3,8.2.3,Qual o mês e ano da última reunião do Conselho de mobilidade urbana ou similar?
+municipal,2026,8.3.1,8.3.1,O município possui ouvidoria ou estrutura similar para recebimento de reclamações e sugestões na instituição responsável pela gestão da mobilidade urbana?
+municipal,2026,8.4.1,8.4.1,Qual o tipo de consulta popular com relação ao planejamento da mobilidade e definição de projetos prioritários houve no município no ano de 2025?
+municipal,2026,9.1.1,9.1.1,Marque as medidas de moderação de tráfego presentes em seu município:
+municipal,2026,9.1.2,9.1.2,Qual o número de agentes de trânsito em exercício no município em 2025?
+municipal,2026,9.1.3,9.1.3,Qual o número de equipamentos de fiscalização de velocidade existentes?
+municipal,2026,9.1.4,9.1.4,Qual foi a arrecadação anual em 2025 com multas de trânsito?

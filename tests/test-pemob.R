@@ -1,6 +1,7 @@
 source(here::here("tests", "test-pemob-historical-joins.R"))
 source(here::here("tests", "test-pemob-source-contracts.R"))
 source(here::here("tests", "test-pemob-2025.R"))
+source(here::here("tests", "test-pemob-2026.R"))
 source(here::here("tests", "test-pemob-parsing.R"))
 source(here::here("tests", "test-pemob-scaling.R"))
 source(here::here("tests", "test-pemob-metro-identifiers.R"))

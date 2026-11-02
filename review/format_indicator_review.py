@@ -31,28 +31,28 @@ EXTRA_LABELS = {
     "coverage_places": "Regiões com resposta",
     "coverage_places_positive": "Regiões com valor positivo",
     "panel_places": "Regiões com 4+ edições",
-    "panel_places_full": "Regiões em todas de 2021 a 2025",
+    "panel_places_full": "Regiões em todas de 2021 a 2026",
     "site_presence": "Hoje no site",
     "level": "Questionário",
-    **{f"cities_{year}": f"Municípios {year}" for year in range(2019, 2026)},
-    **{f"places_{year}": f"Regiões {year}" for year in (2019, 2021, 2022, 2023, 2024, 2025)},
+    **{f"cities_{year}": f"Municípios {year}" for year in range(2019, 2027)},
+    **{f"places_{year}": f"Regiões {year}" for year in (2019, 2021, 2022, 2023, 2024, 2025, 2026)},
 }
 EXTRA_DEFINITIONS = {
     "coverage_places": "Regiões metropolitanas com resposta válida em ao menos uma edição do questionário metropolitano.",
     "coverage_places_positive": "Regiões metropolitanas com valor numérico positivo.",
-    "panel_places": "Regiões metropolitanas com resposta válida em quatro ou mais das seis edições disponíveis (2019 e 2021 a 2025).",
-    "panel_places_full": "Regiões metropolitanas com resposta válida em todas as edições de 2021 a 2025.",
+    "panel_places": "Regiões metropolitanas com resposta válida em quatro ou mais edições disponíveis (2019 e 2021 a 2026).",
+    "panel_places_full": "Regiões metropolitanas com resposta válida em todas as edições de 2021 a 2026.",
     "site_presence": "Presença da pergunta no snapshot de 2019 a 2024 do site. Tabela e dashboard: aparece nas duas páginas. Menu sem dados: está no menu da tabela, mas sem valores. Não: fora do site. O site ainda não mostra perguntas metropolitanas.",
     "level": "Questionário municipal ou metropolitano; o código da pergunta só é único dentro de cada questionário.",
-    **{f"cities_{year}": f"Municípios com resposta válida em {year}." for year in range(2019, 2026)},
-    **{f"places_{year}": f"Regiões metropolitanas com resposta válida em {year}." for year in (2019, 2021, 2022, 2023, 2024, 2025)},
+    **{f"cities_{year}": f"Municípios com resposta válida em {year}." for year in range(2019, 2027)},
+    **{f"places_{year}": f"Regiões metropolitanas com resposta válida em {year}." for year in (2019, 2021, 2022, 2023, 2024, 2025, 2026)},
 }
 INTEGERS = {
     "coverage_cities", "coverage_cities_positive", "coverage_places",
     "coverage_places_positive", "n_years", "n_answers", "question_wording_versions",
     "panel_cities", "panel_cities_full", "panel_places", "panel_places_full",
-} | {f"cities_{year}" for year in range(2019, 2026)} | {
-    f"places_{year}" for year in (2019, 2021, 2022, 2023, 2024, 2025)
+} | {f"cities_{year}" for year in range(2019, 2027)} | {
+    f"places_{year}" for year in (2019, 2021, 2022, 2023, 2024, 2025, 2026)
 }
 SHARES = {
     "response_rate_mean", "response_rate_latest", "zero_share",
@@ -206,7 +206,7 @@ def write_participation(sheet, rows, bounds, unit):
     sheet.append(["Série", f"{unit} participantes"])
     second_header = sheet.max_row
     sheet.append(["4 ou mais edições", int(bounds["participated_4_plus"])])
-    sheet.append(["Todas de 2021 a 2025", int(bounds["participated_2021_2025"])])
+    sheet.append(["Todas de 2021 a 2026", int(bounds["participated_2021_2026"])])
     styled_header(sheet[1])
     styled_header(sheet[second_header])
     sheet.column_dimensions["A"].width = 27

@@ -1,6 +1,7 @@
 # Prepare local long-form files for the Phase 4 Dataverse release.
 
 source(here::here("R", "pemob_treatment.R"))
+source(here::here("R", "pemob_2026.R"))
 source(here::here("R", "pemob_question_registry.R"))
 
 
@@ -346,6 +347,26 @@ build_pemob_codebook <- function() {
     }
     outputs[[length(outputs) + 1L]] <- current |>
       dplyr::select(level, year, code_variable, source_code, question_text)
+
+    raw_2026 <- here::here(
+      "data-raw",
+      paste0(
+        "pemob_",
+        if (level == "municipal") "municipal" else "metropolitana",
+        "_2026.xlsx"
+      )
+    )
+    current_2026 <- read_pemob_2026_header(raw_2026, level)
+    current_2026$level <- level
+    current_2026$year <- 2026
+    current_2026$code_variable <- current_2026$source_code
+    if (level == "municipal") {
+      current_2026$code_variable[
+        current_2026$source_code == "12.1.1"
+      ] <- "12.2.1"
+    }
+    outputs[[length(outputs) + 1L]] <- current_2026 |>
+      dplyr::select(level, year, code_variable, source_code, question_text)
   }
   result <- dplyr::bind_rows(outputs) |>
     dplyr::distinct() |>
@@ -686,10 +707,10 @@ build_pemob_dataverse <- function(
 ) {
   .check_pemob_draft_target(output_dir)
   municipal <- read_pemob_history(
-    here::here("data", "pemob_harmonizada_2025.csv")
+    here::here("data", "pemob_harmonizada_2026.csv")
   )
   metro <- read_pemob_history(
-    here::here("data", "pemob_metro_harmonizada_2025.csv")
+    here::here("data", "pemob_metro_harmonizada_2026.csv")
   )
   treated <- read_pemob_treated_export(
     here::here("data", "pemob_target_treated.csv")

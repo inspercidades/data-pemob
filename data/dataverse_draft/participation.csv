@@ -5,246 +5,322 @@ metropolitan,AL::Região Metropolitana de Maceió,Região Metropolitana de Macei
 metropolitan,AL::Região Metropolitana de Maceió,Região Metropolitana de Maceió,AL,2023,TRUE
 metropolitan,AL::Região Metropolitana de Maceió,Região Metropolitana de Maceió,AL,2024,TRUE
 metropolitan,AL::Região Metropolitana de Maceió,Região Metropolitana de Maceió,AL,2025,TRUE
+metropolitan,AL::Região Metropolitana de Maceió,Região Metropolitana de Maceió,AL,2026,TRUE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2019,FALSE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2021,FALSE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2022,TRUE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2023,FALSE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2024,FALSE
 metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2025,FALSE
+metropolitan,AL::Região Metropolitana do Agreste,Região Metropolitana do Agreste,AL,2026,FALSE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2019,FALSE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2021,FALSE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2022,FALSE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2023,TRUE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2024,FALSE
 metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2025,TRUE
+metropolitan,AM::Região Metropolitana de Manaus,Região Metropolitana de Manaus,AM,2026,TRUE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2019,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2021,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2022,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2023,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2024,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2025,FALSE
+metropolitan,AP::Região Metropolitana de Macapá,Região Metropolitana de Macapá,AP,2026,TRUE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2019,FALSE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2021,TRUE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2022,FALSE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2023,TRUE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2024,TRUE
 metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2025,TRUE
+metropolitan,BA::Região Metropolitana de Salvador,Região Metropolitana de Salvador,BA,2026,TRUE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2019,TRUE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2021,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2022,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2023,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2024,FALSE
 metropolitan,CE::RM Cariri,RM Cariri,CE,2025,FALSE
+metropolitan,CE::RM Cariri,RM Cariri,CE,2026,TRUE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2019,TRUE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2021,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2022,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2023,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2024,FALSE
 metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2025,FALSE
+metropolitan,CE::RM Fortaleza,RM Fortaleza,CE,2026,TRUE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2019,TRUE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2021,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2022,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2023,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2024,FALSE
 metropolitan,CE::RM Sobral,RM Sobral,CE,2025,FALSE
+metropolitan,CE::RM Sobral,RM Sobral,CE,2026,TRUE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2019,FALSE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2021,TRUE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2022,FALSE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2023,FALSE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2024,FALSE
 metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2025,FALSE
+metropolitan,DF::Região Integrada de Desenvolvimento do Distrito Federal e Entorno,Região Integrada de Desenvolvimento do Distrito Federal e Entorno,DF,2026,FALSE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2019,FALSE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2021,TRUE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2022,TRUE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2023,TRUE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2024,TRUE
 metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2025,TRUE
+metropolitan,ES::Região Metropolitana da Grande Vitória,Região Metropolitana da Grande Vitória,ES,2026,TRUE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2019,TRUE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2021,TRUE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2022,TRUE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2023,FALSE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2024,TRUE
 metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2025,TRUE
+metropolitan,GO::Região Metropolitana de Goiânia,Região Metropolitana de Goiânia,GO,2026,TRUE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2019,TRUE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2021,FALSE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2022,FALSE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2023,TRUE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2024,TRUE
 metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2025,TRUE
+metropolitan,MG::Região Metropolitana de Belo Horizonte,Região Metropolitana de Belo Horizonte,MG,2026,TRUE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2019,TRUE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2021,TRUE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2022,FALSE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2023,FALSE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2024,TRUE
 metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2025,FALSE
+metropolitan,PB::Região Metropolitana de João Pessoa,Região Metropolitana de João Pessoa,PB,2026,FALSE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2019,TRUE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2021,TRUE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2022,FALSE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2023,FALSE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2024,TRUE
 metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2025,TRUE
+metropolitan,PE::Região Metropolitana de Recife,Região Metropolitana de Recife,PE,2026,TRUE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2019,TRUE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2021,FALSE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2022,FALSE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2023,FALSE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2024,FALSE
 metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,TRUE
+metropolitan,PI::Região Integrada de Desenvolvimento da Grande Teresina,Região Integrada de Desenvolvimento da Grande Teresina,PI,2026,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2019,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2021,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2022,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2023,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2024,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2025,FALSE
+metropolitan,PR::Região Metropolitana de Apucarana,Região Metropolitana de Apucarana,PR,2026,TRUE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2019,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2021,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2022,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2023,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2024,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2025,FALSE
+metropolitan,PR::Região Metropolitana de Campo Mourão,Região Metropolitana de Campo Mourão,PR,2026,TRUE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2019,FALSE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2021,FALSE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2022,FALSE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2023,FALSE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2024,TRUE
 metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2025,FALSE
+metropolitan,PR::Região Metropolitana de Cascavel,Região Metropolitana de Cascavel,PR,2026,TRUE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2019,TRUE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2021,TRUE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2022,FALSE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2023,FALSE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2024,TRUE
 metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2025,TRUE
+metropolitan,PR::Região Metropolitana de Curitiba,Região Metropolitana de Curitiba,PR,2026,TRUE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2019,FALSE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2021,FALSE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2022,FALSE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2023,FALSE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2024,TRUE
 metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2025,TRUE
+metropolitan,PR::Região Metropolitana de Londrina,Região Metropolitana de Londrina,PR,2026,TRUE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2019,FALSE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2021,FALSE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2022,FALSE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2023,FALSE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2024,TRUE
 metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2025,TRUE
+metropolitan,PR::Região Metropolitana de Maringá,Região Metropolitana de Maringá,PR,2026,TRUE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2019,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2021,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2022,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2023,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2024,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2025,FALSE
+metropolitan,PR::Região Metropolitana de Toledo,Região Metropolitana de Toledo,PR,2026,TRUE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2019,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2021,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2022,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2023,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2024,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2025,FALSE
+metropolitan,PR::Região Metropolitana de Umuarama,Região Metropolitana de Umuarama,PR,2026,TRUE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2019,TRUE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2021,TRUE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2022,FALSE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2023,TRUE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2024,TRUE
 metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2025,TRUE
+metropolitan,RJ::Região Metropolitana do Rio de Janeiro,Região Metropolitana do Rio de Janeiro,RJ,2026,TRUE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2019,TRUE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2021,FALSE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2022,FALSE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2023,TRUE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2024,TRUE
 metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2025,TRUE
+metropolitan,RN::Região Metropolitana de Natal,Região Metropolitana de Natal,RN,2026,TRUE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2019,TRUE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2021,FALSE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2022,FALSE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2023,FALSE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2024,FALSE
 metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2025,FALSE
+metropolitan,RS::AU Litoral Norte,AU Litoral Norte,RS,2026,FALSE
 metropolitan,RS::AU Sul,AU Sul,RS,2019,TRUE
 metropolitan,RS::AU Sul,AU Sul,RS,2021,FALSE
 metropolitan,RS::AU Sul,AU Sul,RS,2022,FALSE
 metropolitan,RS::AU Sul,AU Sul,RS,2023,FALSE
 metropolitan,RS::AU Sul,AU Sul,RS,2024,FALSE
 metropolitan,RS::AU Sul,AU Sul,RS,2025,FALSE
+metropolitan,RS::AU Sul,AU Sul,RS,2026,FALSE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2019,TRUE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2021,FALSE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2022,FALSE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2023,FALSE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2024,FALSE
 metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2025,FALSE
+metropolitan,RS::RM Serra Gaúcha,RM Serra Gaúcha,RS,2026,FALSE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2019,TRUE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2021,FALSE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2022,TRUE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2023,TRUE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2024,FALSE
 metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2025,FALSE
+metropolitan,RS::Região Metropolitana de Porto Alegre,Região Metropolitana de Porto Alegre,RS,2026,FALSE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana Carbonífera,Região Metropolitana Carbonífera,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana da Foz do Rio Itajaí,Região Metropolitana da Foz do Rio Itajaí,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana de Chapecó,Região Metropolitana de Chapecó,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana de Florianópolis,Região Metropolitana de Florianópolis,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana de Lages,Região Metropolitana de Lages,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana de Tubarão,Região Metropolitana de Tubarão,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana do Alto Vale do Itajaí,Região Metropolitana do Alto Vale do Itajaí,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana do Contestado,Região Metropolitana do Contestado,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana do Extremo Oeste,Região Metropolitana do Extremo Oeste,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana do Norte/Nordeste Catarinense,Região Metropolitana do Norte/Nordeste Catarinense,SC,2026,TRUE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2019,FALSE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2021,FALSE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2022,FALSE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2023,FALSE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2024,TRUE
 metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2025,TRUE
+metropolitan,SC::Região Metropolitana do Vale do Itajaí,Região Metropolitana do Vale do Itajaí,SC,2026,TRUE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2019,TRUE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2021,FALSE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2022,FALSE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2023,FALSE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2024,FALSE
 metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2025,FALSE
+metropolitan,SP::AU Jundiaí,AU Jundiaí,SP,2026,FALSE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2019,TRUE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2021,TRUE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2022,FALSE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2023,TRUE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2024,TRUE
 metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2025,TRUE
+metropolitan,SP::Região Metropolitana da Baixada Santista,Região Metropolitana da Baixada Santista,SP,2026,TRUE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2019,TRUE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2021,TRUE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2022,FALSE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2023,TRUE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2024,TRUE
 metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2025,TRUE
+metropolitan,SP::Região Metropolitana de Campinas,Região Metropolitana de Campinas,SP,2026,TRUE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2019,TRUE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2021,TRUE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2022,FALSE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2023,TRUE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2024,TRUE
 metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2025,TRUE
+metropolitan,SP::Região Metropolitana de Sorocaba,Região Metropolitana de Sorocaba,SP,2026,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2019,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2021,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2022,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2023,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2024,TRUE
 metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2025,TRUE
+metropolitan,SP::Região Metropolitana de São Paulo,Região Metropolitana de São Paulo,SP,2026,TRUE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2019,TRUE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2021,TRUE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2022,FALSE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2023,TRUE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2024,TRUE
 metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,TRUE
+metropolitan,SP::Região Metropolitana do Vale do Paraíba e Litoral Norte,Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2026,TRUE
 municipal,1100205,Porto Velho,RO,2019,TRUE
 municipal,1100205,Porto Velho,RO,2020,FALSE
 municipal,1100205,Porto Velho,RO,2021,TRUE
@@ -252,6 +328,7 @@ municipal,1100205,Porto Velho,RO,2022,TRUE
 municipal,1100205,Porto Velho,RO,2023,TRUE
 municipal,1100205,Porto Velho,RO,2024,FALSE
 municipal,1100205,Porto Velho,RO,2025,FALSE
+municipal,1100205,Porto Velho,RO,2026,TRUE
 municipal,1200401,Rio Branco,AC,2019,FALSE
 municipal,1200401,Rio Branco,AC,2020,FALSE
 municipal,1200401,Rio Branco,AC,2021,TRUE
@@ -259,6 +336,7 @@ municipal,1200401,Rio Branco,AC,2022,FALSE
 municipal,1200401,Rio Branco,AC,2023,TRUE
 municipal,1200401,Rio Branco,AC,2024,TRUE
 municipal,1200401,Rio Branco,AC,2025,TRUE
+municipal,1200401,Rio Branco,AC,2026,TRUE
 municipal,1302603,Manaus,AM,2019,TRUE
 municipal,1302603,Manaus,AM,2020,TRUE
 municipal,1302603,Manaus,AM,2021,FALSE
@@ -266,6 +344,7 @@ municipal,1302603,Manaus,AM,2022,TRUE
 municipal,1302603,Manaus,AM,2023,TRUE
 municipal,1302603,Manaus,AM,2024,TRUE
 municipal,1302603,Manaus,AM,2025,FALSE
+municipal,1302603,Manaus,AM,2026,TRUE
 municipal,1400100,Boa Vista,RR,2019,FALSE
 municipal,1400100,Boa Vista,RR,2020,FALSE
 municipal,1400100,Boa Vista,RR,2021,FALSE
@@ -273,6 +352,15 @@ municipal,1400100,Boa Vista,RR,2022,FALSE
 municipal,1400100,Boa Vista,RR,2023,TRUE
 municipal,1400100,Boa Vista,RR,2024,TRUE
 municipal,1400100,Boa Vista,RR,2025,TRUE
+municipal,1400100,Boa Vista,RR,2026,TRUE
+municipal,1500800,Ananindeua,PA,2019,FALSE
+municipal,1500800,Ananindeua,PA,2020,FALSE
+municipal,1500800,Ananindeua,PA,2021,FALSE
+municipal,1500800,Ananindeua,PA,2022,FALSE
+municipal,1500800,Ananindeua,PA,2023,FALSE
+municipal,1500800,Ananindeua,PA,2024,FALSE
+municipal,1500800,Ananindeua,PA,2025,FALSE
+municipal,1500800,Ananindeua,PA,2026,TRUE
 municipal,1501402,Belém,PA,2019,FALSE
 municipal,1501402,Belém,PA,2020,FALSE
 municipal,1501402,Belém,PA,2021,TRUE
@@ -280,6 +368,7 @@ municipal,1501402,Belém,PA,2022,FALSE
 municipal,1501402,Belém,PA,2023,TRUE
 municipal,1501402,Belém,PA,2024,FALSE
 municipal,1501402,Belém,PA,2025,TRUE
+municipal,1501402,Belém,PA,2026,TRUE
 municipal,1504208,Marabá,PA,2019,FALSE
 municipal,1504208,Marabá,PA,2020,FALSE
 municipal,1504208,Marabá,PA,2021,FALSE
@@ -287,6 +376,7 @@ municipal,1504208,Marabá,PA,2022,FALSE
 municipal,1504208,Marabá,PA,2023,FALSE
 municipal,1504208,Marabá,PA,2024,FALSE
 municipal,1504208,Marabá,PA,2025,TRUE
+municipal,1504208,Marabá,PA,2026,TRUE
 municipal,1506807,Santarém,PA,2019,TRUE
 municipal,1506807,Santarém,PA,2020,FALSE
 municipal,1506807,Santarém,PA,2021,TRUE
@@ -294,6 +384,7 @@ municipal,1506807,Santarém,PA,2022,FALSE
 municipal,1506807,Santarém,PA,2023,TRUE
 municipal,1506807,Santarém,PA,2024,TRUE
 municipal,1506807,Santarém,PA,2025,FALSE
+municipal,1506807,Santarém,PA,2026,TRUE
 municipal,1721000,Palmas,TO,2019,TRUE
 municipal,1721000,Palmas,TO,2020,TRUE
 municipal,1721000,Palmas,TO,2021,TRUE
@@ -301,6 +392,15 @@ municipal,1721000,Palmas,TO,2022,FALSE
 municipal,1721000,Palmas,TO,2023,TRUE
 municipal,1721000,Palmas,TO,2024,FALSE
 municipal,1721000,Palmas,TO,2025,FALSE
+municipal,1721000,Palmas,TO,2026,TRUE
+municipal,2105302,Imperatriz,MA,2019,FALSE
+municipal,2105302,Imperatriz,MA,2020,FALSE
+municipal,2105302,Imperatriz,MA,2021,FALSE
+municipal,2105302,Imperatriz,MA,2022,FALSE
+municipal,2105302,Imperatriz,MA,2023,FALSE
+municipal,2105302,Imperatriz,MA,2024,FALSE
+municipal,2105302,Imperatriz,MA,2025,FALSE
+municipal,2105302,Imperatriz,MA,2026,TRUE
 municipal,2111201,São José de Ribamar,MA,2019,FALSE
 municipal,2111201,São José de Ribamar,MA,2020,FALSE
 municipal,2111201,São José de Ribamar,MA,2021,FALSE
@@ -308,6 +408,7 @@ municipal,2111201,São José de Ribamar,MA,2022,FALSE
 municipal,2111201,São José de Ribamar,MA,2023,FALSE
 municipal,2111201,São José de Ribamar,MA,2024,FALSE
 municipal,2111201,São José de Ribamar,MA,2025,TRUE
+municipal,2111201,São José de Ribamar,MA,2026,TRUE
 municipal,2111300,São Luís,MA,2019,FALSE
 municipal,2111300,São Luís,MA,2020,FALSE
 municipal,2111300,São Luís,MA,2021,TRUE
@@ -315,6 +416,7 @@ municipal,2111300,São Luís,MA,2022,TRUE
 municipal,2111300,São Luís,MA,2023,FALSE
 municipal,2111300,São Luís,MA,2024,FALSE
 municipal,2111300,São Luís,MA,2025,TRUE
+municipal,2111300,São Luís,MA,2026,FALSE
 municipal,2211001,Teresina,PI,2019,TRUE
 municipal,2211001,Teresina,PI,2020,FALSE
 municipal,2211001,Teresina,PI,2021,FALSE
@@ -322,6 +424,7 @@ municipal,2211001,Teresina,PI,2022,FALSE
 municipal,2211001,Teresina,PI,2023,FALSE
 municipal,2211001,Teresina,PI,2024,TRUE
 municipal,2211001,Teresina,PI,2025,TRUE
+municipal,2211001,Teresina,PI,2026,TRUE
 municipal,2303709,Caucaia,CE,2019,TRUE
 municipal,2303709,Caucaia,CE,2020,FALSE
 municipal,2303709,Caucaia,CE,2021,FALSE
@@ -329,6 +432,7 @@ municipal,2303709,Caucaia,CE,2022,FALSE
 municipal,2303709,Caucaia,CE,2023,FALSE
 municipal,2303709,Caucaia,CE,2024,TRUE
 municipal,2303709,Caucaia,CE,2025,TRUE
+municipal,2303709,Caucaia,CE,2026,TRUE
 municipal,2304400,Fortaleza,CE,2019,TRUE
 municipal,2304400,Fortaleza,CE,2020,TRUE
 municipal,2304400,Fortaleza,CE,2021,TRUE
@@ -336,6 +440,7 @@ municipal,2304400,Fortaleza,CE,2022,TRUE
 municipal,2304400,Fortaleza,CE,2023,FALSE
 municipal,2304400,Fortaleza,CE,2024,FALSE
 municipal,2304400,Fortaleza,CE,2025,TRUE
+municipal,2304400,Fortaleza,CE,2026,TRUE
 municipal,2307304,Juazeiro do Norte,CE,2019,TRUE
 municipal,2307304,Juazeiro do Norte,CE,2020,FALSE
 municipal,2307304,Juazeiro do Norte,CE,2021,FALSE
@@ -343,6 +448,15 @@ municipal,2307304,Juazeiro do Norte,CE,2022,TRUE
 municipal,2307304,Juazeiro do Norte,CE,2023,TRUE
 municipal,2307304,Juazeiro do Norte,CE,2024,FALSE
 municipal,2307304,Juazeiro do Norte,CE,2025,TRUE
+municipal,2307304,Juazeiro do Norte,CE,2026,TRUE
+municipal,2307650,Maracanaú,CE,2019,FALSE
+municipal,2307650,Maracanaú,CE,2020,FALSE
+municipal,2307650,Maracanaú,CE,2021,FALSE
+municipal,2307650,Maracanaú,CE,2022,FALSE
+municipal,2307650,Maracanaú,CE,2023,FALSE
+municipal,2307650,Maracanaú,CE,2024,FALSE
+municipal,2307650,Maracanaú,CE,2025,FALSE
+municipal,2307650,Maracanaú,CE,2026,TRUE
 municipal,2403251,Parnamirim,RN,2019,TRUE
 municipal,2403251,Parnamirim,RN,2020,FALSE
 municipal,2403251,Parnamirim,RN,2021,FALSE
@@ -350,6 +464,7 @@ municipal,2403251,Parnamirim,RN,2022,TRUE
 municipal,2403251,Parnamirim,RN,2023,FALSE
 municipal,2403251,Parnamirim,RN,2024,TRUE
 municipal,2403251,Parnamirim,RN,2025,TRUE
+municipal,2403251,Parnamirim,RN,2026,TRUE
 municipal,2408003,Mossoró,RN,2019,TRUE
 municipal,2408003,Mossoró,RN,2020,TRUE
 municipal,2408003,Mossoró,RN,2021,TRUE
@@ -357,6 +472,7 @@ municipal,2408003,Mossoró,RN,2022,FALSE
 municipal,2408003,Mossoró,RN,2023,FALSE
 municipal,2408003,Mossoró,RN,2024,FALSE
 municipal,2408003,Mossoró,RN,2025,FALSE
+municipal,2408003,Mossoró,RN,2026,FALSE
 municipal,2408102,Natal,RN,2019,FALSE
 municipal,2408102,Natal,RN,2020,FALSE
 municipal,2408102,Natal,RN,2021,FALSE
@@ -364,6 +480,7 @@ municipal,2408102,Natal,RN,2022,TRUE
 municipal,2408102,Natal,RN,2023,FALSE
 municipal,2408102,Natal,RN,2024,FALSE
 municipal,2408102,Natal,RN,2025,TRUE
+municipal,2408102,Natal,RN,2026,TRUE
 municipal,2504009,Campina Grande,PB,2019,FALSE
 municipal,2504009,Campina Grande,PB,2020,FALSE
 municipal,2504009,Campina Grande,PB,2021,TRUE
@@ -371,6 +488,7 @@ municipal,2504009,Campina Grande,PB,2022,TRUE
 municipal,2504009,Campina Grande,PB,2023,TRUE
 municipal,2504009,Campina Grande,PB,2024,TRUE
 municipal,2504009,Campina Grande,PB,2025,TRUE
+municipal,2504009,Campina Grande,PB,2026,TRUE
 municipal,2507507,João Pessoa,PB,2019,TRUE
 municipal,2507507,João Pessoa,PB,2020,TRUE
 municipal,2507507,João Pessoa,PB,2021,TRUE
@@ -378,6 +496,7 @@ municipal,2507507,João Pessoa,PB,2022,TRUE
 municipal,2507507,João Pessoa,PB,2023,FALSE
 municipal,2507507,João Pessoa,PB,2024,FALSE
 municipal,2507507,João Pessoa,PB,2025,TRUE
+municipal,2507507,João Pessoa,PB,2026,TRUE
 municipal,2604106,Caruaru,PE,2019,TRUE
 municipal,2604106,Caruaru,PE,2020,FALSE
 municipal,2604106,Caruaru,PE,2021,FALSE
@@ -385,6 +504,7 @@ municipal,2604106,Caruaru,PE,2022,TRUE
 municipal,2604106,Caruaru,PE,2023,TRUE
 municipal,2604106,Caruaru,PE,2024,TRUE
 municipal,2604106,Caruaru,PE,2025,TRUE
+municipal,2604106,Caruaru,PE,2026,TRUE
 municipal,2607901,Jaboatão dos Guararapes,PE,2019,TRUE
 municipal,2607901,Jaboatão dos Guararapes,PE,2020,FALSE
 municipal,2607901,Jaboatão dos Guararapes,PE,2021,TRUE
@@ -392,6 +512,7 @@ municipal,2607901,Jaboatão dos Guararapes,PE,2022,TRUE
 municipal,2607901,Jaboatão dos Guararapes,PE,2023,TRUE
 municipal,2607901,Jaboatão dos Guararapes,PE,2024,TRUE
 municipal,2607901,Jaboatão dos Guararapes,PE,2025,TRUE
+municipal,2607901,Jaboatão dos Guararapes,PE,2026,TRUE
 municipal,2609600,Olinda,PE,2019,TRUE
 municipal,2609600,Olinda,PE,2020,FALSE
 municipal,2609600,Olinda,PE,2021,FALSE
@@ -399,6 +520,7 @@ municipal,2609600,Olinda,PE,2022,TRUE
 municipal,2609600,Olinda,PE,2023,FALSE
 municipal,2609600,Olinda,PE,2024,FALSE
 municipal,2609600,Olinda,PE,2025,FALSE
+municipal,2609600,Olinda,PE,2026,FALSE
 municipal,2611101,Petrolina,PE,2019,FALSE
 municipal,2611101,Petrolina,PE,2020,FALSE
 municipal,2611101,Petrolina,PE,2021,FALSE
@@ -406,6 +528,7 @@ municipal,2611101,Petrolina,PE,2022,TRUE
 municipal,2611101,Petrolina,PE,2023,TRUE
 municipal,2611101,Petrolina,PE,2024,TRUE
 municipal,2611101,Petrolina,PE,2025,TRUE
+municipal,2611101,Petrolina,PE,2026,TRUE
 municipal,2611606,Recife,PE,2019,TRUE
 municipal,2611606,Recife,PE,2020,TRUE
 municipal,2611606,Recife,PE,2021,TRUE
@@ -413,6 +536,7 @@ municipal,2611606,Recife,PE,2022,TRUE
 municipal,2611606,Recife,PE,2023,TRUE
 municipal,2611606,Recife,PE,2024,TRUE
 municipal,2611606,Recife,PE,2025,TRUE
+municipal,2611606,Recife,PE,2026,TRUE
 municipal,2704302,Maceió,AL,2019,FALSE
 municipal,2704302,Maceió,AL,2020,FALSE
 municipal,2704302,Maceió,AL,2021,FALSE
@@ -420,6 +544,7 @@ municipal,2704302,Maceió,AL,2022,TRUE
 municipal,2704302,Maceió,AL,2023,TRUE
 municipal,2704302,Maceió,AL,2024,TRUE
 municipal,2704302,Maceió,AL,2025,TRUE
+municipal,2704302,Maceió,AL,2026,FALSE
 municipal,2800308,Aracaju,SE,2019,FALSE
 municipal,2800308,Aracaju,SE,2020,FALSE
 municipal,2800308,Aracaju,SE,2021,TRUE
@@ -427,6 +552,7 @@ municipal,2800308,Aracaju,SE,2022,TRUE
 municipal,2800308,Aracaju,SE,2023,TRUE
 municipal,2800308,Aracaju,SE,2024,TRUE
 municipal,2800308,Aracaju,SE,2025,TRUE
+municipal,2800308,Aracaju,SE,2026,TRUE
 municipal,2905701,Camaçari,BA,2019,FALSE
 municipal,2905701,Camaçari,BA,2020,TRUE
 municipal,2905701,Camaçari,BA,2021,FALSE
@@ -434,6 +560,7 @@ municipal,2905701,Camaçari,BA,2022,FALSE
 municipal,2905701,Camaçari,BA,2023,FALSE
 municipal,2905701,Camaçari,BA,2024,TRUE
 municipal,2905701,Camaçari,BA,2025,TRUE
+municipal,2905701,Camaçari,BA,2026,TRUE
 municipal,2910800,Feira de Santana,BA,2019,TRUE
 municipal,2910800,Feira de Santana,BA,2020,FALSE
 municipal,2910800,Feira de Santana,BA,2021,TRUE
@@ -441,6 +568,15 @@ municipal,2910800,Feira de Santana,BA,2022,FALSE
 municipal,2910800,Feira de Santana,BA,2023,TRUE
 municipal,2910800,Feira de Santana,BA,2024,TRUE
 municipal,2910800,Feira de Santana,BA,2025,TRUE
+municipal,2910800,Feira de Santana,BA,2026,TRUE
+municipal,2918407,Juazeiro,BA,2019,FALSE
+municipal,2918407,Juazeiro,BA,2020,FALSE
+municipal,2918407,Juazeiro,BA,2021,FALSE
+municipal,2918407,Juazeiro,BA,2022,FALSE
+municipal,2918407,Juazeiro,BA,2023,FALSE
+municipal,2918407,Juazeiro,BA,2024,FALSE
+municipal,2918407,Juazeiro,BA,2025,FALSE
+municipal,2918407,Juazeiro,BA,2026,TRUE
 municipal,2927408,Salvador,BA,2019,TRUE
 municipal,2927408,Salvador,BA,2020,TRUE
 municipal,2927408,Salvador,BA,2021,TRUE
@@ -448,6 +584,7 @@ municipal,2927408,Salvador,BA,2022,TRUE
 municipal,2927408,Salvador,BA,2023,TRUE
 municipal,2927408,Salvador,BA,2024,TRUE
 municipal,2927408,Salvador,BA,2025,TRUE
+municipal,2927408,Salvador,BA,2026,TRUE
 municipal,2933307,Vitória da Conquista,BA,2019,FALSE
 municipal,2933307,Vitória da Conquista,BA,2020,FALSE
 municipal,2933307,Vitória da Conquista,BA,2021,TRUE
@@ -455,6 +592,7 @@ municipal,2933307,Vitória da Conquista,BA,2022,TRUE
 municipal,2933307,Vitória da Conquista,BA,2023,TRUE
 municipal,2933307,Vitória da Conquista,BA,2024,TRUE
 municipal,2933307,Vitória da Conquista,BA,2025,TRUE
+municipal,2933307,Vitória da Conquista,BA,2026,FALSE
 municipal,3106200,Belo Horizonte,MG,2019,TRUE
 municipal,3106200,Belo Horizonte,MG,2020,TRUE
 municipal,3106200,Belo Horizonte,MG,2021,FALSE
@@ -462,6 +600,7 @@ municipal,3106200,Belo Horizonte,MG,2022,FALSE
 municipal,3106200,Belo Horizonte,MG,2023,TRUE
 municipal,3106200,Belo Horizonte,MG,2024,TRUE
 municipal,3106200,Belo Horizonte,MG,2025,TRUE
+municipal,3106200,Belo Horizonte,MG,2026,TRUE
 municipal,3106705,Betim,MG,2019,FALSE
 municipal,3106705,Betim,MG,2020,FALSE
 municipal,3106705,Betim,MG,2021,TRUE
@@ -469,6 +608,7 @@ municipal,3106705,Betim,MG,2022,FALSE
 municipal,3106705,Betim,MG,2023,FALSE
 municipal,3106705,Betim,MG,2024,FALSE
 municipal,3106705,Betim,MG,2025,FALSE
+municipal,3106705,Betim,MG,2026,TRUE
 municipal,3118601,Contagem,MG,2019,TRUE
 municipal,3118601,Contagem,MG,2020,FALSE
 municipal,3118601,Contagem,MG,2021,FALSE
@@ -476,6 +616,7 @@ municipal,3118601,Contagem,MG,2022,FALSE
 municipal,3118601,Contagem,MG,2023,FALSE
 municipal,3118601,Contagem,MG,2024,FALSE
 municipal,3118601,Contagem,MG,2025,FALSE
+municipal,3118601,Contagem,MG,2026,FALSE
 municipal,3127701,Governador Valadares,MG,2019,TRUE
 municipal,3127701,Governador Valadares,MG,2020,FALSE
 municipal,3127701,Governador Valadares,MG,2021,FALSE
@@ -483,6 +624,7 @@ municipal,3127701,Governador Valadares,MG,2022,FALSE
 municipal,3127701,Governador Valadares,MG,2023,TRUE
 municipal,3127701,Governador Valadares,MG,2024,FALSE
 municipal,3127701,Governador Valadares,MG,2025,FALSE
+municipal,3127701,Governador Valadares,MG,2026,TRUE
 municipal,3131307,Ipatinga,MG,2019,TRUE
 municipal,3131307,Ipatinga,MG,2020,FALSE
 municipal,3131307,Ipatinga,MG,2021,FALSE
@@ -490,6 +632,7 @@ municipal,3131307,Ipatinga,MG,2022,TRUE
 municipal,3131307,Ipatinga,MG,2023,FALSE
 municipal,3131307,Ipatinga,MG,2024,FALSE
 municipal,3131307,Ipatinga,MG,2025,FALSE
+municipal,3131307,Ipatinga,MG,2026,FALSE
 municipal,3136702,Juiz de Fora,MG,2019,TRUE
 municipal,3136702,Juiz de Fora,MG,2020,TRUE
 municipal,3136702,Juiz de Fora,MG,2021,FALSE
@@ -497,6 +640,15 @@ municipal,3136702,Juiz de Fora,MG,2022,TRUE
 municipal,3136702,Juiz de Fora,MG,2023,FALSE
 municipal,3136702,Juiz de Fora,MG,2024,FALSE
 municipal,3136702,Juiz de Fora,MG,2025,FALSE
+municipal,3136702,Juiz de Fora,MG,2026,FALSE
+municipal,3143302,Montes Claros,MG,2019,FALSE
+municipal,3143302,Montes Claros,MG,2020,FALSE
+municipal,3143302,Montes Claros,MG,2021,FALSE
+municipal,3143302,Montes Claros,MG,2022,FALSE
+municipal,3143302,Montes Claros,MG,2023,FALSE
+municipal,3143302,Montes Claros,MG,2024,FALSE
+municipal,3143302,Montes Claros,MG,2025,FALSE
+municipal,3143302,Montes Claros,MG,2026,TRUE
 municipal,3154606,Ribeirão das Neves,MG,2019,TRUE
 municipal,3154606,Ribeirão das Neves,MG,2020,FALSE
 municipal,3154606,Ribeirão das Neves,MG,2021,TRUE
@@ -504,6 +656,7 @@ municipal,3154606,Ribeirão das Neves,MG,2022,TRUE
 municipal,3154606,Ribeirão das Neves,MG,2023,TRUE
 municipal,3154606,Ribeirão das Neves,MG,2024,TRUE
 municipal,3154606,Ribeirão das Neves,MG,2025,TRUE
+municipal,3154606,Ribeirão das Neves,MG,2026,FALSE
 municipal,3170107,Uberaba,MG,2019,TRUE
 municipal,3170107,Uberaba,MG,2020,FALSE
 municipal,3170107,Uberaba,MG,2021,FALSE
@@ -511,6 +664,7 @@ municipal,3170107,Uberaba,MG,2022,FALSE
 municipal,3170107,Uberaba,MG,2023,FALSE
 municipal,3170107,Uberaba,MG,2024,TRUE
 municipal,3170107,Uberaba,MG,2025,FALSE
+municipal,3170107,Uberaba,MG,2026,TRUE
 municipal,3170206,Uberlândia,MG,2019,TRUE
 municipal,3170206,Uberlândia,MG,2020,FALSE
 municipal,3170206,Uberlândia,MG,2021,FALSE
@@ -518,6 +672,7 @@ municipal,3170206,Uberlândia,MG,2022,TRUE
 municipal,3170206,Uberlândia,MG,2023,FALSE
 municipal,3170206,Uberlândia,MG,2024,FALSE
 municipal,3170206,Uberlândia,MG,2025,TRUE
+municipal,3170206,Uberlândia,MG,2026,TRUE
 municipal,3201308,Cariacica,ES,2019,TRUE
 municipal,3201308,Cariacica,ES,2020,FALSE
 municipal,3201308,Cariacica,ES,2021,FALSE
@@ -525,6 +680,7 @@ municipal,3201308,Cariacica,ES,2022,FALSE
 municipal,3201308,Cariacica,ES,2023,TRUE
 municipal,3201308,Cariacica,ES,2024,TRUE
 municipal,3201308,Cariacica,ES,2025,TRUE
+municipal,3201308,Cariacica,ES,2026,TRUE
 municipal,3205002,Serra,ES,2019,FALSE
 municipal,3205002,Serra,ES,2020,FALSE
 municipal,3205002,Serra,ES,2021,TRUE
@@ -532,6 +688,7 @@ municipal,3205002,Serra,ES,2022,FALSE
 municipal,3205002,Serra,ES,2023,TRUE
 municipal,3205002,Serra,ES,2024,TRUE
 municipal,3205002,Serra,ES,2025,TRUE
+municipal,3205002,Serra,ES,2026,FALSE
 municipal,3205200,Vila Velha,ES,2019,FALSE
 municipal,3205200,Vila Velha,ES,2020,FALSE
 municipal,3205200,Vila Velha,ES,2021,TRUE
@@ -539,6 +696,7 @@ municipal,3205200,Vila Velha,ES,2022,TRUE
 municipal,3205200,Vila Velha,ES,2023,TRUE
 municipal,3205200,Vila Velha,ES,2024,TRUE
 municipal,3205200,Vila Velha,ES,2025,TRUE
+municipal,3205200,Vila Velha,ES,2026,TRUE
 municipal,3205309,Vitória,ES,2019,FALSE
 municipal,3205309,Vitória,ES,2020,FALSE
 municipal,3205309,Vitória,ES,2021,FALSE
@@ -546,6 +704,7 @@ municipal,3205309,Vitória,ES,2022,FALSE
 municipal,3205309,Vitória,ES,2023,FALSE
 municipal,3205309,Vitória,ES,2024,FALSE
 municipal,3205309,Vitória,ES,2025,TRUE
+municipal,3205309,Vitória,ES,2026,TRUE
 municipal,3300456,Belford Roxo,RJ,2019,TRUE
 municipal,3300456,Belford Roxo,RJ,2020,TRUE
 municipal,3300456,Belford Roxo,RJ,2021,TRUE
@@ -553,6 +712,7 @@ municipal,3300456,Belford Roxo,RJ,2022,TRUE
 municipal,3300456,Belford Roxo,RJ,2023,FALSE
 municipal,3300456,Belford Roxo,RJ,2024,FALSE
 municipal,3300456,Belford Roxo,RJ,2025,TRUE
+municipal,3300456,Belford Roxo,RJ,2026,TRUE
 municipal,3301009,Campos dos Goytacazes,RJ,2019,TRUE
 municipal,3301009,Campos dos Goytacazes,RJ,2020,FALSE
 municipal,3301009,Campos dos Goytacazes,RJ,2021,TRUE
@@ -560,6 +720,7 @@ municipal,3301009,Campos dos Goytacazes,RJ,2022,FALSE
 municipal,3301009,Campos dos Goytacazes,RJ,2023,TRUE
 municipal,3301009,Campos dos Goytacazes,RJ,2024,TRUE
 municipal,3301009,Campos dos Goytacazes,RJ,2025,TRUE
+municipal,3301009,Campos dos Goytacazes,RJ,2026,TRUE
 municipal,3301702,Duque de Caxias,RJ,2019,FALSE
 municipal,3301702,Duque de Caxias,RJ,2020,FALSE
 municipal,3301702,Duque de Caxias,RJ,2021,FALSE
@@ -567,6 +728,7 @@ municipal,3301702,Duque de Caxias,RJ,2022,FALSE
 municipal,3301702,Duque de Caxias,RJ,2023,FALSE
 municipal,3301702,Duque de Caxias,RJ,2024,FALSE
 municipal,3301702,Duque de Caxias,RJ,2025,TRUE
+municipal,3301702,Duque de Caxias,RJ,2026,TRUE
 municipal,3302403,Macaé,RJ,2019,FALSE
 municipal,3302403,Macaé,RJ,2020,FALSE
 municipal,3302403,Macaé,RJ,2021,TRUE
@@ -574,6 +736,7 @@ municipal,3302403,Macaé,RJ,2022,TRUE
 municipal,3302403,Macaé,RJ,2023,FALSE
 municipal,3302403,Macaé,RJ,2024,FALSE
 municipal,3302403,Macaé,RJ,2025,TRUE
+municipal,3302403,Macaé,RJ,2026,TRUE
 municipal,3303302,Niterói,RJ,2019,TRUE
 municipal,3303302,Niterói,RJ,2020,TRUE
 municipal,3303302,Niterói,RJ,2021,TRUE
@@ -581,6 +744,7 @@ municipal,3303302,Niterói,RJ,2022,FALSE
 municipal,3303302,Niterói,RJ,2023,TRUE
 municipal,3303302,Niterói,RJ,2024,FALSE
 municipal,3303302,Niterói,RJ,2025,TRUE
+municipal,3303302,Niterói,RJ,2026,TRUE
 municipal,3303500,Nova Iguaçu,RJ,2019,FALSE
 municipal,3303500,Nova Iguaçu,RJ,2020,FALSE
 municipal,3303500,Nova Iguaçu,RJ,2021,FALSE
@@ -588,6 +752,7 @@ municipal,3303500,Nova Iguaçu,RJ,2022,FALSE
 municipal,3303500,Nova Iguaçu,RJ,2023,TRUE
 municipal,3303500,Nova Iguaçu,RJ,2024,TRUE
 municipal,3303500,Nova Iguaçu,RJ,2025,TRUE
+municipal,3303500,Nova Iguaçu,RJ,2026,TRUE
 municipal,3303906,Petrópolis,RJ,2019,FALSE
 municipal,3303906,Petrópolis,RJ,2020,FALSE
 municipal,3303906,Petrópolis,RJ,2021,FALSE
@@ -595,6 +760,7 @@ municipal,3303906,Petrópolis,RJ,2022,TRUE
 municipal,3303906,Petrópolis,RJ,2023,TRUE
 municipal,3303906,Petrópolis,RJ,2024,TRUE
 municipal,3303906,Petrópolis,RJ,2025,TRUE
+municipal,3303906,Petrópolis,RJ,2026,TRUE
 municipal,3304557,Rio de Janeiro,RJ,2019,FALSE
 municipal,3304557,Rio de Janeiro,RJ,2020,TRUE
 municipal,3304557,Rio de Janeiro,RJ,2021,TRUE
@@ -602,6 +768,7 @@ municipal,3304557,Rio de Janeiro,RJ,2022,TRUE
 municipal,3304557,Rio de Janeiro,RJ,2023,TRUE
 municipal,3304557,Rio de Janeiro,RJ,2024,TRUE
 municipal,3304557,Rio de Janeiro,RJ,2025,TRUE
+municipal,3304557,Rio de Janeiro,RJ,2026,TRUE
 municipal,3304904,São Gonçalo,RJ,2019,TRUE
 municipal,3304904,São Gonçalo,RJ,2020,FALSE
 municipal,3304904,São Gonçalo,RJ,2021,TRUE
@@ -609,6 +776,7 @@ municipal,3304904,São Gonçalo,RJ,2022,TRUE
 municipal,3304904,São Gonçalo,RJ,2023,TRUE
 municipal,3304904,São Gonçalo,RJ,2024,TRUE
 municipal,3304904,São Gonçalo,RJ,2025,TRUE
+municipal,3304904,São Gonçalo,RJ,2026,TRUE
 municipal,3305109,São João de Meriti,RJ,2019,FALSE
 municipal,3305109,São João de Meriti,RJ,2020,FALSE
 municipal,3305109,São João de Meriti,RJ,2021,TRUE
@@ -616,6 +784,7 @@ municipal,3305109,São João de Meriti,RJ,2022,FALSE
 municipal,3305109,São João de Meriti,RJ,2023,TRUE
 municipal,3305109,São João de Meriti,RJ,2024,TRUE
 municipal,3305109,São João de Meriti,RJ,2025,TRUE
+municipal,3305109,São João de Meriti,RJ,2026,TRUE
 municipal,3306305,Volta Redonda,RJ,2019,TRUE
 municipal,3306305,Volta Redonda,RJ,2020,FALSE
 municipal,3306305,Volta Redonda,RJ,2021,FALSE
@@ -623,6 +792,15 @@ municipal,3306305,Volta Redonda,RJ,2022,FALSE
 municipal,3306305,Volta Redonda,RJ,2023,TRUE
 municipal,3306305,Volta Redonda,RJ,2024,FALSE
 municipal,3306305,Volta Redonda,RJ,2025,TRUE
+municipal,3306305,Volta Redonda,RJ,2026,TRUE
+municipal,3503208,Araraquara,SP,2019,FALSE
+municipal,3503208,Araraquara,SP,2020,FALSE
+municipal,3503208,Araraquara,SP,2021,FALSE
+municipal,3503208,Araraquara,SP,2022,FALSE
+municipal,3503208,Araraquara,SP,2023,FALSE
+municipal,3503208,Araraquara,SP,2024,FALSE
+municipal,3503208,Araraquara,SP,2025,FALSE
+municipal,3503208,Araraquara,SP,2026,TRUE
 municipal,3505708,Barueri,SP,2019,TRUE
 municipal,3505708,Barueri,SP,2020,FALSE
 municipal,3505708,Barueri,SP,2021,TRUE
@@ -630,6 +808,7 @@ municipal,3505708,Barueri,SP,2022,TRUE
 municipal,3505708,Barueri,SP,2023,TRUE
 municipal,3505708,Barueri,SP,2024,TRUE
 municipal,3505708,Barueri,SP,2025,TRUE
+municipal,3505708,Barueri,SP,2026,TRUE
 municipal,3506003,Bauru,SP,2019,FALSE
 municipal,3506003,Bauru,SP,2020,FALSE
 municipal,3506003,Bauru,SP,2021,TRUE
@@ -637,6 +816,7 @@ municipal,3506003,Bauru,SP,2022,FALSE
 municipal,3506003,Bauru,SP,2023,TRUE
 municipal,3506003,Bauru,SP,2024,FALSE
 municipal,3506003,Bauru,SP,2025,TRUE
+municipal,3506003,Bauru,SP,2026,TRUE
 municipal,3509502,Campinas,SP,2019,TRUE
 municipal,3509502,Campinas,SP,2020,TRUE
 municipal,3509502,Campinas,SP,2021,FALSE
@@ -644,6 +824,7 @@ municipal,3509502,Campinas,SP,2022,TRUE
 municipal,3509502,Campinas,SP,2023,TRUE
 municipal,3509502,Campinas,SP,2024,TRUE
 municipal,3509502,Campinas,SP,2025,TRUE
+municipal,3509502,Campinas,SP,2026,TRUE
 municipal,3510609,Carapicuíba,SP,2019,TRUE
 municipal,3510609,Carapicuíba,SP,2020,FALSE
 municipal,3510609,Carapicuíba,SP,2021,FALSE
@@ -651,6 +832,7 @@ municipal,3510609,Carapicuíba,SP,2022,FALSE
 municipal,3510609,Carapicuíba,SP,2023,FALSE
 municipal,3510609,Carapicuíba,SP,2024,TRUE
 municipal,3510609,Carapicuíba,SP,2025,TRUE
+municipal,3510609,Carapicuíba,SP,2026,TRUE
 municipal,3513009,Cotia,SP,2019,FALSE
 municipal,3513009,Cotia,SP,2020,FALSE
 municipal,3513009,Cotia,SP,2021,FALSE
@@ -658,6 +840,7 @@ municipal,3513009,Cotia,SP,2022,FALSE
 municipal,3513009,Cotia,SP,2023,FALSE
 municipal,3513009,Cotia,SP,2024,TRUE
 municipal,3513009,Cotia,SP,2025,FALSE
+municipal,3513009,Cotia,SP,2026,TRUE
 municipal,3513801,Diadema,SP,2019,FALSE
 municipal,3513801,Diadema,SP,2020,FALSE
 municipal,3513801,Diadema,SP,2021,TRUE
@@ -665,6 +848,7 @@ municipal,3513801,Diadema,SP,2022,TRUE
 municipal,3513801,Diadema,SP,2023,TRUE
 municipal,3513801,Diadema,SP,2024,FALSE
 municipal,3513801,Diadema,SP,2025,FALSE
+municipal,3513801,Diadema,SP,2026,TRUE
 municipal,3515004,Embu,SP,2019,FALSE
 municipal,3515004,Embu,SP,2020,FALSE
 municipal,3515004,Embu,SP,2021,FALSE
@@ -672,6 +856,7 @@ municipal,3515004,Embu,SP,2022,FALSE
 municipal,3515004,Embu,SP,2023,FALSE
 municipal,3515004,Embu,SP,2024,FALSE
 municipal,3515004,Embu,SP,2025,TRUE
+municipal,3515004,Embu,SP,2026,TRUE
 municipal,3516200,Franca,SP,2019,FALSE
 municipal,3516200,Franca,SP,2020,FALSE
 municipal,3516200,Franca,SP,2021,FALSE
@@ -679,6 +864,7 @@ municipal,3516200,Franca,SP,2022,FALSE
 municipal,3516200,Franca,SP,2023,FALSE
 municipal,3516200,Franca,SP,2024,TRUE
 municipal,3516200,Franca,SP,2025,TRUE
+municipal,3516200,Franca,SP,2026,FALSE
 municipal,3518701,Guarujá,SP,2019,FALSE
 municipal,3518701,Guarujá,SP,2020,TRUE
 municipal,3518701,Guarujá,SP,2021,TRUE
@@ -686,6 +872,7 @@ municipal,3518701,Guarujá,SP,2022,FALSE
 municipal,3518701,Guarujá,SP,2023,FALSE
 municipal,3518701,Guarujá,SP,2024,FALSE
 municipal,3518701,Guarujá,SP,2025,FALSE
+municipal,3518701,Guarujá,SP,2026,FALSE
 municipal,3518800,Guarulhos,SP,2019,TRUE
 municipal,3518800,Guarulhos,SP,2020,TRUE
 municipal,3518800,Guarulhos,SP,2021,TRUE
@@ -693,6 +880,7 @@ municipal,3518800,Guarulhos,SP,2022,TRUE
 municipal,3518800,Guarulhos,SP,2023,TRUE
 municipal,3518800,Guarulhos,SP,2024,FALSE
 municipal,3518800,Guarulhos,SP,2025,TRUE
+municipal,3518800,Guarulhos,SP,2026,TRUE
 municipal,3520509,Indaiatuba,SP,2019,FALSE
 municipal,3520509,Indaiatuba,SP,2020,FALSE
 municipal,3520509,Indaiatuba,SP,2021,FALSE
@@ -700,6 +888,7 @@ municipal,3520509,Indaiatuba,SP,2022,FALSE
 municipal,3520509,Indaiatuba,SP,2023,FALSE
 municipal,3520509,Indaiatuba,SP,2024,FALSE
 municipal,3520509,Indaiatuba,SP,2025,TRUE
+municipal,3520509,Indaiatuba,SP,2026,TRUE
 municipal,3523107,Itaquaquecetuba,SP,2019,FALSE
 municipal,3523107,Itaquaquecetuba,SP,2020,FALSE
 municipal,3523107,Itaquaquecetuba,SP,2021,FALSE
@@ -707,6 +896,15 @@ municipal,3523107,Itaquaquecetuba,SP,2022,FALSE
 municipal,3523107,Itaquaquecetuba,SP,2023,FALSE
 municipal,3523107,Itaquaquecetuba,SP,2024,TRUE
 municipal,3523107,Itaquaquecetuba,SP,2025,FALSE
+municipal,3523107,Itaquaquecetuba,SP,2026,FALSE
+municipal,3524402,Jacareí,SP,2019,FALSE
+municipal,3524402,Jacareí,SP,2020,FALSE
+municipal,3524402,Jacareí,SP,2021,FALSE
+municipal,3524402,Jacareí,SP,2022,FALSE
+municipal,3524402,Jacareí,SP,2023,FALSE
+municipal,3524402,Jacareí,SP,2024,FALSE
+municipal,3524402,Jacareí,SP,2025,FALSE
+municipal,3524402,Jacareí,SP,2026,TRUE
 municipal,3525904,Jundiaí,SP,2019,FALSE
 municipal,3525904,Jundiaí,SP,2020,FALSE
 municipal,3525904,Jundiaí,SP,2021,TRUE
@@ -714,6 +912,7 @@ municipal,3525904,Jundiaí,SP,2022,TRUE
 municipal,3525904,Jundiaí,SP,2023,TRUE
 municipal,3525904,Jundiaí,SP,2024,TRUE
 municipal,3525904,Jundiaí,SP,2025,TRUE
+municipal,3525904,Jundiaí,SP,2026,FALSE
 municipal,3526902,Limeira,SP,2019,FALSE
 municipal,3526902,Limeira,SP,2020,FALSE
 municipal,3526902,Limeira,SP,2021,TRUE
@@ -721,6 +920,7 @@ municipal,3526902,Limeira,SP,2022,TRUE
 municipal,3526902,Limeira,SP,2023,TRUE
 municipal,3526902,Limeira,SP,2024,TRUE
 municipal,3526902,Limeira,SP,2025,FALSE
+municipal,3526902,Limeira,SP,2026,TRUE
 municipal,3529401,Mauá,SP,2019,FALSE
 municipal,3529401,Mauá,SP,2020,FALSE
 municipal,3529401,Mauá,SP,2021,TRUE
@@ -728,6 +928,7 @@ municipal,3529401,Mauá,SP,2022,TRUE
 municipal,3529401,Mauá,SP,2023,TRUE
 municipal,3529401,Mauá,SP,2024,TRUE
 municipal,3529401,Mauá,SP,2025,TRUE
+municipal,3529401,Mauá,SP,2026,FALSE
 municipal,3530607,Mogi das Cruzes,SP,2019,TRUE
 municipal,3530607,Mogi das Cruzes,SP,2020,FALSE
 municipal,3530607,Mogi das Cruzes,SP,2021,FALSE
@@ -735,6 +936,7 @@ municipal,3530607,Mogi das Cruzes,SP,2022,FALSE
 municipal,3530607,Mogi das Cruzes,SP,2023,FALSE
 municipal,3530607,Mogi das Cruzes,SP,2024,FALSE
 municipal,3530607,Mogi das Cruzes,SP,2025,FALSE
+municipal,3530607,Mogi das Cruzes,SP,2026,FALSE
 municipal,3534401,Osasco,SP,2019,TRUE
 municipal,3534401,Osasco,SP,2020,FALSE
 municipal,3534401,Osasco,SP,2021,TRUE
@@ -742,6 +944,7 @@ municipal,3534401,Osasco,SP,2022,TRUE
 municipal,3534401,Osasco,SP,2023,FALSE
 municipal,3534401,Osasco,SP,2024,TRUE
 municipal,3534401,Osasco,SP,2025,TRUE
+municipal,3534401,Osasco,SP,2026,TRUE
 municipal,3538709,Piracicaba,SP,2019,FALSE
 municipal,3538709,Piracicaba,SP,2020,FALSE
 municipal,3538709,Piracicaba,SP,2021,TRUE
@@ -749,6 +952,7 @@ municipal,3538709,Piracicaba,SP,2022,FALSE
 municipal,3538709,Piracicaba,SP,2023,FALSE
 municipal,3538709,Piracicaba,SP,2024,FALSE
 municipal,3538709,Piracicaba,SP,2025,TRUE
+municipal,3538709,Piracicaba,SP,2026,TRUE
 municipal,3541000,Praia Grande,SP,2019,FALSE
 municipal,3541000,Praia Grande,SP,2020,TRUE
 municipal,3541000,Praia Grande,SP,2021,TRUE
@@ -756,6 +960,7 @@ municipal,3541000,Praia Grande,SP,2022,TRUE
 municipal,3541000,Praia Grande,SP,2023,TRUE
 municipal,3541000,Praia Grande,SP,2024,TRUE
 municipal,3541000,Praia Grande,SP,2025,TRUE
+municipal,3541000,Praia Grande,SP,2026,TRUE
 municipal,3543402,Ribeirão Preto,SP,2019,FALSE
 municipal,3543402,Ribeirão Preto,SP,2020,FALSE
 municipal,3543402,Ribeirão Preto,SP,2021,TRUE
@@ -763,6 +968,7 @@ municipal,3543402,Ribeirão Preto,SP,2022,FALSE
 municipal,3543402,Ribeirão Preto,SP,2023,FALSE
 municipal,3543402,Ribeirão Preto,SP,2024,FALSE
 municipal,3543402,Ribeirão Preto,SP,2025,FALSE
+municipal,3543402,Ribeirão Preto,SP,2026,TRUE
 municipal,3547809,Santo André,SP,2019,TRUE
 municipal,3547809,Santo André,SP,2020,TRUE
 municipal,3547809,Santo André,SP,2021,TRUE
@@ -770,6 +976,7 @@ municipal,3547809,Santo André,SP,2022,TRUE
 municipal,3547809,Santo André,SP,2023,FALSE
 municipal,3547809,Santo André,SP,2024,TRUE
 municipal,3547809,Santo André,SP,2025,TRUE
+municipal,3547809,Santo André,SP,2026,TRUE
 municipal,3548500,Santos,SP,2019,FALSE
 municipal,3548500,Santos,SP,2020,TRUE
 municipal,3548500,Santos,SP,2021,FALSE
@@ -777,6 +984,7 @@ municipal,3548500,Santos,SP,2022,TRUE
 municipal,3548500,Santos,SP,2023,FALSE
 municipal,3548500,Santos,SP,2024,TRUE
 municipal,3548500,Santos,SP,2025,TRUE
+municipal,3548500,Santos,SP,2026,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2019,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2020,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2021,TRUE
@@ -784,6 +992,7 @@ municipal,3548708,São Bernardo do Campo,SP,2022,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2023,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2024,TRUE
 municipal,3548708,São Bernardo do Campo,SP,2025,TRUE
+municipal,3548708,São Bernardo do Campo,SP,2026,TRUE
 municipal,3548906,São Carlos,SP,2019,TRUE
 municipal,3548906,São Carlos,SP,2020,FALSE
 municipal,3548906,São Carlos,SP,2021,TRUE
@@ -791,6 +1000,7 @@ municipal,3548906,São Carlos,SP,2022,TRUE
 municipal,3548906,São Carlos,SP,2023,FALSE
 municipal,3548906,São Carlos,SP,2024,FALSE
 municipal,3548906,São Carlos,SP,2025,FALSE
+municipal,3548906,São Carlos,SP,2026,FALSE
 municipal,3549805,São José do Rio Preto,SP,2019,FALSE
 municipal,3549805,São José do Rio Preto,SP,2020,FALSE
 municipal,3549805,São José do Rio Preto,SP,2021,TRUE
@@ -798,6 +1008,7 @@ municipal,3549805,São José do Rio Preto,SP,2022,TRUE
 municipal,3549805,São José do Rio Preto,SP,2023,TRUE
 municipal,3549805,São José do Rio Preto,SP,2024,TRUE
 municipal,3549805,São José do Rio Preto,SP,2025,TRUE
+municipal,3549805,São José do Rio Preto,SP,2026,TRUE
 municipal,3549904,São José dos Campos,SP,2019,TRUE
 municipal,3549904,São José dos Campos,SP,2020,TRUE
 municipal,3549904,São José dos Campos,SP,2021,TRUE
@@ -805,6 +1016,7 @@ municipal,3549904,São José dos Campos,SP,2022,TRUE
 municipal,3549904,São José dos Campos,SP,2023,TRUE
 municipal,3549904,São José dos Campos,SP,2024,TRUE
 municipal,3549904,São José dos Campos,SP,2025,TRUE
+municipal,3549904,São José dos Campos,SP,2026,TRUE
 municipal,3550308,São Paulo,SP,2019,TRUE
 municipal,3550308,São Paulo,SP,2020,FALSE
 municipal,3550308,São Paulo,SP,2021,TRUE
@@ -812,6 +1024,7 @@ municipal,3550308,São Paulo,SP,2022,TRUE
 municipal,3550308,São Paulo,SP,2023,TRUE
 municipal,3550308,São Paulo,SP,2024,TRUE
 municipal,3550308,São Paulo,SP,2025,TRUE
+municipal,3550308,São Paulo,SP,2026,TRUE
 municipal,3551009,São Vicente,SP,2019,TRUE
 municipal,3551009,São Vicente,SP,2020,TRUE
 municipal,3551009,São Vicente,SP,2021,TRUE
@@ -819,6 +1032,7 @@ municipal,3551009,São Vicente,SP,2022,TRUE
 municipal,3551009,São Vicente,SP,2023,FALSE
 municipal,3551009,São Vicente,SP,2024,TRUE
 municipal,3551009,São Vicente,SP,2025,TRUE
+municipal,3551009,São Vicente,SP,2026,TRUE
 municipal,3552205,Sorocaba,SP,2019,FALSE
 municipal,3552205,Sorocaba,SP,2020,TRUE
 municipal,3552205,Sorocaba,SP,2021,FALSE
@@ -826,6 +1040,7 @@ municipal,3552205,Sorocaba,SP,2022,TRUE
 municipal,3552205,Sorocaba,SP,2023,FALSE
 municipal,3552205,Sorocaba,SP,2024,TRUE
 municipal,3552205,Sorocaba,SP,2025,TRUE
+municipal,3552205,Sorocaba,SP,2026,TRUE
 municipal,3552403,Sumaré,SP,2019,TRUE
 municipal,3552403,Sumaré,SP,2020,FALSE
 municipal,3552403,Sumaré,SP,2021,FALSE
@@ -833,6 +1048,7 @@ municipal,3552403,Sumaré,SP,2022,FALSE
 municipal,3552403,Sumaré,SP,2023,FALSE
 municipal,3552403,Sumaré,SP,2024,FALSE
 municipal,3552403,Sumaré,SP,2025,FALSE
+municipal,3552403,Sumaré,SP,2026,FALSE
 municipal,3552502,Suzano,SP,2019,TRUE
 municipal,3552502,Suzano,SP,2020,FALSE
 municipal,3552502,Suzano,SP,2021,FALSE
@@ -840,6 +1056,7 @@ municipal,3552502,Suzano,SP,2022,FALSE
 municipal,3552502,Suzano,SP,2023,FALSE
 municipal,3552502,Suzano,SP,2024,FALSE
 municipal,3552502,Suzano,SP,2025,FALSE
+municipal,3552502,Suzano,SP,2026,TRUE
 municipal,3552809,Taboão da Serra,SP,2019,TRUE
 municipal,3552809,Taboão da Serra,SP,2020,FALSE
 municipal,3552809,Taboão da Serra,SP,2021,TRUE
@@ -847,6 +1064,7 @@ municipal,3552809,Taboão da Serra,SP,2022,TRUE
 municipal,3552809,Taboão da Serra,SP,2023,TRUE
 municipal,3552809,Taboão da Serra,SP,2024,FALSE
 municipal,3552809,Taboão da Serra,SP,2025,TRUE
+municipal,3552809,Taboão da Serra,SP,2026,TRUE
 municipal,3554102,Taubaté,SP,2019,FALSE
 municipal,3554102,Taubaté,SP,2020,TRUE
 municipal,3554102,Taubaté,SP,2021,TRUE
@@ -854,6 +1072,7 @@ municipal,3554102,Taubaté,SP,2022,TRUE
 municipal,3554102,Taubaté,SP,2023,TRUE
 municipal,3554102,Taubaté,SP,2024,TRUE
 municipal,3554102,Taubaté,SP,2025,FALSE
+municipal,3554102,Taubaté,SP,2026,TRUE
 municipal,4104808,Cascavel,PR,2019,FALSE
 municipal,4104808,Cascavel,PR,2020,FALSE
 municipal,4104808,Cascavel,PR,2021,TRUE
@@ -861,6 +1080,7 @@ municipal,4104808,Cascavel,PR,2022,TRUE
 municipal,4104808,Cascavel,PR,2023,FALSE
 municipal,4104808,Cascavel,PR,2024,FALSE
 municipal,4104808,Cascavel,PR,2025,TRUE
+municipal,4104808,Cascavel,PR,2026,TRUE
 municipal,4106902,Curitiba,PR,2019,TRUE
 municipal,4106902,Curitiba,PR,2020,TRUE
 municipal,4106902,Curitiba,PR,2021,TRUE
@@ -868,6 +1088,7 @@ municipal,4106902,Curitiba,PR,2022,FALSE
 municipal,4106902,Curitiba,PR,2023,TRUE
 municipal,4106902,Curitiba,PR,2024,TRUE
 municipal,4106902,Curitiba,PR,2025,TRUE
+municipal,4106902,Curitiba,PR,2026,TRUE
 municipal,4108304,Foz do Iguaçu,PR,2019,TRUE
 municipal,4108304,Foz do Iguaçu,PR,2020,FALSE
 municipal,4108304,Foz do Iguaçu,PR,2021,FALSE
@@ -875,6 +1096,7 @@ municipal,4108304,Foz do Iguaçu,PR,2022,FALSE
 municipal,4108304,Foz do Iguaçu,PR,2023,FALSE
 municipal,4108304,Foz do Iguaçu,PR,2024,TRUE
 municipal,4108304,Foz do Iguaçu,PR,2025,FALSE
+municipal,4108304,Foz do Iguaçu,PR,2026,FALSE
 municipal,4113700,Londrina,PR,2019,TRUE
 municipal,4113700,Londrina,PR,2020,FALSE
 municipal,4113700,Londrina,PR,2021,FALSE
@@ -882,6 +1104,7 @@ municipal,4113700,Londrina,PR,2022,FALSE
 municipal,4113700,Londrina,PR,2023,TRUE
 municipal,4113700,Londrina,PR,2024,TRUE
 municipal,4113700,Londrina,PR,2025,FALSE
+municipal,4113700,Londrina,PR,2026,TRUE
 municipal,4115200,Maringá,PR,2019,TRUE
 municipal,4115200,Maringá,PR,2020,TRUE
 municipal,4115200,Maringá,PR,2021,TRUE
@@ -889,6 +1112,7 @@ municipal,4115200,Maringá,PR,2022,TRUE
 municipal,4115200,Maringá,PR,2023,TRUE
 municipal,4115200,Maringá,PR,2024,TRUE
 municipal,4115200,Maringá,PR,2025,TRUE
+municipal,4115200,Maringá,PR,2026,TRUE
 municipal,4119905,Ponta Grossa,PR,2019,FALSE
 municipal,4119905,Ponta Grossa,PR,2020,FALSE
 municipal,4119905,Ponta Grossa,PR,2021,FALSE
@@ -896,6 +1120,7 @@ municipal,4119905,Ponta Grossa,PR,2022,TRUE
 municipal,4119905,Ponta Grossa,PR,2023,TRUE
 municipal,4119905,Ponta Grossa,PR,2024,TRUE
 municipal,4119905,Ponta Grossa,PR,2025,TRUE
+municipal,4119905,Ponta Grossa,PR,2026,TRUE
 municipal,4125506,São José dos Pinhais,PR,2019,FALSE
 municipal,4125506,São José dos Pinhais,PR,2020,FALSE
 municipal,4125506,São José dos Pinhais,PR,2021,FALSE
@@ -903,6 +1128,7 @@ municipal,4125506,São José dos Pinhais,PR,2022,FALSE
 municipal,4125506,São José dos Pinhais,PR,2023,TRUE
 municipal,4125506,São José dos Pinhais,PR,2024,TRUE
 municipal,4125506,São José dos Pinhais,PR,2025,FALSE
+municipal,4125506,São José dos Pinhais,PR,2026,TRUE
 municipal,4202404,Blumenau,SC,2019,TRUE
 municipal,4202404,Blumenau,SC,2020,FALSE
 municipal,4202404,Blumenau,SC,2021,TRUE
@@ -910,6 +1136,7 @@ municipal,4202404,Blumenau,SC,2022,TRUE
 municipal,4202404,Blumenau,SC,2023,TRUE
 municipal,4202404,Blumenau,SC,2024,TRUE
 municipal,4202404,Blumenau,SC,2025,TRUE
+municipal,4202404,Blumenau,SC,2026,TRUE
 municipal,4204202,Chapecó,SC,2019,FALSE
 municipal,4204202,Chapecó,SC,2020,FALSE
 municipal,4204202,Chapecó,SC,2021,FALSE
@@ -917,6 +1144,7 @@ municipal,4204202,Chapecó,SC,2022,FALSE
 municipal,4204202,Chapecó,SC,2023,TRUE
 municipal,4204202,Chapecó,SC,2024,TRUE
 municipal,4204202,Chapecó,SC,2025,TRUE
+municipal,4204202,Chapecó,SC,2026,TRUE
 municipal,4205407,Florianópolis,SC,2019,TRUE
 municipal,4205407,Florianópolis,SC,2020,FALSE
 municipal,4205407,Florianópolis,SC,2021,FALSE
@@ -924,6 +1152,7 @@ municipal,4205407,Florianópolis,SC,2022,FALSE
 municipal,4205407,Florianópolis,SC,2023,TRUE
 municipal,4205407,Florianópolis,SC,2024,TRUE
 municipal,4205407,Florianópolis,SC,2025,TRUE
+municipal,4205407,Florianópolis,SC,2026,TRUE
 municipal,4208203,Itajaí,SC,2019,FALSE
 municipal,4208203,Itajaí,SC,2020,FALSE
 municipal,4208203,Itajaí,SC,2021,FALSE
@@ -931,6 +1160,7 @@ municipal,4208203,Itajaí,SC,2022,FALSE
 municipal,4208203,Itajaí,SC,2023,TRUE
 municipal,4208203,Itajaí,SC,2024,TRUE
 municipal,4208203,Itajaí,SC,2025,TRUE
+municipal,4208203,Itajaí,SC,2026,TRUE
 municipal,4209102,Joinville,SC,2019,FALSE
 municipal,4209102,Joinville,SC,2020,TRUE
 municipal,4209102,Joinville,SC,2021,TRUE
@@ -938,6 +1168,7 @@ municipal,4209102,Joinville,SC,2022,FALSE
 municipal,4209102,Joinville,SC,2023,TRUE
 municipal,4209102,Joinville,SC,2024,FALSE
 municipal,4209102,Joinville,SC,2025,TRUE
+municipal,4209102,Joinville,SC,2026,TRUE
 municipal,4216602,São José,SC,2019,FALSE
 municipal,4216602,São José,SC,2020,FALSE
 municipal,4216602,São José,SC,2021,FALSE
@@ -945,6 +1176,7 @@ municipal,4216602,São José,SC,2022,TRUE
 municipal,4216602,São José,SC,2023,TRUE
 municipal,4216602,São José,SC,2024,TRUE
 municipal,4216602,São José,SC,2025,TRUE
+municipal,4216602,São José,SC,2026,TRUE
 municipal,4304606,Canoas,RS,2019,TRUE
 municipal,4304606,Canoas,RS,2020,FALSE
 municipal,4304606,Canoas,RS,2021,TRUE
@@ -952,6 +1184,7 @@ municipal,4304606,Canoas,RS,2022,TRUE
 municipal,4304606,Canoas,RS,2023,FALSE
 municipal,4304606,Canoas,RS,2024,FALSE
 municipal,4304606,Canoas,RS,2025,TRUE
+municipal,4304606,Canoas,RS,2026,FALSE
 municipal,4305108,Caxias do Sul,RS,2019,TRUE
 municipal,4305108,Caxias do Sul,RS,2020,TRUE
 municipal,4305108,Caxias do Sul,RS,2021,TRUE
@@ -959,6 +1192,7 @@ municipal,4305108,Caxias do Sul,RS,2022,TRUE
 municipal,4305108,Caxias do Sul,RS,2023,FALSE
 municipal,4305108,Caxias do Sul,RS,2024,FALSE
 municipal,4305108,Caxias do Sul,RS,2025,TRUE
+municipal,4305108,Caxias do Sul,RS,2026,TRUE
 municipal,4309209,Gravataí,RS,2019,TRUE
 municipal,4309209,Gravataí,RS,2020,FALSE
 municipal,4309209,Gravataí,RS,2021,TRUE
@@ -966,6 +1200,7 @@ municipal,4309209,Gravataí,RS,2022,TRUE
 municipal,4309209,Gravataí,RS,2023,TRUE
 municipal,4309209,Gravataí,RS,2024,TRUE
 municipal,4309209,Gravataí,RS,2025,TRUE
+municipal,4309209,Gravataí,RS,2026,TRUE
 municipal,4314407,Pelotas,RS,2019,TRUE
 municipal,4314407,Pelotas,RS,2020,FALSE
 municipal,4314407,Pelotas,RS,2021,FALSE
@@ -973,6 +1208,7 @@ municipal,4314407,Pelotas,RS,2022,FALSE
 municipal,4314407,Pelotas,RS,2023,TRUE
 municipal,4314407,Pelotas,RS,2024,FALSE
 municipal,4314407,Pelotas,RS,2025,FALSE
+municipal,4314407,Pelotas,RS,2026,FALSE
 municipal,4314902,Porto Alegre,RS,2019,TRUE
 municipal,4314902,Porto Alegre,RS,2020,TRUE
 municipal,4314902,Porto Alegre,RS,2021,TRUE
@@ -980,6 +1216,7 @@ municipal,4314902,Porto Alegre,RS,2022,TRUE
 municipal,4314902,Porto Alegre,RS,2023,TRUE
 municipal,4314902,Porto Alegre,RS,2024,TRUE
 municipal,4314902,Porto Alegre,RS,2025,TRUE
+municipal,4314902,Porto Alegre,RS,2026,TRUE
 municipal,4316907,Santa Maria,RS,2019,TRUE
 municipal,4316907,Santa Maria,RS,2020,FALSE
 municipal,4316907,Santa Maria,RS,2021,TRUE
@@ -987,6 +1224,7 @@ municipal,4316907,Santa Maria,RS,2022,TRUE
 municipal,4316907,Santa Maria,RS,2023,TRUE
 municipal,4316907,Santa Maria,RS,2024,TRUE
 municipal,4316907,Santa Maria,RS,2025,TRUE
+municipal,4316907,Santa Maria,RS,2026,TRUE
 municipal,4323002,Viamão,RS,2019,FALSE
 municipal,4323002,Viamão,RS,2020,FALSE
 municipal,4323002,Viamão,RS,2021,FALSE
@@ -994,6 +1232,7 @@ municipal,4323002,Viamão,RS,2022,TRUE
 municipal,4323002,Viamão,RS,2023,FALSE
 municipal,4323002,Viamão,RS,2024,FALSE
 municipal,4323002,Viamão,RS,2025,FALSE
+municipal,4323002,Viamão,RS,2026,FALSE
 municipal,5002704,Campo Grande,MS,2019,TRUE
 municipal,5002704,Campo Grande,MS,2020,TRUE
 municipal,5002704,Campo Grande,MS,2021,TRUE
@@ -1001,6 +1240,7 @@ municipal,5002704,Campo Grande,MS,2022,TRUE
 municipal,5002704,Campo Grande,MS,2023,TRUE
 municipal,5002704,Campo Grande,MS,2024,TRUE
 municipal,5002704,Campo Grande,MS,2025,TRUE
+municipal,5002704,Campo Grande,MS,2026,TRUE
 municipal,5103403,Cuiabá,MT,2019,TRUE
 municipal,5103403,Cuiabá,MT,2020,FALSE
 municipal,5103403,Cuiabá,MT,2021,FALSE
@@ -1008,6 +1248,7 @@ municipal,5103403,Cuiabá,MT,2022,TRUE
 municipal,5103403,Cuiabá,MT,2023,TRUE
 municipal,5103403,Cuiabá,MT,2024,TRUE
 municipal,5103403,Cuiabá,MT,2025,FALSE
+municipal,5103403,Cuiabá,MT,2026,FALSE
 municipal,5201108,Anápolis,GO,2019,TRUE
 municipal,5201108,Anápolis,GO,2020,FALSE
 municipal,5201108,Anápolis,GO,2021,TRUE
@@ -1015,6 +1256,7 @@ municipal,5201108,Anápolis,GO,2022,TRUE
 municipal,5201108,Anápolis,GO,2023,TRUE
 municipal,5201108,Anápolis,GO,2024,TRUE
 municipal,5201108,Anápolis,GO,2025,TRUE
+municipal,5201108,Anápolis,GO,2026,TRUE
 municipal,5201405,Aparecida de Goiânia,GO,2019,TRUE
 municipal,5201405,Aparecida de Goiânia,GO,2020,FALSE
 municipal,5201405,Aparecida de Goiânia,GO,2021,FALSE
@@ -1022,6 +1264,7 @@ municipal,5201405,Aparecida de Goiânia,GO,2022,FALSE
 municipal,5201405,Aparecida de Goiânia,GO,2023,TRUE
 municipal,5201405,Aparecida de Goiânia,GO,2024,TRUE
 municipal,5201405,Aparecida de Goiânia,GO,2025,TRUE
+municipal,5201405,Aparecida de Goiânia,GO,2026,TRUE
 municipal,5208707,Goiânia,GO,2019,TRUE
 municipal,5208707,Goiânia,GO,2020,TRUE
 municipal,5208707,Goiânia,GO,2021,TRUE
@@ -1029,6 +1272,7 @@ municipal,5208707,Goiânia,GO,2022,TRUE
 municipal,5208707,Goiânia,GO,2023,TRUE
 municipal,5208707,Goiânia,GO,2024,TRUE
 municipal,5208707,Goiânia,GO,2025,FALSE
+municipal,5208707,Goiânia,GO,2026,FALSE
 municipal,5300108,Brasília,DF,2019,TRUE
 municipal,5300108,Brasília,DF,2020,TRUE
 municipal,5300108,Brasília,DF,2021,TRUE
@@ -1036,3 +1280,4 @@ municipal,5300108,Brasília,DF,2022,TRUE
 municipal,5300108,Brasília,DF,2023,FALSE
 municipal,5300108,Brasília,DF,2024,TRUE
 municipal,5300108,Brasília,DF,2025,FALSE
+municipal,5300108,Brasília,DF,2026,TRUE

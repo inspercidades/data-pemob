@@ -4,7 +4,7 @@
 
 ## Rebuild
 
-Run from the repository root with the R packages in `renv.lock` and Python's `openpyxl` installed:
+Run from the repository root with the R packages in `renv.lock` and Python's `openpyxl` installed. Rebuild the PEMOB pipeline and Dataverse draft first:
 
 ```sh
 Rscript review/build_indicator_review.R

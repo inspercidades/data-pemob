@@ -324,6 +324,18 @@ stopifnot(
   ),
   any(
     codebook$level == "municipal" &
+      codebook$year == 2026 &
+      codebook$code_variable == "12.2.1" &
+      codebook$source_code == "12.1.1" &
+      !is.na(codebook$question_text)
+  ),
+  any(
+    codebook$level == "metropolitan" &
+      codebook$year == 2026 &
+      !is.na(codebook$question_text)
+  ),
+  any(
+    codebook$level == "municipal" &
       codebook$year == 2020 &
       is.na(codebook$question_text)
   ),

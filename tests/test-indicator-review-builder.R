@@ -101,9 +101,10 @@ zero_answers <- municipal_long |>
   )
 zero_row <- municipal[municipal$code == zero_code, ]
 stopifnot(
-  nrow(zero_answers) == 26L,
+  nrow(zero_answers) == 50L,
+  sum(zero_answers$year == 2026) == 24L,
   sum(zero_answers$value_num == 0, na.rm = TRUE) == 3L,
-  isTRUE(all.equal(zero_row$zero_share, 3 / 26)),
+  isTRUE(all.equal(zero_row$zero_share, 3 / 50)),
   !grepl("muitos zeros", zero_row$quality_flags, fixed = TRUE)
 )
 

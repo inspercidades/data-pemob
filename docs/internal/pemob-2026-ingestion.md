@@ -10,3 +10,5 @@ Downloaded on 1 November 2026 from the [Ministry of Cities PEMOB 2026 page](http
 Both workbooks place question text in row 1 and question codes in row 2. The municipal file has two empty trailing columns. After normalizing identifier labels, each questionnaire has the same question codes as its 2025 source. Question wording differs only in calendar-year references. The municipal fund code `12.1.1` continues to map to the historical code `12.2.1`.
 
 The completed 2026 panels retain every earlier response. Nine new cycling observations triggered the review rules and remain pending in `docs/internal/pemob-review-ledger.csv`. The Dataverse draft contains the 2026 observations; reviewed type and unit metadata are left empty for 2026 until reviewed.
+
+Four 2026 metropolitan names changed while their historical regions kept the same identity: Fortaleza, Sobral, Cariri, and Vale do Itajaí/Vale Europeu. The alias table links those responses to the existing keys, leaving 46 distinct regions across editions.

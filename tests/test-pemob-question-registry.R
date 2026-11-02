@@ -333,3 +333,79 @@ live_snapshot <- readr::read_csv(
   show_col_types = FALSE
 )
 stopifnot(nrow(live_snapshot) == 160L, sum(is.na(live_snapshot$label)) == 8L)
+
+# Recovered metadata keeps the source-supported edition boundary ------------
+
+recovered_review <- readr::read_csv(
+  here::here("tabelas", "pemob_question_registry_review.csv"),
+  col_types = readr::cols(.default = readr::col_character()),
+  show_col_types = FALSE
+)
+recovered_codes <- c("1.6.1.G", "3.1.1.A", "1.4.5.A", "4.3.1")
+recovered_rows <- recovered_review[
+  match(recovered_codes, recovered_review$code_variable),
+]
+stopifnot(
+  identical(recovered_rows$code_variable, recovered_codes),
+  identical(
+    recovered_rows$value_type,
+    c("numeric", "numeric", "text", "categorical")
+  ),
+  identical(
+    recovered_rows$unit,
+    c("km", NA_character_, NA_character_, NA_character_)
+  ),
+  all(
+    recovered_rows$reviewed_type_editions[1:3] ==
+      "2019;2021;2022;2023;2024;2025"
+  ),
+  recovered_rows$reviewed_type_editions[4] == "2021;2022;2023;2024;2025",
+  all(is.na(recovered_rows$valid_values)),
+  all(is.na(recovered_rows$valid_pattern)),
+  all(is.na(recovered_rows$validity_editions)),
+  all(!is.na(recovered_rows$evidence)),
+  all(!is.na(recovered_rows$reviewer))
+)
+
+recovered_seed <- readr::read_delim(
+  here::here("data", "portal", "v1", "dict_portal_v1.csv"),
+  delim = ";",
+  col_types = readr::cols(.default = readr::col_character()),
+  show_col_types = FALSE
+)
+recovered_registry <- build_pemob_question_registry(
+  real_codebook,
+  recovered_seed,
+  recovered_review
+)
+recovered_panel <- read_pemob_history(
+  here::here("data", "pemob_harmonizada_2025.csv")
+)
+recovered_long <- build_pemob_long(
+  recovered_panel,
+  "municipal",
+  registry = recovered_registry
+)
+cycle_metadata <- recovered_long[recovered_long$code_variable == "1.6.1.G", ]
+stopifnot(
+  all(is.na(cycle_metadata$value_type[cycle_metadata$year == 2020])),
+  all(is.na(cycle_metadata$unit[cycle_metadata$year == 2020])),
+  all(cycle_metadata$value_type[cycle_metadata$year == 2021] == "numeric"),
+  all(cycle_metadata$unit[cycle_metadata$year == 2021] == "km")
+)
+
+future_panel <- recovered_panel[recovered_panel$year == 2021, ]
+future_panel$year <- 2026L
+future_long <- build_pemob_long(
+  future_panel,
+  "municipal",
+  registry = recovered_registry
+)
+future_metadata <- future_long[
+  future_long$code_variable %in% recovered_codes,
+]
+stopifnot(
+  nrow(future_metadata) > 0L,
+  all(is.na(future_metadata$value_type)),
+  all(is.na(future_metadata$unit))
+)

@@ -24,3 +24,6 @@ data/portal/**/*.zip
 # Environment
 .Renviron
 .env
+
+# Python
+__pycache__/

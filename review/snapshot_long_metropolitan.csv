@@ -401,8 +401,8 @@ Região Metropolitana de Maceió,AL,2025,2.2.1.B,1.000000000000000000,TRUE
 Região Metropolitana de Maceió,AL,2025,2.2.1.C,1.000000000000000000,TRUE
 Região Metropolitana de Maceió,AL,2025,2.2.1.D,1.000000000000000000,TRUE
 Região Metropolitana de Maceió,AL,2025,2.3.1,NR,FALSE
-Região Metropolitana de Maceió,AL,2025,2.4.1.A,89.00%,FALSE
-Região Metropolitana de Maceió,AL,2025,2.4.1.B,7.00%,FALSE
+Região Metropolitana de Maceió,AL,2025,2.4.1.A,0.890000000000000013,TRUE
+Região Metropolitana de Maceió,AL,2025,2.4.1.B,0.070000000000000007,TRUE
 Região Metropolitana de Maceió,AL,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Maceió,AL,2025,3.1.1.A,CRUZEIRO DO SUL - MACEIÓ (VIA PONTA VERDE),FALSE
 Região Metropolitana de Maceió,AL,2025,3.1.1.B,6.900000000000000355,TRUE
@@ -428,8 +428,8 @@ Região Metropolitana de Maceió,AL,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Maceió,AL,2025,3.4.1.D,NR,FALSE
 Região Metropolitana de Maceió,AL,2025,3.4.1.E,NR,FALSE
 Região Metropolitana de Maceió,AL,2025,3.4.1.F,NR,FALSE
-Região Metropolitana de Maceió,AL,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Maceió,AL,2025,3.5.1.C,100.00%,FALSE
+Região Metropolitana de Maceió,AL,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Maceió,AL,2025,3.5.1.C,1.000000000000000000,TRUE
 Região Metropolitana de Maceió,AL,2025,3.5.1,Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana de Maceió,AL,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Maceió,AL,2025,3.6.1.B,NR,FALSE
@@ -762,10 +762,10 @@ Região Metropolitana de Manaus,AM,2025,3.2.4.A,NR,FALSE
 Região Metropolitana de Manaus,AM,2025,3.2.4.B,NR,FALSE
 Região Metropolitana de Manaus,AM,2025,3.2.4.C,NR,FALSE
 Região Metropolitana de Manaus,AM,2025,3.2.4.D,NR,FALSE
-Região Metropolitana de Manaus,AM,2025,3.3.1.E,5.00%,FALSE
+Região Metropolitana de Manaus,AM,2025,3.3.1.E,0.050000000000000003,TRUE
 Região Metropolitana de Manaus,AM,2025,3.3.1.F,NR,FALSE
 Região Metropolitana de Manaus,AM,2025,3.3.1,Outros,FALSE
-Região Metropolitana de Manaus,AM,2025,3.3.4.E,5.00%,FALSE
+Região Metropolitana de Manaus,AM,2025,3.3.4.E,0.050000000000000003,TRUE
 Região Metropolitana de Manaus,AM,2025,3.3.4.F,N/E,FALSE
 Região Metropolitana de Manaus,AM,2025,3.3.4,Outros,FALSE
 Região Metropolitana de Manaus,AM,2025,3.4.1.A,618069.000000000000000000,TRUE
@@ -780,11 +780,11 @@ Região Metropolitana de Manaus,AM,2025,3.4.4.C,30724.000000000000000000,TRUE
 Região Metropolitana de Manaus,AM,2025,3.4.4.D,NR,FALSE
 Região Metropolitana de Manaus,AM,2025,3.4.4.E,50000.000000000000000000,TRUE
 Região Metropolitana de Manaus,AM,2025,3.4.4.F,259675.000000000000000000,TRUE
-Região Metropolitana de Manaus,AM,2025,3.5.1.A,50.00%,FALSE
-Região Metropolitana de Manaus,AM,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Manaus,AM,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Manaus,AM,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana de Manaus,AM,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Manaus,AM,2025,3.5.1.A,0.500000000000000000,TRUE
+Região Metropolitana de Manaus,AM,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Manaus,AM,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Manaus,AM,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana de Manaus,AM,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Manaus,AM,2025,3.5.1.AA,1.000000000000000000,TRUE
 Região Metropolitana de Manaus,AM,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Pessoas com baixa renda,FALSE
 Região Metropolitana de Manaus,AM,2025,3.6.1,Não,FALSE
@@ -1460,7 +1460,7 @@ Região Metropolitana de Salvador,BA,2025,3.3.1,Outros,FALSE
 Região Metropolitana de Salvador,BA,2025,3.3.2.E,NR,FALSE
 Região Metropolitana de Salvador,BA,2025,3.3.2.F,isento ICMS,FALSE
 Região Metropolitana de Salvador,BA,2025,3.3.2,Outros,FALSE
-Região Metropolitana de Salvador,BA,2025,3.3.4.E,0.00%,FALSE
+Região Metropolitana de Salvador,BA,2025,3.3.4.E,0.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,3.3.4.F,isento ICMS,FALSE
 Região Metropolitana de Salvador,BA,2025,3.3.4,Outros,FALSE
 Região Metropolitana de Salvador,BA,2025,3.4.1.A,9218102.000000000000000000,TRUE
@@ -1481,10 +1481,10 @@ Região Metropolitana de Salvador,BA,2025,3.4.4.C,9912.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,3.4.4.D,9912.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,3.4.4.E,513007.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,3.4.4.F,4940145.000000000000000000,TRUE
-Região Metropolitana de Salvador,BA,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Salvador,BA,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,3.5.1,Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino,FALSE
 Região Metropolitana de Salvador,BA,2025,3.6.1,Não,FALSE
 Região Metropolitana de Salvador,BA,2025,3.6.2,Não,FALSE
@@ -1499,20 +1499,20 @@ Região Metropolitana de Salvador,BA,2025,4.2.1.C,http://www.infraestrutura.ba.g
 Região Metropolitana de Salvador,BA,2025,4.2.1.D,5900000.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,4.2.1.E,26.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,4.2.1.F,50.000000000000000000,TRUE
-Região Metropolitana de Salvador,BA,2025,4.2.1.G,35.30%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.H,1.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.I,34.90%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.J,19.10%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.K,1.90%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.L,1.40%,FALSE
-Região Metropolitana de Salvador,BA,2025,4.2.1.M,4.10%,FALSE
+Região Metropolitana de Salvador,BA,2025,4.2.1.G,0.352999999999999980,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.H,0.010000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.I,0.348999999999999977,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.J,0.191000000000000003,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.K,0.019000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.L,0.013999999999999990,TRUE
+Região Metropolitana de Salvador,BA,2025,4.2.1.M,0.040999999999999988,TRUE
 Região Metropolitana de Salvador,BA,2025,4.2.1,Sim,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.B,4.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.E,36.00%,FALSE
-Região Metropolitana de Salvador,BA,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana de Salvador,BA,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,5.1.1.B,0.040000000000000001,TRUE
+Região Metropolitana de Salvador,BA,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana de Salvador,BA,2025,5.1.1.E,0.359999999999999987,TRUE
+Região Metropolitana de Salvador,BA,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana de Salvador,BA,2025,5.1.1,Sim,FALSE
 Região Metropolitana de Salvador,BA,2025,6.1.1,Órgão da administração indireta,FALSE
 Região Metropolitana de Salvador,BA,2025,7.1.1,Operação por delegação,FALSE
@@ -2836,11 +2836,11 @@ Região Metropolitana da Grande Vitória,ES,2025,2.2.1.B,10.000000000000000000,T
 Região Metropolitana da Grande Vitória,ES,2025,2.2.1.C,10.000000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,2.2.1.D,NR,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,2.3.1,NR,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,2.4.1.A,78.50%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,2.4.1.B,0.80%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,2.4.1.A,0.785000000000000031,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,2.4.1.B,0.008000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,2.4.1,Sim,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,2.4.4.A,94.50%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,2.4.4.B,3.90%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,2.4.4.A,0.944999999999999951,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,2.4.4.B,0.039000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,2.4.4,Sim,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.1.1.A,NR,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.1.1.B,4.900000000000000355,TRUE
@@ -2865,12 +2865,12 @@ Região Metropolitana da Grande Vitória,ES,2025,3.2.4.A,"1,726,651.00",FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.2.4.B,"20,507,379.00",FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.2.4.C,"20,507,379.00",FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.2.4.D,NR,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.3.1.B,5.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,3.3.1.B,0.050000000000000003,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,3.3.1.F,"Contribuição sobre a receita bruta, de 2%",FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.3.4.A,5.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.3.4.E,2.40%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,3.3.4.A,0.050000000000000003,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,3.3.4.E,0.024000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,3.3.4.F,Imposto de Renda,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.3.4,Outros; ISS,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.4.1.A,64108386.000000000000000000,TRUE
@@ -2885,9 +2885,9 @@ Região Metropolitana da Grande Vitória,ES,2025,3.4.4.C,6983.000000000000000000
 Região Metropolitana da Grande Vitória,ES,2025,3.4.4.D,39483.000000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,3.4.4.E,34792.000000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,3.4.4.F,352378.000000000000000000,TRUE
-Região Metropolitana da Grande Vitória,ES,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.6.1,Não,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,3.6.4,Não,FALSE
@@ -2895,12 +2895,12 @@ Região Metropolitana da Grande Vitória,ES,2025,4.1.1,Não,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,4.1.2.A,https://planometropolitano.es.gov.br/,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,4.1.2,Sim,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,4.2.1,Não,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.B,0.20%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.E,0.00%,FALSE
-Região Metropolitana da Grande Vitória,ES,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.B,0.002000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.E,0.000000000000000000,TRUE
+Região Metropolitana da Grande Vitória,ES,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana da Grande Vitória,ES,2025,5.1.1,Sim,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,6.1.1,Órgão da administração indireta,FALSE
 Região Metropolitana da Grande Vitória,ES,2025,7.1.1,Operação por delegação,FALSE
@@ -3449,8 +3449,8 @@ Região Metropolitana de Goiânia,GO,2025,3.2.1.A,"388,017,852.90",FALSE
 Região Metropolitana de Goiânia,GO,2025,3.2.1.B,"104,028,480.83",FALSE
 Região Metropolitana de Goiânia,GO,2025,3.2.1.C,"534,569,709.76",FALSE
 Região Metropolitana de Goiânia,GO,2025,3.2.1.D,"237,953.00",FALSE
-Região Metropolitana de Goiânia,GO,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,3.3.1.E,73.00%,FALSE
+Região Metropolitana de Goiânia,GO,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,3.3.1.E,0.729999999999999982,TRUE
 Região Metropolitana de Goiânia,GO,2025,3.3.1.F,IPVA,FALSE
 Região Metropolitana de Goiânia,GO,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana de Goiânia,GO,2025,3.4.1.A,85587313.000000000000000000,TRUE
@@ -3459,10 +3459,10 @@ Região Metropolitana de Goiânia,GO,2025,3.4.1.C,12258214.000000000000000000,TR
 Região Metropolitana de Goiânia,GO,2025,3.4.1.D,19482757.000000000000000000,TRUE
 Região Metropolitana de Goiânia,GO,2025,3.4.1.E,15522211.000000000000000000,TRUE
 Região Metropolitana de Goiânia,GO,2025,3.4.1.F,103475150.000000000000000000,TRUE
-Região Metropolitana de Goiânia,GO,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,3.5.1.E,100.00%,FALSE
+Região Metropolitana de Goiânia,GO,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,3.5.1.E,1.000000000000000000,TRUE
 Região Metropolitana de Goiânia,GO,2025,3.5.1,Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino,FALSE
 Região Metropolitana de Goiânia,GO,2025,3.6.1,Não,FALSE
 Região Metropolitana de Goiânia,GO,2025,4.1.1,Não,FALSE
@@ -3482,12 +3482,12 @@ Região Metropolitana de Goiânia,GO,2025,4.2.1.K,NR,FALSE
 Região Metropolitana de Goiânia,GO,2025,4.2.1.L,NR,FALSE
 Região Metropolitana de Goiânia,GO,2025,4.2.1.M,NR,FALSE
 Região Metropolitana de Goiânia,GO,2025,4.2.1,Sim,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.B,1.20%,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.E,0.00%,FALSE
-Região Metropolitana de Goiânia,GO,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.B,0.012000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.E,0.000000000000000000,TRUE
+Região Metropolitana de Goiânia,GO,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana de Goiânia,GO,2025,5.1.1,Sim,FALSE
 Região Metropolitana de Goiânia,GO,2025,6.1.1,Secretaria exclusiva,FALSE
 Região Metropolitana de Goiânia,GO,2025,7.1.1,Operação por delegação,FALSE
@@ -3899,11 +3899,11 @@ Região Metropolitana de Belo Horizonte,MG,2025,2.2.2.B,19.000000000000000000,TR
 Região Metropolitana de Belo Horizonte,MG,2025,2.2.2.C,19.000000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,2.2.2.D,19.000000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,2.3.1,Não,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,2.4.1.A,87.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,2.4.1.B,13.00%,FALSE
+Região Metropolitana de Belo Horizonte,MG,2025,2.4.1.A,0.869999999999999996,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,2.4.1.B,0.130000000000000004,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,2.4.1,Sim,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,2.4.2.A,99.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,2.4.2.B,1.00%,FALSE
+Região Metropolitana de Belo Horizonte,MG,2025,2.4.2.A,0.989999999999999991,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,2.4.2.B,0.010000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,2.4.2,Sim,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.1.1.A,Belo Horizonte-Contagem,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.1.1.B,8.199999999999999289,TRUE
@@ -3927,10 +3927,10 @@ Região Metropolitana de Belo Horizonte,MG,2025,3.2.2.A,"97,400,000.00",FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.2.2.B,NR,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.2.2.C,NR,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.2.2.D,"3,500,000.00",FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana de Belo Horizonte,MG,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,3.3.1.F,INSS,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.3.1,Outros,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.3.2.E,2.00%,FALSE
+Região Metropolitana de Belo Horizonte,MG,2025,3.3.2.E,0.020000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,3.3.2.F,IR 25% e CSLL 9%,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.3.2,Outros,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.4.1.A,162700000.000000000000000000,TRUE
@@ -3946,15 +3946,15 @@ Região Metropolitana de Belo Horizonte,MG,2025,3.4.2.D,3500000.0000000000000000
 Região Metropolitana de Belo Horizonte,MG,2025,3.4.2.E,3000000.000000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,3.4.2.F,17000000.000000000000000000,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,3.5.1,Nenhuma,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.A,27.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.B,14.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.C,25.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.D,5.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.E,6.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.F,12.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.G,2.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.H,1.00%,FALSE
-Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.I,6.00%,FALSE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.A,0.270000000000000018,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.B,0.140000000000000013,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.C,0.250000000000000000,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.D,0.050000000000000003,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.E,0.059999999999999998,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.F,0.119999999999999996,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.G,0.020000000000000000,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.H,0.010000000000000000,TRUE
+Região Metropolitana de Belo Horizonte,MG,2025,3.6.1.I,0.059999999999999998,TRUE
 Região Metropolitana de Belo Horizonte,MG,2025,3.6.1,Sim,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,3.6.2,Não,FALSE
 Região Metropolitana de Belo Horizonte,MG,2025,4.1.1.A,www.agenciarmbh.mg.gov.br,FALSE
@@ -4840,8 +4840,8 @@ Região Metropolitana de Recife,PE,2025,2.2.1.B,6.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,2.2.1.C,6.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,2.2.1.D,1.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,2.3.1,NR,FALSE
-Região Metropolitana de Recife,PE,2025,2.4.1.A,95.00%,FALSE
-Região Metropolitana de Recife,PE,2025,2.4.1.B,5.00%,FALSE
+Região Metropolitana de Recife,PE,2025,2.4.1.A,0.949999999999999956,TRUE
+Região Metropolitana de Recife,PE,2025,2.4.1.B,0.050000000000000003,TRUE
 Região Metropolitana de Recife,PE,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Recife,PE,2025,3.1.1.A,NR,FALSE
 Região Metropolitana de Recife,PE,2025,3.1.1.B,NR,FALSE
@@ -4859,7 +4859,7 @@ Região Metropolitana de Recife,PE,2025,3.2.1.A,"31,982,957.97",FALSE
 Região Metropolitana de Recife,PE,2025,3.2.1.B,"31,982,957.97",FALSE
 Região Metropolitana de Recife,PE,2025,3.2.1.C,NR,FALSE
 Região Metropolitana de Recife,PE,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Recife,PE,2025,3.3.1.A,2.00%,FALSE
+Região Metropolitana de Recife,PE,2025,3.3.1.A,0.020000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.3.1,ISS,FALSE
 Região Metropolitana de Recife,PE,2025,3.4.1.A,364026627.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.4.1.B,166000381.000000000000000000,TRUE
@@ -4867,9 +4867,9 @@ Região Metropolitana de Recife,PE,2025,3.4.1.C,59280047.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.4.1.D,80204995.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.4.1.E,154823476.000000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.4.1.F,209393486.000000000000000000,TRUE
-Região Metropolitana de Recife,PE,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Recife,PE,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Recife,PE,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Recife,PE,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Recife,PE,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Recife,PE,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Recife,PE,2025,3.5.1,Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana de Recife,PE,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Recife,PE,2025,3.6.1.B,NR,FALSE
@@ -5133,8 +5133,8 @@ Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.2.2.B,11.00000
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.2.2.C,11.000000000000000000,TRUE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.2.2.D,0.000000000000000000,TRUE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.3.1,Não,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.4.5.A,85%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.4.5.B,7%,FALSE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.4.5.A,0.849999999999999978,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.4.5.B,0.070000000000000007,TRUE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,2.4.5,Sim,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.1.5.A,Tarifa Zero,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.1.5.B,1.000000000000000000,TRUE
@@ -5157,18 +5157,18 @@ Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.4.5.C,NR,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.4.5.D,NR,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.4.5.E,NR,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.4.5.F,NR,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.A,100.00%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.B,100.00%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.C,100.00%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.D,100.00%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.E,100.00%,FALSE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.A,1.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1.E,1.000000000000000000,TRUE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.5.1,Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.A,34%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.D,4%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.F,15%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.I,0%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.J,0%,FALSE
-Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.L,2%,FALSE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.A,0.340000000000000024,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.D,0.040000000000000001,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.F,0.149999999999999994,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.I,0.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.J,0.000000000000000000,TRUE
+Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5.L,0.020000000000000000,TRUE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,3.6.5,Sim,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,4.1.1,Não,FALSE
 Região Integrada de Desenvolvimento da Grande Teresina,PI,2025,4.1.2,Não,FALSE
@@ -5670,8 +5670,8 @@ Região Metropolitana de Curitiba,PR,2025,2.2.1.B,17.000000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,2.2.1.C,17.000000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,2.2.1.D,NR,FALSE
 Região Metropolitana de Curitiba,PR,2025,2.3.1,NR,FALSE
-Região Metropolitana de Curitiba,PR,2025,2.4.1.A,97.70%,FALSE
-Região Metropolitana de Curitiba,PR,2025,2.4.1.B,0.20%,FALSE
+Região Metropolitana de Curitiba,PR,2025,2.4.1.A,0.976999999999999980,TRUE
+Região Metropolitana de Curitiba,PR,2025,2.4.1.B,0.002000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Curitiba,PR,2025,3.1.1.A,Linha D01-PIRAQUARA/SANTOS ANDRADE (via TERMINAL SÃO ROQUE),FALSE
 Região Metropolitana de Curitiba,PR,2025,3.1.1.B,6.000000000000000000,TRUE
@@ -5689,7 +5689,7 @@ Região Metropolitana de Curitiba,PR,2025,3.2.1.A,"346,709,833.75",FALSE
 Região Metropolitana de Curitiba,PR,2025,3.2.1.B,"41,698,629.99",FALSE
 Região Metropolitana de Curitiba,PR,2025,3.2.1.C,"168,156,212.40",FALSE
 Região Metropolitana de Curitiba,PR,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.3.1.E,5.29%,FALSE
+Região Metropolitana de Curitiba,PR,2025,3.3.1.E,0.052900000000000003,TRUE
 Região Metropolitana de Curitiba,PR,2025,3.3.1.F,"Verba de Gestão (4%), Taxa de Regulação (~0,29%), CPRB (1%) - Valores referentes ao período de janeiro/24 a setembro/24",FALSE
 Região Metropolitana de Curitiba,PR,2025,3.3.1,Outros,FALSE
 Região Metropolitana de Curitiba,PR,2025,3.4.1.A,27913807.000000000000000000,TRUE
@@ -5698,17 +5698,17 @@ Região Metropolitana de Curitiba,PR,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Curitiba,PR,2025,3.4.1.D,743122.000000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,3.4.1.E,7543071.000000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,3.4.1.F,62716642.000000000000000000,TRUE
-Região Metropolitana de Curitiba,PR,2025,3.5.1.C,100.00%,FALSE
+Região Metropolitana de Curitiba,PR,2025,3.5.1.C,1.000000000000000000,TRUE
 Região Metropolitana de Curitiba,PR,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.A,27.21%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.B,14.93%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.C,16.92%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.D,8.40%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.E,10.49%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.F,12.07%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.G,5.29%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.H,2.75%,FALSE
-Região Metropolitana de Curitiba,PR,2025,3.6.1.I,1.94%,FALSE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.A,0.272100000000000009,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.B,0.149299999999999988,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.C,0.169200000000000017,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.D,0.084000000000000005,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.E,0.104899999999999993,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.F,0.120700000000000002,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.G,0.052900000000000003,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.H,0.027500000000000000,TRUE
+Região Metropolitana de Curitiba,PR,2025,3.6.1.I,0.019400000000000001,TRUE
 Região Metropolitana de Curitiba,PR,2025,3.6.1,Sim,FALSE
 Região Metropolitana de Curitiba,PR,2025,4.1.1,Não,FALSE
 Região Metropolitana de Curitiba,PR,2025,4.1.2,Não,FALSE
@@ -7086,17 +7086,17 @@ Região Metropolitana do Rio de Janeiro,RJ,2025,2.2.2.B,145.000000000000000000,T
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.2.2.C,145.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.2.2.D,52.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.3.1,Não,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.1.A,69.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.1.B,24.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.1.A,0.689999999999999947,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.1.B,0.239999999999999991,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.1,Sim,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.2.A,93.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.2.B,7.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.2.A,0.930000000000000049,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.2.B,0.070000000000000007,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.2,Sim,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.3.A,97.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.3.B,3.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.3.A,0.969999999999999973,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.3.B,0.029999999999999999,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.3,Sim,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.4.A,96.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.4.B,4.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.4.A,0.959999999999999964,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.4.B,0.040000000000000001,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,2.4.4,Sim,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.1.1.A,Nova Iguaçu x Rio de Janeiro,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.1.1.B,12.650000000000000355,TRUE
@@ -7135,25 +7135,25 @@ Região Metropolitana do Rio de Janeiro,RJ,2025,3.2.4.A,"100,420.00",FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.2.4.B,NR,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.2.4.C,NR,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.2.4.D,"1,747.00",FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.C,2.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.D,2.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.C,0.020000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.D,0.020000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1.F,ICMS + FOT/KM,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.1,Outros; Cofins; PIS,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.A,2.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.C,1.65%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.D,7.60%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.E,5.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.A,0.020000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.C,0.016500000000000001,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.D,0.075999999999999998,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.E,0.050000000000000003,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2.F,Taxa de regulação,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.2,ISS; PIS; Cofins; Outros,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.A,2.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.C,1.65%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.D,7.60%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.E,5.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.A,0.020000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.C,0.016500000000000001,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.D,0.075999999999999998,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.E,0.050000000000000003,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3.F,Taxa de Regulação,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.3,Cofins; Outros; ISS; PIS,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.4.C,65.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.4.D,3.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.4.C,0.650000000000000022,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.4.D,0.029999999999999999,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.3.4,Cofins; PIS,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.1.A,400547977.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.1.B,NR,FALSE
@@ -7179,38 +7179,38 @@ Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.4.C,35789.000000000000000000
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.4.D,1329173.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.4.E,1474452.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.4.4.F,11918184.000000000000000000,TRUE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.A,30.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.D,100.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.A,0.299999999999999989,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.D,1.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1.AA,2.270000000000000018,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Pessoas com 60 a 64 anos; Pessoas com baixa renda,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.A,28.08%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.B,3.56%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.C,27.51%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.D,6.79%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.E,6.27%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.F,18.26%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.G,4.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.H,5.53%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.A,0.280799999999999994,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.B,0.035600000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.C,0.275100000000000011,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.D,0.067900000000000002,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.E,0.062699999999999992,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.F,0.182600000000000012,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.G,0.040000000000000001,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.H,0.055300000000000002,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1.I,NR,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.1,Sim,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.A,30.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.B,6.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.C,0.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.D,0.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.E,5.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.F,8.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.G,3.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.H,8.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.I,19.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.J,0.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.L,22.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.A,0.299999999999999989,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.B,0.059999999999999998,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.C,0.000000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.D,0.000000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.E,0.050000000000000003,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.F,0.080000000000000002,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.G,0.029999999999999999,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.H,0.080000000000000002,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.I,0.190000000000000002,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.J,0.000000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2.L,0.220000000000000001,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.2,Sim,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.3,Não,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.A,39.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.C,15.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.I,3.00%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.A,0.390000000000000013,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.C,0.149999999999999994,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4.I,0.029999999999999999,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,3.6.4,Sim,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.1.1.A,https://www.rj.gov.br/central/pdtu_2015,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.1.1,Sim,FALSE
@@ -7222,13 +7222,13 @@ Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.C,"Não está disponível,
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.D,2259500.000000000000000000,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.E,NR,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.F,29.699999999999999289,TRUE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.G,29.40%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.H,2.40%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.I,48.70%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.J,16.60%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.K,1.00%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.L,1.10%,FALSE
-Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.M,0.70%,FALSE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.G,0.293999999999999984,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.H,0.024000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.I,0.486999999999999988,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.J,0.166000000000000009,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.K,0.010000000000000000,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.L,0.010999999999999999,TRUE
+Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1.M,0.006999999999999990,TRUE
 Região Metropolitana do Rio de Janeiro,RJ,2025,4.2.1,Sim,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,5.1.1,Não,FALSE
 Região Metropolitana do Rio de Janeiro,RJ,2025,6.1.1,Secretaria de mobilidade/transporte junto a outras políticas,FALSE
@@ -7744,8 +7744,8 @@ Região Metropolitana de Natal,RN,2025,2.2.1.B,2.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,2.2.1.C,20.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,2.2.1.D,NR,FALSE
 Região Metropolitana de Natal,RN,2025,2.3.1,NR,FALSE
-Região Metropolitana de Natal,RN,2025,2.4.1.A,70.00%,FALSE
-Região Metropolitana de Natal,RN,2025,2.4.1.B,15.00%,FALSE
+Região Metropolitana de Natal,RN,2025,2.4.1.A,0.699999999999999956,TRUE
+Região Metropolitana de Natal,RN,2025,2.4.1.B,0.149999999999999994,TRUE
 Região Metropolitana de Natal,RN,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Natal,RN,2025,3.1.1.A,Natal-Parnamirim,FALSE
 Região Metropolitana de Natal,RN,2025,3.1.1.B,5.450000000000000178,TRUE
@@ -7763,8 +7763,8 @@ Região Metropolitana de Natal,RN,2025,3.2.1.A,"87,290,045.00",FALSE
 Região Metropolitana de Natal,RN,2025,3.2.1.B,NR,FALSE
 Região Metropolitana de Natal,RN,2025,3.2.1.C,"15,000.00",FALSE
 Região Metropolitana de Natal,RN,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Natal,RN,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Natal,RN,2025,3.3.1.E,4.00%,FALSE
+Região Metropolitana de Natal,RN,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Natal,RN,2025,3.3.1.E,0.040000000000000001,TRUE
 Região Metropolitana de Natal,RN,2025,3.3.1.F,ICMS,FALSE
 Região Metropolitana de Natal,RN,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana de Natal,RN,2025,3.4.1.A,20003968.000000000000000000,TRUE
@@ -7773,11 +7773,11 @@ Região Metropolitana de Natal,RN,2025,3.4.1.C,6824008.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,3.4.1.D,402824.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,3.4.1.E,9556775.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,3.4.1.F,13536078.000000000000000000,TRUE
-Região Metropolitana de Natal,RN,2025,3.5.1.A,100.00%,FALSE
-Região Metropolitana de Natal,RN,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Natal,RN,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Natal,RN,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Natal,RN,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Natal,RN,2025,3.5.1.A,1.000000000000000000,TRUE
+Região Metropolitana de Natal,RN,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Natal,RN,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Natal,RN,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Natal,RN,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,3.5.1.AA,1.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,3.5.1,Pessoas com baixa renda; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Pessoas com 60 a 64 anos,FALSE
 Região Metropolitana de Natal,RN,2025,3.6.1.A,NR,FALSE
@@ -7798,13 +7798,13 @@ Região Metropolitana de Natal,RN,2025,4.2.1.C,nenhum,FALSE
 Região Metropolitana de Natal,RN,2025,4.2.1.D,73005.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,4.2.1.E,40.000000000000000000,TRUE
 Região Metropolitana de Natal,RN,2025,4.2.1.F,40.000000000000000000,TRUE
-Região Metropolitana de Natal,RN,2025,4.2.1.G,5.00%,FALSE
-Região Metropolitana de Natal,RN,2025,4.2.1.H,10.00%,FALSE
+Região Metropolitana de Natal,RN,2025,4.2.1.G,0.050000000000000003,TRUE
+Região Metropolitana de Natal,RN,2025,4.2.1.H,0.100000000000000006,TRUE
 Região Metropolitana de Natal,RN,2025,4.2.1.I,NR,FALSE
 Região Metropolitana de Natal,RN,2025,4.2.1.J,NR,FALSE
 Região Metropolitana de Natal,RN,2025,4.2.1.K,NR,FALSE
 Região Metropolitana de Natal,RN,2025,4.2.1.L,NR,FALSE
-Região Metropolitana de Natal,RN,2025,4.2.1.M,85.00%,FALSE
+Região Metropolitana de Natal,RN,2025,4.2.1.M,0.849999999999999978,TRUE
 Região Metropolitana de Natal,RN,2025,4.2.1,Sim,FALSE
 Região Metropolitana de Natal,RN,2025,5.1.1,Não,FALSE
 Região Metropolitana de Natal,RN,2025,6.1.1,Órgão da administração indireta,FALSE
@@ -8497,8 +8497,8 @@ Região Metropolitana Carbonífera,SC,2025,3.2.1.A,"15,204,000.00",FALSE
 Região Metropolitana Carbonífera,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana Carbonífera,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana Carbonífera,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana Carbonífera,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.4.1.A,16104201.000000000000000000,TRUE
@@ -8507,10 +8507,10 @@ Região Metropolitana Carbonífera,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana Carbonífera,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana Carbonífera,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana Carbonífera,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana Carbonífera,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana Carbonífera,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana Carbonífera,SC,2025,3.5.1,Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana Carbonífera,SC,2025,3.6.1.B,NR,FALSE
@@ -8705,8 +8705,8 @@ Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.2.1.A,"12,080,125.00",FALS
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.4.1.A,233248012.000000000000000000,TRUE
@@ -8715,10 +8715,10 @@ Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana da Foz do Rio Itajaí,SC,2025,3.6.1.B,NR,FALSE
@@ -8893,8 +8893,8 @@ Região Metropolitana de Chapecó,SC,2025,3.2.1.A,"6,158,951.00",FALSE
 Região Metropolitana de Chapecó,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana de Chapecó,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Chapecó,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana de Chapecó,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.4.1.A,882140.000000000000000000,TRUE
@@ -8903,10 +8903,10 @@ Região Metropolitana de Chapecó,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Chapecó,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Chapecó,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Chapecó,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Chapecó,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Chapecó,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Chapecó,SC,2025,3.5.1,Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Chapecó,SC,2025,3.6.1.B,NR,FALSE
@@ -9099,8 +9099,8 @@ Região Metropolitana de Florianópolis,SC,2025,3.2.1.A,"131,169,541.00",FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana de Florianópolis,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Florianópolis,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana de Florianópolis,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.4.1.A,23158741.000000000000000000,TRUE
@@ -9109,10 +9109,10 @@ Região Metropolitana de Florianópolis,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Florianópolis,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Florianópolis,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Florianópolis,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Florianópolis,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Florianópolis,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Florianópolis,SC,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com 60 a 64 anos,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Florianópolis,SC,2025,3.6.1.B,NR,FALSE
@@ -9289,8 +9289,8 @@ Região Metropolitana de Lages,SC,2025,3.2.1.A,"925,214.44",FALSE
 Região Metropolitana de Lages,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Lages,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Lages,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana de Lages,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Lages,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana de Lages,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana de Lages,SC,2025,3.4.1.A,NR,FALSE
@@ -9299,10 +9299,10 @@ Região Metropolitana de Lages,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana de Lages,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Lages,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Lages,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Lages,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Lages,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Lages,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Lages,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Lages,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Lages,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana de Lages,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Lages,SC,2025,3.6.1.B,NR,FALSE
@@ -9484,8 +9484,8 @@ Região Metropolitana de Tubarão,SC,2025,3.2.1.A,"4,767,598.25",FALSE
 Região Metropolitana de Tubarão,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana de Tubarão,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana de Tubarão,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana de Tubarão,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.4.1.A,NR,FALSE
@@ -9494,10 +9494,10 @@ Região Metropolitana de Tubarão,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana de Tubarão,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Tubarão,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Tubarão,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Tubarão,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana de Tubarão,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Tubarão,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de Tubarão,SC,2025,3.6.1.B,NR,FALSE
@@ -9688,8 +9688,8 @@ Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.2.1.A,"2,758,358.85",FAL
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.4.1.A,802458.000000000000000000,TRUE
@@ -9698,10 +9698,10 @@ Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana do Alto Vale do Itajaí,SC,2025,3.6.1.B,NR,FALSE
@@ -9892,8 +9892,8 @@ Região Metropolitana do Contestado,SC,2025,3.2.1.A,"3,958,458.15",FALSE
 Região Metropolitana do Contestado,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana do Contestado,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana do Contestado,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana do Contestado,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Contestado,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana do Contestado,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana do Contestado,SC,2025,3.4.1.A,985125.000000000000000000,TRUE
@@ -9902,10 +9902,10 @@ Região Metropolitana do Contestado,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana do Contestado,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Contestado,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Contestado,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana do Contestado,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Contestado,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Contestado,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Contestado,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Contestado,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Contestado,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino,FALSE
 Região Metropolitana do Contestado,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana do Contestado,SC,2025,3.6.1.B,NR,FALSE
@@ -10096,8 +10096,8 @@ Região Metropolitana do Extremo Oeste,SC,2025,3.2.1.A,"30,720,567.00",FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana do Extremo Oeste,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Extremo Oeste,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana do Extremo Oeste,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.4.1.A,NR,FALSE
@@ -10106,10 +10106,10 @@ Região Metropolitana do Extremo Oeste,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Extremo Oeste,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Extremo Oeste,SC,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana do Extremo Oeste,SC,2025,3.6.1.B,NR,FALSE
@@ -10300,8 +10300,8 @@ Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.2.1.A,"8,402,574.0
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.4.1.A,1325478.000000000000000000,TRUE
@@ -10310,10 +10310,10 @@ Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.5.1,Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Pessoas com 60 a 64 anos,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana do Norte/Nordeste Catarinense,SC,2025,3.6.1.B,NR,FALSE
@@ -10504,8 +10504,8 @@ Região Metropolitana do Vale do Itajaí,SC,2025,3.2.1.A,"6,621,458.70",FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.2.1.B,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.2.1.D,NR,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1.B,1.00%,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1.E,1.00%,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1.B,0.010000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1.E,0.010000000000000000,TRUE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1.F,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.4.1.A,1265874.000000000000000000,TRUE
@@ -10514,10 +10514,10 @@ Região Metropolitana do Vale do Itajaí,SC,2025,3.4.1.C,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.4.1.E,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.4.1.F,NR,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.D,50.00%,FALSE
-Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.D,0.500000000000000000,TRUE
+Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino; Pessoas com 60 a 64 anos,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.6.1.A,NR,FALSE
 Região Metropolitana do Vale do Itajaí,SC,2025,3.6.1.B,NR,FALSE
@@ -11192,10 +11192,10 @@ Região Metropolitana da Baixada Santista,SP,2025,2.3.1.A,2024.00000000000000000
 Região Metropolitana da Baixada Santista,SP,2025,2.3.1.B,Não disponível,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,2.3.1,Sim,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,2.4.1.A,NR,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,2.4.1.B,0.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,2.4.1.B,0.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,2.4.1,Sim,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,2.4.5.A,99.90%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,2.4.5.B,0.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,2.4.5.A,0.998999999999999999,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,2.4.5.B,0.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,2.4.5,Sim,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.1.1.A,Sao Vicente (Terminal Barreiros) - Santos (Terminal Porto),FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.1.1.B,5.349999999999999645,TRUE
@@ -11220,12 +11220,12 @@ Região Metropolitana da Baixada Santista,SP,2025,3.2.5.A,NR,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.2.5.B,NR,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.2.5.C,NR,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.2.5.D,NR,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.3.1.B,3.86%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,3.3.1.B,0.038599999999999988,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.3.1.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.3.5.B,3.86%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.3.5.E,2.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,3.3.5.B,0.038599999999999988,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.3.5.E,0.020000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.3.5.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.3.5,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.4.1.A,51225739.000000000000000000,TRUE
@@ -11240,20 +11240,20 @@ Região Metropolitana da Baixada Santista,SP,2025,3.4.5.C,241693.000000000000000
 Região Metropolitana da Baixada Santista,SP,2025,3.4.5.D,1122769.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.4.5.E,2205858.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.4.5.F,6610194.000000000000000000,TRUE
-Região Metropolitana da Baixada Santista,SP,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.5.1,Estudantes da rede privada de ensino; Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.A,41.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.B,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.C,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.D,29.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.E,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.F,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.G,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.H,30.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,3.6.1.I,0.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.A,0.409999999999999976,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.B,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.C,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.D,0.289999999999999980,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.E,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.F,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.G,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.H,0.299999999999999989,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,3.6.1.I,0.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,3.6.1,Sim,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.6.5.A,NR,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,3.6.5.D,NR,FALSE
@@ -11271,20 +11271,20 @@ Região Metropolitana da Baixada Santista,SP,2025,4.2.1.C,não está disponivel,
 Região Metropolitana da Baixada Santista,SP,2025,4.2.1.D,2173208.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,4.2.1.E,5.799999999999999822,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,4.2.1.F,33.799999999999997158,TRUE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.G,26.12%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.H,11.49%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.I,36.15%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.J,19.59%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.K,5.78%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.L,0.54%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,4.2.1.M,0.33%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.G,0.261199999999999988,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.H,0.114900000000000002,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.I,0.361499999999999988,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.J,0.195899999999999991,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.K,0.057799999999999997,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.L,0.005400000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,4.2.1.M,0.003300000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,4.2.1,Sim,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.B,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.E,100.00%,FALSE
-Região Metropolitana da Baixada Santista,SP,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.B,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.E,1.000000000000000000,TRUE
+Região Metropolitana da Baixada Santista,SP,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana da Baixada Santista,SP,2025,5.1.1,Sim,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,6.1.1,Órgão da administração indireta; Secretaria exclusiva,FALSE
 Região Metropolitana da Baixada Santista,SP,2025,7.1.1,Operação por delegação,FALSE
@@ -11786,8 +11786,8 @@ Região Metropolitana de Campinas,SP,2025,2.2.1.B,5.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,2.2.1.C,5.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,2.2.1.D,5.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,2.3.1,NR,FALSE
-Região Metropolitana de Campinas,SP,2025,2.4.1.A,93.70%,FALSE
-Região Metropolitana de Campinas,SP,2025,2.4.1.B,6.20%,FALSE
+Região Metropolitana de Campinas,SP,2025,2.4.1.A,0.937000000000000055,TRUE
+Região Metropolitana de Campinas,SP,2025,2.4.1.B,0.062000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Campinas,SP,2025,3.1.1.A,Vinhedo (Capela) - Campinas (Terminal Metropolitano Prefeito Magalhaes Teixeira),FALSE
 Região Metropolitana de Campinas,SP,2025,3.1.1.B,6.200000000000000178,TRUE
@@ -11804,8 +11804,8 @@ Região Metropolitana de Campinas,SP,2025,3.2.1.A,"150,758,322.19",FALSE
 Região Metropolitana de Campinas,SP,2025,3.2.1.B,"1,852,021.20",FALSE
 Região Metropolitana de Campinas,SP,2025,3.2.1.C,"10,515,268.74",FALSE
 Região Metropolitana de Campinas,SP,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Campinas,SP,2025,3.3.1.B,3.86%,FALSE
-Região Metropolitana de Campinas,SP,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,3.3.1.B,0.038599999999999988,TRUE
+Região Metropolitana de Campinas,SP,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,3.3.1.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana de Campinas,SP,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
 Região Metropolitana de Campinas,SP,2025,3.4.1.A,31033787.000000000000000000,TRUE
@@ -11814,19 +11814,19 @@ Região Metropolitana de Campinas,SP,2025,3.4.1.C,588031.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,3.4.1.D,1519988.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,3.4.1.E,5196176.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,3.4.1.F,26199670.000000000000000000,TRUE
-Região Metropolitana de Campinas,SP,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,3.5.1,Pessoas com deficiência e mobilidae reduzida; Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Estudantes da rede pública de ensino,FALSE
-Região Metropolitana de Campinas,SP,2025,3.6.1.A,34.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,3.6.1.A,0.340000000000000024,TRUE
 Região Metropolitana de Campinas,SP,2025,3.6.1.B,NR,FALSE
 Região Metropolitana de Campinas,SP,2025,3.6.1.C,NR,FALSE
-Região Metropolitana de Campinas,SP,2025,3.6.1.D,33.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,3.6.1.D,0.330000000000000016,TRUE
 Região Metropolitana de Campinas,SP,2025,3.6.1.E,NR,FALSE
 Região Metropolitana de Campinas,SP,2025,3.6.1.F,NR,FALSE
 Região Metropolitana de Campinas,SP,2025,3.6.1.G,NR,FALSE
-Região Metropolitana de Campinas,SP,2025,3.6.1.H,33.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,3.6.1.H,0.330000000000000016,TRUE
 Região Metropolitana de Campinas,SP,2025,3.6.1.I,NR,FALSE
 Região Metropolitana de Campinas,SP,2025,3.6.1,Sim,FALSE
 Região Metropolitana de Campinas,SP,2025,4.1.1.A,http://www.stm.sp.gov.br/pitu2015/documentos,FALSE
@@ -11839,20 +11839,20 @@ Região Metropolitana de Campinas,SP,2025,4.2.1.C,http://www.peasistemas.com.br/
 Região Metropolitana de Campinas,SP,2025,4.2.1.D,4746347.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,4.2.1.E,NR,FALSE
 Região Metropolitana de Campinas,SP,2025,4.2.1.F,28.300000000000000711,TRUE
-Região Metropolitana de Campinas,SP,2025,4.2.1.G,25.10%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.H,2.20%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.I,28.90%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.J,38.40%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.K,4.90%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.L,0.20%,FALSE
-Região Metropolitana de Campinas,SP,2025,4.2.1.M,0.40%,FALSE
+Região Metropolitana de Campinas,SP,2025,4.2.1.G,0.251000000000000001,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.H,0.021999999999999999,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.I,0.288999999999999979,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.J,0.384000000000000008,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.K,0.049000000000000002,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.L,0.002000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,4.2.1.M,0.004000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,4.2.1,Sim,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.B,0.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.E,100.00%,FALSE
-Região Metropolitana de Campinas,SP,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana de Campinas,SP,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,5.1.1.B,0.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,5.1.1.E,1.000000000000000000,TRUE
+Região Metropolitana de Campinas,SP,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana de Campinas,SP,2025,5.1.1,Sim,FALSE
 Região Metropolitana de Campinas,SP,2025,6.1.1,Secretaria exclusiva; Órgão da administração indireta,FALSE
 Região Metropolitana de Campinas,SP,2025,7.1.1,Operação por delegação,FALSE
@@ -12252,7 +12252,7 @@ Região Metropolitana de Sorocaba,SP,2025,2.2.1.C,NR,FALSE
 Região Metropolitana de Sorocaba,SP,2025,2.2.1.D,NR,FALSE
 Região Metropolitana de Sorocaba,SP,2025,2.3.1,NR,FALSE
 Região Metropolitana de Sorocaba,SP,2025,2.4.1.A,NR,FALSE
-Região Metropolitana de Sorocaba,SP,2025,2.4.1.B,0.00%,FALSE
+Região Metropolitana de Sorocaba,SP,2025,2.4.1.B,0.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,2.4.1,Sim,FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.1.1.A,Salto De Pirapora (Campo Largo) - Sorocaba (Centro),FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.1.1.B,6.849999999999999645,TRUE
@@ -12270,8 +12270,8 @@ Região Metropolitana de Sorocaba,SP,2025,3.2.1.A,"50,014,240.80",FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.2.1.B,"4,765,731.80",FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.2.1.C,"17,280,289.93",FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.2.1.D,NR,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.3.1.B,3.86%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana de Sorocaba,SP,2025,3.3.1.B,0.038599999999999988,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.3.1.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana de Sorocaba,SP,2025,3.4.1.A,9926894.000000000000000000,TRUE
@@ -12280,31 +12280,31 @@ Região Metropolitana de Sorocaba,SP,2025,3.4.1.C,645878.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.4.1.D,192969.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.4.1.E,1534102.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.4.1.F,8970873.000000000000000000,TRUE
-Região Metropolitana de Sorocaba,SP,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de Sorocaba,SP,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.5.1,Estudantes da rede pública de ensino; Pessoas com deficiência e mobilidae reduzida; Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.A,46.44%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.B,8.92%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.C,21.37%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.D,3.34%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.E,4.80%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.F,5.29%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.G,2.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.H,7.84%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,3.6.1.I,0.00%,FALSE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.A,0.464399999999999979,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.B,0.089200000000000002,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.C,0.213700000000000001,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.D,0.033399999999999999,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.E,0.048000000000000001,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.F,0.052900000000000003,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.G,0.020000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.H,0.078399999999999997,TRUE
+Região Metropolitana de Sorocaba,SP,2025,3.6.1.I,0.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,3.6.1,Sim,FALSE
 Região Metropolitana de Sorocaba,SP,2025,4.1.1,Não,FALSE
 Região Metropolitana de Sorocaba,SP,2025,4.1.2.A,https://rms.pdui.sp.gov.br,FALSE
 Região Metropolitana de Sorocaba,SP,2025,4.1.2,Sim,FALSE
 Região Metropolitana de Sorocaba,SP,2025,4.2.1,Não,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.B,0.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.E,100.00%,FALSE
-Região Metropolitana de Sorocaba,SP,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.B,0.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.E,1.000000000000000000,TRUE
+Região Metropolitana de Sorocaba,SP,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana de Sorocaba,SP,2025,5.1.1,Sim,FALSE
 Região Metropolitana de Sorocaba,SP,2025,6.1.1,Órgão da administração indireta; Secretaria exclusiva,FALSE
 Região Metropolitana de Sorocaba,SP,2025,7.1.1,Operação por delegação,FALSE
@@ -13468,17 +13468,17 @@ Região Metropolitana de São Paulo,SP,2025,2.2.2.D,176.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.3.1.A,2024.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.3.1.B,https://www.cptm.sp.gov.br/Transparencia/Pages/Pesquisas.aspx https://mobilidade.grupoccr.com.br/content/Site-Mobilidade/pt/viamobilidade8e9/pesquisa-de-satisfacao-e-indicadores.html https://mobilidade.grupoccr.com.br/content/dam/conteudo-multicanal/mobilidade/conteudo/pt/midia/documentos/pesquisa-de-satisfacao-e-indicadores/20240722094331639-Pesquisa%20de%20Qualidade%20de%20Servi%C3%A7os%20-%20Linha%208%20-%20Abril%202024%20(7).pdf,FALSE
 Região Metropolitana de São Paulo,SP,2025,2.3.1,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.1.A,95.50%,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.1.B,4.40%,FALSE
+Região Metropolitana de São Paulo,SP,2025,2.4.1.A,0.954999999999999960,TRUE
+Região Metropolitana de São Paulo,SP,2025,2.4.1.B,0.043999999999999997,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.4.1,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.2.A,97.40%,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.2.B,2.50%,FALSE
+Região Metropolitana de São Paulo,SP,2025,2.4.2.A,0.973999999999999977,TRUE
+Região Metropolitana de São Paulo,SP,2025,2.4.2.B,0.025000000000000001,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.4.2,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.3.A,98.70%,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.3.B,1.20%,FALSE
+Região Metropolitana de São Paulo,SP,2025,2.4.3.A,0.986999999999999988,TRUE
+Região Metropolitana de São Paulo,SP,2025,2.4.3.B,0.012000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.4.3,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.6.A,98.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,2.4.6.B,2.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,2.4.6.A,0.979999999999999982,TRUE
+Região Metropolitana de São Paulo,SP,2025,2.4.6.B,0.020000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,2.4.7,Sim,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.1.1.A,São Bernardo Do Campo (Terminal Metropolitano Ferrazopolis) - Sao Paulo (Terminal Metropolitano Jabaquara),FALSE
 Região Metropolitana de São Paulo,SP,2025,3.1.1.B,6.049999999999999822,TRUE
@@ -13517,16 +13517,16 @@ Região Metropolitana de São Paulo,SP,2025,3.2.6.A,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.2.6.B,"22,519,000.00",FALSE
 Região Metropolitana de São Paulo,SP,2025,3.2.6.C,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.2.6.D,NR,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.3.1.B,3.86%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.3.1.B,0.038599999999999988,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.3.1.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.3.1,Outros; Taxa de Gerenciamento,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.3.2.E,34.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.3.2.E,0.340000000000000024,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.3.2.F,CPRB - Contribuição Previdenciária sobre a Receita Bruta,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.3.2,Outros,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.3.3.E,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.3.3,Outros,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.3.6.E,2.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.3.6.E,0.020000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.3.6.F,CPRB - Contribuição Previdenciária sobre a Receita Bruta,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.3.6,Outros,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.4.1.A,411070760.000000000000000000,TRUE
@@ -13553,10 +13553,10 @@ Região Metropolitana de São Paulo,SP,2025,3.4.6.C,910304.000000000000000000,TR
 Região Metropolitana de São Paulo,SP,2025,3.4.6.D,19862058.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.4.6.E,4048621.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.4.6.F,18336745.000000000000000000,TRUE
-Região Metropolitana de São Paulo,SP,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.5.1,Estudantes da rede pública de ensino; Estudantes da rede privada de ensino; Pessoas com 60 a 64 anos; Pessoas com deficiência e mobilidae reduzida,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.6.1.A,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.6.1.B,NR,FALSE
@@ -13568,41 +13568,41 @@ Região Metropolitana de São Paulo,SP,2025,3.6.1.G,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.6.1.H,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.6.1.I,NR,FALSE
 Região Metropolitana de São Paulo,SP,2025,3.6.1,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.A,45.80%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.B,11.60%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.C,0.20%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.D,0.90%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.E,8.30%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.F,4.70%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.G,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.H,25.20%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.I,11.70%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.J,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.2.L,0.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.A,0.458000000000000018,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.B,0.116000000000000006,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.C,0.002000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.D,0.008999999999999999,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.E,0.083000000000000004,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.F,0.047000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.G,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.H,0.252000000000000002,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.I,0.117000000000000007,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.J,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.2.L,0.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.6.2,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.A,32.60%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.B,7.80%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.C,2.80%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.D,1.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.E,21.30%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.F,4.80%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.G,0.10%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.H,30.60%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.I,6.40%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.J,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.3.L,13.90%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.A,0.326000000000000012,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.B,0.078000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.C,0.027999999999999990,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.D,0.010000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.E,0.212999999999999995,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.F,0.048000000000000001,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.G,0.001000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.H,0.305999999999999994,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.I,0.064000000000000001,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.J,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.3.L,0.139000000000000012,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.6.3,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.A,60.10%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.B,10.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.C,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.D,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.E,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.F,3.30%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.A,0.600999999999999979,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.B,0.100000000000000006,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.C,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.D,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.E,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.F,0.033000000000000002,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.6.6.G,NR,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.H,19.90%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.I,6.70%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.J,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,3.6.6.L,0.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.H,0.199000000000000010,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.I,0.067000000000000004,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.J,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,3.6.6.L,0.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,3.6.6,Sim,FALSE
 Região Metropolitana de São Paulo,SP,2025,4.1.1.A,https://pitu2040.stm.sp.gov.br/descricao/,FALSE
 Região Metropolitana de São Paulo,SP,2025,4.1.1,Sim,FALSE
@@ -13614,20 +13614,20 @@ Região Metropolitana de São Paulo,SP,2025,4.2.1.C,https://transparencia.metros
 Região Metropolitana de São Paulo,SP,2025,4.2.1.D,3566106.200000000186264515,TRUE
 Região Metropolitana de São Paulo,SP,2025,4.2.1.E,5.599999999999999645,TRUE
 Região Metropolitana de São Paulo,SP,2025,4.2.1.F,33.899999999999998579,TRUE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.G,28.20%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.H,1.30%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.I,34.40%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.J,29.30%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.K,3.50%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.L,3.10%,FALSE
-Região Metropolitana de São Paulo,SP,2025,4.2.1.M,0.20%,FALSE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.G,0.281999999999999973,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.H,0.012999999999999999,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.I,0.343999999999999972,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.J,0.292999999999999983,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.K,0.035000000000000003,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.L,0.031000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,4.2.1.M,0.002000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,4.2.1,Sim,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.B,2.20%,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.E,97.70%,FALSE
-Região Metropolitana de São Paulo,SP,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.B,0.021999999999999999,TRUE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.E,0.976999999999999980,TRUE
+Região Metropolitana de São Paulo,SP,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana de São Paulo,SP,2025,5.1.1,Sim,FALSE
 Região Metropolitana de São Paulo,SP,2025,6.1.1,Secretaria exclusiva; Órgão da administração indireta,FALSE
 Região Metropolitana de São Paulo,SP,2025,7.1.1,Operação por delegação; Operação direta,FALSE
@@ -14203,7 +14203,7 @@ Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.2.1.C,NR,FAL
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.2.1.D,NR,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.3.1,NR,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.4.1.A,NR,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.4.1.B,0.00%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.4.1.B,0.000000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,2.4.1,Sim,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.1.1.A,Jacarei (Terminal Rodoviario De Jacarei) - Sao Jose Dos Campos (Terminal Rodoviario Frederico Ozanam),FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.1.1.B,6.000000000000000000,TRUE
@@ -14220,8 +14220,8 @@ Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.2.1.A,"82,19
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.2.1.B,"82,199,849.21",FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.2.1.C,NR,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.2.1.D,"1,141,573.95",FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1.B,3.86%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1.E,2.00%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1.B,0.038599999999999988,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1.E,0.020000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1.F,INSS sobre o Faturamento,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.3.1,Taxa de Gerenciamento; Outros,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.4.1.A,14495271.000000000000000000,TRUE
@@ -14230,20 +14230,20 @@ Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.4.1.C,574042
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.4.1.D,NR,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.4.1.E,3058509.000000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.4.1.F,12149689.000000000000000000,TRUE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.B,100.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.C,100.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.D,100.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.E,50.00%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.B,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.C,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.D,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1.E,0.500000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.5.1,Pessoas com 60 a 64 anos; Estudantes da rede privada de ensino; Pessoas com deficiência e mobilidae reduzida; Estudantes da rede pública de ensino,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.A,36.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.B,7.80%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.C,23.61%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.D,10.72%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.E,7.67%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.F,5.51%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.G,2.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.H,5.18%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.I,0.00%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.A,0.359999999999999987,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.B,0.078000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.C,0.236100000000000004,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.D,0.107200000000000004,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.E,0.076700000000000004,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.F,0.055099999999999989,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.G,0.020000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.H,0.051799999999999999,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1.I,0.000000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,3.6.1,Sim,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.1.1,Não,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.1.2.A,https://rmvpln.pdui.sp.gov.br,FALSE
@@ -14254,20 +14254,20 @@ Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.C,http:/
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.D,3213150.000000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.E,NR,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.F,25.000000000000000000,TRUE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.G,24.90%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.H,9.70%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.I,26.30%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.J,33.80%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.K,4.50%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.L,0.30%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.M,0.50%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.G,0.248999999999999999,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.H,0.097000000000000003,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.I,0.263000000000000012,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.J,0.337999999999999967,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.K,0.044999999999999998,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.L,0.003000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1.M,0.005000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,4.2.1,Sim,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.A,0.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.B,0.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.C,0.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.D,0.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.E,100.00%,FALSE
-Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.F,0.00%,FALSE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.A,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.B,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.C,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.D,0.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.E,1.000000000000000000,TRUE
+Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1.F,0.000000000000000000,TRUE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,5.1.1,Sim,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,6.1.1,Secretaria exclusiva; Órgão da administração indireta,FALSE
 Região Metropolitana do Vale do Paraíba e Litoral Norte,SP,2025,7.1.1,Operação por delegação,FALSE
